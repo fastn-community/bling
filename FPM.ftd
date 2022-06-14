@@ -3,6 +3,18 @@
 -- fpm.package: fifthtry.github.io/bling
 zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
 
--- fpm.dependency: fifthtry.github.io/doc-site as ds
 
--- fpm.auto-import: ds
+
+-- fpm.dependency: fifthtry.github.io/doc-site as ft
+
+
+-- fpm.auto-import: ft
+-- fpm.auto-import: fpm
+-- fpm.auto-import: fifthtry.github.io/bling/FPM/config
+
+
+-- fpm.sitemap:
+
+# Home: /
+
+- Message: /chat/
