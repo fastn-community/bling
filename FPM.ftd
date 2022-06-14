@@ -18,3 +18,4 @@ zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
 # Home: /
 
 - Message: /chat/
+- Tip: /tip/
