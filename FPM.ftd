@@ -20,5 +20,7 @@ zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
 
 # Home: /
 
+- Badge: /badge/
 - Message: /chat/
 - Tip: /tip/
+- Quote: /quote/
