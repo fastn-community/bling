@@ -137,6 +137,11 @@ margin-bottom: $fpm.space.space-6
 --- tf.h3: $title
 align: center
 
+--- ftd.column:
+if: $ft.is-mobile
+width: fill
+overflow-x: auto
+
 --- ftd.row:
 width: fill
 margin-left: -16
@@ -165,6 +170,42 @@ success: true
 --- badge: Danger
 danger: true
 
+--- container: ftd.main
+
+--- ftd.column:
+if: not $ft.is-mobile
+width: fill
+
+--- tf.h3: $title
+align: center
+
+--- ftd.row:
+width: fill
+margin-left: -16
+
+--- badge: Light
+light: true
+
+--- badge: Dark
+dark: true
+
+--- badge: Primary
+primary: true
+
+--- badge: Secondary
+secondary: true
+
+--- badge: Info
+info: true
+
+--- badge: Warning
+warning: true
+
+--- badge: Success
+success: true
+
+--- badge: Danger
+danger: true
 
 
 
