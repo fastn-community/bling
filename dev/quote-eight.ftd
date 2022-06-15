@@ -1,0 +1,62 @@
+-- import: fifthtry.github.io/bling/assets
+
+
+
+-- ft.page: `quote-nine` and it's Usage
+
+`-- quote-nine` can be used as part of blog posts.
+
+-- ft.code: Example code for `-- quote-nine`
+lang: ftd
+
+\-- quote-nine: Amit Upadhyay
+
+Lorem ipsum dolor sit amet.
+
+
+-- quote-eight: Amit Upadhyay
+
+Lorem ipsum dolor sit amet
+
+
+
+-- ftd.row quote-eight:
+caption title:
+ftd.image-src left-logo: $assets.files.rect-down.png
+ftd.image-src right-logo: $assets.files.rect-top.png
+body body:
+width: fill
+max-width: 320
+margin-top: $fpm.space.space-5
+margin-bottom: $fpm.space.space-6
+
+
+--- ftd.image:
+src: $left-logo
+height: 120
+width: 42
+
+--- ftd.column:
+align: center
+
+--- ftd.text:
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+padding-horizontal: $fpm.space.space-7
+margin-top: 16
+margin-bottom: 16
+
+--- ftd.text: $title
+align: right
+role: $fpm.type.copy-tight
+color: $fpm.color.main.text
+padding-horizontal: $fpm.space.space-7
+
+
+--- container: ftd.main
+
+--- ftd.image:
+src: $right-logo
+height: 120
+width: 42

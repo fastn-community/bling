@@ -24,3 +24,10 @@ zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
 - Message: /chat/
 - Tip: /tip/
 - Quote: /quote/
+  - one: /dev/intro/
+  - two: /dev/intro-two/
+  - three: /dev/quote-three/
+  - four: /dev/quotefour/
+  - five: /dev/quote-five/
+  - six: /dev/quote-six/
+
