@@ -1,53 +1,58 @@
 -- import: fifthtry.github.io/bling/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
 
--- ft.page: `tip` and it's Usage
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+-- ft.page: Tip highlighter
+
+-- pd.package: `tip` and it's Usage
+name: fifthtry.github.io/bling/tip
 
 `tip` is a new conversation experince via using `FTD` lang:
 
 To use `tip` on your web package, add below into `FPM.ftd` file:
 
-
--- ft.code:
+-- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
 \-- fpm.auto-import: fifthtry.github.io/bling
 
 
--- ft.markdown:
+-- tf.markdown:
 
 Once you add above lines into your web package, add `tip` into your `.ftd` files:
 
 
--- ft.code: Basic usage example code:
+-- cb.code: Basic usage example code:
 lang: ftd
 
 \-- tip: Cool bots hot tip!
 
-Hey Buddy! Though this is a chat message but I have multiple features like showing
-code snippet inside this message!
-Would you like to see how? 
+Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
 
 
--- ft.h3: Output of above basic example:
+-- tf.h3: Output of above basic example:
 
 -- tip: Cool bots hot tip!
 
-Hey Buddy! Though this is a chat message but I have multiple features like showing
-code snippet inside this message!
-Would you like to see how? 
+Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
 
 
--- ft.code: Advanced usage example code:
+-- cb.code: Advanced usage example code:
 lang: ftd
 
 
 \-- tip: Cool bots hot tip !
 
-Yo! I like the way this code block fits in my msg: Even if I want to add new 
-text as line then I should be able to add it
+Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium dolorem 
+queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo inventore!
 
-\--- ft.code: Wow! awesome man!:
+\--- tf.code: Wow! awesome man!:
 lang: ftd
 
 \--- ftd.text: Though the code block appears above, can I have some text below it?
@@ -60,15 +65,14 @@ role: $fpm.type.copy-relaxed
 
 
 
--- ft.h3: Output of above advanced usage example:
-
+-- tf.h3: Output of above advanced usage example:
 
 -- tip: Cool bots hot tip !
 
-Yo! I like the way this code block fits in my msg: Even if I want to add new 
-text as line then I should be able to add it
+Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium dolorem 
+queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo inventore!
 
---- ft.code: Wow! awesome man!:
+--- cb.code: Wow! awesome man!:
 lang: ftd
 
 \--- ftd.text: Though the code block appears above, can I have some text below it?
@@ -93,7 +97,9 @@ background-color: $fpm.color.main.background.step-1
 padding: $fpm.space.space-4
 border-radius: 4
 border-width: 1
-width: fill
+width if not $is-mobile: auto
+width if $is-mobile: fill
+min-width: percent 50
 margin-top: $fpm.space.space-2
 margin-bottom: $fpm.space.space-7
 append-at: msg-container
@@ -124,7 +130,7 @@ role: $fpm.type.heading-small
 width: fill
 id: msg-container
 
---- ft.markdown:
+--- tf.markdown:
 body: $body
 
 --- container: ftd.main

@@ -1,19 +1,52 @@
 -- import: fifthtry.github.io/bling/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
 
 
 
--- ftd.column:
-width: fill
-id: page-container
+-- ft.page: Chat messages
 
-
--- ft.page: `message-left` with it's Usage
+-- pd.package: `message-left` & `message-right`
+name: fifthtry.github.io/bling/tip
 
 `message-left` OR `message-right` is a chatting experince via using `FTD` lang:
 
+To use these components on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling/chat
+\-- fpm.auto-import: fifthtry.github.io/bling/chat
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `message-left` OR `message-right`
+into your `.ftd` files:
+
+-- cb.code: `-- message-left` basic usage example code:
+lang: ftd
+
+\-- message-left: Hey Buddy!
+
+
+-- cb.code: `-- message-right` basic usage example code:
+lang: ftd
+
+\-- message-right: Hey Buddy!
+
+
+-- tf.h3: Below is real-life example of chat, using `message` `left` OR `right`
+
 -- ftd.column:
-width if not $ft.is-mobile: 380
-padding if not $ft.is-mobile: 24
+width if not $is-mobile: 380
+padding if not $is-mobile: 24
 border-radius: 20
 background-color: $fpm.color.main.background.base
 
@@ -24,14 +57,14 @@ pull-top: -4
 --- ftd.column:
 margin-top: 4
 
---- ft.markdown:
+--- tf.markdown:
 uis nostrud exercitation ullamco labil oris nisi ut aliquip ex ea commo dorli consequat. 
 Duis aute irure dolor lorii
 
 --- ftd.column:
 margin-top: -14
 
---- ft.code: Below is code:
+--- cb.code: Below is code:
 lang: ftd
 
 \-- message-left: Hi! 
@@ -45,10 +78,10 @@ margin-top: -11
 -- message-right: Yo! 
 pull-top: -4
 
---- ft.markdown:
+--- tf.markdown:
 in voluptate velit esse cillum dolor er eu fugiat nulla pariatur. Excepte urla sint occaecat cupidatat nor proident,
 
---- ft.code: Wow! awesome man!:
+--- cb.code: Wow! awesome man!:
 lang: ftd
 
 \-- message-right: Yo! 
@@ -81,77 +114,6 @@ role: $fpm.type.label-big
 
 
 
-
-
--- ftd.column message:
-optional body body:
-boolean avatar-left: true
-ftd.image-src avatar: $assets.files.agent.png
-margin-bottom: $fpm.space.space-4
-append-at: msg-container
-id: message
-align if not $avatar-left: right
-
---- ftd.row:
-if: $avatar-left
-width: fill
-
---- ftd.image:
-src: $avatar
-width: 32
-height: auto
-margin-right: $fpm.space.space-4
-
- 
---- ftd.column:
-border-width: 1
-border-color: $fpm.color.main.border
-background-color: $fpm.color.main.background.step-1
-padding: $fpm.space.space-3
-border-radius: 4
-width: fill
-id: msg-container
-
---- ftd.text:
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.label-big
-width: fill
-
---- container: ftd.main
-
---- ftd.column:
-if: not $avatar-left
-width: fill
- 
---- ftd.row:
-width: fill
-id: chat
-
---- ftd.column:
-border-width: 1
-border-color: $fpm.color.main.border
-background-color: $fpm.color.main.background.step-1
-padding: $fpm.space.space-3
-border-radius: 4
-id: msg-container
-align: right
-
---- ftd.text:
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.label-big
-width: fill
-
---- container: chat
-
---- ftd.image:
-src: $avatar
-width: 32
-height: auto
-margin-left: $fpm.space.space-4
-
---- container: ftd.main
 
 
 

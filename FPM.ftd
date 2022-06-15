@@ -5,12 +5,15 @@ zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
 
 
 
--- fpm.dependency: fifthtry.github.io/doc-site as ft
+-- fpm.dependency: fifthtry.github.io/package-doc as pd
+-- fpm.dependency: fifthtry.github.io/typography as tf
 
 
--- fpm.auto-import: ft
+-- fpm.auto-import: pd
 -- fpm.auto-import: fpm
--- fpm.auto-import: fifthtry.github.io/bling/FPM/config
+-- fpm.auto-import: tf
+-- fpm.auto-import: pd/code-block as cb
+-- fpm.auto-import: pd/forest-theme as ft
 
 
 -- fpm.sitemap:
