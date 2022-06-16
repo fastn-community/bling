@@ -1,0 +1,173 @@
+-- import: fifthtry.github.io/bling/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+
+
+
+-- ftd.font-size copy-relax:
+line-height: 18
+size: 14
+letter-spacing: 0
+
+-- ftd.type copy-relaxed: $fpm.font-display
+desktop: $copy-relax
+mobile: $copy-relax
+xl: $copy-relax
+weight: 700
+
+
+
+
+
+-- ft.page: `quote-5` and it's Usage
+
+`-- quote-5` can be used as part of blog posts.
+
+
+
+
+
+-- pd.package: `quote-5` and it's Usage
+name: fifthtry.github.io/bling/quote-5
+
+`quote-5` is a new conversation experince via using `FTD` lang:
+
+To use `quote-5` on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/quote-5
+
+
+
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-5` into your `.ftd` 
+files:
+
+
+
+
+
+
+-- cb.code: Example code for `-- quote-5`
+lang: ftd
+
+
+\-- quote-5.quote-5: Barack Obama
+
+The real test is not whether you avoid this failure, because you 
+won't. It's whether you let it harden or shame you into inaction,
+or whether you learn from it; whether you choose to persevere.
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- quote-5: Barack Obama
+
+The real test is not whether you avoid this failure, because you won't. It's 
+whether you let it harden or shame you into inaction, or whether you learn from 
+it; whether you choose to persevere.
+
+
+
+
+
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-5` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-5.quote-5 blog-quote:
+optional caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote: Barack Obama
+
+The real test is not whether you avoid this failure, because you won't. It's 
+whether you let it harden or shame you into inaction, or whether you learn from 
+it; whether you choose to persevere.
+
+
+
+
+
+
+
+
+
+-- ftd.row quote-5:
+optional caption title:
+body body:
+ftd.color backgroundcolor: $fpm.color.main.background.step-1
+background-color: $backgroundcolor
+optional ftd.image-src quote-logo: $assets.files.left-quote-circle.png
+padding-vertical: $fpm.space.space-6
+border-left: 5
+padding-right:$fpm.space.space-7
+border-color: $fpm.color.main.text
+spacing: 32
+margin-top: $fpm.space.space-5
+margin-bottom: $fpm.space.space-6
+width: fill
+
+--- ftd.image:
+src: $quote-logo
+width: auto
+height: 32
+padding-left: 25
+
+--- ftd.column:
+width: fill
+align: center
+padding-top: 12
+spacing: 12
+
+--- ftd.text:
+text: $body
+role: $fpm.type.copy-relaxed
+
+--- ftd.row:
+padding-left: $fpm.space.space-3
+
+--- ftd.text: ~
+role: $copy-relaxed
+color: $fpm.color.main.background.step-2
+margin-right: $fpm.space.space-2
+
+--- ftd.text: $title
+role: $copy-relaxed
+color: $fpm.color.main.background.step-2

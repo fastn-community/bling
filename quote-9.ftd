@@ -1,0 +1,162 @@
+-- import: fifthtry.github.io/bling/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+
+
+
+-- ft.page: `quote-9` and it's Usage
+
+`-- quote-9` can be used as part of blog posts.
+
+
+
+
+
+-- pd.package: `quote-9` and it's Usage
+name: fifthtry.github.io/bling/quote-9
+
+`quote-9` is a new conversation experince via using `FTD` lang:
+
+To use `quote-9` on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/quote-9
+
+
+
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-9` into your `.ftd` 
+files:
+
+
+
+
+
+-- cb.code: Example code for `-- quote-9`
+lang: ftd
+
+\-- quote-9.quote-9: Dr. APJ Abdul Kalam
+
+"All of us do not have equal talent. But, all of us have an equal opportunity 
+to develop our talents."
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- quote-9: Dr. APJ Abdul Kalam
+
+"All of us do not have equal talent. But, all of us have an equal opportunity 
+to develop our talents."
+
+
+
+
+
+
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-9` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-9.quote-9 blog-quote:
+optional caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote: Dr. APJ Abdul Kalam
+
+"All of us do not have equal talent. But, all of us have an equal opportunity 
+to develop our talents."
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-9:
+optional caption title:
+body body: 
+ftd.image-src left-logo: $assets.files.left-quote.png
+ftd.image-src right-logo: $assets.files.right-quote-sign.png
+margin-top: $fpm.space.space-5
+margin-bottom: $fpm.space.space-6
+
+--- ftd.image:
+src: $left-logo
+height: 69
+width: 69
+anchor: parent
+top: -12
+left if $is-mobile: 0
+left: -32
+z-index: 0
+
+--- ftd.column:
+align: center
+padding-vertical: $fpm.space.space-2
+padding-horizontal: $fpm.space.space-2
+max-width: 756
+z-index: 1
+
+--- ftd.text:
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.heading-small
+padding-horizontal: $fpm.space.space-7
+margin-top: 16
+margin-bottom: 16
+text-align: center
+
+--- ftd.text: $title
+align: center
+role: $fpm.type.copy-tight
+color: $fpm.color.main.text
+padding-horizontal: $fpm.space.space-7
+
+--- container: ftd.main
+
+--- ftd.image:
+src: $right-logo
+height: 69
+width: 69
+anchor: parent
+right: 0
+bottom: 0

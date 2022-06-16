@@ -1,0 +1,161 @@
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+
+
+
+-- ft.page: `quote-7` and it's Usage
+
+`-- quote-7` can be used as part of blog posts.
+
+
+
+
+
+-- pd.package: `quote-7` and it's Usage
+name: fifthtry.github.io/bling/quote-7
+
+`quote-7` is a new conversation experince via using `FTD` lang:
+
+To use `quote-7` on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/quote-7
+
+
+
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-7` into your `.ftd` 
+files:
+
+
+
+
+
+-- cb.code: Example code for `-- quote-7`
+lang: ftd
+
+\-- quote-7.quote-7: M.K. Gandhi
+
+"A man is but a product of his thoughts. 
+
+What he thinks he becomes."
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- quote-7: M.K. Gandhi
+
+"A man is but a product of his thoughts.
+
+ What he thinks he becomes."
+
+
+
+
+
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-7` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-7.quote-7 blog-quote:
+optional caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote:  M.K. Gandhi
+
+"A man is but a product of his thoughts. 
+
+What he thinks he becomes."
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-7:
+optional caption title:
+body body:
+border-width: 16
+border-color: $fpm.color.main.border
+padding-vertical: $fpm.space.space-4
+padding-horizontal: $fpm.space.space-4
+width: fill
+max-width: 320
+margin-top: $fpm.space.space-5
+margin-bottom: $fpm.space.space-6
+align: center
+
+--- ftd.column:
+z-index: 300
+
+--- ftd.text: 
+text: $body
+role: $fpm.type.copy-large
+color: $fpm.color.main.text
+margin-top: $fpm.space.space-4
+margin-bottom: $fpm.space.space-4
+text-align: center
+align: center
+
+--- ftd.row:
+padding-left: $fpm.space.space-3
+align: right
+
+--- ftd.text: ~
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+margin-right: $fpm.space.space-2
+
+--- ftd.text: $title
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+
+--- container: ftd.main
+
+--- ftd.row:
+anchor: parent
+background-color: $fpm.color.main.background.base
+left: 32
+right: 32
+top: -16
+bottom: -16

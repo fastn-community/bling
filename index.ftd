@@ -1,17 +1,16 @@
 -- import: fifthtry.github.io/bling/assets
 
-
 -- boolean is-mobile: false
 
 -- is-mobile: true
 if: $ftd.device == mobile
+
+
+
+
 
 -- ft.page: Bling a collection of `FTD` components
 
 `fifthtry.github.io/bling` is a component library which contains various `ftd` 
 componets can be used on your pages. Click on each component into sidebar to 
 see its working demo!
-
-
-
-
