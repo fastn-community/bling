@@ -84,10 +84,14 @@ margin-bottom: $fpm.space.space-6
 background-image: $backgroundimage
 width: 84
 height: 84
+width if $is-mobile: 44
+height if $is-mobile: 44
 anchor: parent
 z-index: 0
-top: 24
-left: 24
+top: 10
+top if $is-mobile: 34
+left: 0
+left if $is-mobile: 34
 z-index: 0
 
 --- container: ftd.main
@@ -97,8 +101,8 @@ z-index: 1
 padding-left: $fpm.space.space-4
 
 --- ftd.text: $title
-color: $fpm.color.main.text-strong
-role: $fpm.type.heading-small
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
 align: center
 margin-bottom: $fpm.space.space-2
 
@@ -106,6 +110,6 @@ margin-bottom: $fpm.space.space-2
 width: fill
 text: $body
 color: $fpm.color.main.text-strong
-role: $fpm.type.heading-small
+role: $fpm.type.copy-large
 z-index: 200
 text-align: center
