@@ -48,7 +48,7 @@ Once you add above lines into your web package, add `badge` into your `.ftd` fil
 --- cb.code: Example code for `badge` `light` is by default true:
 lang: ftd
 
-\-- badge: Light
+\-- badge.badge: Light
 
 
 
@@ -61,7 +61,7 @@ light: false
 --- cb.code: Example code for dark `badge`:
 lang: ftd
 
-\-- cb.badge: Dark
+\-- badge.badge: Dark
 dark: true
 
 
@@ -75,7 +75,7 @@ light: false
 --- cb.code: Example code for primary `badge`:
 lang: ftd
 
-\-- badge: Primary
+\-- badge.badge: Primary
 primary: true
 
 
@@ -89,7 +89,7 @@ light: false
 --- cb.code: Example code for secondary `badge`:
 lang: ftd
 
-\-- cb.badge: Secondary
+\-- badge.badge: Secondary
 secondary: true
 
 
@@ -103,7 +103,7 @@ light: false
 --- cb.code: Example code for success `badge`:
 lang: ftd
 
-\-- cb.badge: Success
+\-- badge.badge: Success
 success: true
 
 
@@ -117,7 +117,7 @@ light: false
 --- cb.code: Example code for danger `badge`:
 lang: ftd
 
-\-- cb.badge: Danger
+\-- badge.badge: Danger
 danger: true
 
 
@@ -131,7 +131,7 @@ light: false
 --- cb.code: Example code for warning `badge`:
 lang: ftd
 
-\-- cb.badge: Warning
+\-- badge.badge: Warning
 warning: true
 
 
@@ -145,7 +145,7 @@ light: false
 --- cb.code: Example code for info `badge`:
 lang: ftd
 
-\-- cb.badge: Info
+\-- badge.badge: Info
 info: true
 
 
