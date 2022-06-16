@@ -45,7 +45,7 @@ Once you add above lines into your web package, add `tip` into your `.ftd` files
 -- cb.code: Basic usage example code:
 lang: ftd
 
-\-- tip: Cool bots hot tip!
+\-- tip.tip: Cool bots hot tip!
 
 Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
 
@@ -70,7 +70,7 @@ Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
 -- cb.code: Advanced usage example code:
 lang: ftd
 
-\-- tip: Cool bots hot tip !
+\-- tip.tip: Cool bots hot tip !
 
 Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium dolorem 
 queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo inventore!
