@@ -28,7 +28,16 @@ To use `quote-1` on your web package, add below into `FPM.ftd` file:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/quote-1
+
+
+
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-1` into your `.ftd` 
+files:
 
 
 
@@ -37,10 +46,10 @@ lang: ftd
 -- cb.code: Example code for `-- quote-1`
 lang: ftd
 
-\-- quote-1: Steve Jobs
-Your time is limited, so don't waste it living someone else's life. Don't 
-be trapped by dogma – which is living with the results of other people's 
-thinking
+\-- quote-1.quote-1: Steve Jobs
+Your time is limited, so don't waste it living someone else's life. 
+Don't be trapped by dogma – which is living with the results of other 
+people's thinking.
 
 
 
@@ -55,7 +64,42 @@ thinking
 -- quote-1: Steve Jobs
 Your time is limited, so don't waste it living someone else's life. Don't 
 be trapped by dogma – which is living with the results of other people's 
-thinking
+thinking.
+
+
+
+
+
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-1` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-1.quote-1 blog-quote:
+optional caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote: Steve Jobs
+
+Your time is limited, so don't waste it living someone else's life. 
+Don't be trapped by dogma – which is living with the results of other 
+people's thinking.
 
 
 
@@ -72,18 +116,10 @@ body body:
 ftd.color backgroundcolor: $fpm.color.main.background.base
 width: fill
 
-
-
-
-
 --- quote-1-desktop: $title
 if: not $ft.is-mobile
 body: $body
 backgroundcolor: $backgroundcolor
-
-
-
-
 
 --- quote-1-mobile: $title
 if: $ft.is-mobile
