@@ -1,5 +1,5 @@
 # Bling is a collection of `FTD` components
-`fifthtry.github.io/bling` is a component library which contains various `ftd` 
+`fifthtry.github.io/bling` is a `ftd` component library which contains various `ftd` 
 componets can be used on your pages. 
 
 To use this `ftd` library on your web package, add below lines into `FPM.ftd` file:
