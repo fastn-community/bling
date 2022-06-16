@@ -1,4 +1,4 @@
-# Bling a collection of `FTD` components
+# Bling is a collection of `FTD` components
 `fifthtry.github.io/bling` is a component library which contains various `ftd` 
 componets can be used on your pages. 
 
