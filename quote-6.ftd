@@ -135,23 +135,14 @@ Life is either a daring adventure or nothing at all.
 
 
 
-
 -- ftd.column quote-6:
 optional caption title:
 body body:
 width: fill
 
-
-
-
-
 --- quote-6-desktop: $title
 if: not $is-mobile
 body: $body
-
-
-
-
 
 --- quote-6-mobile: $title
 if: $is-mobile
@@ -212,9 +203,6 @@ text: $body
 role: $heading-40-bold
 color: $fpm.color.main.text
 
-
-
-
 --- ftd.text: $title
 role: $fpm.type.heading-small
 color: $fpm.color.main.text
@@ -227,6 +215,15 @@ right: 10
 bottom: -32
 height: 62
 width: 62
+
+
+
+
+
+
+
+
+
 
 -- ftd.column quote-6-mobile:
 optional caption title:
@@ -242,7 +239,6 @@ align: center
 margin-top: $fpm.space.space-5
 margin-bottom: $fpm.space.space-6
 
-
 --- ftd.column:
 border-top: 1
 border-color: $fpm.color.main.text
@@ -251,7 +247,6 @@ top: 18
 left: 44
 width: percent 80
 align: center
-
 
 --- container: ftd.main
 
@@ -263,7 +258,6 @@ right: 44
 bottom: 18
 width: percent 80
 
-
 --- container: ftd.main
 
 --- ftd.column:
@@ -271,19 +265,15 @@ align: center
 width: percent 80
 padding-vertical: $fpm.space.space-4
 
-
 --- ftd.text: 
 text: $body
 role: $heading-small-bold
 color: $fpm.color.main.text
 
-
-
 --- ftd.text: $title
 role: $fpm.type.copy-relaxed
 color: $fpm.color.main.text
 padding-top: $fpm.space.space-5
-
 
 --- ftd.image:
 anchor: parent
