@@ -45,7 +45,7 @@ into your `.ftd` files:
 -- cb.code: `-- message-left` basic usage example code:
 lang: ftd
 
-\-- message-left: Hey Buddy!
+\-- chat.message-left: Hey Buddy!
 
 
 
@@ -54,13 +54,109 @@ lang: ftd
 -- cb.code: `-- message-right` basic usage example code:
 lang: ftd
 
-\-- message-right: Hey Buddy!
+\-- chat.message-right: Hey Buddy!
 
 
 
 
 
--- tf.h3: Below is real-life example of chat, using `message` `left` OR `right`
+-- tf.h3: How to create custom component, using default attributes?
+
+
+
+
+
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- message-left` with custom name as `my-msg`:
+lang: ftd
+
+\-- chat.message-left left-msg:
+optional caption title:
+title: $title
+
+\-- chat.message-right right-msg:
+optional caption title:
+title: $title
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: `-- left-msg` & `-- right-msg` usage:
+lang: ftd
+
+\-- left-msg: Hello World! `ftd` is awesome
+
+\-- right-msg: Hello there! `ftd` is flexible
+
+
+
+
+
+-- tf.markdown:
+
+You can change default `avatar` and use custom image as avatar, add your custom 
+images into your package and use them via changing `avatar` attribute value 
+as given below example:
+
+-- cb.code: Example: `-- left-msg` with custom avatar:
+lang: ftd
+
+\-- chat.message-left left-msg:
+optional caption title:
+ftd.image-src avatar: $assets.files.amitu.jpg
+title: $title
+avatar: $avatar
+
+
+-- cb.code: Example: `-- left-msg` with `rounded-avatar` as default `true`:
+lang: ftd
+
+\-- chat.message-left left-msg:
+optional caption title:
+ftd.image-src avatar: $assets.files.amitu.jpg
+boolean rounded-image: true
+title: $title
+avatar: $avatar
+rounded-avatar: $rounded-image
+
+
+
+
+-- tf.markdown:
+
+Now use `left-msg` normally:
+
+-- cb.code: `-- left-msg` with custom `avatar`:
+lang: ftd
+
+\-- left-msg: Hello World! `ftd` is awesome
+
+
+
+
+
+-- tf.h3: Output of above `left-msg` custom component:
+
+
+-- message-left: Hello World! `ftd` is awesome
+avatar: $assets.files.amitu.jpg
+round-avatar: true
+
+-- message-right: Hey! liking `ftd` lang?
+avatar: $assets.files.ganeshs.jpeg
+round-avatar: true
+
+
+
+-- tf.h3: Below is real-life example of a chat, using `message` `left` OR `right`
 
 
 
@@ -166,6 +262,7 @@ role: $fpm.type.label-big
 -- ftd.column message-left:
 optional caption title:
 ftd.image-src avatar: $assets.files.agent.png
+boolean round-avatar: false
 margin-bottom: $fpm.space.space-4
 integer pull-top: 0
 append-at: msg-container
@@ -175,10 +272,19 @@ id: message
 width: fill
 
 --- ftd.image:
+if: not $round-avatar
 src: $avatar
 width: 32
 height: auto
 margin-right: $fpm.space.space-4
+
+--- ftd.image:
+if: $round-avatar
+src: $avatar
+width: 32
+height: auto
+margin-right: $fpm.space.space-4
+border-radius: 32
 
 --- ftd.column:
 border-width: 1
@@ -211,6 +317,7 @@ margin-top: $pull-top
 -- ftd.column message-right:
 optional caption title:
 ftd.image-src avatar: $assets.files.user.png
+boolean round-avatar: false
 margin-bottom: $fpm.space.space-4
 integer pull-top: 0
 append-at: msg-container
@@ -241,13 +348,21 @@ width: fill
 text-align: right
 margin-top: $pull-top
 
-
 --- container: chat-right
 
 --- ftd.image:
+if: not $round-avatar
 src: $avatar
 width: 32
 height: auto
 margin-left: $fpm.space.space-4
+
+--- ftd.image:
+if: $round-avatar
+src: $avatar
+width: 32
+height: auto
+margin-left: $fpm.space.space-4
+border-radius: 32
 
 --- container: ftd.main
