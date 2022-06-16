@@ -45,7 +45,7 @@ To use `quote-5` on your web package, add below into `FPM.ftd` file:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/quote-5
 
 
 
@@ -65,7 +65,7 @@ files:
 lang: ftd
 
 
-\-- quote-5: Barack Obama
+\-- quote-5.quote-5: Barack Obama
 
 The real test is not whether you avoid this failure, because you 
 won't. It's whether you let it harden or shame you into inaction,

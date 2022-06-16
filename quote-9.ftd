@@ -29,7 +29,7 @@ To use `quote-9` on your web package, add below into `FPM.ftd` file:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/quote-9
 
 
 
@@ -47,7 +47,7 @@ files:
 -- cb.code: Example code for `-- quote-9`
 lang: ftd
 
-\-- quote-9: Dr. APJ Abdul Kalam
+\-- quote-9.quote-9: Dr. APJ Abdul Kalam
 
 "All of us do not have equal talent. But, all of us have an equal opportunity 
 to develop our talents."

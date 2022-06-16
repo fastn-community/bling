@@ -29,7 +29,7 @@ To use `quote-4` on your web package, add below into `FPM.ftd` file:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/quote-4
 
 
 
@@ -47,7 +47,7 @@ files:
 -- cb.code: Example code for `-- quote-4`
 lang: ftd
 
-\-- quote-4: Nelson Mandela
+\-- quote-4.quote-4: Nelson Mandela
 
 The greatest glory in living lies not in never falling, but in rising 
 every time we fall. 
@@ -76,10 +76,10 @@ every time we fall.
 `FTD` lang is flexible and you can define your custom names to the default component.
 Below are few examples of custom names:
 
--- cb.code: `-- quote-1` with custom name as e.g. `blog-quote`:
+-- cb.code: `-- quote-4` with custom name as e.g. `blog-quote`:
 lang: ftd
 
-\-- quote-1.quote-1 blog-quote:
+\-- quote-4.quote-4 blog-quote:
 optional caption title:
 body body: 
 title: $title

@@ -56,7 +56,7 @@ To use `quote-6` on your web package, add below into `FPM.ftd` file:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/quote-6
 
 
 
@@ -74,7 +74,7 @@ files:
 -- cb.code: Example code for `-- quote-6`
 lang: ftd
 
-\-- quote-6: Helen Keller
+\-- quote-6.quote-6: Helen Keller
 
 Life is either a daring adventure or nothing at all.
 

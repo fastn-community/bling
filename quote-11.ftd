@@ -28,7 +28,7 @@ To use `quote-11` on your web package, add below into `FPM.ftd` file:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/quote-11
 
 
 
@@ -46,7 +46,7 @@ files:
 -- cb.code: Example code for `-- quote-11`
 lang: ftd
 
-\-- quote-11: Bill Gates
+\-- quote-11.quote-11: Bill Gates
 
 "Your most unhappy customers are your greatest source of learning." 
 
@@ -70,7 +70,7 @@ lang: ftd
 -- cb.code: Example code for `-- quote-11`
 lang: ftd
 
-\-- quote-11: Mark Zuckerberg
+\-- quote-11.quote-11: Mark Zuckerberg
 
 "If you just work on stuff that you like and you're passionate about, 
 you don't have to have a master plan with how things will play out."
@@ -96,7 +96,7 @@ you don't have to have a master plan with how things will play out."
 -- cb.code: Example code for `-- quote-11`
 lang: ftd
 
-\-- quote-11: Reid Hoffman
+\-- quote-11.quote-11: Reid Hoffman
 
 "If you are not embarrassed by the first version of your product, 
 you've launched too late." 

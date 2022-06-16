@@ -28,7 +28,7 @@ To use `quote-7` on your web package, add below into `FPM.ftd` file:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/quote-7
 
 
 
@@ -46,7 +46,7 @@ files:
 -- cb.code: Example code for `-- quote-7`
 lang: ftd
 
-\-- quote-7: M.K. Gandhi
+\-- quote-7.quote-7: M.K. Gandhi
 
 "A man is but a product of his thoughts. 
 
