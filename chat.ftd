@@ -45,7 +45,10 @@ into your `.ftd` files:
 -- cb.code: `-- message-left` basic usage example code:
 lang: ftd
 
-\-- chat.message-left: Hey Buddy!
+\-- chat.message-left: Hellow World! 😀
+
+
+-- message-left: Hello World! 😀
 
 
 
@@ -54,7 +57,10 @@ lang: ftd
 -- cb.code: `-- message-right` basic usage example code:
 lang: ftd
 
-\-- chat.message-right: Hey Buddy!
+\-- chat.message-right: Hey Buddy! 👋
+
+
+-- message-right: Hey Buddy! 👋
 
 
 
@@ -156,7 +162,7 @@ round-avatar: true
 
 
 
--- tf.h3: Below is real-life example of a chat, using `message` `left` OR `right`
+-- tf.h3: Real-life example of a chat, using `message` `left` & `right`:
 
 
 
@@ -249,7 +255,6 @@ role: $fpm.type.label-big
 
 
 -- message-right: sed do eiusmod
-
 
 
 
