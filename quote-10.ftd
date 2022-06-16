@@ -35,6 +35,15 @@ lang: ftd
 
 
 
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-10` into your `.ftd` 
+files:
+
+
+
+
+
 -- cb.code: Example code for `-- quote-10`
 lang: ftd
 
@@ -67,12 +76,49 @@ success, and this is the way great spiritual giants are produced."
 
 
 
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-10` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-10.quote-10 blog-quote:
+optional caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote: Swami Vivekananda
+
+"Take up one idea. Make that one idea your life; dream of it; think of it; 
+live on that idea. Let the brain, the body, muscles, nerves, every part of 
+your body be full of that idea, and just leave every other idea alone. This 
+is the way to success, and this is the way great spiritual giants are produced."
+
+
+
+
+
+
 
 
 
 
 -- ftd.column quote-10:
-caption title:
+optional caption title:
 ftd.image-src logo: $assets.files.right-quote-sign.png
 width: fill
 margin-top: $fpm.space.space-9

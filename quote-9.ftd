@@ -35,6 +35,15 @@ lang: ftd
 
 
 
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-9` into your `.ftd` 
+files:
+
+
+
+
+
 -- cb.code: Example code for `-- quote-9`
 lang: ftd
 
@@ -63,12 +72,48 @@ to develop our talents."
 
 
 
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-9` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-9.quote-9 blog-quote:
+optional caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote: Dr. APJ Abdul Kalam
+
+"All of us do not have equal talent. But, all of us have an equal opportunity 
+to develop our talents."
+
+
+
+
+
+
+
 
 
 
 
 -- ftd.column quote-9:
-caption title:
+optional caption title:
 body body: 
 ftd.image-src left-logo: $assets.files.left-quote.png
 ftd.image-src right-logo: $assets.files.right-quote-sign.png

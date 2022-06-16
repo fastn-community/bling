@@ -34,6 +34,15 @@ lang: ftd
 
 
 
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-7` into your `.ftd` 
+files:
+
+
+
+
+
 -- cb.code: Example code for `-- quote-7`
 lang: ftd
 
@@ -63,13 +72,48 @@ What he thinks he becomes."
 
 
 
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-7` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-7.quote-7 blog-quote:
+optional caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote:  M.K. Gandhi
+
+"A man is but a product of his thoughts. 
+
+What he thinks he becomes."
+
+
+
+
+
 
 
 
 
 
 -- ftd.column quote-7:
-caption title:
+optional caption title:
 body body:
 border-width: 16
 border-color: $fpm.color.main.border

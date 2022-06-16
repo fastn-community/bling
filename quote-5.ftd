@@ -51,6 +51,16 @@ lang: ftd
 
 
 
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-5` into your `.ftd` 
+files:
+
+
+
+
+
+
 -- cb.code: Example code for `-- quote-5`
 lang: ftd
 
@@ -80,13 +90,47 @@ it; whether you choose to persevere.
 
 
 
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-5` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-5.quote-5 blog-quote:
+optional caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote: Barack Obama
+
+The real test is not whether you avoid this failure, because you won't. It's 
+whether you let it harden or shame you into inaction, or whether you learn from 
+it; whether you choose to persevere.
+
+
+
+
 
 
 
 
 
 -- ftd.row quote-5:
-caption title:
+optional caption title:
 body body:
 ftd.color backgroundcolor: $fpm.color.main.background.step-1
 background-color: $backgroundcolor

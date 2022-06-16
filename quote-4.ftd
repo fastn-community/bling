@@ -35,6 +35,15 @@ lang: ftd
 
 
 
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-4` into your `.ftd` 
+files:
+
+
+
+
+
 -- cb.code: Example code for `-- quote-4`
 lang: ftd
 
@@ -62,13 +71,47 @@ every time we fall.
 
 
 
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-1` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-1.quote-1 blog-quote:
+optional caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote: Nelson Mandela
+
+The greatest glory in living lies not in never falling, but in rising 
+every time we fall. 
+
+
+
+
+
 
 
 
 
 
 -- ftd.column quote-4:
-caption title:
+optional caption title:
 body body:
 padding-horizontal: 24
 padding-vertical: 24

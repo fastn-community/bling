@@ -34,6 +34,15 @@ lang: ftd
 
 
 
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-2` into your `.ftd` 
+files:
+
+
+
+
+
 -- cb.code: Example code for `-- quote-2`
 lang: ftd
 
@@ -54,6 +63,40 @@ what you don't have in life, you'll never have enough.
 -- quote-2: Oprah Winfrey
 If you look at what you have in life, you'll always have more. If you look at 
 what you don't have in life, you'll never have enough.
+
+
+
+
+
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-2` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-2.quote-2 blog-quote:
+optional caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote: Oprah Winfrey
+
+If you look at what you have in life, you'll always have more. If you look 
+at what you don't have in life, you'll never have enough.
 
 
 

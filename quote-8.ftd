@@ -35,10 +35,19 @@ lang: ftd
 
 
 
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-8` into your `.ftd` 
+files:
+
+
+
+
+
 -- cb.code: Example code for `-- quote-8`
 lang: ftd
 
-\-- quote-nine: Thomas Jefferson
+\-- quote-8: Thomas Jefferson
 
  "I find that the harder I work, the more luck I seem to have."
 
@@ -53,6 +62,39 @@ lang: ftd
 
 
 -- quote-8: Thomas Jefferson
+
+ "I find that the harder I work, the more luck I seem to have."
+
+
+
+
+
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-8` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-8.quote-8 blog-quote:
+optional caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote: Thomas Jefferson
 
  "I find that the harder I work, the more luck I seem to have."
 

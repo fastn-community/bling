@@ -91,13 +91,50 @@ the {white:life} in your years."
 
 
 
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-3` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-3.quote-3 blog-quote:
+optional caption title:
+optional string label:
+body body: 
+title: $title
+body: $body
+label: $label
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote: Eleanor Roosevelt
+label: U.S.A.
+
+"The future belongs to those who believe in the beauty of their dreams."
+
+
+
+
+
+
 
 
 
 
 -- ftd.column quote-3:
-caption title:
-string label:
+optional caption title:
+optional string label:
 body body:
 width: fill
 margin-top: $fpm.space.space-5

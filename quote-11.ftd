@@ -34,6 +34,15 @@ lang: ftd
 
 
 
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-11` into your `.ftd` 
+files:
+
+
+
+
+
 -- cb.code: Example code for `-- quote-11`
 lang: ftd
 
@@ -108,6 +117,38 @@ you've launched too late."
 you've launched too late." 
 
 
+
+
+
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-11` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-11.quote-11 blog-quote:
+caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote: Reid Hoffman
+
+"If you are not embarrassed by the first version of your product, 
+you've launched too late." 
 
 
 
