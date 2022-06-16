@@ -1,7 +1,6 @@
 -- import: fifthtry.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
-
 -- boolean is-mobile: false
 
 -- is-mobile: true
@@ -9,20 +8,29 @@ if: $ftd.device == mobile
 
 
 
--- ft.page: Chat messages
+
+
+-- ft.page: Chat `messages`
+
+`message-left` OR `message-right` is a chatting experince via using `FTD` lang.
+
+
+
+
 
 -- pd.package: `message-left` & `message-right`
-name: fifthtry.github.io/bling/tip
-
-`message-left` OR `message-right` is a chatting experince via using `FTD` lang:
+name: fifthtry.github.io/bling/chat
 
 To use these components on your web package, add below into `FPM.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling/chat
+\-- fpm.dependency: fifthtry.github.io/bling
 \-- fpm.auto-import: fifthtry.github.io/bling/chat
+
+
+
 
 
 -- tf.markdown:
@@ -30,10 +38,17 @@ lang: ftd
 Once you add above lines into your web package, add `message-left` OR `message-right`
 into your `.ftd` files:
 
+
+
+
+
 -- cb.code: `-- message-left` basic usage example code:
 lang: ftd
 
 \-- message-left: Hey Buddy!
+
+
+
 
 
 -- cb.code: `-- message-right` basic usage example code:
@@ -42,13 +57,23 @@ lang: ftd
 \-- message-right: Hey Buddy!
 
 
+
+
+
 -- tf.h3: Below is real-life example of chat, using `message` `left` OR `right`
+
+
+
+
 
 -- ftd.column:
 width if not $is-mobile: 380
 padding if not $is-mobile: 24
 border-radius: 20
 background-color: $fpm.color.main.background.base
+
+
+
 
 
 -- message-left: Hey Buddy!
@@ -70,9 +95,11 @@ lang: ftd
 \-- message-left: Hi! 
 \-- ftd.text: Hi!
 
-
 --- ftd.column:
 margin-top: -11
+
+
+
 
 
 -- message-right: Yo! 
@@ -92,23 +119,40 @@ color: $fpm.color.main.text
 role: $fpm.type.label-big
 
 
+
+
+
 -- message-left: 🤘
+
+
 
 
 
 -- message-right: 👍👍
 
 
+
+
+
 -- message-left: Lorem ipsum dolor sit amet,
+
+
+
 
 
 -- message-right: sed do eiusmod tempor ut
 
 
+
+
+
 -- message-left: Lorem ipsum
 
--- message-right: sed do eiusmod
 
+
+
+
+-- message-right: sed do eiusmod
 
 
 
@@ -154,9 +198,6 @@ text-align: left
 margin-top: $pull-top
 
 --- container: ftd.main
-
-
-
 
 
 
