@@ -135,6 +135,7 @@ width if $is-mobile: fill
 min-width: percent 50
 margin-top: $fpm.space.space-2
 margin-bottom: $fpm.space.space-7
+align: center
 append-at: msg-container
 
 --- ftd.column:
