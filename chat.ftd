@@ -241,7 +241,6 @@ width: fill
 text-align: right
 margin-top: $pull-top
 
-
 --- container: chat-right
 
 --- ftd.image:
