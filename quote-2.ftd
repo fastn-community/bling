@@ -1,0 +1,188 @@
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+
+
+
+-- ft.page: `quote-2` and it's Usage
+
+`-- quote-2` can be used as part of blog posts.
+
+
+
+
+
+-- pd.package: `quote-2` and it's Usage
+name: fifthtry.github.io/bling/quote-2
+
+`quote-2` is a new conversation experince via using `FTD` lang:
+
+To use `quote-2` on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling
+
+
+
+
+
+-- cb.code: Example code for `-- quote-2`
+lang: ftd
+
+\-- quote-2: Oprah Winfrey
+If you look at what you have in life, you'll always have more. If you look at 
+what you don't have in life, you'll never have enough.
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- quote-2: Oprah Winfrey
+If you look at what you have in life, you'll always have more. If you look at 
+what you don't have in life, you'll never have enough.
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-2:
+optional caption title:
+body body:
+ftd.color backgroundcolor: $fpm.color.main.background.base
+width: fill
+
+
+
+
+--- quote-2-desktop: $title
+if: not $ft.is-mobile
+body: $body
+backgroundcolor: $backgroundcolor
+
+
+
+
+--- quote-2-mobile: $title
+if: $ft.is-mobile
+body: $body
+backgroundcolor: $backgroundcolor
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-2-desktop:
+body body:
+optional caption title:
+ftd.color backgroundcolor: $fpm.color.main.background.base
+width: fill
+background-color: $backgroundcolor
+margin-top: $fpm.space.space-5
+margin-bottom: $fpm.space.space-6
+max-width: 2056
+
+--- ftd.row:
+width: fill
+border-left: 4
+padding-left: $fpm.space.space-8
+border-color: $fpm.color.main.border
+
+--- ftd.column:
+width: fill
+
+--- ftd.text: 
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.copy-large
+style: italic
+text-align: right
+
+--- ftd.row:
+align: right
+spacing: 8
+margin-top: $fpm.space.space-4
+
+--- ftd.text: ~
+align: center
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+
+--- ftd.text: $title
+align: center
+color: $fpm.color.main.text
+role: $fpm.type.fine-print
+white-space: nowrap
+style: italic
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-2-mobile:
+body body:
+ftd.color backgroundcolor:
+width: fill
+background-color: $backgroundcolor
+max-width: 2056
+optional caption title:
+
+--- ftd.row:
+width: fill
+border-left: 4
+padding-left: $fpm.space.space-7
+border-color: $fpm.color.main.border
+
+--- ftd.column:
+width: fill
+
+--- ftd.text: 
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+style: italic
+text-align: right
+
+--- ftd.row:
+align: right
+spacing: 8
+margin-top: $fpm.space.space-4
+
+--- ftd.text: ~
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+
+--- ftd.text: $title
+align: right
+color: $fpm.color.main.text
+role: $fpm.type.fine-print
+white-space: nowrap
+style: italic

@@ -7,6 +7,7 @@ zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
 
 -- fpm.dependency: fifthtry.github.io/package-doc as pd
 -- fpm.dependency: fifthtry.github.io/typography as tf
+-- fpm.dependency: fifthtry.github.io/inter
 
 
 -- fpm.auto-import: pd
@@ -23,11 +24,15 @@ zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
 - Badge: /badge/
 - Message: /chat/
 - Tip: /tip/
-- Quote: /quote/
-  - one: /dev/intro/
-  - two: /dev/intro-two/
-  - three: /dev/quote-three/
-  - four: /dev/quotefour/
-  - five: /dev/quote-five/
-  - six: /dev/quote-six/
-
+- Quotes: /quote/
+  - Quote-1: /quote-1/
+  - Quote-2: /quote-2/
+  - Quote-3: /quote-3/
+  - Quote-4: /quote-4/
+  - Quote-5: /quote-5/
+  - Quote-6: /quote-6/
+  - Quote-7: /quote-7/
+  - Quote-8: /quote-8/
+  - Quote-9: /quote-9/
+  - Quote-10: /quote-10/
+  - Quote-11: /quote-11/

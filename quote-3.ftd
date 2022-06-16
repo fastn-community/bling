@@ -1,0 +1,270 @@
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+
+
+
+-- ft.page: `quote-3` and it's Usage
+
+`-- quote-3` can be used as part of blog posts.
+
+
+
+
+
+-- pd.package: `quote-3` and it's Usage
+name: fifthtry.github.io/bling/quote-3
+
+`quote-3` is a new conversation experince via using `FTD` lang:
+
+To use `quote-3` on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling
+
+
+
+
+
+-- cb.code: Example code for `-- quote-3`
+lang: ftd
+
+\-- quote-3: Eleanor Roosevelt
+label: U.S.A.
+
+"The future belongs to those who believe in the beauty of their dreams."
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- quote-3: Eleanor Roosevelt
+label: U.S.A.
+
+"The future belongs to those who believe in the beauty of their dreams."
+
+
+
+
+
+-- cb.code: Example code for `-- quote-3`
+lang: ftd
+
+\-- quote-3: Abraham Lincoln
+label: U.S.A.
+
+"In the end, {white:it's not the years} in your {white:life }that count. It's 
+the {white:life} in your years."
+
+
+
+
+
+-- tf.h3: Output of above advanced example:
+
+
+
+
+
+-- quote-3: Abraham Lincoln
+label: U.S.A.
+
+"In the end, {white:it's not the years} in your {white:life }that count. It's 
+the {white:life} in your years."
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-3:
+caption title:
+string label:
+body body:
+width: fill
+margin-top: $fpm.space.space-5
+margin-bottom: $fpm.space.space-8
+
+--- quotes:
+body: $body
+
+--- ftd.column:
+margin-left: $fpm.space.space-15
+spacing: 8
+anchor: parent
+bottom: -34
+left: 20
+left if $is-mobile: 5
+
+--- ftd.text: $title
+role: $fpm.type.copy-tight
+color: $fpm.color.main.text
+
+--- ftd.text:
+text: $label
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quotes:
+body body:
+width: fill
+
+
+
+
+
+--- quotes-desktop:
+if: not $is-mobile
+body: $body
+
+
+
+
+
+--- quotes-mobile:
+if:  $is-mobile
+body: $body
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quotes-desktop:
+padding-horizontal: 20
+padding-vertical: 20
+body body:
+border-width: 3
+border-color: $fpm.color.main.border
+border-radius:20
+max-width: 620
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+margin-right:$fpm.space.space-6
+margin-left: $fpm.space.space-6
+
+--- ftd.row:
+anchor: parent
+width: 50
+border-width: 4
+border-color: $fpm.color.main.background.base
+left: 50
+bottom: -4
+z-index: 200
+
+--- container: ftd.main
+
+--- ftd.row:
+anchor: parent
+width: 60
+height: 60
+border-right: 3
+border-right-radius: 6
+border-bottom-radius: -30
+border-radius: 50
+border-color: $fpm.color.main.border
+left: -8
+bottom: -60
+z-index: 200
+
+--- container: ftd.main
+
+--- ftd.text:
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.heading-large
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quotes-mobile:
+padding-horizontal: 20
+padding-vertical: 20
+body body:
+border-width: 3
+border-color: $fpm.color.main.border
+border-radius:20
+width: fill
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+margin-right:$fpm.space.space-6
+margin-left: $fpm.space.space-6
+
+--- ftd.row:
+anchor: parent
+width: 40
+border-width: 4
+border-color: $fpm.color.main.background.base
+left: 50
+bottom: -4
+z-index: 200
+
+--- container: ftd.main
+
+--- ftd.row:
+anchor: parent
+width: 60
+height: 60
+border-right: 3
+border-right-radius: 6
+border-radius: 50
+border-bottom-radius: -30
+border-color: $fpm.color.main.border
+left: -8
+bottom: -60
+z-index: 200
+
+--- container: ftd.main
+
+--- ftd.text:
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.heading-medium
+
+
+
+
+
+
+
+
+
+-- ftd.text white: test
+color: $fpm.color.main.text-strong

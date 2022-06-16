@@ -1,0 +1,127 @@
+-- import: fifthtry.github.io/bling/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+
+
+
+-- ft.page: `quote-10` and it's Usage
+
+`-- quote-10` can be used as part of blog posts.
+
+
+
+
+
+-- pd.package: `quote-10` and it's Usage
+name: fifthtry.github.io/bling/quote-10
+
+`quote-10` is a new conversation experince via using `FTD` lang:
+
+To use `quote-10` on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling
+
+
+
+
+
+-- cb.code: Example code for `-- quote-10`
+lang: ftd
+
+\-- quote-10: Swami Vivekananda
+
+"Take up one idea. Make that one idea your life; dream of it; think of it; 
+live on that idea. Let the brain, the body, muscles, nerves, every part of 
+your body be full of that idea, and just leave every other idea alone. This 
+is the way to success, and this is the way great spiritual giants are produced."
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- quote-10: Swami Vivekananda
+
+"Take up one idea. Make that one idea your life; dream of it; think of it; live 
+on that idea. Let the brain, the body, muscles, nerves, every part of your body 
+be full of that idea, and just leave every other idea alone. This is the way to 
+success, and this is the way great spiritual giants are produced."
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-10:
+caption title:
+ftd.image-src logo: $assets.files.right-quote-sign.png
+width: fill
+margin-top: $fpm.space.space-9
+margin-bottom: $fpm.space.space-9
+body body:
+max-width: 960
+
+--- ftd.row:
+width: fill
+border-left: 10
+padding-left: $fpm.space.space-8
+border-color: $fpm.color.main.border
+
+--- ftd.column:
+padding-vertical: $fpm.space.space-3
+id: text-container
+
+--- ftd.text: 
+if: not $is-mobile
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.copy-large
+
+--- ftd.text: 
+if: $is-mobile
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.copy-large
+text-align: justify
+
+--- container: text-container
+
+--- ftd.text: $title
+color: $fpm.color.main.text
+role: $fpm.type.fine-print
+style: italic
+margin-top: $fpm.space.space-3
+
+--- container: ftd.main
+
+--- ftd.row:
+anchor: parent
+padding-vertical: 16
+background-color: $fpm.color.main.background.base
+top: 36
+top if $is-mobile: 64
+left: -8
+
+--- ftd.image:
+src: $logo
+width: 32
+height: auto
