@@ -7,6 +7,7 @@
 -- is-mobile: true
 if: $ftd.device == mobile
 
+-- ft.site-name: Bling Components
 
 
 
