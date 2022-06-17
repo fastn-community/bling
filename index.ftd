@@ -17,8 +17,9 @@ color: $fpm.color.main.text-strong
 -- ft.page: Bling a collection of `FTD` components
 
 `fifthtry.github.io/bling` is a component library which contains various `ftd` 
-componets can be used on your pages. Click on each component into sidebar to 
-see its working demo!
+componets can be used on your pages. 
+
+Click on each component into sidebar to see its working demo!
 
 
 
