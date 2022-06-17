@@ -78,6 +78,28 @@ lang: ftd
 
 
 
+
+-- cb.code: Example code for `-- divider-2`
+lang: ftd
+
+\-- divider-2.divider-2: 
+end-mark: true
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- divider-2: 
+end-mark: true
+
+
+
+
 -- cb.code: Example code for `-- divider-2`
 lang: ftd
 
@@ -95,6 +117,27 @@ lang: ftd
 
 -- divider-2:  Thank You
 
+
+
+
+-- cb.code: Example code for `-- divider-2`
+lang: ftd
+
+\-- divider-2.divider-2: Thank You
+end-mark: true
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- divider-2:  Thank You
+end-mark: true
 
 
 
@@ -129,7 +172,7 @@ lang: ftd
 -- tf.markdown:
 
 `FTD` lang is flexible and you can define your custom names to the default component.
-Below are few examples of custom names:
+Below is example of custom names:
 
 -- cb.code: `-- divider-2` with custom name as e.g. `chapter-end`:
 lang: ftd
@@ -157,6 +200,12 @@ lang: ftd
 
 
 
+-- tf.h3: Output of above custom example:
+
+
+
+
+
 -- divider-2:  End of Chapter One
 
 
@@ -169,8 +218,10 @@ lang: ftd
 
 
 -- ftd.column divider-2:
+boolean end-mark: false
 optional caption title:
 ftd.image-src divider-icon: $assets.files.divider-2.svg
+optional ftd.image-src the-end: $assets.files.the-end-1.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto
@@ -181,6 +232,14 @@ align: center
 src: $divider-icon
 width: fill
 height: auto
+
+--- ftd.image:
+if: $end-mark
+src: $the-end
+width: 150
+height: auto
+align: center
+margin-top: $fpm.space.space-6
 
 --- ftd.text: $title
 if: $title is not null

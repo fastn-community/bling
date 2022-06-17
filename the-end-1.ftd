@@ -1,0 +1,130 @@
+-- import: fifthtry.github.io/bling/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+
+
+
+-- ft.page: `the-end-1` and it's Usage
+
+`-- the-end-1` can be used as part of blog posts OR books.
+
+
+
+
+
+
+-- pd.package: `the-end-1` and it's Usage
+name: fifthtry.github.io/bling/the-end-1
+
+To use `the-end-1` on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/the-end-1
+
+
+
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `the-end-1` into your `.ftd` 
+files:
+
+
+
+
+
+-- cb.code: Example code for `-- the-end-1`
+lang: ftd
+
+\-- the-end-1.the-end-1: 
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- the-end-1: 
+
+
+
+
+
+-- tf.h3: How to create custom component, using default attributes?
+
+
+
+
+
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below is example of custom names:
+
+-- cb.code: `-- the-end-1` with custom name as e.g. `chapter-end`:
+lang: ftd
+
+\-- the-end-1.the-end-1 chapter-end:
+ftd.image-src end-img: $assets.files.the-end-1.png
+the-end: $end-img
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- chapter-end` usage:
+lang: ftd
+
+\-- chapter-end: 
+
+
+
+
+
+-- tf.h3: Output of above custom example:
+
+
+
+
+
+-- the-end-1: 
+
+
+
+
+
+
+
+
+
+
+-- ftd.column the-end-1:
+ftd.image-src the-end: $assets.files.the-end-1.png
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+width: auto
+align: center
+
+--- ftd.image:
+src: $the-end
+width: 200
+width if $is-mobile: 150
+height: auto

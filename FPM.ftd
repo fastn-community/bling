@@ -43,6 +43,10 @@ zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
   - Quote-16: /quote-16/
   - Quote-17: /quote-17/
 - The End Mark: /the-end/
+  - The End Mark 1: /the-end-1/
+  - The End Mark 2: /the-end-2/
+  - The End Mark 3: /the-end-3/
+  - The End Mark 4: /the-end-4/
 -Divider: /divider-1/
   -Divider-1: /divider-1/
   -Divider-2: /divider-2/
