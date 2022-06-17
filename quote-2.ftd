@@ -9,6 +9,7 @@ if: $ftd.device == mobile
 
 
 
+
 -- ft.page: `quote-2` and it's Usage
 
 `-- quote-2` can be used as part of blog posts.

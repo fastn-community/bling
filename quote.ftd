@@ -3,6 +3,8 @@
 
 
 
+
+
 -- ftd.type heading-small-bold: $fpm.type.heading-small.font
 desktop: $fpm.type.heading-small.desktop
 mobile: $fpm.type.heading-small.mobile

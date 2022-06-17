@@ -152,11 +152,11 @@ lang: ftd
 -- tf.h3: Output of above `left-msg` custom component:
 
 
--- message-left: Hello World! `ftd` is awesome
+-- message-left: Hello World! liking `ftd` lang?
 avatar: $assets.files.amitu.jpg
 round-avatar: true
 
--- message-right: Hey! liking `ftd` lang?
+-- message-right: Hey! `ftd` is awesome! 🤘
 avatar: $assets.files.ganeshs.jpeg
 round-avatar: true
 
@@ -185,11 +185,12 @@ pull-top: -4
 margin-top: 4
 
 --- tf.markdown:
-uis nostrud exercitation ullamco labil oris nisi ut aliquip ex ea commo dorli consequat. 
-Duis aute irure dolor lorii
+uis nostrud exercitation ullaril mco labil oris nisi ut aliquip ex ea commo 
+dorli consequa duis aute irure dolor lorii
 
 --- ftd.column:
 margin-top: -14
+width: fill
 
 --- cb.code: Below is code:
 lang: ftd
@@ -273,8 +274,12 @@ integer pull-top: 0
 append-at: msg-container
 id: message
 
+--- ftd.column:
+width: fill
+
 --- ftd.row:
 width: fill
+id: chat-right
 
 --- ftd.image:
 if: not $round-avatar
@@ -290,6 +295,8 @@ width: 32
 height: auto
 margin-right: $fpm.space.space-4
 border-radius: 32
+
+--- container: chat-right
 
 --- ftd.column:
 border-width: 1

@@ -1,4 +1,4 @@
--- import: ft
+-- import: pd/forest-theme as ft
 
 
--- ft.site-name: Bling
+-- ft.site-name: Bling Components

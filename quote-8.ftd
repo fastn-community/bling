@@ -10,6 +10,7 @@ if: $ftd.device == mobile
 
 
 
+
 -- ft.page: `quote-8` and it's Usage
 
 `-- quote-8` can be used as part of blog posts.

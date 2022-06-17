@@ -10,6 +10,7 @@ if: $ftd.device == mobile
 
 
 
+
 -- ft.page: `Tip` and it's usage
 
 `tip` is a new conversation experince via using `FTD` lang. `tip` can be used 
