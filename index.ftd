@@ -57,13 +57,18 @@ width: fill
 --- ftd.text: Tip:
 role: $fpm.type.copy-large
 color: $fpm.color.main.text
-margin-bottom: $fpm.space.space-4
+margin-bottom: $fpm.space.space-0
 margin-top: $fpm.space.space-10
 
--- tip.tip: Cool bots hot tip!
+
+-- ftd.column:
+width: 380
+width if $is-mobile: fill
+align: center
+
+--- tip.tip: Cool bots hot tip!
 
 Sed ut perspiciatis unde omnis iste rolf
-
 natus err or sit voluptatem accusantium
 
 
