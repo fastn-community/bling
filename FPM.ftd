@@ -42,3 +42,14 @@ zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
   - Quote-15: /quote-15/
   - Quote-16: /quote-16/
   - Quote-17: /quote-17/
+
+-Divider: /divider-1/
+  -Divider-1: /divider-1/
+  -Divider-2: /divider-2/
+  -Divider-3: /divider-3/
+  -Divider-4: /divider-4/
+  -Divider-5: /divider-5/
+  -Divider-6: /divider-6/
+  -Divider-7: /divider-7/
+  -Divider-8: /divider-8/
+  -Divider-9: /divider-9/
