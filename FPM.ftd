@@ -14,6 +14,7 @@ zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
 -- fpm.auto-import: pd/typography as tf
 -- fpm.auto-import: pd/code-block as cb
 -- fpm.auto-import: pd/forest-theme as ft
+-- fpm.auto-import: fifthtry.github.io/bling/FPM/config
 
 
 -- fpm.sitemap:
