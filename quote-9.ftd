@@ -72,6 +72,11 @@ opportunity to develop our talents."
 
 
 
+-- tf.h3: How to create custom component, using default attributes?
+
+
+
+
 
 -- tf.markdown:
 
@@ -117,8 +122,11 @@ optional caption title:
 body body: 
 ftd.image-src left-logo: $assets.files.left-quote.png
 ftd.image-src right-logo: $assets.files.right-quote-sign.png
-margin-top: $fpm.space.space-5
+margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
+width: auto
+width if $is-mobile: fill
+align: center
 
 --- ftd.image:
 src: $left-logo

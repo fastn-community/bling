@@ -77,6 +77,11 @@ spiritual giants are produced."
 
 
 
+-- tf.h3: How to create custom component, using default attributes?
+
+
+
+
 
 -- tf.markdown:
 
@@ -124,8 +129,8 @@ spiritual giants are produced."
 optional caption title:
 ftd.image-src logo: $assets.files.right-quote-sign.png
 width: fill
-margin-top: $fpm.space.space-9
-margin-bottom: $fpm.space.space-9
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
 body body:
 max-width: 960
 

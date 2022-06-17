@@ -72,6 +72,12 @@ What he thinks he becomes."
 
 
 
+-- tf.h3: How to create custom component, using default attributes?
+
+
+
+
+
 -- tf.markdown:
 
 `FTD` lang is flexible and you can define your custom names to the default component.
@@ -120,7 +126,7 @@ padding-vertical: $fpm.space.space-4
 padding-horizontal: $fpm.space.space-4
 width: fill
 max-width: 320
-margin-top: $fpm.space.space-5
+margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 align: center
 

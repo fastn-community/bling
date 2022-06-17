@@ -120,6 +120,12 @@ you've launched too late."
 
 
 
+-- tf.h3: How to create custom component, using default attributes?
+
+
+
+
+
 -- tf.markdown:
 
 `FTD` lang is flexible and you can define your custom names to the default component.
@@ -170,8 +176,8 @@ width: auto
 width if $is-mobile: fill
 min-width: percent 60
 align: center
-margin-top: $fpm.space.space-11
-margin-bottom: $fpm.space.space-11
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
 
 --- ftd.text: $title
 anchor: parent

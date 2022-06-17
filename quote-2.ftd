@@ -69,6 +69,12 @@ If you look at what you don't have in life, you'll never have enough.
 
 
 
+-- tf.h3: How to create custom component, using default attributes?
+
+
+
+
+
 -- tf.markdown:
 
 `FTD` lang is flexible and you can define your custom names to the default component.
@@ -113,6 +119,8 @@ optional caption title:
 body body:
 ftd.color backgroundcolor: $fpm.color.main.background.base
 width: fill
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
 
 
 
