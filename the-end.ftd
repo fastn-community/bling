@@ -1,4 +1,6 @@
+-- import: fifthtry.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
+
 
 -- boolean is-mobile: false
 
@@ -7,3 +9,14 @@ if: $ftd.device == mobile
 
 
 
+
+
+
+
+
+
+
+-- ftd.column:
+ftd.image-src the-end: $assets.files.user.png
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
