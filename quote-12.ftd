@@ -155,7 +155,3 @@ margin-right: $fpm.space.space-1
 --- ftd.text: $title
 role: $fpm.type.fine-print
 color: $fpm.color.main.text
-
-
-
-

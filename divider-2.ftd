@@ -1,0 +1,193 @@
+-- import: fifthtry.github.io/bling/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+
+
+
+-- ftd.font-size copy-relax:
+line-height: 18
+size: 14
+letter-spacing: 0
+
+-- ftd.type copy-relaxed: $fpm.font-display
+desktop: $copy-relax
+mobile: $copy-relax
+xl: $copy-relax
+weight: 700
+
+
+
+
+
+-- ft.page: `divider-2` and it's Usage
+
+`-- divider-2` can be used as end of blog post, section OR chapter end.
+
+
+
+
+
+-- pd.package: `divider-2` and it's Usage
+name: fifthtry.github.io/bling/divider-2
+
+To use `divider-2` on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/divider-2
+
+
+
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `divider-2` into your `.ftd` 
+files:
+
+
+
+
+
+-- cb.code: Example code for `-- divider-2`
+lang: ftd
+
+\-- divider-2.divider-2: 
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- divider-2: 
+
+
+
+
+
+-- cb.code: Example code for `-- divider-2`
+lang: ftd
+
+\-- divider-2.divider-2: Thank You
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- divider-2:  Thank You
+
+
+
+
+
+-- cb.code: Example code for `-- divider-2`
+lang: ftd
+
+\-- divider-2.divider-2: The End
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- divider-2:  The End
+
+
+
+
+
+-- tf.h3: How to create custom component, using default attributes?
+
+
+
+
+
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- divider-2` with custom name as e.g. `chapter-end`:
+lang: ftd
+
+\-- divider-2.divider-2 chapter-end:
+optional caption title:
+ftd.image-src divider-icon: 
+title: $title
+divider-icon: $divider-icon
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- chapter-end` usage:
+lang: ftd
+
+\-- chapter-end: End of Chapter One
+
+
+
+
+
+-- divider-2:  End of Chapter One
+
+
+
+
+
+
+
+
+
+
+-- ftd.column divider-2:
+optional caption title:
+ftd.image-src divider-icon: $assets.files.divider-2.svg
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+width: auto
+width if $is-mobile: fill
+align: center
+
+--- ftd.image:
+src: $divider-icon
+width: fill
+height: auto
+
+--- ftd.text: $title
+if: $title is not null
+role: $fpm.type.copy-large
+color: $fpm.color.main.text
+text-align: center
+align: center
+white-space: nowrap
+style: italic
+margin-top: $fpm.space.space-4
