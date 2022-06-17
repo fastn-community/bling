@@ -125,7 +125,7 @@ padding-vertical: $fpm.space.space-7
 align: center
 max-width: 600
 optional ftd.image-src backgroundimage: $assets.files.quotes.svg
-margin-top: $fpm.space.space-5
+margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 
 --- ftd.row:

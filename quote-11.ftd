@@ -176,8 +176,8 @@ width: auto
 width if $is-mobile: fill
 min-width: percent 60
 align: center
-margin-top: $fpm.space.space-11
-margin-bottom: $fpm.space.space-11
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
 
 --- ftd.text: $title
 anchor: parent

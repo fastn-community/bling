@@ -121,7 +121,7 @@ body body:
 width if not $is-mobile: auto
 width if $is-mobile: fill
 min-width: percent 50
-margin-top: $fpm.space.space-5
+margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 align: center
 

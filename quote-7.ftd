@@ -126,7 +126,7 @@ padding-vertical: $fpm.space.space-4
 padding-horizontal: $fpm.space.space-4
 width: fill
 max-width: 320
-margin-top: $fpm.space.space-5
+margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 align: center
 

@@ -147,7 +147,7 @@ border-left: 5
 padding-right:$fpm.space.space-7
 border-color: $fpm.color.main.text
 spacing: 32
-margin-top: $fpm.space.space-5
+margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: fill
 

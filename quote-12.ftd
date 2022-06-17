@@ -1,0 +1,161 @@
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+
+
+
+-- ft.page: `quote-12` and it's Usage
+
+`-- quote-12` can be used as part of blog posts.
+
+
+
+
+
+-- pd.package: `quote-12` and it's Usage
+name: fifthtry.github.io/bling/quote-12
+
+`quote-12` is a new conversation experince via using `FTD` lang:
+
+To use `quote-12` on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/quote-12
+
+
+
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `quote-12` into your `.ftd` 
+files:
+
+
+
+
+
+-- cb.code: Example code for `-- quote-10`
+lang: ftd
+
+\-- quote-12.quote-12: Swami Vivekananda
+
+"Take up one idea. Make that one idea your life; dream of it; think of it; 
+live on that idea. Let the brain, the body, muscles, nerves, every part of 
+your body be full of that idea, and just leave every other idea alone. This 
+is the way to success, and this is the way great spiritual giants are produced."
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- quote-12: Swami Vivekananda
+
+"Take up one idea. Make that one idea your life; dream of it; think of it; live 
+on that idea. Let the brain, the body, muscles, nerves, every part of your body 
+be full of that idea, and just leave every other idea alone. This is the way to 
+success, and this is the way great spiritual giants are produced."
+
+
+
+
+
+-- tf.h3: How to create custom component, using default attributes?
+
+
+
+
+
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- quote-12` with custom name as e.g. `blog-quote`:
+lang: ftd
+
+\-- quote-12.quote-12 blog-quote:
+optional caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- blog-quote` usage:
+lang: ftd
+
+\-- blog-quote: Swami Vivekananda
+
+"Take up one idea. Make that one idea your life; dream of it; think of it; 
+live on that idea. Let the brain, the body, muscles, nerves, every part of 
+your body be full of that idea, and just leave every other idea alone. This 
+is the way to success, and this is the way great spiritual giants are produced."
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-12:
+optional caption title:
+body body:
+padding-vertical: $fpm.space.space-4
+margin-top: 24
+margin-bottom: 24
+width: auto
+width if $is-mobile: fill
+align: center
+border-style: dashed
+border-bottom: 2
+border-color: $fpm.color.main.text
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+
+--- ftd.text:
+text: $body
+role: $fpm.type.copy-tight
+color: $fpm.color.main.text
+
+--- ftd.row:
+align: right
+padding-top: $fpm.space.space-4
+
+--- ftd.text: ~
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+margin-right: $fpm.space.space-1
+
+--- ftd.text: $title
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+
+
+
+

@@ -173,7 +173,7 @@ ftd.image-src logo: $assets.files.quote.png
 width: fill
 max-width: 800
 align: center
-margin-top: $fpm.space.space-5
+margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 
 --- ftd.column:

@@ -142,8 +142,8 @@ optional caption title:
 optional string label:
 body body:
 width: fill
-margin-top: $fpm.space.space-5
-margin-bottom: $fpm.space.space-8
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
 
 --- quotes:
 body: $body
