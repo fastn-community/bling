@@ -19,7 +19,7 @@ zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
 
 -- fpm.sitemap:
 
-# Home: /
+# Home: index.html
 
 - Badge: /badge/
 - Message: /chat/
