@@ -61,10 +61,6 @@ lang: ftd
 Once you add above lines into your web package, add `inbox` into your `.ftd` 
 files:
 
-
-
-
-
 -- cb.code: Example code for `-- inbox`
 lang: ftd
 
@@ -81,11 +77,18 @@ nostrud exercitation ullamco laboris nisi ut
 
 -- tf.h3: Output of above basic example:
 
+
+
+
+
 --- inbox: This is your Title
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+
 
 
 -- tf.h3: Advanced usage of `-- inbox`:
@@ -102,13 +105,21 @@ laboris nisi ut.}
 
 
 
+
+
 -- tf.h3: Output of above advanced example:
+
+
+
+
 
 --- inbox: This is your Title
 
 Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, sed do 
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
 minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
+
+
 
 
 
@@ -143,9 +154,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
 minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 
+
+
+
+
 -- tf.markdown: 
 
 Output of above custom name example:
+
+
+
+
 
 -- inbox: This is your Title
 

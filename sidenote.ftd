@@ -1,5 +1,4 @@
 -- import: fifthtry.github.io/package-doc/doc as pd
--- boolean is-mobile: false
 
 
 
@@ -61,10 +60,6 @@ lang: ftd
 Once you add above lines into your web package, add `sidenote` into your `.ftd` 
 files:
 
-
-
-
-
 -- cb.code: Example code for `-- sidenote`
 lang: ftd
 
@@ -92,8 +87,10 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
--- tf.h3: Advanced usage example:
 
+
+
+-- tf.h3: Advanced usage example:
 
 -- cb.code: Advanced example code for `-- sidenote`
 lang: ftd
@@ -106,13 +103,21 @@ minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
 
 
 
+
+
 -- tf.h3: Output of above advanced example:
+
+
+
+
 
 --- sidenote: 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
 minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
+
+
 
 
 
@@ -127,6 +132,10 @@ lang: ftd
 \-- sidenote.sidenote showcase:
 body body: 
 body: $body
+
+
+
+
 
 -- tf.markdown: 
 
@@ -143,9 +152,15 @@ nostrud exercitation ullamco laboris nisi ut
 
 
 
+
+
 -- tf.markdown: 
 
 Output of above custom name example:
+
+
+
+
 
 -- sidenote:
 

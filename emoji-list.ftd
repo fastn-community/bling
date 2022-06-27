@@ -10,6 +10,32 @@ if: $ftd.device == mobile
 
 
 
+-- ftd.font-size copy-large-bold-desktop:
+line-height: 28
+size: 20
+letter-spacing: 0
+
+-- ftd.type copy-large-bold: $fpm.font-display
+desktop: $copy-large-bold-desktop
+mobile: $copy-large-bold-desktop
+xl: $copy-large-bold-desktop
+weight: 700
+
+-- ftd.font-size copy-large-bold-desktop:
+line-height: 28
+size: 20
+letter-spacing: 0
+
+-- ftd.type copy-large-bold: $fpm.font-display
+desktop: $copy-large-bold-desktop
+mobile: $copy-large-bold-desktop
+xl: $copy-large-bold-desktop
+weight: 700
+
+
+
+
+
 -- ft.page: `emoji-list` and it's Usage
 
 `-- emoji-list` can be used as part of blog posts.
@@ -40,10 +66,6 @@ lang: ftd
 Once you add above lines into your web package, add `emoji-list` into your `.ftd` 
 files:
 
-
-
-
-
 -- cb.code: Example code for `-- emoji-list`
 lang: ftd
 
@@ -53,7 +75,6 @@ emoji: ✨
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut
-
 
 
 
@@ -79,7 +100,6 @@ emoji: ✨
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
 nostrud exercitation ullamco laboris nisi ut
-
 
 
 
@@ -126,18 +146,6 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 emoji: 📞
 
 
--- ftd.font-size copy-large-bold-desktop:
-line-height: 28
-size: 20
-letter-spacing: 0
-
--- ftd.type copy-large-bold: $fpm.font-display
-desktop: $copy-large-bold-desktop
-mobile: $copy-large-bold-desktop
-xl: $copy-large-bold-desktop
-weight: 700
-
-
 
 
 
@@ -151,6 +159,9 @@ nostrud exercitation ullamco laboris nisi ut
 
 -- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing
 emoji: 📞
+
+
+
 
 
 
