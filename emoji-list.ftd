@@ -21,17 +21,6 @@ mobile: $copy-large-bold-desktop
 xl: $copy-large-bold-desktop
 weight: 700
 
--- ftd.font-size copy-large-bold-desktop:
-line-height: 28
-size: 20
-letter-spacing: 0
-
--- ftd.type copy-large-bold: $fpm.font-display
-desktop: $copy-large-bold-desktop
-mobile: $copy-large-bold-desktop
-xl: $copy-large-bold-desktop
-weight: 700
-
 
 
 
