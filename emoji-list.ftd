@@ -1,0 +1,176 @@
+
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+
+
+
+-- ftd.font-size copy-large-bold-desktop:
+line-height: 28
+size: 20
+letter-spacing: 0
+
+-- ftd.type copy-large-bold: $fpm.font-display
+desktop: $copy-large-bold-desktop
+mobile: $copy-large-bold-desktop
+xl: $copy-large-bold-desktop
+weight: 700
+
+
+
+
+
+-- ft.page: `emoji-list` and it's Usage
+
+`-- emoji-list` can be used as part of blog posts.
+
+
+
+
+
+-- pd.package: `emoji-list` and it's Usage
+name: fifthtry.github.io/bling/emoji-list
+
+`emoji-list` is a new conversation experince via using `FTD` lang:
+
+To use `emoji-list` on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/emoji-list
+
+
+
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `emoji-list` into your `.ftd` 
+files:
+
+-- cb.code: Example code for `-- emoji-list`
+lang: ftd
+
+\-- emoji-list.emoji-list: 
+emoji: ✨
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 🌄
+
+-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 🎇
+
+-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 💿
+
+-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 📃
+
+-- emoji-list: 
+emoji: ✨
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+nostrud exercitation ullamco laboris nisi ut
+
+
+
+
+
+-- tf.h3: How to create custom component, using default attributes?
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below are few examples of custom names:
+
+-- cb.code: `-- emoji-list` with custom name as e.g. `showcase`:
+lang: ftd
+
+\-- emoji-list.emoji-list showcase: 
+string emoji:
+caption or body body:
+emoji: $emoji
+body: $body
+
+\-- emoji-list.emoji-list showcase: $body
+string emoji:
+caption or body body:
+emoji: $emoji
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name:
+
+-- cb.code: custom `-- showcase` usage:
+lang: ftd
+
+\ -- showcase:
+emoji: ✨
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+\ -- showcase: Lorem ipsum dolor sit amet, consectetur adipiscing
+emoji: 📞
+
+
+
+
+
+-- emoji-list: 
+emoji: ✨
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+nostrud exercitation ullamco laboris nisi ut
+
+
+-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing
+emoji: 📞
+
+
+
+
+
+
+
+
+
+
+-- ftd.row emoji-list:
+string emoji:
+caption or body body:
+max-width: 800
+width: auto
+spacing: 10
+
+--- ftd.text:
+text: $emoji
+color:$fpm.color.main.text
+role: $fpm.type.copy-tight 
+
+--- ftd.text:
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight 

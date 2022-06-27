@@ -1,0 +1,241 @@
+-- import: fifthtry.github.io/bling/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+
+
+
+
+-- ft.page: `detail` and it's Usage
+
+`-- detail` can be used as part of blog posts, OR inside page.
+
+
+
+
+
+-- pd.package: `detail` and it's Usage
+name: fifthtry.github.io/bling/detail
+
+`detail` is a new conversation experince via using `FTD` lang:
+
+To use `detail` on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/detail
+
+
+
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `detail` into your `.ftd` 
+files:
+
+
+
+
+
+-- cb.code: Example code for `-- detail`
+lang: ftd
+
+\-- detail.detail: Lorem ipsum dolor
+open: true
+
+\--- tf.markdown:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt.
+
+\--- cb.code: details
+lang: ftd
+ 
+\-- detail.detail: Lorem ipsum dolor
+ open: true
+ 
+\-- detail.detail: Lorem ipsum dolor
+
+\--- tf.markdown:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt.
+
+\-- detail.detail: Lorem ipsum dolor
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+
+
+
+
+-- tf.h3: Output of above example:
+
+
+
+
+
+-- detail: Lorem ipsum dolor
+open: true
+
+--- tf.markdown:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt.
+
+--- cb.code: details
+lang: ftd
+ 
+\-- detail.detail: Lorem ipsum dolor
+ open: true
+
+
+
+
+
+-- detail: Lorem ipsum dolor
+
+--- tf.markdown:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt.
+
+
+
+
+
+-- detail: Lorem ipsum dolor
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+
+
+-- tf.h3: How to create custom component, using default attributes?
+
+
+
+
+
+-- tf.markdown:
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below example shows usage of custom name:
+
+
+
+
+
+-- cb.code: `-- detail` with custom name as e.g. `showcase`:
+lang: ftd
+
+\-- detail.detail showcase:
+caption title:
+optional body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown:
+
+How to use above custom name `-- showcase`:
+
+
+
+
+
+-- cb.code: custom `-- showcase` usage:
+lang: ftd
+
+\ -- showcase: Click here to show more details
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+
+
+
+-- tf.h3: Output of above custom name example:
+
+
+
+
+
+-- detail: Click here to show more details
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+
+
+
+
+
+
+
+
+-- ftd.column detail:
+caption title:
+boolean open: false
+optional body body:
+spacing: 8
+$on-click$: toggle $open
+width: fill
+max-width: 800
+width: auto
+append-at: code-container
+
+--- ftd.row:
+id: text-container
+spacing: 8
+
+--- ftd.text: &#x25B6;
+if: not $open
+padding-top: 2
+role: $fpm.type.fine-print
+width: 20
+
+--- ftd.text: &#x25BC;
+if: $open
+role: $fpm.type.fine-print
+padding-top: 2
+width: 20
+
+--- container: text-container
+
+--- ftd.text: $title
+role: $fpm.type.copy-tight
+color: $fpm.color.main.text
+
+--- container: ftd.main
+
+--- ftd.column:
+width: fill
+if: $open
+id: code-container
+border-width: 1
+border-color: $fpm.color.main.border
+background-color: $fpm.color.main.background.step-1
+padding: $fpm.space.space-3
+border-radius: 4
+
+--- ftd.text:
+if :$body is not null
+text: $body
+role: $fpm.type.label-big
+color: $fpm.color.main.text
+
+--- container:  code-container

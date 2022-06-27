@@ -83,7 +83,7 @@ success, and this is the way great spiritual giants are produced."
 -- tf.markdown:
 
 `FTD` lang is flexible and you can define your custom names to the default component.
-Below are few examples of custom names:
+Below example shows usage of custom name:
 
 -- cb.code: `-- quote-12` with custom name as e.g. `blog-quote`:
 lang: ftd
