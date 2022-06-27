@@ -208,6 +208,9 @@ margin-top: -11
 -- message-right: Yo! 
 pull-top: -4
 
+--- ftd.column:
+margin-top: 4
+
 --- tf.markdown:
 in voluptate velit esse cillum dolor er eu fugiat nulla pariatur. Excepte urla sint occaecat cupidatat nor proident,
 

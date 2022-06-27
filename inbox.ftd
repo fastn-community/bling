@@ -1,0 +1,215 @@
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+-- ftd.font-size fine-print-bold-desktop:
+line-height: 16
+size: 14
+letter-spacing: 0
+
+-- ftd.type fine-print-bold: $fpm.font-display
+desktop: $fine-print-bold-desktop
+mobile: $fine-print-bold-desktop
+xl: $fine-print-bold-desktop
+weight: 700
+
+-- ftd.font-size copy-tight-bold-desktop:
+line-height: 20
+size: 16
+letter-spacing: 0
+
+-- ftd.type copy-tight-bold: $fpm.font-display
+desktop: $copy-tight-bold-desktop
+mobile: $copy-tight-bold-desktop
+xl: $copy-tight-bold-desktop
+weight: 700
+
+
+
+
+
+-- ft.page: `inbox` and it's Usage
+
+`-- inbox` can be used as part of blog posts.
+
+
+
+
+
+-- pd.package: `inbox` and it's Usage
+name: fifthtry.github.io/bling/inbox
+
+`inbox` is a new conversation experince via using `FTD` lang:
+
+To use `inbox` on your web package, add below into `FPM.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/inbox
+
+
+
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `inbox` into your `.ftd` 
+files:
+
+
+
+
+
+-- cb.code: Example code for `-- inbox`
+lang: ftd
+
+\-- inbox.inbox: This is your Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+nostrud exercitation ullamco laboris nisi ut
+
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+--- inbox: This is your Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+-- tf.h3: Advanced usage of `-- inbox`:
+
+--- cb.code: Advanced example code for `-- inbox`
+lang: ftd
+
+\-- inbox.inbox: This is your Title
+
+Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud {bold: exercitation ullamco 
+laboris nisi ut.}
+
+
+
+-- tf.h3: Output of above advanced example:
+
+--- inbox: This is your Title
+
+Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
+
+
+
+-- tf.h3: How to create custom component, using default attributes?
+
+`FTD` lang is flexible and you can define your custom names to the default component.
+Below example shows usage of custom name:
+
+-- cb.code: `-- inbox` with custom name as e.g. `showcase`:
+lang: ftd
+
+\-- inbox.inbox showcase:
+caption title:
+body body: 
+title: $title
+body: $body
+
+
+
+
+
+-- tf.markdown: 
+
+How to use above custom name `-- showcase`:
+
+-- cb.code: custom `-- showcase` usage:
+lang: ftd
+
+\-- showcase: This is your Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+-- tf.markdown: 
+
+Output of above custom name example:
+
+-- inbox: This is your Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+
+
+
+
+
+
+
+
+-- ftd.row inbox:
+caption title:
+optional body body:
+optional string emoji: 📝
+optional ftd.color backgroundcolor: $fpm.color.main.custom.three
+optional ftd.color bordercolor: $fpm.color.main.custom.nine
+padding-vertical: $fpm.space.space-4
+padding-horizontal:$fpm.space.space-4
+background-color: $backgroundcolor
+border-color: $bordercolor
+border-width: 1
+spacing: 16
+width: auto
+border-radius: 6
+max-width: 800
+align: center
+
+--- ftd.column:
+
+--- ftd.text: 
+text: $emoji
+role: $fpm.type.heading-medium
+
+--- container: ftd.main
+
+--- ftd.column:
+width: fill
+spacing: 8
+
+--- ftd.text: $title
+role: $copy-tight-bold
+color: $fpm.color.main.background.step-1
+
+--- ftd.text:
+text: $body
+role: $fpm.type.fine-print
+color: $fpm.color.main.background.step-1
+
+
+
+
+
+
+
+
+
+
+-- ftd.text bold: color
+role: $fine-print-bold
+border-bottom:1
+border-style: dashed
