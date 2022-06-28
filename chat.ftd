@@ -10,13 +10,10 @@ if: $ftd.device == mobile
 
 
 
--- ft.page: Chat `messages`
+-- ft.page: Chat & messages
 
-`message-left` OR `message-right` is a chatting experince via using `FTD` lang.
-
-
-
-
+`-- message-left` OR `-- message-right` is a new chatting experince via using 
+`FTD` lang.
 
 -- pd.package: `message-left` & `message-right`
 name: fifthtry.github.io/bling/chat
@@ -29,23 +26,18 @@ lang: ftd
 \-- fpm.dependency: fifthtry.github.io/bling
 \-- fpm.auto-import: fifthtry.github.io/bling/chat
 
-
-
-
-
 -- tf.markdown:
 
 Once you add above lines into your web package, add `message-left` OR `message-right`
 into your `.ftd` files:
 
-
-
-
-
 -- cb.code: `-- message-left` basic usage example code:
 lang: ftd
 
 \-- chat.message-left: Hellow World! 😀
+
+
+
 
 
 -- message-left: Hello World! 😀
@@ -60,6 +52,9 @@ lang: ftd
 \-- chat.message-right: Hey Buddy! 👋
 
 
+
+
+
 -- message-right: Hey Buddy! 👋
 
 
@@ -68,39 +63,28 @@ lang: ftd
 
 -- tf.h3: How to create custom component, using default attributes?
 
-
-
-
-
--- tf.markdown:
-
 `FTD` lang is flexible and you can define your custom names to the default component.
 Below are few examples of custom names:
 
--- cb.code: `-- message-left` with custom name as `my-msg`:
+--- cb.code: Example: with custom name as below:
 lang: ftd
 
-\-- chat.message-left left-msg:
+\-- chat.message-left amitu:
 optional caption title:
 title: $title
 
-\-- chat.message-right right-msg:
+\-- chat.message-right me:
 optional caption title:
 title: $title
 
+-- tf.h3: How to use above custom name:
 
-
-
--- tf.markdown:
-
-How to use above custom name:
-
--- cb.code: `-- left-msg` & `-- right-msg` usage:
+--- cb.code: `-- amitu` & `-- me` usage:
 lang: ftd
 
-\-- left-msg: Hello World! `ftd` is awesome
+\-- amitu: Hello World! `ftd` is awesome
 
-\-- right-msg: Hello there! `ftd` is flexible
+\-- me: Hello there! `ftd` is flexible
 
 
 
@@ -112,60 +96,62 @@ You can change default `avatar` and use custom image as avatar, add your custom
 images into your package and use them via changing `avatar` attribute value 
 as given below example:
 
--- cb.code: Example: `-- left-msg` with custom avatar:
+-- cb.code: Example: chat with custom avatar:
 lang: ftd
 
-\-- chat.message-left left-msg:
+\-- chat.message-left amitu:
 optional caption title:
 ftd.image-src avatar: $assets.files.amitu.jpg
 title: $title
 avatar: $avatar
 
 
--- cb.code: Example: `-- left-msg` with `rounded-avatar` as default `true`:
+-- cb.code: Example: with `rounded-avatar` as `true` (by default its `false`):
 lang: ftd
 
-\-- chat.message-left left-msg:
+\-- chat.message-right me:
 optional caption title:
-ftd.image-src avatar: $assets.files.amitu.jpg
+ftd.image-src avatar: $assets.files.ganeshs.jpeg
 boolean rounded-image: true
 title: $title
 avatar: $avatar
 rounded-avatar: $rounded-image
 
-
-
-
 -- tf.markdown:
 
-Now use `left-msg` normally:
+Now use `-- amitu` normally:
 
--- cb.code: `-- left-msg` with custom `avatar`:
+-- cb.code: `-- amitu` with custom `avatar`:
 lang: ftd
 
-\-- left-msg: Hello World! `ftd` is awesome
+\-- amitu: Hello World! liking `ftd` lang?
+\-- me: Hey! `ftd` is awesome! 🤘
 
 
 
 
+-- tf.h3: Output of above custom component:
 
--- tf.h3: Output of above `left-msg` custom component:
+--- ftd.column:
+width if not $is-mobile: 450
+padding if not $is-mobile: 24
+border-radius: 20
+background-color: $fpm.color.main.background.base
 
-
--- message-left: Hello World! liking `ftd` lang?
+--- message-left: Hello World! liking `ftd` lang?
 avatar: $assets.files.amitu.jpg
 round-avatar: true
 
--- message-right: Hey! `ftd` is awesome! 🤘
+--- message-right: Hey! `ftd` is awesome! 🤘
 avatar: $assets.files.ganeshs.jpeg
 round-avatar: true
 
 
 
+
+
+
 -- tf.h3: Real-life example of a chat, using `message` `left` & `right`:
-
-
-
 
 
 -- ftd.column:
