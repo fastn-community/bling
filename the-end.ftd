@@ -12,7 +12,8 @@ if: $ftd.device == mobile
 
 -- ft.page: `the-end` and it's Usage
 
-`-- the-end` can be used as part of blog posts OR books.
+`-- the-end` can be used as part of blog posts, books, section OR chapter end 
+etc.
 
 
 
@@ -43,81 +44,159 @@ files:
 
 
 
--- cb.code: Example code for `-- the-end`
+-- tf.h3: List of end-marks we designed for you:
+
+
+-- tf.h3: 1: `-- marker`
+
+--- cb.code: Example code for `-- marker`
 lang: ftd
 
-\-- the-end.the-end: 
+\-- the-end.marker: 
+
+--- tf.markdown: 
+
+Output of above:
+
+
+-- marker: 
 
 
 
 
 
--- tf.h3: Output of above basic example:
+-- tf.h3: 2: `-- pen`
 
-
-
-
-
--- the-end: 
-
-
-
-
-
--- tf.h3: How to create custom component, using default attributes?
-
-
-
-
-
--- tf.markdown:
-
-`FTD` lang is flexible and you can define your custom names to the default component.
-Below is example of custom names:
-
--- cb.code: `-- the-end` with custom name as e.g. `chapter-end`:
+--- cb.code: Example code for `-- pen`
 lang: ftd
 
-\-- the-end.the-end chapter-end:
-ftd.image-src end-img: $assets.files.the-end-0.png
-the-end: $end-img
+\-- the-end.pen: 
+
+--- tf.markdown: 
+
+Output of above:
+
+
+-- pen: 
 
 
 
 
 
--- tf.markdown:
 
-How to use above custom name:
+-- tf.h3: 3: `-- ballet`
 
--- cb.code: custom `-- chapter-end` usage:
+--- cb.code: Example code for `-- ballet`
 lang: ftd
 
-\-- chapter-end: 
+\-- the-end.ballet: 
+
+--- tf.markdown: 
+
+Output of above:
 
 
-
-
-
--- tf.h3: Output of above custom example:
-
-
-
-
-
--- the-end: 
-
+-- ballet: 
 
 
 
 
 
 
+-- tf.h3: 4: `-- brush`
+
+--- cb.code: Example code for `-- brush`
+lang: ftd
+
+\-- the-end.brush: 
+
+--- tf.markdown: 
+
+Output of above:
+
+
+-- brush: 
 
 
 
--- ftd.column the-end:
+
+
+
+
+
+
+
+
+
+
+-- ftd.column marker:
 ftd.image-src the-end: $assets.files.the-end-0.png
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+width: auto
+align: center
+
+--- ftd.image:
+src: $the-end
+width: 200
+width if $is-mobile: 150
+height: auto
+
+
+
+
+
+
+
+
+
+
+-- ftd.column pen:
+ftd.image-src the-end: $assets.files.the-end-1.png
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+width: auto
+align: center
+
+--- ftd.image:
+src: $the-end
+width: 200
+width if $is-mobile: 150
+height: auto
+
+
+
+
+
+
+
+
+
+
+-- ftd.column ballet:
+ftd.image-src the-end: $assets.files.the-end-3.png
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+width: auto
+align: center
+
+--- ftd.image:
+src: $the-end
+width: 200
+width if $is-mobile: 150
+height: auto
+
+
+
+
+
+
+
+
+
+
+-- ftd.column brush:
+ftd.image-src the-end: $assets.files.the-end-4.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto

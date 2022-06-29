@@ -31,17 +31,4 @@ base: https://raw.githubusercontent.com/fifthtry/bling/main
 - Sidenote: /sidenote/
 - Quotes: /quote/
 - The End Mark: /the-end/
-  - The End Mark 1: /the-end-1/
-  - The End Mark 2: /the-end-2/
-  - The End Mark 3: /the-end-3/
-  - The End Mark 4: /the-end-4/
--Divider: /divider-1/
-  -Divider-1: /divider-1/
-  -Divider-2: /divider-2/
-  -Divider-3: /divider-3/
-  -Divider-4: /divider-4/
-  -Divider-5: /divider-5/
-  -Divider-6: /divider-6/
-  -Divider-7: /divider-7/
-  -Divider-8: /divider-8/
-  -Divider-9: /divider-9/
+-Divider: /divider/
