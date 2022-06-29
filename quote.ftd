@@ -55,13 +55,14 @@ dark: rgba(192,192,192,0.3)
 
 -- ft.page: `quote` and it's Usage
 
-`-- quote` can be used as part of blog posts to highlight a quote from blogger.
+`-- quote` can be used as part of blog posts to highlight a quote from blogger 
+OR highlighting important notes on documentation etc.
 
 
 -- pd.package: `quote`
 name: fifthtry.github.io/bling/quote
 
-To use these quotes on your web package, add below into `FPM.ftd` file:
+To use these quotes on your web package add below into `FPM.ftd` file:
 
 -- cb.code:
 lang: ftd
@@ -72,20 +73,8 @@ lang: ftd
 
 -- tf.markdown:
 
-Once you add above lines into your web package, add `quote` into your `.ftd` files:
-
-
--- ft.code: Basic Example code for `-- quote`
-lang: ftd
-
-
-\-- quote.quote: Amit Upadhyay
-label: CEO
-avatar: $assets.files.amitu.jpg
-logo: $assets.files.fifthtry.svg
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.
+Once you add above lines into your web package, add `quote` into your `.ftd` 
+files:
 
 
 
@@ -97,12 +86,12 @@ tempor incididunt ut labore et dolore magna aliqua.
 
 
 
--- tf.h3: 1: `-- quote`
+-- tf.h3: 1: `-- charcoal`
 
---- cb.code: Example code for `-- quote-1`
+--- cb.code: Example code for `-- charcoal`
 lang: ftd
 
-\-- quote: Amit Upadhyay
+\-- quote.charcoal: Amit Upadhyay
 label: CEO
 avatar: $assets.files.amitu.jpg
 logo: $assets.files.fifthtry.svg
@@ -115,7 +104,7 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua..
 Output of above:
 
 
---- quote: Amit Upadhyay
+--- charcoal: Amit Upadhyay
 label: CEO
 avatar: $assets.files.amitu.jpg
 logo: $assets.files.fifthtry.svg
@@ -127,12 +116,12 @@ tempor incididunt ut labore et dolore magna aliqua..
 
 
 
--- tf.h3: 2: `-- quote-1`
+-- tf.h3: 2: `-- marengo`
 
---- cb.code: Example code for `-- quote-1`
+--- cb.code: Example code for `-- marengo`
 lang: ftd
 
-\-- quote.quote-1: Steve Jobs
+\-- quote.marengo: Steve Jobs
 Your time is limited, so don't waste it living someone else's life. 
 Don't be trapped by dogma – which is living with the results of other 
 people's thinking.
@@ -141,7 +130,7 @@ people's thinking.
 
 Output of above:
 
---- quote-1: Steve Jobs
+--- marengo: Steve Jobs
 Your time is limited, so don't waste it living someone else's life. Don't 
 be trapped by dogma – which is living with the results of other people's 
 thinking.
@@ -150,12 +139,12 @@ thinking.
 
 
 
--- tf.h3: 3: `-- quote-2`
+-- tf.h3: 3: `-- marengo-hug`
 
---- cb.code: Example code for `-- quote-2`
+--- cb.code: Example code for `-- marengo-hug`
 lang: ftd
 
-\-- quote.quote-2: Oprah Winfrey
+\-- quote.marengo-hug: Oprah Winfrey
 If you look at what you have in life, you'll always have more.
 If you look at what you don't have in life, you'll never have enough.
 
@@ -163,7 +152,7 @@ If you look at what you don't have in life, you'll never have enough.
 
 Output of above:
 
---- quote-2: Oprah Winfrey
+--- marengo-hug: Oprah Winfrey
 If you look at what you have in life, you'll always have more.
 If you look at what you don't have in life, you'll never have enough.
 
@@ -171,12 +160,12 @@ If you look at what you don't have in life, you'll never have enough.
 
 
 
--- tf.h3: 4: `-- quote-3`
+-- tf.h3: 4: `-- scorpion`
 
---- cb.code: Example code for `-- quote-3`
+--- cb.code: Example code for `-- scorpion`
 lang: ftd
 
-\-- quote.quote-3: Eleanor Roosevelt
+\-- quote.scorpion: Eleanor Roosevelt
 label: U.S.A.
 
 "The future belongs to those who believe in the beauty of their dreams."
@@ -185,7 +174,7 @@ label: U.S.A.
 
 Output of above:
 
---- quote-3: Eleanor Roosevelt
+--- scorpion: Eleanor Roosevelt
 label: U.S.A.
 
 "The future belongs to those who believe in the beauty of their dreams."
@@ -194,12 +183,12 @@ label: U.S.A.
 
 
 
--- tf.h3: 5: `-- quote-4`
+-- tf.h3: 5: `-- chalice`
 
---- cb.code: Example code for `-- quote-4`
+--- cb.code: Example code for `-- chalice`
 lang: ftd
 
-\-- quote.quote-4: Nelson Mandela
+\-- quote.chalice: Nelson Mandela
 
 The greatest glory in living lies not in never falling, but in rising 
 every time we fall. 
@@ -208,7 +197,7 @@ every time we fall.
 
 Output of above:
 
---- quote-4: Nelson Mandela
+--- chalice: Nelson Mandela
 
 The greatest glory in living lies not in never falling, but in rising 
 every time we fall. 
@@ -217,12 +206,12 @@ every time we fall.
 
 
 
--- tf.h3: 6: `-- quote-5`
+-- tf.h3: 6: `-- onyx`
 
---- cb.code: Example code for `-- quote-5`
+--- cb.code: Example code for `-- onyx`
 lang: ftd
 
-\-- quote.quote-5: Barack Obama
+\-- quote.onyx: Barack Obama
 
 The real test is not whether you avoid this failure, because you 
 won't. It's whether you let it harden or shame you into inaction,
@@ -232,7 +221,7 @@ or whether you learn from it; whether you choose to persevere.
 
 Output of above:
 
---- quote-5: Barack Obama
+--- onyx: Barack Obama
 
 The real test is not whether you avoid this failure, because you 
 won't. It's whether you let it harden or shame you into inaction,
@@ -242,12 +231,12 @@ or whether you learn from it; whether you choose to persevere.
 
 
 
--- tf.h3: 7: `-- quote-6`
+-- tf.h3: 7: `-- silver`
 
---- cb.code: Example code for `-- quote-6`
+--- cb.code: Example code for `-- silver`
 lang: ftd
 
-\-- quote.quote-6: Helen Keller
+\-- quote.silver: Helen Keller
 
 Life is either a daring adventure or nothing at all.
 
@@ -255,7 +244,7 @@ Life is either a daring adventure or nothing at all.
 
 Output of above:
 
---- quote-6: Helen Keller
+--- silver: Helen Keller
 
 Life is either a daring adventure or nothing at all.
 
@@ -263,12 +252,12 @@ Life is either a daring adventure or nothing at all.
 
 
 
--- tf.h3: 8: `-- quote-7`
+-- tf.h3: 8: `-- stormcloud`
 
---- cb.code: Example code for `-- quote-7`
+--- cb.code: Example code for `-- stormcloud`
 lang: ftd
 
-\-- quote.quote-7: M.K. Gandhi
+\-- quote.stormcloud: M.K. Gandhi
 
 "A man is but a product of his thoughts.
 
@@ -278,7 +267,7 @@ lang: ftd
 
 Output of above:
 
---- quote-7: M.K. Gandhi
+--- stormcloud: M.K. Gandhi
 
 "A man is but a product of his thoughts.
 
@@ -288,12 +277,12 @@ Output of above:
 
 
 
--- tf.h3: 9: `-- quote-8`
+-- tf.h3: 9: `-- vampire`
 
---- cb.code: Example code for `-- quote-8`
+--- cb.code: Example code for `-- vampire`
 lang: ftd
 
-\-- quote.quote-8: Thomas Jefferson
+\-- quote.vampire: Thomas Jefferson
 
 "I find that the harder I work, the more luck I seem to have."
 
@@ -301,7 +290,7 @@ lang: ftd
 
 Output of above:
 
---- quote-8: Thomas Jefferson
+--- vampire: Thomas Jefferson
 
 "I find that the harder I work, the more luck I seem to have."
 
@@ -309,12 +298,12 @@ Output of above:
 
 
 
--- tf.h3: 10: `-- quote-9`
+-- tf.h3: 10: `-- rustic`
 
---- cb.code: Example code for `-- quote-9`
+--- cb.code: Example code for `-- rustic`
 lang: ftd
 
-\-- quote.quote-9: Dr. APJ Abdul Kalam
+\-- quote.rustic: Dr. APJ Abdul Kalam
 
 "All of us do not have equal talent. But, all of us have an equal 
 opportunity to develop our talents."
@@ -323,7 +312,7 @@ opportunity to develop our talents."
 
 Output of above:
 
---- quote-9: Dr. APJ Abdul Kalam
+--- rustic: Dr. APJ Abdul Kalam
 
 "All of us do not have equal talent. But, all of us have an equal 
 opportunity to develop our talents."
@@ -332,12 +321,12 @@ opportunity to develop our talents."
 
 
 
--- tf.h3: 11: `-- quote-10`
+-- tf.h3: 11: `-- echo`
 
---- cb.code: Example code for `-- quote-10`
+--- cb.code: Example code for `-- echo`
 lang: ftd
 
-\-- quote.quote-10: Swami Vivekananda
+\-- quote.echo: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; think of 
 it; live on that idea. Let the brain, the body, muscles, nerves, every 
@@ -349,7 +338,7 @@ spiritual giants are produced."
 
 Output of above:
 
---- quote-10: Swami Vivekananda
+--- echo: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; think of 
 it; live on that idea. Let the brain, the body, muscles, nerves, every 
@@ -361,12 +350,12 @@ spiritual giants are produced."
 
 
 
--- tf.h3: 12: `-- quote-11`
+-- tf.h3: 12: `-- window`
 
---- cb.code: Example code for `-- quote-11`
+--- cb.code: Example code for `-- window`
 lang: ftd
 
-\-- quote.quote-11: Mark Zuckerberg
+\-- quote.window: Mark Zuckerberg
 
 "If you just work on stuff that you like and you're passionate about, 
 you don't have to have a master plan with how things will play out."
@@ -375,7 +364,7 @@ you don't have to have a master plan with how things will play out."
 
 Output of above:
 
---- quote-11: Mark Zuckerberg
+--- window: Mark Zuckerberg
 
 "If you just work on stuff that you like and you're passionate about, 
 you don't have to have a master plan with how things will play out."
@@ -384,12 +373,12 @@ you don't have to have a master plan with how things will play out."
 
 
 
--- tf.h3: 13: `-- quote-12`
+-- tf.h3: 13: `-- matte`
 
---- cb.code: Example code for `-- quote-12`
+--- cb.code: Example code for `-- matte`
 lang: ftd
 
-\-- quote.quote-12: Swami Vivekananda
+\-- quote.matte: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; 
 think of it; live on that idea. Let the brain, the body, muscles, 
@@ -401,7 +390,7 @@ way great spiritual giants are produced."
 
 Output of above:
 
---- quote-12: Swami Vivekananda
+--- matte: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; think of it; live 
 on that idea. Let the brain, the body, muscles, nerves, every part of your body 
@@ -412,12 +401,12 @@ success, and this is the way great spiritual giants are produced."
 
 
 
--- tf.h3: 14: `-- quote-13`
+-- tf.h3: 14: `-- antique`
 
---- cb.code: Example code for `-- quote-13`
+--- cb.code: Example code for `-- antique`
 lang: ftd
 
-\-- quote.quote-13:  Socrates
+\-- quote.antique:  Socrates
 
 "Strong minds discuss ideas, average minds."
 
@@ -425,7 +414,7 @@ lang: ftd
 
 Output of above:
 
---- quote-13:  Socrates
+--- antique:  Socrates
 
 "Strong minds discuss ideas, average minds."
 
@@ -433,12 +422,12 @@ Output of above:
 
 
 
--- tf.h3: 15: `-- quote-14`
+-- tf.h3: 15: `-- bubble`
 
---- cb.code: Example code for `-- quote-14`
+--- cb.code: Example code for `-- bubble`
 lang: ftd
 
-\-- quote.quote-14:  Socrates
+\-- quote.bubble:  Socrates
 
 "To find yourself, think for yourself."
 
@@ -446,7 +435,7 @@ lang: ftd
 
 Output of above:
 
---- quote-14:  Socrates
+--- bubble:  Socrates
 
 "To find yourself, think for yourself."
 
@@ -454,12 +443,12 @@ Output of above:
 
 
 
--- tf.h3: 16: `-- quote-15`
+-- tf.h3: 16: `-- electric`
 
---- cb.code: Example code for `-- quote-15`
+--- cb.code: Example code for `-- electric`
 lang: ftd
 
-\-- quote.quote-15:  Socrates
+\-- quote.electric:  Socrates
 
 “If you don't get what you want, you suffer; if you get what you 
 don't want, you suffer; even when you get exactly what you want, 
@@ -472,7 +461,7 @@ law and no amount of pretending will alter that reality.”
 
 Output of above:
 
---- quote-15:  Socrates
+--- electric:  Socrates
 
 “If you don't get what you want, you suffer; if you get what you don't want,
  you suffer; even when you get exactly what you want, you still suffer 
@@ -485,12 +474,12 @@ Output of above:
 
 
 
--- tf.h3: 17: `-- quote-16`
+-- tf.h3: 17: `-- chrome`
 
---- cb.code: Example code for `-- quote-16`
+--- cb.code: Example code for `-- chrome`
 lang: ftd
 
-\-- quote.quote-16: Swami Vivekananda
+\-- quote.chrome: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; 
 think of it; live on that idea. Let the brain, the body, muscles, 
@@ -502,7 +491,7 @@ way great spiritual giants are produced."
 
 Output of above:
 
---- quote-16: Swami Vivekananda
+--- chrome: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; think of it; live 
 on that idea. Let the brain, the body, muscles, nerves, every part of your body 
@@ -513,12 +502,12 @@ success, and this is the way great spiritual giants are produced."
 
 
 
--- tf.h3: 18: `-- quote-17`
+-- tf.h3: 18: `-- dorian`
 
---- cb.code: Example code for `-- quote-17`
+--- cb.code: Example code for `-- dorian`
 lang: ftd
 
-\-- quote.quote-17: Swami Vivekananda
+\-- quote.dorian: Swami Vivekananda
 
 “You have to grow from the inside out. None can teach you, none can 
 make you spiritual. There is no other teacher but your own soul.”
@@ -527,7 +516,7 @@ make you spiritual. There is no other teacher but your own soul.”
 
 Output of above:
 
---- quote-17: Swami Vivekananda
+--- dorian: Swami Vivekananda
 
 “You have to grow from the inside out. None can teach you, none can 
 make you spiritual. There is no other teacher but your own soul.”
@@ -538,7 +527,18 @@ make you spiritual. There is no other teacher but your own soul.”
 
 
 
--- ftd.column quote:
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.column charcoal:
 optional caption title:
 optional ftd.image-src quote-icon: $assets.files.quotes.svg
 optional body body: 
@@ -746,7 +746,7 @@ align: center
 
 
 
--- ftd.column quote-1:
+-- ftd.column marengo:
 optional caption title:
 body body:
 ftd.color backgroundcolor: $fpm.color.main.background.base
@@ -867,7 +867,7 @@ white-space: nowrap
 
 
 
--- ftd.column quote-2:
+-- ftd.column marengo-hug:
 optional caption title:
 body body:
 ftd.color backgroundcolor: $fpm.color.main.background.base
@@ -1001,7 +1001,7 @@ style: italic
 
 
 
--- ftd.column quote-3:
+-- ftd.column scorpion:
 optional caption title:
 optional string label:
 body body:
@@ -1184,7 +1184,7 @@ color: $fpm.color.main.text-strong
 
 
 
--- ftd.column quote-4:
+-- ftd.column chalice:
 optional caption title:
 body body:
 padding-horizontal: 24
@@ -1240,7 +1240,7 @@ text-align: center
 
 
 
--- ftd.row quote-5:
+-- ftd.row onyx:
 optional caption title:
 body body:
 ftd.color backgroundcolor: $fpm.color.main.background.step-1
@@ -1292,7 +1292,7 @@ color: $fpm.color.main.background.step-2
 
 
 
--- ftd.column quote-6:
+-- ftd.column silver:
 optional caption title:
 body body:
 width: fill
@@ -1449,7 +1449,7 @@ width: 32
 
 
 
--- ftd.column quote-7:
+-- ftd.column stormcloud:
 optional caption title:
 body body:
 border-width: 16
@@ -1506,7 +1506,7 @@ bottom: -16
 
 
 
--- ftd.row quote-8:
+-- ftd.row vampire:
 optional caption title:
 ftd.image-src left-logo: $assets.files.left-quote.png
 ftd.image-src right-logo: $assets.files.right-quote-sign.png
@@ -1565,7 +1565,7 @@ width: 24
 
 
 
--- ftd.column quote-9:
+-- ftd.column rustic:
 optional caption title:
 body body: 
 ftd.image-src left-logo: $assets.files.left-quote.png
@@ -1627,7 +1627,7 @@ bottom: 0
 
 
 
--- ftd.column quote-10:
+-- ftd.column echo:
 optional caption title:
 ftd.image-src logo: $assets.files.right-quote-sign.png
 width: fill
@@ -1691,7 +1691,7 @@ height: auto
 
 
 
--- ftd.column quote-11:
+-- ftd.column window:
 caption title:
 body body:
 border-width: 1
@@ -1800,7 +1800,7 @@ z-index: 200
 
 
 
--- ftd.column quote-12:
+-- ftd.column matte:
 optional caption title:
 body body:
 padding-vertical: $fpm.space.space-4
@@ -1842,7 +1842,7 @@ color: $fpm.color.main.text
 
 
 
--- ftd.row quote-13:
+-- ftd.row antique:
 ftd.image-src avatar: $assets.files.socrates.png
 optional caption title:
 body body:
@@ -1911,7 +1911,7 @@ color: $fpm.color.main.text
 
 
 
--- ftd.row quote-14:
+-- ftd.row bubble:
 ftd.image-src avatar: $assets.files.socrates.png
 optional caption title:
 body body:
@@ -2032,7 +2032,7 @@ color: $fpm.color.main.text
 
 
 
--- ftd.row quote-15:
+-- ftd.row electric:
 ftd.image-src avatar: $assets.files.socrates.png
 optional caption title:
 body body:
@@ -2100,7 +2100,7 @@ color: $fpm.color.main.text
 
 
 
--- ftd.column quote-16:
+-- ftd.column chrome:
 optional caption title:
 body body:
 background-color: $fpm.color.main.background.step-2
@@ -2145,7 +2145,7 @@ role: $fpm.type.fine-print
 
 
 
--- ftd.column quote-17:
+-- ftd.column dorian:
 optional caption title:
 body body:
 width: auto
