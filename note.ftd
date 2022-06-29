@@ -31,26 +31,26 @@ weight: 700
 
 
 
--- ft.page: `inbox` and it's Usage
+-- ft.page: `note` and it's Usage
 
-`-- inbox` can be used as part of blog posts.
-
-
+`-- note` can be used as part of blog posts.
 
 
 
--- pd.package: `inbox` and it's Usage
-name: fifthtry.github.io/bling/inbox
 
-`inbox` is a new conversation experince via using `FTD` lang:
 
-To use `inbox` on your web package, add below into `FPM.ftd` file:
+-- pd.package: `note` and it's Usage
+name: fifthtry.github.io/bling/note
+
+`note` is a new conversation experince via using `FTD` lang:
+
+To use `note` on your web package, add below into `FPM.ftd` file:
 
 -- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling/inbox
+\-- fpm.auto-import: fifthtry.github.io/bling/note
 
 
 
@@ -58,13 +58,13 @@ lang: ftd
 
 -- tf.markdown:
 
-Once you add above lines into your web package, add `inbox` into your `.ftd` 
+Once you add above lines into your web package, add `note` into your `.ftd` 
 files:
 
--- cb.code: Example code for `-- inbox`
+-- cb.code: Example code for `-- note`
 lang: ftd
 
-\-- inbox.inbox: This is your Title
+\-- note.note: This is your Title
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
@@ -81,7 +81,7 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
---- inbox: This is your Title
+--- note: This is your Title
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
@@ -91,12 +91,12 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
--- tf.h3: Advanced usage of `-- inbox`:
+-- tf.h3: Advanced usage of `-- note`:
 
---- cb.code: Advanced example code for `-- inbox`
+--- cb.code: Advanced example code for `-- note`
 lang: ftd
 
-\-- inbox.inbox: This is your Title
+\-- note.note: This is your Title
 
 Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, 
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -109,7 +109,7 @@ laboris nisi ut.}
 
 -- tf.h3: Output of above advanced example:
 
---- inbox: This is your Title
+--- note: This is your Title
 
 Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, sed do 
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
@@ -124,7 +124,7 @@ minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
 
 
 
--- ftd.row inbox:
+-- ftd.row note:
 caption title:
 optional body body:
 optional string emoji: 📝
