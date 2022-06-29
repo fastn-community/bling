@@ -1,8 +1,7 @@
 -- import: fifthtry.github.io/bling/assets
 -- import: fifthtry.github.io/bling/chat
 -- import: fifthtry.github.io/bling/tip
--- import: fifthtry.github.io/bling/quote-3
--- import: fifthtry.github.io/bling/quote-10
+-- import: fifthtry.github.io/bling/quote
 
 -- boolean is-mobile: false
 
@@ -82,13 +81,13 @@ margin-bottom: $fpm.space.space-4
 width: fill
 
 
--- ftd.text: Quotes: `-- quote-3` sample
+-- ftd.text: Quotes: `-- scorpion` sample
 role: $fpm.type.copy-large
 color: $fpm.color.main.text
 margin-top: $fpm.space.space-10
 
 
--- quote-3.quote-3: Abraham Lincoln
+-- quote.scorpion: Abraham Lincoln
 label: U.S.A.
 
 "In the end, {white:it's not the years} in your {white:life} that 
@@ -104,14 +103,14 @@ margin-bottom: $fpm.space.space-4
 width: fill
 
 
---- ftd.text: Quotes: `-- quote-10` sample
+--- ftd.text: Quotes: `-- echo` sample
 role: $fpm.type.copy-large
 color: $fpm.color.main.text
 margin-bottom: $fpm.space.space-0
 margin-top: $fpm.space.space-10
 
 
--- quote-10.quote-10: Swami Vivekananda
+-- quote.echo: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; think of 
 it; live on that idea. Let the brain, the body, muscles, nerves, every 
