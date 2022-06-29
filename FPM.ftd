@@ -26,7 +26,7 @@ base: https://raw.githubusercontent.com/fifthtry/bling/main
 - Message: /chat/
 - Tip: /tip/
 - Detail: /detail/
-- Inbox: /inbox/
+- Note: /note/
 - Emoji-list: /emoji-list/
 - Sidenote: /sidenote/
 - Quotes: /quote/
