@@ -66,9 +66,9 @@ lang: ftd
 
 \-- inbox.inbox: This is your Title
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
@@ -109,68 +109,11 @@ laboris nisi ut.}
 
 -- tf.h3: Output of above advanced example:
 
-
-
-
-
 --- inbox: This is your Title
 
 Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, sed do 
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
 minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
-
-
-
-
-
--- tf.h3: How to create custom component, using default attributes?
-
-`FTD` lang is flexible and you can define your custom names to the default component.
-Below example shows usage of custom name:
-
--- cb.code: `-- inbox` with custom name as e.g. `showcase`:
-lang: ftd
-
-\-- inbox.inbox showcase:
-caption title:
-body body: 
-title: $title
-body: $body
-
-
-
-
-
--- tf.markdown: 
-
-How to use above custom name `-- showcase`:
-
--- cb.code: custom `-- showcase` usage:
-lang: ftd
-
-\-- showcase: This is your Title
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-
-
-
-
-
--- tf.markdown: 
-
-Output of above custom name example:
-
-
-
-
-
--- inbox: This is your Title
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
@@ -185,8 +128,8 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 caption title:
 optional body body:
 optional string emoji: 📝
-optional ftd.color backgroundcolor: $fpm.color.main.custom.three
-optional ftd.color bordercolor: $fpm.color.main.custom.nine
+optional ftd.color backgroundcolor: $fpm.color.main.text
+optional ftd.color bordercolor: $fpm.color.main.text-strong
 padding-vertical: $fpm.space.space-4
 padding-horizontal:$fpm.space.space-4
 background-color: $backgroundcolor

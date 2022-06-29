@@ -65,9 +65,9 @@ lang: ftd
 
 \-- sidenote.sidenote: 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
@@ -75,10 +75,6 @@ nostrud exercitation ullamco laboris nisi ut
 
 
 -- tf.h3: Output of above basic example:
-
-
-
-
 
 -- sidenote:
 
@@ -107,66 +103,11 @@ minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
 
 -- tf.h3: Output of above advanced example:
 
-
-
-
-
 --- sidenote: 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
 minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
-
-
-
-
-
--- tf.h3: How to create custom component, using default attributes?
-
-`FTD` lang is flexible and you can define your custom names to the default component.
-Below are few examples of custom names:
-
---- cb.code: `-- sidenote` with custom name as e.g. `showcase`:
-lang: ftd
-
-\-- sidenote.sidenote showcase:
-body body: 
-body: $body
-
-
-
-
-
--- tf.markdown: 
-
-How to use above custom name:
-
--- cb.code: custom name  `-- showcase` usage:
-lang: ftd
-
-\ -- showcase: 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-nostrud exercitation ullamco laboris nisi ut
-
-
-
-
-
--- tf.markdown: 
-
-Output of above custom name example:
-
-
-
-
-
--- sidenote:
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-nostrud exercitation ullamco laboris nisi ut
 
 
 
@@ -181,10 +122,10 @@ nostrud exercitation ullamco laboris nisi ut
 optional body body:
 padding-vertical: $fpm.space.space-4
 padding-horizontal:$fpm.space.space-7
-optional ftd.color bordercolor: $fpm.color.main.custom.two
+optional ftd.color bordercolor: $fpm.color.main.border-strong
 border-color: $bordercolor
 border-width: 1
-optional ftd.color backgroundcolor: $fpm.color.main.info.base
+optional ftd.color backgroundcolor: $fpm.color.main.background.step-2
 background-color: $backgroundcolor
 border-radius: 8
 max-width: 800
@@ -193,15 +134,15 @@ align: center
 
 --- ftd.text: Sidenote:
 anchor: parent
-top: 19
+top: 15
 left: 32
 role: $copy-tight-bold
-color: $fpm.color.main.background.step-1
+color: $fpm.color.main.text-strong
 
 --- ftd.text:
 text: $body
 role: $fpm.type.copy-tight
-color:$fpm.color.main.background.step-1
+color: $fpm.color.main.text
 text-align: justify
 text-indent: 84
 

@@ -58,12 +58,23 @@ files:
 -- cb.code: Example code for `-- emoji-list`
 lang: ftd
 
-\-- emoji-list.emoji-list: 
-emoji: ✨
+\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 💫
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut
+\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 🌟
+
+\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 💥
+
+\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 🌺
+
+\-- emoji-list: 
+emoji: ✨
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
@@ -71,83 +82,24 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 -- tf.h3: Output of above basic example:
 
--- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
-emoji: 🌄
+--- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 💫
 
--- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
-emoji: 🎇
+--- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 🌟
 
--- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
-emoji: 💿
+--- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 💥
 
--- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
-emoji: 📃
+--- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 🌺
 
--- emoji-list: 
+--- emoji-list: 
 emoji: ✨
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-nostrud exercitation ullamco laboris nisi ut
-
-
-
-
-
--- tf.h3: How to create custom component, using default attributes?
-
-`FTD` lang is flexible and you can define your custom names to the default component.
-Below are few examples of custom names:
-
--- cb.code: `-- emoji-list` with custom name as e.g. `showcase`:
-lang: ftd
-
-\-- emoji-list.emoji-list showcase: 
-string emoji:
-caption or body body:
-emoji: $emoji
-body: $body
-
-\-- emoji-list.emoji-list showcase: $body
-string emoji:
-caption or body body:
-emoji: $emoji
-
-
-
-
-
--- tf.markdown:
-
-How to use above custom name:
-
--- cb.code: custom `-- showcase` usage:
-lang: ftd
-
-\ -- showcase:
-emoji: ✨
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
-
-\ -- showcase: Lorem ipsum dolor sit amet, consectetur adipiscing
-emoji: 📞
-
-
-
-
-
--- emoji-list: 
-emoji: ✨
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-nostrud exercitation ullamco laboris nisi ut
-
-
--- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing
-emoji: 📞
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
@@ -162,6 +114,7 @@ emoji: 📞
 string emoji:
 caption or body body:
 max-width: 800
+margin-bottom: $fpm.space.space-3
 width: auto
 spacing: 10
 

@@ -1,22 +1,53 @@
 -- import: fifthtry.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
+-- boolean is-mobile: false
 
+-- is-mobile: true
+if: $ftd.device == mobile
 
+-- ftd.font-size copy-relax:
+line-height: 18
+size: 14
+letter-spacing: 0
 
-
--- ftd.type heading-small-bold: $fpm.type.heading-small.font
-desktop: $fpm.type.heading-small.desktop
-mobile: $fpm.type.heading-small.mobile
-xl: $fpm.type.heading-small.xl
+-- ftd.type copy-relaxed: $fpm.font-display
+desktop: $copy-relax
+mobile: $copy-relax
+xl: $copy-relax
 weight: 700
 
+-- ftd.font-size heading-40-bold-desktop:
+line-height: 48
+size: 40
+letter-spacing: 0
+
+-- ftd.type heading-40-bold: $fpm.font-display
+desktop: $heading-40-bold-desktop
+mobile: $heading-40-bold-desktop
+xl: $heading-40-bold-desktop
+weight: 700
+
+-- ftd.font-size heading-small-bold-desktop:
+line-height: 36
+size: 24
+letter-spacing: 0
+
+-- ftd.type heading-small-bold: $fpm.font-display
+desktop: $heading-small-bold-desktop
+mobile: $heading-small-bold-desktop
+xl: $heading-small-bold-desktop
+weight: 700
 
 -- ftd.type fine-print-bold: $fpm.type.fine-print.font
 desktop: $fpm.type.fine-print.desktop
 mobile: $fpm.type.fine-print.mobile
 xl: $fpm.type.fine-print.xl
 weight: 700
+
+-- ftd.color image-color:
+light: rgba(192,192,192,0.3)
+dark: rgba(192,192,192,0.3)
 
 
 
@@ -44,21 +75,47 @@ lang: ftd
 Once you add above lines into your web package, add `quote` into your `.ftd` files:
 
 
--- ft.code: Basic Example: 
+-- ft.code: Basic Example code for `-- quote`
 lang: ftd
 
+
+\-- quote.quote: Amit Upadhyay
+label: CEO
+avatar: $assets.files.amitu.jpg
+logo: $assets.files.fifthtry.svg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.
+
+
+
+
+
+-- tf.h3: List of quotes we designed for you:
+
+
+
+
+
+-- tf.h3: 1: `-- quote`
+
+--- cb.code: Example code for `-- quote-1`
+lang: ftd
 
 \-- quote: Amit Upadhyay
 label: CEO
 avatar: $assets.files.amitu.jpg
 logo: $assets.files.fifthtry.svg
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua..
+
+--- tf.markdown: 
+
+Output of above:
 
 
-
--- quote: Amit Upadhyay
+--- quote: Amit Upadhyay
 label: CEO
 avatar: $assets.files.amitu.jpg
 logo: $assets.files.fifthtry.svg
@@ -70,10 +127,410 @@ tempor incididunt ut labore et dolore magna aliqua..
 
 
 
+-- tf.h3: 2: `-- quote-1`
+
+--- cb.code: Example code for `-- quote-1`
+lang: ftd
+
+\-- quote.quote-1: Steve Jobs
+Your time is limited, so don't waste it living someone else's life. 
+Don't be trapped by dogma – which is living with the results of other 
+people's thinking.
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-1: Steve Jobs
+Your time is limited, so don't waste it living someone else's life. Don't 
+be trapped by dogma – which is living with the results of other people's 
+thinking.
 
 
 
 
+
+-- tf.h3: 3: `-- quote-2`
+
+--- cb.code: Example code for `-- quote-2`
+lang: ftd
+
+\-- quote.quote-2: Oprah Winfrey
+If you look at what you have in life, you'll always have more.
+If you look at what you don't have in life, you'll never have enough.
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-2: Oprah Winfrey
+If you look at what you have in life, you'll always have more.
+If you look at what you don't have in life, you'll never have enough.
+
+
+
+
+
+-- tf.h3: 4: `-- quote-3`
+
+--- cb.code: Example code for `-- quote-3`
+lang: ftd
+
+\-- quote.quote-3: Eleanor Roosevelt
+label: U.S.A.
+
+"The future belongs to those who believe in the beauty of their dreams."
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-3: Eleanor Roosevelt
+label: U.S.A.
+
+"The future belongs to those who believe in the beauty of their dreams."
+
+
+
+
+
+-- tf.h3: 5: `-- quote-4`
+
+--- cb.code: Example code for `-- quote-4`
+lang: ftd
+
+\-- quote.quote-4: Nelson Mandela
+
+The greatest glory in living lies not in never falling, but in rising 
+every time we fall. 
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-4: Nelson Mandela
+
+The greatest glory in living lies not in never falling, but in rising 
+every time we fall. 
+
+
+
+
+
+-- tf.h3: 6: `-- quote-5`
+
+--- cb.code: Example code for `-- quote-5`
+lang: ftd
+
+\-- quote.quote-5: Barack Obama
+
+The real test is not whether you avoid this failure, because you 
+won't. It's whether you let it harden or shame you into inaction,
+or whether you learn from it; whether you choose to persevere.
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-5: Barack Obama
+
+The real test is not whether you avoid this failure, because you 
+won't. It's whether you let it harden or shame you into inaction,
+or whether you learn from it; whether you choose to persevere.
+
+
+
+
+
+-- tf.h3: 7: `-- quote-6`
+
+--- cb.code: Example code for `-- quote-6`
+lang: ftd
+
+\-- quote.quote-6: Helen Keller
+
+Life is either a daring adventure or nothing at all.
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-6: Helen Keller
+
+Life is either a daring adventure or nothing at all.
+
+
+
+
+
+-- tf.h3: 8: `-- quote-7`
+
+--- cb.code: Example code for `-- quote-7`
+lang: ftd
+
+\-- quote.quote-7: M.K. Gandhi
+
+"A man is but a product of his thoughts.
+
+ What he thinks he becomes."
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-7: M.K. Gandhi
+
+"A man is but a product of his thoughts.
+
+ What he thinks he becomes."
+
+
+
+
+
+-- tf.h3: 9: `-- quote-8`
+
+--- cb.code: Example code for `-- quote-8`
+lang: ftd
+
+\-- quote.quote-8: Thomas Jefferson
+
+"I find that the harder I work, the more luck I seem to have."
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-8: Thomas Jefferson
+
+"I find that the harder I work, the more luck I seem to have."
+
+
+
+
+
+-- tf.h3: 10: `-- quote-9`
+
+--- cb.code: Example code for `-- quote-9`
+lang: ftd
+
+\-- quote.quote-9: Dr. APJ Abdul Kalam
+
+"All of us do not have equal talent. But, all of us have an equal 
+opportunity to develop our talents."
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-9: Dr. APJ Abdul Kalam
+
+"All of us do not have equal talent. But, all of us have an equal 
+opportunity to develop our talents."
+
+
+
+
+
+-- tf.h3: 11: `-- quote-10`
+
+--- cb.code: Example code for `-- quote-10`
+lang: ftd
+
+\-- quote.quote-10: Swami Vivekananda
+
+"Take up one idea. Make that one idea your life; dream of it; think of 
+it; live on that idea. Let the brain, the body, muscles, nerves, every 
+part of your body be full of that idea, and just leave every other 
+idea alone. This is the way to success, and this is the way great 
+spiritual giants are produced."
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-10: Swami Vivekananda
+
+"Take up one idea. Make that one idea your life; dream of it; think of 
+it; live on that idea. Let the brain, the body, muscles, nerves, every 
+part of your body be full of that idea, and just leave every other 
+idea alone. This is the way to success, and this is the way great 
+spiritual giants are produced."
+
+
+
+
+
+-- tf.h3: 12: `-- quote-11`
+
+--- cb.code: Example code for `-- quote-11`
+lang: ftd
+
+\-- quote.quote-11: Mark Zuckerberg
+
+"If you just work on stuff that you like and you're passionate about, 
+you don't have to have a master plan with how things will play out."
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-11: Mark Zuckerberg
+
+"If you just work on stuff that you like and you're passionate about, 
+you don't have to have a master plan with how things will play out."
+
+
+
+
+
+-- tf.h3: 13: `-- quote-12`
+
+--- cb.code: Example code for `-- quote-12`
+lang: ftd
+
+\-- quote.quote-12: Swami Vivekananda
+
+"Take up one idea. Make that one idea your life; dream of it; 
+think of it; live on that idea. Let the brain, the body, muscles, 
+nerves, every part of your body be full of that idea, and just leave 
+every other idea alone. This is the way to success, and this is the 
+way great spiritual giants are produced."
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-12: Swami Vivekananda
+
+"Take up one idea. Make that one idea your life; dream of it; think of it; live 
+on that idea. Let the brain, the body, muscles, nerves, every part of your body 
+be full of that idea, and just leave every other idea alone. This is the way to 
+success, and this is the way great spiritual giants are produced."
+
+
+
+
+
+-- tf.h3: 14: `-- quote-13`
+
+--- cb.code: Example code for `-- quote-13`
+lang: ftd
+
+\-- quote.quote-13:  Socrates
+
+"Strong minds discuss ideas, average minds."
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-13:  Socrates
+
+"Strong minds discuss ideas, average minds."
+
+
+
+
+
+-- tf.h3: 15: `-- quote-14`
+
+--- cb.code: Example code for `-- quote-14`
+lang: ftd
+
+\-- quote.quote-14:  Socrates
+
+"To find yourself, think for yourself."
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-14:  Socrates
+
+"To find yourself, think for yourself."
+
+
+
+
+
+-- tf.h3: 16: `-- quote-15`
+
+--- cb.code: Example code for `-- quote-15`
+lang: ftd
+
+\-- quote.quote-15:  Socrates
+
+“If you don't get what you want, you suffer; if you get what you 
+don't want, you suffer; even when you get exactly what you want, 
+you still suffer because you can't hold on to it forever. 
+Your mind is your predicament. It wants to be free of change. 
+Free of pain, free of the obligations of life and death. But change is 
+law and no amount of pretending will alter that reality.”
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-15:  Socrates
+
+“If you don't get what you want, you suffer; if you get what you don't want,
+ you suffer; even when you get exactly what you want, you still suffer 
+ because you can't hold on to it forever. Your mind is your predicament. 
+ It wants to be free of change. Free of pain, free of the obligations of 
+ life and death. But change is law and no amount of pretending will alter
+ that reality.”
+
+
+
+
+
+-- tf.h3: 17: `-- quote-16`
+
+--- cb.code: Example code for `-- quote-16`
+lang: ftd
+
+\-- quote.quote-16: Swami Vivekananda
+
+"Take up one idea. Make that one idea your life; dream of it; 
+think of it; live on that idea. Let the brain, the body, muscles, 
+nerves, every part of your body be full of that idea, and just leave 
+every other idea alone. This is the way to success, and this is the 
+way great spiritual giants are produced."
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-16: Swami Vivekananda
+
+"Take up one idea. Make that one idea your life; dream of it; think of it; live 
+on that idea. Let the brain, the body, muscles, nerves, every part of your body 
+be full of that idea, and just leave every other idea alone. This is the way to 
+success, and this is the way great spiritual giants are produced."
+
+
+
+
+
+-- tf.h3: 18: `-- quote-17`
+
+--- cb.code: Example code for `-- quote-17`
+lang: ftd
+
+\-- quote.quote-17: Swami Vivekananda
+
+“You have to grow from the inside out. None can teach you, none can 
+make you spiritual. There is no other teacher but your own soul.”
+
+--- tf.markdown: 
+
+Output of above:
+
+--- quote-17: Swami Vivekananda
+
+“You have to grow from the inside out. None can teach you, none can 
+make you spiritual. There is no other teacher but your own soul.”
 
 
 
@@ -280,3 +737,1451 @@ role: $fpm.type.fine-print
 color: $fpm.color.main.text
 align: center
 
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-1:
+optional caption title:
+body body:
+ftd.color backgroundcolor: $fpm.color.main.background.base
+width: fill
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+
+--- quote-1-desktop: $title
+if: not $ft.is-mobile
+body: $body
+backgroundcolor: $backgroundcolor
+
+--- quote-1-mobile: $title
+if: $ft.is-mobile
+body: $body
+backgroundcolor: $backgroundcolor
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-1-desktop:
+body body:
+optional caption title:
+ftd.color backgroundcolor: $fpm.color.main.background.base
+width: fill
+background-color: $backgroundcolor
+margin-top: $fpm.space.space-5
+margin-bottom: $fpm.space.space-6
+max-width: 1056
+
+--- ftd.row:
+width: fill
+border-left: 4
+padding-left: $fpm.space.space-8
+border-color: $fpm.color.main.border
+
+--- ftd.column:
+width: fill
+
+--- ftd.text: 
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.copy-large
+
+--- ftd.row:
+align: right
+spacing: 8
+margin-top: $fpm.space.space-4
+
+--- ftd.text: ~
+align: center
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+
+--- ftd.text: $title
+align: center
+color: $fpm.color.main.text
+role: $fpm.type.fine-print
+white-space: nowrap
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-1-mobile:
+body body:
+ftd.color backgroundcolor:
+width: fill
+background-color: $backgroundcolor
+max-width: 1056
+optional caption title:
+
+--- ftd.row:
+width: fill
+border-left: 4
+padding-left: $fpm.space.space-7
+border-color: $fpm.color.main.border
+
+--- ftd.column:
+width: fill
+
+--- ftd.text: 
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+
+--- ftd.row:
+align: right
+spacing: 8
+
+--- ftd.text: ~
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+
+--- ftd.text: $title
+align: right
+color: $fpm.color.main.text
+role: $fpm.type.fine-print
+white-space: nowrap
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-2:
+optional caption title:
+body body:
+ftd.color backgroundcolor: $fpm.color.main.background.base
+width: fill
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+
+
+
+
+--- quote-2-desktop: $title
+if: not $ft.is-mobile
+body: $body
+backgroundcolor: $backgroundcolor
+
+
+
+
+--- quote-2-mobile: $title
+if: $ft.is-mobile
+body: $body
+backgroundcolor: $backgroundcolor
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-2-desktop:
+body body:
+optional caption title:
+ftd.color backgroundcolor: $fpm.color.main.background.base
+width: fill
+background-color: $backgroundcolor
+margin-top: $fpm.space.space-5
+margin-bottom: $fpm.space.space-6
+max-width: 2056
+
+--- ftd.row:
+width: fill
+border-left: 4
+padding-left: $fpm.space.space-8
+border-color: $fpm.color.main.border
+
+--- ftd.column:
+width: fill
+
+--- ftd.text: 
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.copy-large
+style: italic
+text-align: right
+
+--- ftd.row:
+align: right
+spacing: 8
+margin-top: $fpm.space.space-4
+
+--- ftd.text: ~
+align: center
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+
+--- ftd.text: $title
+align: center
+color: $fpm.color.main.text
+role: $fpm.type.fine-print
+white-space: nowrap
+style: italic
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-2-mobile:
+body body:
+ftd.color backgroundcolor:
+width: fill
+background-color: $backgroundcolor
+max-width: 2056
+optional caption title:
+
+--- ftd.row:
+width: fill
+border-left: 4
+padding-left: $fpm.space.space-7
+border-color: $fpm.color.main.border
+
+--- ftd.column:
+width: fill
+
+--- ftd.text: 
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+style: italic
+text-align: right
+
+--- ftd.row:
+align: right
+spacing: 8
+margin-top: $fpm.space.space-4
+
+--- ftd.text: ~
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+
+--- ftd.text: $title
+align: right
+color: $fpm.color.main.text
+role: $fpm.type.fine-print
+white-space: nowrap
+style: italic
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-3:
+optional caption title:
+optional string label:
+body body:
+width: fill
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+
+--- quotes:
+body: $body
+
+--- ftd.column:
+margin-left: $fpm.space.space-15
+spacing: 8
+anchor: parent
+bottom: -34
+left: 20
+left if $is-mobile: 5
+
+--- ftd.text: $title
+role: $fpm.type.copy-tight
+color: $fpm.color.main.text
+
+--- ftd.text:
+text: $label
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quotes:
+body body:
+width: fill
+
+
+
+
+
+--- quotes-desktop:
+if: not $is-mobile
+body: $body
+
+
+
+
+
+--- quotes-mobile:
+if:  $is-mobile
+body: $body
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quotes-desktop:
+padding-horizontal: 20
+padding-vertical: 20
+body body:
+border-width: 3
+border-color: $fpm.color.main.border
+border-radius:20
+max-width: 620
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+margin-right:$fpm.space.space-6
+margin-left: $fpm.space.space-6
+
+--- ftd.row:
+anchor: parent
+width: 50
+border-width: 4
+border-color: $fpm.color.main.background.base
+left: 50
+bottom: -4
+z-index: 200
+
+--- container: ftd.main
+
+--- ftd.row:
+anchor: parent
+width: 60
+height: 60
+border-right: 3
+border-right-radius: 6
+border-bottom-radius: -30
+border-radius: 50
+border-color: $fpm.color.main.border
+left: -8
+bottom: -60
+z-index: 200
+
+--- container: ftd.main
+
+--- ftd.text:
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.heading-large
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quotes-mobile:
+padding-horizontal: 20
+padding-vertical: 20
+body body:
+border-width: 3
+border-color: $fpm.color.main.border
+border-radius:20
+width: fill
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+margin-right:$fpm.space.space-6
+margin-left: $fpm.space.space-6
+
+--- ftd.row:
+anchor: parent
+width: 40
+border-width: 4
+border-color: $fpm.color.main.background.base
+left: 50
+bottom: -4
+z-index: 200
+
+--- container: ftd.main
+
+--- ftd.row:
+anchor: parent
+width: 60
+height: 60
+border-right: 3
+border-right-radius: 6
+border-radius: 50
+border-bottom-radius: -30
+border-color: $fpm.color.main.border
+left: -8
+bottom: -60
+z-index: 200
+
+--- container: ftd.main
+
+--- ftd.text:
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.heading-medium
+
+
+
+
+
+
+
+
+
+-- ftd.text white: test
+color: $fpm.color.main.text-strong
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-4:
+optional caption title:
+body body:
+padding-horizontal: 24
+padding-vertical: 24
+width: fill
+padding-vertical: $fpm.space.space-7
+align: center
+max-width: 600
+optional ftd.image-src backgroundimage: $assets.files.quotes.svg
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+
+--- ftd.row:
+background-image: $backgroundimage
+width: 84
+height: 84
+width if $is-mobile: 44
+height if $is-mobile: 44
+anchor: parent
+z-index: 0
+top: 10
+top if $is-mobile: 34
+left: 0
+left if $is-mobile: 34
+z-index: 0
+
+--- container: ftd.main
+
+--- ftd.column:
+z-index: 1
+padding-left: $fpm.space.space-4
+
+--- ftd.text: $title
+color: $fpm.color.main.text
+role: $fpm.type.copy-tight
+align: center
+margin-bottom: $fpm.space.space-2
+
+--- ftd.text:
+width: fill
+text: $body
+color: $fpm.color.main.text-strong
+role: $fpm.type.copy-large
+z-index: 200
+text-align: center
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quote-5:
+optional caption title:
+body body:
+ftd.color backgroundcolor: $fpm.color.main.background.step-1
+background-color: $backgroundcolor
+optional ftd.image-src quote-logo: $assets.files.left-quote-circle.png
+padding-vertical: $fpm.space.space-6
+border-left: 5
+padding-right:$fpm.space.space-7
+border-color: $fpm.color.main.text
+spacing: 32
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+width: fill
+
+--- ftd.image:
+src: $quote-logo
+width: auto
+height: 32
+padding-left: 25
+
+--- ftd.column:
+width: fill
+align: center
+padding-top: 12
+spacing: 12
+
+--- ftd.text:
+text: $body
+role: $fpm.type.copy-relaxed
+
+--- ftd.row:
+padding-left: $fpm.space.space-3
+
+--- ftd.text: ~
+role: $copy-relaxed
+color: $fpm.color.main.background.step-2
+margin-right: $fpm.space.space-2
+
+--- ftd.text: $title
+role: $copy-relaxed
+color: $fpm.color.main.background.step-2
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-6:
+optional caption title:
+body body:
+width: fill
+
+--- quote-6-desktop: $title
+if: not $is-mobile
+body: $body
+
+--- quote-6-mobile: $title
+if: $is-mobile
+body: $body
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-6-desktop:
+optional caption title:
+body body:
+padding-vertical: 32
+padding-horizontal: 32
+gradient-direction: top to bottom
+gradient-colors: grey, black
+ftd.image-src logo: $assets.files.quote.png
+width: fill
+max-width: 800
+align: center
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+
+--- ftd.column:
+border-top: 2
+border-color: $fpm.color.main.text
+anchor: parent
+top: 38
+left: 148
+width: percent 60
+align: center
+
+--- container: ftd.main
+
+--- ftd.column:
+border-bottom: 2
+border-color: $fpm.color.main.text
+anchor: parent
+right: 146
+bottom: 38
+width: percent 60
+
+--- container: ftd.main
+
+--- ftd.column:
+align: center
+width: percent 60
+padding-vertical: $fpm.space.space-7
+max-height: 400
+
+--- ftd.text: 
+text: $body
+role: $heading-40-bold
+color: $fpm.color.main.text
+
+--- ftd.text: $title
+role: $fpm.type.heading-small
+color: $fpm.color.main.text
+padding-top: $fpm.space.space-5
+
+--- ftd.image:
+anchor: parent
+src: $logo
+right: 10
+bottom: -32
+height: 62
+width: 62
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-6-mobile:
+optional caption title:
+body body:
+padding-vertical: $fpm.space.space-4
+padding-horizontal: $fpm.space.space-4
+gradient-direction: top to bottom
+gradient-colors: grey, black
+ftd.image-src logo: $assets.files.quote.png
+width: fill
+max-width: 800
+align: center
+margin-top: $fpm.space.space-5
+margin-bottom: $fpm.space.space-6
+
+--- ftd.column:
+border-top: 1
+border-color: $fpm.color.main.text
+anchor: parent
+top: 18
+left: 44
+width: percent 80
+align: center
+
+--- container: ftd.main
+
+--- ftd.column:
+border-bottom: 1
+border-color: $fpm.color.main.text
+anchor: parent
+right: 44
+bottom: 18
+width: percent 80
+
+--- container: ftd.main
+
+--- ftd.column:
+align: center
+width: percent 80
+padding-vertical: $fpm.space.space-4
+
+--- ftd.text: 
+text: $body
+role: $heading-small-bold
+color: $fpm.color.main.text
+
+--- ftd.text: $title
+role: $fpm.type.copy-relaxed
+color: $fpm.color.main.text
+padding-top: $fpm.space.space-5
+
+--- ftd.image:
+anchor: parent
+src: $logo
+right: 10
+bottom: -12
+height: 32
+width: 32
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-7:
+optional caption title:
+body body:
+border-width: 16
+border-color: $fpm.color.main.border
+padding-vertical: $fpm.space.space-4
+padding-horizontal: $fpm.space.space-4
+width: fill
+max-width: 320
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+align: center
+
+--- ftd.column:
+z-index: 300
+
+--- ftd.text: 
+text: $body
+role: $fpm.type.copy-large
+color: $fpm.color.main.text
+margin-top: $fpm.space.space-4
+margin-bottom: $fpm.space.space-4
+text-align: center
+align: center
+
+--- ftd.row:
+padding-left: $fpm.space.space-3
+align: right
+
+--- ftd.text: ~
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+margin-right: $fpm.space.space-2
+
+--- ftd.text: $title
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+
+--- container: ftd.main
+
+--- ftd.row:
+anchor: parent
+background-color: $fpm.color.main.background.base
+left: 32
+right: 32
+top: -16
+bottom: -16
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quote-8:
+optional caption title:
+ftd.image-src left-logo: $assets.files.left-quote.png
+ftd.image-src right-logo: $assets.files.right-quote-sign.png
+body body:
+width if not $is-mobile: auto
+width if $is-mobile: fill
+min-width: percent 50
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+align: center
+
+--- ftd.image:
+src: $left-logo
+height: 120
+width: 24
+
+--- ftd.column:
+width: fill
+id: text-container
+
+--- ftd.row:
+width: fill
+min-height: 84
+
+--- ftd.text:
+text: $body
+color: $fpm.color.main.text-strong
+role: $fpm.type.copy-tight
+padding-horizontal: $fpm.space.space-7
+margin-top: 16
+margin-bottom: 16
+width: fill
+text-align: center
+
+--- container: text-container
+
+--- ftd.text: $title
+align: right
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+padding-horizontal: $fpm.space.space-4
+
+--- container: ftd.main
+
+--- ftd.image:
+src: $right-logo
+height: 120
+width: 24
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-9:
+optional caption title:
+body body: 
+ftd.image-src left-logo: $assets.files.left-quote.png
+ftd.image-src right-logo: $assets.files.right-quote-sign.png
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+width: auto
+width if $is-mobile: fill
+align: center
+
+--- ftd.image:
+src: $left-logo
+height: 69
+width: 69
+anchor: parent
+top: -12
+left if $is-mobile: 0
+left: -32
+z-index: 0
+
+--- ftd.column:
+align: center
+padding-vertical: $fpm.space.space-2
+padding-horizontal: $fpm.space.space-2
+max-width: 756
+z-index: 1
+
+--- ftd.text:
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.heading-small
+padding-horizontal: $fpm.space.space-7
+margin-top: 16
+margin-bottom: 16
+text-align: center
+
+--- ftd.text: $title
+align: center
+role: $fpm.type.copy-tight
+color: $fpm.color.main.text
+padding-horizontal: $fpm.space.space-7
+
+--- container: ftd.main
+
+--- ftd.image:
+src: $right-logo
+height: 69
+width: 69
+anchor: parent
+right: 0
+bottom: 0
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-10:
+optional caption title:
+ftd.image-src logo: $assets.files.right-quote-sign.png
+width: fill
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+body body:
+max-width: 960
+
+--- ftd.row:
+width: fill
+border-left: 10
+padding-left: $fpm.space.space-8
+border-color: $fpm.color.main.border
+
+--- ftd.column:
+padding-vertical: $fpm.space.space-3
+id: text-container
+
+--- ftd.text: 
+if: not $is-mobile
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.copy-large
+
+--- ftd.text: 
+if: $is-mobile
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.copy-large
+text-align: justify
+
+--- container: text-container
+
+--- ftd.text: $title
+color: $fpm.color.main.text
+role: $fpm.type.fine-print
+style: italic
+margin-top: $fpm.space.space-3
+
+--- container: ftd.main
+
+--- ftd.row:
+anchor: parent
+padding-vertical: 16
+background-color: $fpm.color.main.background.base
+top: 36
+top if $is-mobile: 64
+left: -8
+
+--- ftd.image:
+src: $logo
+width: 32
+height: auto
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-11:
+caption title:
+body body:
+border-width: 1
+border-color: $fpm.color.main.text
+padding-vertical: $fpm.space.space-7
+padding-horizontal: $fpm.space.space-7
+width: auto
+width if $is-mobile: fill
+min-width: percent 60
+align: center
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+
+--- ftd.text: $title
+anchor: parent
+background-color: $fpm.color.main.background.base
+top: -16
+move-right: 270
+text-align: center
+role: $fpm.type.copy-large
+color: $fpm.color.main.text
+white-space: nowrap
+padding-horizontal: $fpm.space.space-6
+
+--- ftd.text:
+text: $body
+role: $fpm.type.copy-large
+color: $fpm.color.main.text
+style: italic
+padding-top: $fpm.space.space-2
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+align: center
+text-align: center
+
+--- container: ftd.main
+
+--- ftd.row:
+width: 30
+height: 30
+anchor: parent
+border-top: 2
+border-right-radius: 100
+border-left-radius: 100
+border-color: $fpm.color.main.text
+background-color: $fpm.color.main.background.base
+left: -16
+top: -11
+rotate: 110
+z-index: 200
+
+--- container: ftd.main
+
+--- ftd.row:
+width: 30
+height: 30
+anchor: parent
+border-left: 2
+border-right-radius: 100
+border-left-radius: 100
+border-color: $fpm.color.main.text
+background-color: $fpm.color.main.background.base
+left: -16
+bottom: -11
+rotate: 150
+z-index: 200
+
+--- container: ftd.main
+
+--- ftd.row:
+width: 30
+height: 30
+anchor: parent
+border-right: 2
+border-right-radius: 100
+border-left-radius: 100
+border-color: $fpm.color.main.text
+background-color: $fpm.color.main.background.base
+right: -16
+top: -11
+rotate: 160
+z-index: 200
+
+--- container: ftd.main
+
+--- ftd.row:
+width: 30
+height: 30
+anchor: parent
+border-bottom: 2
+border-right-radius: 100
+border-left-radius: 100
+border-color: $fpm.color.main.text
+background-color: $fpm.color.main.background.base
+right: -16
+bottom: -11
+rotate: 110
+z-index: 200
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-12:
+optional caption title:
+body body:
+padding-vertical: $fpm.space.space-4
+margin-top: 24
+margin-bottom: 24
+width: auto
+width if $is-mobile: fill
+align: center
+border-style: dashed
+border-bottom: 2
+border-color: $fpm.color.main.text
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+
+--- ftd.text:
+text: $body
+role: $fpm.type.copy-tight
+color: $fpm.color.main.text
+
+--- ftd.row:
+align: right
+padding-top: $fpm.space.space-4
+
+--- ftd.text: ~
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+margin-right: $fpm.space.space-1
+
+--- ftd.text: $title
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quote-13:
+ftd.image-src avatar: $assets.files.socrates.png
+optional caption title:
+body body:
+width if not $is-mobile: auto
+width if $is-mobile: fill
+min-width: percent 50
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+align: center
+
+--- ftd.column:
+anchor: parent
+background-color: $image-color
+top: 0
+left: 0
+width: 90
+height: fill
+
+--- container: ftd.main
+
+--- ftd.column:
+background-image: $avatar
+width: 90
+height: fill
+anchor: parent
+top: 0
+left: 0
+
+--- container: ftd.main
+
+--- ftd.column:
+margin-left: 90
+padding-top: $fpm.space.space-4
+padding-horizontal: $fpm.space.space-4
+background-color: $fpm.color.main.background.step-2
+border-radius: 4
+spacing: 8
+max-width if not $is-mobile: percent 30
+width if $is-mobile: fill
+
+--- ftd.text:
+text: $body
+role: $heading-40-bold
+color: $fpm.color.main.text
+
+
+--- ftd.row:
+spacing: 8
+margin-top: $fpm.space.space-12
+padding-bottom: $fpm.space.space-4
+
+--- ftd.text: ~
+role: $fpm.type.copy-large
+color: $fpm.color.main.text
+
+--- ftd.text: $title
+role: $fpm.type.copy-large
+color: $fpm.color.main.text
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quote-14:
+ftd.image-src avatar: $assets.files.socrates.png
+optional caption title:
+body body:
+width: fill
+
+--- quote-14-desktop: $title
+if: not $is-mobile
+body: $body
+
+--- quote-14-mobile: $title
+if: $is-mobile
+body: $body
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quote-14-desktop:
+ftd.image-src avatar: $assets.files.quotes-bg.jpeg
+optional caption title:
+body body:
+width if not $is-mobile: auto
+width if $is-mobile: fill
+min-width: percent 50
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+background-image: $avatar
+background-repeat: false
+padding-vertical: $fpm.space.space-8
+padding-horizontal:  $fpm.space.space-8
+align: center
+
+--- ftd.column:
+spacing: 8
+background-color: $fpm.color.main.background.base
+align: center
+padding-vertical: $fpm.space.space-8
+padding-horizontal: $fpm.space.space-8
+
+--- ftd.text:
+text: $body
+role: $fpm.type.heading-small
+color: $fpm.color.main.text
+text-align: justify
+
+--- ftd.row:
+spacing: 8
+margin-top: $fpm.space.space-6
+
+--- ftd.text: ~
+role: $fpm.type.copy-large
+color: $fpm.color.main.text
+
+--- ftd.text: $title
+role: $fpm.type.copy-large
+color: $fpm.color.main.text
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quote-14-mobile:
+ftd.image-src avatar: $assets.files.quotes-bg.jpeg
+optional caption title:
+body body:
+width if not $is-mobile: auto
+width if $is-mobile: fill
+min-width: percent 50
+margin-top: $fpm.space.space-3
+margin-bottom: $fpm.space.space-3
+background-image: $avatar
+background-repeat: false
+padding-vertical: $fpm.space.space-3
+padding-horizontal:  $fpm.space.space-3
+align: center
+
+--- ftd.column:
+spacing: 8
+background-color: $fpm.color.main.background.base
+align: center
+padding-vertical: $fpm.space.space-3
+padding-horizontal: $fpm.space.space-3
+
+--- ftd.text:
+text: $body
+role: $fpm.type.copy-large
+color: $fpm.color.main.text
+text-align: justify
+
+--- ftd.row:
+spacing: 8
+margin-top: $fpm.space.space-6
+
+--- ftd.text: ~
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+
+--- ftd.text: $title
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+
+
+
+
+
+
+
+
+
+
+-- ftd.row quote-15:
+ftd.image-src avatar: $assets.files.socrates.png
+optional caption title:
+body body:
+width if not $is-mobile: auto
+width if $is-mobile: fill
+min-width: percent 50
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+align: center
+
+--- ftd.column:
+anchor: parent
+background-color: $image-color
+top: 0
+left: 0
+width: 90
+height: fill
+
+--- container: ftd.main
+
+--- ftd.column:
+background-image: $avatar
+width: 90
+height: fill
+anchor: parent
+top: 0
+left: 0
+
+--- container: ftd.main
+
+--- ftd.column:
+margin-left: 90
+padding-top: $fpm.space.space-4
+padding-horizontal: $fpm.space.space-4
+background-color: $fpm.color.main.background.step-2
+border-radius: 4
+spacing: 8
+width: fill
+
+
+--- ftd.text:
+text: $body
+role: $heading-small-bold
+color: $fpm.color.main.text
+
+--- ftd.row:
+spacing: 8
+margin-top: $fpm.space.space-12
+padding-bottom: $fpm.space.space-4
+
+--- ftd.text: ~
+role: $fpm.type.copy-large
+color: $fpm.color.main.text
+
+--- ftd.text: $title
+role: $fpm.type.copy-large
+color: $fpm.color.main.text
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-16:
+optional caption title:
+body body:
+background-color: $fpm.color.main.background.step-2
+border-radius: 16
+border-width: 2
+padding-vertical: $fpm.space.space-6
+padding-horizontal: $fpm.space.space-6
+ftd.image-src quote-icon: $assets.files.quotes.svg
+width: auto
+width $is-mobile: fill
+align: center
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+
+--- ftd.image:
+src: $quote-icon
+width: 32
+height:auto
+margin-bottom: $fpm.space.space-4
+
+
+--- ftd.text: 
+padding-bottom: $fpm.space.space-6
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.heading-small
+border-bottom: 2
+border-color: $fpm.color.main.text
+
+
+--- ftd.text: $title
+margin-top: $fpm.space.space-6
+color: $fpm.color.main.text
+role: $fpm.type.fine-print
+
+
+
+
+
+
+
+
+
+
+-- ftd.column quote-17:
+optional caption title:
+body body:
+width: auto
+width $is-mobile: fill
+align: center
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+
+--- ftd.row:
+width: 30
+height: 30
+anchor: parent
+background-color: $fpm.color.main.background.step-2
+left: 56
+bottom: 52
+rotate: 132
+z-index: 200
+border-style: solid
+
+--- container: ftd.main
+
+--- ftd.text: 
+padding-bottom: $fpm.space.space-6
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.heading-small
+background-color: $fpm.color.main.background.step-2
+padding-vertical: $fpm.space.space-6
+padding-horizontal: $fpm.space.space-6
+border-top-radius: 8
+
+--- ftd.text: $title
+color: $fpm.color.main.text
+role: $fpm.type.fine-print
+background-color: $fpm.color.main.background.step-1
+padding-vertical: $fpm.space.space-6
+padding-horizontal: $fpm.space.space-6
+width: fill
+border-bottom-radius: 8
