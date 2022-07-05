@@ -41,7 +41,7 @@ weight: 700
 -- pd.package: `sidenote` and it's Usage
 name: fifthtry.github.io/bling/sidenote
 
-`sidenote` is a new conversation experince via using `FTD` lang:
+`sidenote` is a new conversation experience via using `FTD` lang:
 
 To use `sidenote` on your web package, add below into `FPM.ftd` file:
 

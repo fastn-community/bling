@@ -12,7 +12,7 @@ if: $ftd.device == mobile
 
 -- ft.page: Chat & messages
 
-`-- message-left` OR `-- message-right` is a new chatting experince via using 
+`-- message-left` OR `-- message-right` is a new chatting experience via using 
 `FTD` lang.
 
 -- pd.package: `message-left` & `message-right`

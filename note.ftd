@@ -42,7 +42,7 @@ weight: 700
 -- pd.package: `note` and it's Usage
 name: fifthtry.github.io/bling/note
 
-`note` is a new conversation experince via using `FTD` lang:
+`note` is a new conversation experience via using `FTD` lang:
 
 To use `note` on your web package, add below into `FPM.ftd` file:
 

@@ -36,7 +36,7 @@ weight: 700
 -- pd.package: `emoji-list` and it's Usage
 name: fifthtry.github.io/bling/emoji-list
 
-`emoji-list` is a new conversation experince via using `FTD` lang:
+`emoji-list` is a new conversation experience via using `FTD` lang:
 
 To use `emoji-list` on your web package, add below into `FPM.ftd` file:
 
