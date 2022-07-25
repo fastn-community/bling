@@ -2,6 +2,7 @@
 -- import: fifthtry.github.io/bling/chat
 -- import: fifthtry.github.io/bling/tip
 -- import: fifthtry.github.io/bling/quote
+-- import: fifthtry.github.io/package-doc/doc as pd
 
 -- boolean is-mobile: false
 
@@ -13,15 +14,22 @@ color: $fpm.color.main.text-strong
 
 
 
--- ft.page: Bling a collection of `FTD` components
+-- ft.page:
+
+
+-- pd.package: Bling components
+name: fifthtry.github.io/bling
 
 `fifthtry.github.io/bling` is a component library which contains various `ftd` 
 components can be used on your pages. 
 
-Click on each component into sidebar to see its working demo!
+To use bling components on your web package, add below into `FPM.ftd` file:
 
+-- cb.code:
+lang: ftd
 
-
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling
 
 
 -- ft.h2: Below are some sample Bling Components:
