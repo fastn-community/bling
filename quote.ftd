@@ -122,6 +122,7 @@ tempor incididunt ut labore et dolore magna aliqua..
 lang: ftd
 
 \-- quote.marengo: Steve Jobs
+
 Your time is limited, so don't waste it living someone else's life. 
 Don't be trapped by dogma – which is living with the results of other 
 people's thinking.
@@ -131,6 +132,7 @@ people's thinking.
 Output of above:
 
 --- marengo: Steve Jobs
+
 Your time is limited, so don't waste it living someone else's life. Don't 
 be trapped by dogma – which is living with the results of other people's 
 thinking.
@@ -145,6 +147,7 @@ thinking.
 lang: ftd
 
 \-- quote.marengo-hug: Oprah Winfrey
+
 If you look at what you have in life, you'll always have more.
 If you look at what you don't have in life, you'll never have enough.
 
@@ -153,6 +156,7 @@ If you look at what you don't have in life, you'll never have enough.
 Output of above:
 
 --- marengo-hug: Oprah Winfrey
+
 If you look at what you have in life, you'll always have more.
 If you look at what you don't have in life, you'll never have enough.
 
