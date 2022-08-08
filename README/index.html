@@ -6,7 +6,7 @@
         <title>README.ftd</title>
         <script type="ftd" id="ftd-data">{
   "fifthtry.github.io/bling/README/#content@0": {
-    "value": "# Bling is a collection of `FTD` components\n`fifthtry.github.io/bling` is a `ftd` component library which contains various `ftd` \ncomponets can be used on your pages. \n\nTo use this `ftd` library on your web package, add below lines into `FPM.ftd` file:\n```ftd\n-- fpm.dependency: fifthtry.github.io/bling\n-- fpm.auto-import: fifthtry.github.io/bling/badge\n```\n\nIn above example `badge` is being added to your package. Which can be called into your `.ftd` files as given below:\n\n```ftd\n-- badge.badge: Primary\nprimary: true\n```",
+    "value": "# Bling is a collection of `FTD` components\n`fifthtry.github.io/bling` is a `ftd` component library which contains various `ftd`\ncomponets can be used on your pages.\n\nTo use this `ftd` library on your web package, add below lines into `FPM.ftd` file:\n```ftd\n-- fpm.dependency: fifthtry.github.io/bling\n-- fpm.auto-import: fifthtry.github.io/bling/badge\n```\n\nIn above example `badge` is being added to your package. Which can be called into your `.ftd` files as given below:\n\n```ftd\n-- badge.badge: Primary\nprimary: true\n```",
     "dependencies": {
       "0": [
         {
@@ -385,7 +385,7 @@ function console_log(...message) {
 let ftd_utils = {
     resolve_reference: function (value, reference, data, obj) {
         let data_value_ref = (reference !== null && !(value instanceof Object)) ?
-            ftd_utils.get_data_value(data, reference) : null;
+            ftd_utils.get_data_with_default(data, reference) : null;
         if (value instanceof Object) {
             let result = value instanceof Array ? [] : {};
             for (var key of Object.keys(value)) {
@@ -773,6 +773,14 @@ let ftd_utils = {
         return ftd_utils.deepCopy(initial_value);
     },
 
+    get_data_with_default: function (data, name, def) {
+        try {
+            return ftd_utils.get_data_value(data, name);
+        } catch (e) {
+            return def;
+        }
+    },
+
     set_data_value: function (data, name, value) {
         let [var_name, remaining] = ftd_utils.get_name_and_remaining(name);
         let initial_value = data[var_name].value;
@@ -1120,6 +1128,12 @@ let ftd_utils = {
 window.ftd = (function () {
     let ftd_data = {};
     let ftd_external_children = {};
+
+    // Setting up default value on <input>
+    const inputElements = document.querySelectorAll('input[data-dv]');
+    for (let input_ele of inputElements) {
+        input_ele.defaultValue = input_ele.dataset.dv;
+    }
 
     function handle_event(evt, id, action, obj) {
         let act = action["action"];
