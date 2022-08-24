@@ -129,7 +129,6 @@ boolean open: false
 optional body body:
 spacing: 8
 $on-click$: toggle $open
-width: fill
 max-width: 800
 width: auto
 append-at: code-container
