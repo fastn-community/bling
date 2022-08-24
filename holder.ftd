@@ -218,7 +218,7 @@ width: auto
 width $is-mobile: fill
 align: center
 margin-top if not $make-odd: $fpm.space.space-6
-margin-bottom: 54
+margin-bottom if not $make-odd: 54
 background-color: $fpm.color.main.background.step-1
 background-color if $make-odd: $fpm.color.main.background.base
 padding-top : 56
