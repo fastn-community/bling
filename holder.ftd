@@ -55,7 +55,112 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 -- tf.h3: Output of above  example:
 
---- holder: This is your Title
+-- holder: This is your Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+--- ft.code:
+lang: ftd
+
+\-- ftd.column holder:
+optional caption title:
+optional body body:
+width: auto
+width $is-mobile: fill
+
+--- ft.markdown:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+
+
+
+-- tf.h3: Advanced usage of `-- holder`:
+
+--- cb.code: Advanced example code for `-- holder`
+lang: ftd
+
+\-- holder.holder: 
+
+Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud {bold: exercitation ullamco 
+laboris nisi ut.}
+
+
+
+
+
+-- tf.h3: Output of above  without title example:
+
+-- holder: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+--- ft.code:
+lang: ftd
+
+\-- ftd.column holder:
+optional caption title:
+optional body body:
+width: auto
+width $is-mobile: fill
+
+--- ft.markdown:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+
+-- holder: Lorem ipsum dolor
+make-odd: true
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+--- ft.code:
+lang: ftd
+
+\-- ftd.column holder:
+optional caption title:
+optional body body:
+width: auto
+width $is-mobile: fill
+
+--- ft.markdown:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+-- holder: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+--- ft.code:
+lang: ftd
+
+\-- ftd.column holder:
+optional caption title:
+optional body body:
+width: auto
+width $is-mobile: fill
+
+--- ft.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
@@ -67,31 +172,37 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
-
-
-
 -- ftd.column holder:
 optional caption title:
-body body:
+optional body body:
+boolean make-odd: false
 width: auto
 width $is-mobile: fill
 align: center
 margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
+margin-bottom: $fpm.space.space-7
 background-color: $fpm.color.main.background.step-1
-padding-vertical: $fpm.space.space-10
+background-color if $make-odd: $fpm.color.main.background.base
+padding-top: 56
+padding-bottom: 32
 padding-horizontal: $fpm.space.space-6
+open: true
+append-at: main-container
 
 --- ftd.row:
 width: 0
 height: 0
-border-top: 48
-border-left: 50
-border-right: 50
+border-top: 50
+border-left: 60
+border-right: 60
 border-top-color: $fpm.color.main.background.base
 border-bottom-color: $fpm.color.main.background.step-1
 border-left-color: $fpm.color.main.background.step-1
 border-right-color: $fpm.color.main.background.step-1
+border-top-color if $make-odd: $fpm.color.main.background.base
+border-bottom-color if $make-odd: $fpm.color.main.background.base
+border-left-color if $make-odd: $fpm.color.main.background.base
+border-right-color if $make-odd: $fpm.color.main.background.base
 anchor: parent
 left: 50
 top: 0
@@ -99,30 +210,40 @@ z-index: 0
 
 --- container: ftd.main
 
---- ftd.text:
-text: $title
-padding-vertical: $fpm.space.space-6
+--- ftd.text: $title
+if: $title is not null
+padding-vertical: $fpm.space.space-4
 color: $fpm.color.main.text
-role: $fpm.type.copy-tight
+role: $fpm.type.heading-medium
 style: bold
 width: fill
 
---- container: ftd.main
 
 --- ftd.text: 
+if: $body is not null
 text: $body
 color: $fpm.color.main.text
-role: $fpm.type.heading-small
+role: $fpm.type.copy-relaxed
 width: fill
+
+
+--- ftd.column:
+id: main-container
+
 
 --- container: ftd.main
 
 --- ftd.row:
-width: 75
-height: 70
+width: 0
+height: 0
+border-top: 50
+border-left: 60
+border-right: 60
+border-top-color: $fpm.color.main.background.step-1
+border-bottom-color: $fpm.color.main.background.base
+border-left-color: $fpm.color.main.background.base
+border-right-color: $fpm.color.main.background.base
 anchor: parent
-background-color: $fpm.color.main.background.step-1
 right: 50
-bottom: -28
-rotate: 134
+bottom: -50
 z-index: 0
