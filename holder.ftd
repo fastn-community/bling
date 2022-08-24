@@ -53,7 +53,7 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
--- tf.h3: Output of above basic example:
+-- tf.h3: Output of above  example:
 
 --- holder: This is your Title
 
@@ -61,33 +61,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
-
-
-
-
--- tf.h3: Advanced usage of `-- holder`:
-
---- cb.code: Advanced example code for `-- holder`
-lang: ftd
-
-\-- holder.holder: This is your Title
-
-Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud {bold: exercitation ullamco 
-laboris nisi ut.}
-
-
-
-
-
--- tf.h3: Output of above advanced example:
-
---- holder: Lorem ipsum dolor
-
-Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, sed do 
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
 
 
 
