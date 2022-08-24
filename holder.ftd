@@ -13,9 +13,9 @@ if: $ftd.device == mobile
 
 `-- holder` can be used as part of blog posts.
 
-
-
-
+-- ftd.column:
+width: fill
+id: change-container
 
 -- pd.package: `holder` and it's Usage
 name: fifthtry.github.io/bling/holder
@@ -61,8 +61,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
+-- container: change-container
 
---- ft.code:
+-- pd.hidden-code: Real Time example with multiple holders
+
+\-- holder: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+\--- ft.code:
 lang: ftd
 
 \-- ftd.column holder:
@@ -71,7 +80,50 @@ optional body body:
 width: auto
 width $is-mobile: fill
 
---- ft.markdown:
+\--- ft.markdown:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+\-- holder: Lorem ipsum dolor
+make-odd: true
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+\--- ft.code:
+lang: ftd
+
+\-- ftd.column holder:
+optional caption title:
+optional body body:
+width: auto
+width $is-mobile: fill
+
+\--- ft.markdown:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+\-- holder: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+\--- ft.code:
+lang: ftd
+
+\-- ftd.column holder:
+optional caption title:
+optional body body:
+width: auto
+width $is-mobile: fill
+
+\--- ft.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
@@ -81,23 +133,9 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
--- tf.h3: Advanced usage of `-- holder`:
-
---- cb.code: Advanced example code for `-- holder`
-lang: ftd
-
-\-- holder.holder: 
-
-Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud {bold: exercitation ullamco 
-laboris nisi ut.}
 
 
-
-
-
--- tf.h3: Output of above  without title example:
+-- tf.h3: Output of above example:
 
 -- holder: 
 
@@ -119,8 +157,6 @@ width $is-mobile: fill
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
-
-
 
 -- holder: Lorem ipsum dolor
 make-odd: true
@@ -144,7 +180,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
-
 -- holder: 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -172,6 +207,9 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
+
+
+
 -- ftd.column holder:
 optional caption title:
 optional body body:
@@ -179,17 +217,20 @@ boolean make-odd: false
 width: auto
 width $is-mobile: fill
 align: center
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-7
+margin-top if not $make-odd: $fpm.space.space-6
+margin-bottom: 54
 background-color: $fpm.color.main.background.step-1
 background-color if $make-odd: $fpm.color.main.background.base
-padding-top: 56
+padding-top : 56
+padding-top if $make-odd: 0
 padding-bottom: 32
+padding-bottom if $make-odd: 0
 padding-horizontal: $fpm.space.space-6
 open: true
 append-at: main-container
 
 --- ftd.row:
+if: not $make-odd
 width: 0
 height: 0
 border-top: 50
@@ -214,7 +255,6 @@ role: $fpm.type.heading-medium
 style: bold
 width: fill
 
-
 --- ftd.text: 
 if: $body is not null
 text: $body
@@ -222,14 +262,13 @@ color: $fpm.color.main.text
 role: $fpm.type.copy-relaxed
 width: fill
 
-
 --- ftd.column:
 id: main-container
-
 
 --- container: ftd.main
 
 --- ftd.row:
+if: not $make-odd
 width: 0
 height: 0
 border-top: 50
