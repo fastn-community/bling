@@ -199,10 +199,6 @@ border-top-color: $fpm.color.main.background.base
 border-bottom-color: $fpm.color.main.background.step-1
 border-left-color: $fpm.color.main.background.step-1
 border-right-color: $fpm.color.main.background.step-1
-border-top-color if $make-odd: $fpm.color.main.background.base
-border-bottom-color if $make-odd: $fpm.color.main.background.base
-border-left-color if $make-odd: $fpm.color.main.background.base
-border-right-color if $make-odd: $fpm.color.main.background.base
 anchor: parent
 left: 50
 top: 0
