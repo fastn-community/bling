@@ -219,7 +219,7 @@ width $is-mobile: fill
 align: center
 margin-top if not $make-odd: $fpm.space.space-6
 margin-bottom if not $make-odd: 54
-background-color: $fpm.color.main.background.step-1
+background-color: $fpm.color.main.border
 background-color if $make-odd: $fpm.color.main.background.base
 padding-top : 56
 padding-top if $make-odd: 0
@@ -237,9 +237,9 @@ border-top: 50
 border-left: 60
 border-right: 60
 border-top-color: $fpm.color.main.background.base
-border-bottom-color: $fpm.color.main.background.step-1
-border-left-color: $fpm.color.main.background.step-1
-border-right-color: $fpm.color.main.background.step-1
+border-bottom-color: $fpm.color.main.border
+border-left-color: $fpm.color.main.border
+border-right-color: $fpm.color.main.border
 anchor: parent
 left: 50
 top: 0
@@ -274,7 +274,7 @@ height: 0
 border-top: 50
 border-left: 60
 border-right: 60
-border-top-color: $fpm.color.main.background.step-1
+border-top-color: $fpm.color.main.border
 border-bottom-color: $fpm.color.main.background.base
 border-left-color: $fpm.color.main.background.base
 border-right-color: $fpm.color.main.background.base
