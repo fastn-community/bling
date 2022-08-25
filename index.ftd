@@ -23,6 +23,10 @@ name: fifthtry.github.io/bling
 `fifthtry.github.io/bling` is a component library which contains various `ftd` 
 components can be used on your pages. 
 
+Bling is for making most content pages more interesting. Normally content pages, like a blog 
+post, or news article etc, only have headings, single quote, image and code block. With bling 
+we are trying to create rich variety of components to spice up such blog posts.
+
 To use bling components on your web package, add below into `FPM.ftd` file:
 
 -- cb.code:
