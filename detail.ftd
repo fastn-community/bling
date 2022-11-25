@@ -43,7 +43,7 @@ files:
 lang: ftd
 
 \-- detail.detail: Lorem ipsum dolor
-show-open: true
+is-open: true
 
 \--- tf.markdown:
 
@@ -54,7 +54,7 @@ tempor incididunt.
 lang: ftd
  
 \-- detail.detail: Lorem ipsum dolor
- show-open: true
+ is-open: true
  
 \-- detail.detail: Lorem ipsum dolor
 
@@ -80,7 +80,7 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 -- detail: Lorem ipsum dolor
-show-open: true
+is-open: true
 
 --- tf.markdown:
 
@@ -91,7 +91,7 @@ tempor incididunt.
 lang: ftd
  
 \-- detail.detail: Lorem ipsum dolor
- show-open: true
+ is-open: true
 
 
 
@@ -125,10 +125,10 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 -- ftd.column detail:
 caption title:
-boolean show-open: false
+boolean is-open: false
 optional body body:
 spacing: 8
-$on-click$: toggle $show-open
+$on-click$: toggle $is-open
 max-width: 800
 string width: auto
 width: $width
@@ -143,13 +143,13 @@ id: text-container
 spacing: 8
 
 --- ftd.text: &#x25B6;
-if: not $show-open
+if: not $is-open
 padding-top: 2
 role: $fpm.type.fine-print
 width: 20
 
 --- ftd.text: &#x25BC;
-if: $show-open
+if: $is-open
 role: $fpm.type.fine-print
 padding-top: 2
 width: 20
@@ -164,7 +164,7 @@ color: $fpm.color.main.text
 
 --- ftd.column:
 width: fill
-if: $show-open
+if: $is-open
 id: code-container
 border-width: 1
 border-color: $fpm.color.main.border
