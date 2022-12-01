@@ -258,7 +258,7 @@ role: $fpm.type.label-big
 
 -- ftd.column message-left:
 optional caption title:
-ftd.image-src avatar: $assets.files.agent.png
+ftd.image-src avatar: $assets.files.amitu.jpg
 boolean round-avatar: false
 margin-bottom: $fpm.space.space-4
 integer pull-top: 0
@@ -319,7 +319,7 @@ margin-top: $pull-top
 
 -- ftd.column message-right:
 optional caption title:
-ftd.image-src avatar: $assets.files.user.png
+ftd.image-src avatar: $assets.files.ganeshs.jpeg
 boolean round-avatar: false
 margin-bottom: $fpm.space.space-4
 integer pull-top: 0
