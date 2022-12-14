@@ -170,7 +170,7 @@ margin-bottom: $fpm.space.space-6
 --- ftd.column:
 width: fill
 id: card-main
-spacing: 24
+spacing: 12
 
 --- ftd.row:
 width: fill
@@ -275,7 +275,7 @@ width: fill
 --- ftd.column:
 width: fill
 id: card-main
-spacing: 24
+spacing: 12
 
 --- ftd.row:
 width: fill
