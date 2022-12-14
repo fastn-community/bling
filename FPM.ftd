@@ -24,6 +24,7 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/bling/main
 
 - Badge: /badge/
 - Message: /chat/
+- Person Card: /person/
 - Tip: /tip/
 - Detail: /detail/
 - Note: /note/
