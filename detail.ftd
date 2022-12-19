@@ -1,4 +1,4 @@
-=-- import: fifthtry.github.io/bling/assets
+-- import: fifthtry.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
 
@@ -131,6 +131,7 @@ spacing: 8
 $on-click$: toggle $is-open
 max-width: 800
 string width: auto
+integer padding: $fpm.space.space-3
 width: $width
 open: true
 id: code-container
@@ -152,9 +153,8 @@ width: 20
 
 --- ftd.text: &#x25BC;
 if: $is-open
-role: $fpm.type.fine-print
+role: $fpm.type.copy-tight
 color: $color
-padding-top: 2
 width: 20
 
 --- container: text-container
@@ -172,7 +172,7 @@ id: code-container
 border-width: 1
 border-color: $fpm.color.main.border
 background-color: $fpm.color.main.background.step-1
-padding: $fpm.space.space-3
+padding: $padding
 border-radius: 4
 
 --- ftd.text:
