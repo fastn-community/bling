@@ -136,6 +136,7 @@ open: true
 id: code-container
 append-at: code-container
 margin-bottom: 28
+ftd.color color: $fpm.color.main.text
 
 
 --- ftd.row:
@@ -146,11 +147,13 @@ spacing: 8
 if: not $is-open
 padding-top: 2
 role: $fpm.type.fine-print
+color: $color
 width: 20
 
 --- ftd.text: &#x25BC;
 if: $is-open
 role: $fpm.type.fine-print
+color: $color
 padding-top: 2
 width: 20
 
@@ -158,7 +161,7 @@ width: 20
 
 --- ftd.text: $title
 role: $fpm.type.copy-tight
-color: $fpm.color.main.text
+color: $color
 
 --- container: ftd.main
 
