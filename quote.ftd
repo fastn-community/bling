@@ -2316,7 +2316,7 @@ margin-top: $fpm.space.space-10
 
 --- ftd.text: ~
 role: $fpm.type.copy-tight
-color: $fpm.color.main.custom.three
+color: $fpm.color.main.text
 margin-right: $fpm.space.space-2
 
 --- ftd.text: $title
