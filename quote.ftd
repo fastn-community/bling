@@ -2219,9 +2219,18 @@ optional caption title:
 body body:
 width: fill
 min-height: 300
-background-color: $fpm.color.main.custom.four
+background-color: $fpm.color.main.custom.seven
 margin-bottom: $fpm.space.space-8
 margin-top: $fpm.space.space-8
+padding-horizontal: $fpm.space.space-10
+padding-vertical: $fpm.space.space-10
+
+
+--- ftd.column:
+width: fill
+background-color: $fpm.color.main.background.base
+id: inner-wrap
+min-height: 250
 
 --- ftd.column:
 background-image: $assets.files.static.hexagon-10.svg
@@ -2232,7 +2241,7 @@ left: -62
 top: -32
 z-index: 99
 
---- container: ftd.main
+--- container: inner-wrap
 
 --- ftd.column:
 background-image: $assets.files.static.hexagon-11.svg
@@ -2243,7 +2252,7 @@ left: 44
 top: -34
 z-index: 99
 
---- container: ftd.main
+--- container: inner-wrap
 
 --- ftd.column:
 background-image: $assets.files.static.hexagon-12.svg
@@ -2254,7 +2263,7 @@ right: -24
 top: -54
 z-index: 99
 
---- container: ftd.main
+--- container: inner-wrap
 
 --- ftd.column:
 background-image: $assets.files.static.hexagon-13.svg
@@ -2265,7 +2274,7 @@ left: -44
 bottom: -44
 z-index: 99
 
---- container: ftd.main
+--- container: inner-wrap
 
 --- ftd.column:
 background-image: $assets.files.static.hexagon-14.svg
@@ -2276,7 +2285,7 @@ right: 60
 bottom: -34
 z-index: 999
 
---- container: ftd.main
+--- container: inner-wrap
 
 --- ftd.column:
 background-image: $assets.files.static.hexagon-9.svg
@@ -2287,22 +2296,29 @@ right: -44
 bottom: -34
 z-index: 99
 
---- container: ftd.main
+--- container: inner-wrap
 
 --- ftd.column:
 width: percent 70
 align: center
-padding-top: $fpm.space.space-8
+padding-top: $fpm.space.space-10
 
 --- ftd.text:
 text: $body
-role: $fpm.type.copy-large
-color: $fpm.color.main.custom.two
+role: $fpm.type.copy-tight
+color: $fpm.color.main.custom.three
 max-height: 200
 overflow-y: auto
 
---- ftd.text: $title
-role: $fpm.type.copy-large
+--- ftd.row:
+align: center
+margin-top: $fpm.space.space-10
+
+--- ftd.text: ~
+role: $fpm.type.copy-tight
 color: $fpm.color.main.custom.three
-margin-top: $fpm.space.space-8
-margin-left: 150
+margin-right: $fpm.space.space-2
+
+--- ftd.text: $title
+role: $fpm.type.copy-tight
+color: $fpm.color.main.custom.three
