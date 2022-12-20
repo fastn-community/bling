@@ -2252,102 +2252,10 @@ margin-top: $fpm.space.space-8
 padding-horizontal: $fpm.space.space-10
 padding-vertical: $fpm.space.space-10
 
---- ftd.column:
-width: fill
-background-color: $fpm.color.main.background.base
-id: inner-wrap
-min-height: 250
+--- octa-inner:
+title: $title
+body: $body
 
---- ftd.column:
-background-image: $assets.files.static.hexagon-10.svg
-width: 150
-height: 150
-anchor: parent
-left: -62
-top: -32
-z-index: 99
-
---- container: inner-wrap
-
---- ftd.column:
-background-image: $assets.files.static.hexagon-11.svg
-width: 80
-height: 80
-anchor: parent
-left: 44
-top: -34
-z-index: 99
-
---- container: inner-wrap
-
---- ftd.column:
-background-image: $assets.files.static.hexagon-12.svg
-width: 130
-height: 130
-anchor: parent
-right: -24
-top: -54
-z-index: 99
-
---- container: inner-wrap
-
---- ftd.column:
-background-image: $assets.files.static.hexagon-13.svg
-width: 140
-height: 140
-anchor: parent
-left: -44
-bottom: -44
-z-index: 99
-
---- container: inner-wrap
-
---- ftd.column:
-background-image: $assets.files.static.hexagon-14.svg
-width: 120
-height: 120
-anchor: parent
-right: 60
-bottom: -34
-z-index: 999
-
---- container: inner-wrap
-
---- ftd.column:
-background-image: $assets.files.static.hexagon-9.svg
-width: 150
-height: 150
-anchor: parent
-right: -44
-bottom: -34
-z-index: 99
-
---- container: inner-wrap
-
---- ftd.column:
-width: percent 70
-align: center
-padding-top: $fpm.space.space-10
-
---- ftd.text:
-text: $body
-role: $fpm.type.copy-tight
-color: $fpm.color.main.custom.three
-max-height: 200
-overflow-y: auto
-
---- ftd.row:
-align: center
-margin-top: $fpm.space.space-10
-
---- ftd.text: ~
-role: $fpm.type.copy-tight
-color: $fpm.color.main.text
-margin-right: $fpm.space.space-2
-
---- ftd.text: $title
-role: $fpm.type.copy-tight
-color: $fpm.color.main.custom.three
 
 
 
@@ -2370,11 +2278,30 @@ width: 750
 margin-left: -200
 margin-top: -70
 
+--- octa-inner:
+title: $title
+body: $body
+
+
+
+
+
+
+
+
+
+
+-- ftd.column octa-inner:
+optional caption title:
+body body:
+width: fill
+
 --- ftd.column:
 width: fill
 background-color: $fpm.color.main.background.base
 id: inner-wrap
 min-height: 250
+
 
 --- ftd.column:
 background-image: $assets.files.static.hexagon-10.svg
