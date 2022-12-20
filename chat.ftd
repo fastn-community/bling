@@ -101,7 +101,7 @@ lang: ftd
 
 \-- chat.message-left amitu:
 optional caption title:
-ftd.image-src avatar: $assets.files.amitu.jpg
+ftd.image-src avatar: $assets.files.static.amitu.jpg
 title: $title
 avatar: $avatar
 
@@ -111,7 +111,7 @@ lang: ftd
 
 \-- chat.message-right me:
 optional caption title:
-ftd.image-src avatar: $assets.files.ganeshs.jpeg
+ftd.image-src avatar: $assets.files.static.ganeshs.jpeg
 boolean rounded-image: true
 title: $title
 avatar: $avatar
@@ -139,11 +139,11 @@ border-radius: 20
 background-color: $fpm.color.main.background.base
 
 --- message-left: Hello World! liking `ftd` lang?
-avatar: $assets.files.amitu.jpg
+avatar: $assets.files.static.amitu.jpg
 round-avatar: true
 
 --- message-right: Hey! `ftd` is awesome! 🤘
-avatar: $assets.files.ganeshs.jpeg
+avatar: $assets.files.static.ganeshs.jpeg
 round-avatar: true
 
 
@@ -258,7 +258,7 @@ role: $fpm.type.label-big
 
 -- ftd.column message-left:
 optional caption title:
-ftd.image-src avatar: $assets.files.amitu.jpg
+ftd.image-src avatar: $assets.files.static.amitu.jpg
 boolean round-avatar: true
 margin-bottom: $fpm.space.space-4
 integer pull-top: 0
@@ -319,7 +319,7 @@ margin-top: $pull-top
 
 -- ftd.column message-right:
 optional caption title:
-ftd.image-src avatar: $assets.files.ganeshs.jpeg
+ftd.image-src avatar: $assets.files.static.ganeshs.jpeg
 boolean round-avatar: true
 margin-bottom: $fpm.space.space-4
 integer pull-top: 0

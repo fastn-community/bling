@@ -130,7 +130,7 @@ Output of above:
 
 
 -- ftd.column marker:
-ftd.image-src the-end: $assets.files.the-end-0.png
+ftd.image-src the-end: $assets.files.static.the-end-0.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto
@@ -152,7 +152,7 @@ height: auto
 
 
 -- ftd.column pen:
-ftd.image-src the-end: $assets.files.the-end-1.png
+ftd.image-src the-end: $assets.files.static.the-end-1.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto
@@ -174,7 +174,7 @@ height: auto
 
 
 -- ftd.column ballet:
-ftd.image-src the-end: $assets.files.the-end-3.png
+ftd.image-src the-end: $assets.files.static.the-end-3.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto
@@ -196,7 +196,7 @@ height: auto
 
 
 -- ftd.column brush:
-ftd.image-src the-end: $assets.files.the-end-4.png
+ftd.image-src the-end: $assets.files.static.the-end-4.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto

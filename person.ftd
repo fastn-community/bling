@@ -42,7 +42,7 @@ Create a list of persons using below list format:
 
 \-- persons-data : Amit Upadhyay
 profile: CEO, FifthTry Pvt. Ltd.
-avatar: $assets.files.amitu.jpg
+avatar: $assets.files.static.amitu.jpg
 email: amitu@fifthtry.com
 phone: +91 1234123412
 address: 66737 Reinke Park, Banglore - 560068
@@ -52,7 +52,7 @@ game, Chai Garam game
 
 \-- persons-data: Ganesh Salunke
 profile: Senior Frontend Manager
-avatar: $assets.files.ganeshs.jpg
+avatar: $assets.files.static.ganeshs.jpg
 email: ganesh@fifthtry.com
 phone: +91 222123412
 address: 6 Spenser Drive, Banglore - 560068
@@ -89,7 +89,7 @@ lang: ftd
 
 \-- person.persona-card: Amit Upadhyay
 profile: CEO, FifthTry Pvt. Ltd.
-avatar: $assets.files.amitu.jpg
+avatar: $assets.files.static.amitu.jpg
 email: amitu@fifthtry.com
 phone: +91 1234123412
 address: 66737 Reinke Park, Banglore - 560068
@@ -105,7 +105,7 @@ Output of above:
 
 -- persona-card: Amit Upadhyay
 profile: CEO, FifthTry Pvt. Ltd.
-avatar: $assets.files.amitu.jpg
+avatar: $assets.files.static.amitu.jpg
 email: amitu@fifthtry.com
 phone: +91 1234123412
 address: 66737 Reinke Park, Banglore - 560068
@@ -151,7 +151,7 @@ body: $obj.body
 
 -- ftd.column persona-card:
 caption title:
-optional ftd.image-src avatar: $assets.files.amitu.jpg
+optional ftd.image-src avatar: $assets.files.static.amitu.jpg
 optional string profile:
 optional string email:
 optional string phone:
@@ -256,7 +256,7 @@ color: $fpm.color.main.text-strong
 
 -- ftd.column person-data:
 caption title:
-optional ftd.image-src avatar: $assets.files.amitu.jpg
+optional ftd.image-src avatar: $assets.files.static.amitu.jpg
 optional string profile:
 optional string email:
 optional string phone:
@@ -374,7 +374,7 @@ optional body body:
 
 -- persons-data: Amit Upadhyay
 profile: CEO, FifthTry Pvt. Ltd.
-avatar: $assets.files.amitu.jpg
+avatar: $assets.files.static.amitu.jpg
 email: amitu@fifthtry.com
 phone: +91 1234123412
 address: 66737 Reinke Park, Banglore - 560068
@@ -386,7 +386,7 @@ Garam game
 
 -- persons-data: Ganesh Salunke
 profile: Senior Frontend Manager
-avatar: $assets.files.ganeshs.jpeg
+avatar: $assets.files.static.ganeshs.jpeg
 email: ganesh@fifthtry.com
 phone: +91 222123412
 address: 6 Spenser Drive, Banglore - 560068

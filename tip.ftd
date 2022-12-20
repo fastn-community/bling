@@ -125,7 +125,7 @@ role: $fpm.type.copy-relaxed
 -- ftd.column tip:
 optional caption title:
 optional body body:
-optional ftd.image-src avatar: $assets.files.amitu.jpg
+optional ftd.image-src avatar: $assets.files.static.amitu.jpg
 border-color: $fpm.color.main.border
 background-color: $fpm.color.main.background.step-1
 padding: $fpm.space.space-4

@@ -538,8 +538,8 @@ end-mark: true
 -- ftd.column heart-end:
 boolean end-mark: false
 optional caption title:
-ftd.image-src divider-icon: $assets.files.divider-1.svg
-optional ftd.image-src the-end: $assets.files.the-end-0.png
+ftd.image-src divider-icon: $assets.files.static.divider-1.svg
+optional ftd.image-src the-end: $assets.files.static.the-end-0.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto
@@ -581,8 +581,8 @@ margin-top: $fpm.space.space-4
 -- ftd.column diamond:
 boolean end-mark: false
 optional caption title:
-ftd.image-src divider-icon: $assets.files.divider-2.svg
-optional ftd.image-src the-end: $assets.files.the-end-1.png
+ftd.image-src divider-icon: $assets.files.static.divider-2.svg
+optional ftd.image-src the-end: $assets.files.static.the-end-1.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto
@@ -624,8 +624,8 @@ margin-top: $fpm.space.space-4
 -- ftd.column arrow:
 boolean end-mark: false
 optional caption title:
-ftd.image-src divider-icon: $assets.files.divider-3.svg
-optional ftd.image-src the-end: $assets.files.the-end-2.png
+ftd.image-src divider-icon: $assets.files.static.divider-3.svg
+optional ftd.image-src the-end: $assets.files.static.the-end-2.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto
@@ -667,8 +667,8 @@ margin-top: $fpm.space.space-4
 -- ftd.column wavy:
 boolean end-mark: false
 optional caption title:
-ftd.image-src divider-icon: $assets.files.divider-4.svg
-optional ftd.image-src the-end: $assets.files.the-end-3.png
+ftd.image-src divider-icon: $assets.files.static.divider-4.svg
+optional ftd.image-src the-end: $assets.files.static.the-end-3.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto
@@ -705,8 +705,8 @@ margin-top: $fpm.space.space-4
 -- ftd.column angled:
 boolean end-mark: false
 optional caption title:
-ftd.image-src divider-icon: $assets.files.divider-5.svg
-optional ftd.image-src the-end: $assets.files.the-end-4.png
+ftd.image-src divider-icon: $assets.files.static.divider-5.svg
+optional ftd.image-src the-end: $assets.files.static.the-end-4.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto
@@ -748,8 +748,8 @@ margin-top: $fpm.space.space-4
 -- ftd.column lines:
 optional caption title:
 boolean end-mark: false
-ftd.image-src divider-icon: $assets.files.divider-6.svg
-optional ftd.image-src the-end: $assets.files.the-end-4.png
+ftd.image-src divider-icon: $assets.files.static.divider-6.svg
+optional ftd.image-src the-end: $assets.files.static.the-end-4.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto
@@ -791,8 +791,8 @@ margin-top: $fpm.space.space-4
 -- ftd.column rounded:
 boolean end-mark: false
 optional caption title:
-ftd.image-src divider-icon: $assets.files.divider-8.svg
-optional ftd.image-src the-end: $assets.files.the-end-0.png
+ftd.image-src divider-icon: $assets.files.static.divider-8.svg
+optional ftd.image-src the-end: $assets.files.static.the-end-0.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto
@@ -834,8 +834,8 @@ margin-top: $fpm.space.space-4
 -- ftd.column rigger:
 boolean end-mark: false
 optional caption title:
-ftd.image-src divider-icon: $assets.files.divider-9.svg
-optional ftd.image-src the-end: $assets.files.the-end-0.png
+ftd.image-src divider-icon: $assets.files.static.divider-9.svg
+optional ftd.image-src the-end: $assets.files.static.the-end-0.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto

@@ -93,8 +93,8 @@ lang: ftd
 
 \-- quote.charcoal: Amit Upadhyay
 label: CEO
-avatar: $assets.files.amitu.jpg
-logo: $assets.files.fifthtry.svg
+avatar: $assets.files.static.amitu.jpg
+logo: $assets.files.static.fifthtry.svg
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
 eiusmod tempor incididunt ut labore et dolore magna aliqua..
@@ -106,8 +106,8 @@ Output of above:
 
 --- charcoal: Amit Upadhyay
 label: CEO
-avatar: $assets.files.amitu.jpg
-logo: $assets.files.fifthtry.svg
+avatar: $assets.files.static.amitu.jpg
+logo: $assets.files.static.fifthtry.svg
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 tempor incididunt ut labore et dolore magna aliqua..
@@ -531,6 +531,24 @@ make you spiritual. There is no other teacher but your own soul.”
 
 
 
+-- tf.h3: 19: `-- octa`
+
+--- cb.code: Example code for `-- octa`
+lang: ftd
+
+\-- quote.octa: Swami Vivekananda
+
+
+“Take up one idea. Make that one idea your life; dream of it; think of it; live on that idea. Let the brain, the body, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success, and this is the way great spiritual giants are produced.”
+
+--- tf.markdown: 
+
+Output of above:
+
+-- octa: Swami Vivekananda
+
+
+“Take up one idea. Make that one idea your life; dream of it; think of it; live on that idea. Let the brain, the body, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success, and this is the way great spiritual giants are produced.”
 
 
 
@@ -545,7 +563,7 @@ make you spiritual. There is no other teacher but your own soul.”
 
 -- ftd.column charcoal:
 optional caption title:
-optional ftd.image-src quote-icon: $assets.files.quotes.svg
+optional ftd.image-src quote-icon: $assets.files.static.quotes.svg
 optional body body: 
 optional ftd.image-src avatar:
 optional ftd.image-src logo:
@@ -575,7 +593,7 @@ backgroundcolor: $backgroundcolor
 
 -- ftd.column quote-desktop:
 optional caption title:
-optional ftd.image-src quote-icon: $assets.files.quotes.svg
+optional ftd.image-src quote-icon: $assets.files.static.quotes.svg
 optional body body: 
 optional ftd.image-src avatar:
 optional ftd.image-src logo:
@@ -668,7 +686,7 @@ color: $fpm.color.main.text
 
 -- ftd.column quote-mobile:
 optional caption title:
-optional ftd.image-src quote-icon: $assets.files.quotes.svg
+optional ftd.image-src quote-icon: $assets.files.static.quotes.svg
 optional body body: 
 optional ftd.image-src avatar:
 optional ftd.image-src logo:
@@ -1197,7 +1215,7 @@ width: fill
 padding-vertical: $fpm.space.space-7
 align: center
 max-width: 600
-optional ftd.image-src backgroundimage: $assets.files.quotes.svg
+optional ftd.image-src backgroundimage: $assets.files.static.quotes.svg
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 
@@ -1248,7 +1266,7 @@ optional caption title:
 body body:
 ftd.color backgroundcolor: $fpm.color.main.background.step-1
 background-color: $backgroundcolor
-optional ftd.image-src quote-logo: $assets.files.left-quote-circle.png
+optional ftd.image-src quote-logo: $assets.files.static.left-quote-circle.png
 padding-vertical: $fpm.space.space-6
 border-left: 5
 padding-right:$fpm.space.space-7
@@ -1324,7 +1342,7 @@ padding-vertical: 32
 padding-horizontal: 32
 gradient-direction: top to bottom
 gradient-colors: grey, black
-ftd.image-src logo: $assets.files.quote.png
+ftd.image-src logo: $assets.files.static.quote.png
 width: fill
 max-width: 800
 align: center
@@ -1392,7 +1410,7 @@ padding-vertical: $fpm.space.space-4
 padding-horizontal: $fpm.space.space-4
 gradient-direction: top to bottom
 gradient-colors: grey, black
-ftd.image-src logo: $assets.files.quote.png
+ftd.image-src logo: $assets.files.static.quote.png
 width: fill
 max-width: 800
 align: center
@@ -1511,8 +1529,8 @@ bottom: -16
 
 -- ftd.row vampire:
 optional caption title:
-ftd.image-src left-logo: $assets.files.left-quote.png
-ftd.image-src right-logo: $assets.files.right-quote-sign.png
+ftd.image-src left-logo: $assets.files.static.left-quote.png
+ftd.image-src right-logo: $assets.files.static.right-quote-sign.png
 body body:
 width if not $is-mobile: auto
 width if $is-mobile: fill
@@ -1571,8 +1589,8 @@ width: 24
 -- ftd.column rustic:
 optional caption title:
 body body: 
-ftd.image-src left-logo: $assets.files.left-quote.png
-ftd.image-src right-logo: $assets.files.right-quote-sign.png
+ftd.image-src left-logo: $assets.files.static.left-quote.png
+ftd.image-src right-logo: $assets.files.static.right-quote-sign.png
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 width: auto
@@ -1632,7 +1650,7 @@ bottom: 0
 
 -- ftd.column echo:
 optional caption title:
-ftd.image-src logo: $assets.files.right-quote-sign.png
+ftd.image-src logo: $assets.files.static.right-quote-sign.png
 width: fill
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
@@ -1844,7 +1862,7 @@ color: $fpm.color.main.text
 
 
 -- ftd.row antique:
-ftd.image-src avatar: $assets.files.socrates.png
+ftd.image-src avatar: $assets.files.static.socrates.png
 optional caption title:
 body body:
 width if not $is-mobile: auto
@@ -1913,7 +1931,7 @@ color: $fpm.color.main.text
 
 
 -- ftd.row bubble:
-ftd.image-src avatar: $assets.files.socrates.png
+ftd.image-src avatar: $assets.files.static.socrates.png
 optional caption title:
 body body:
 width: fill
@@ -1936,7 +1954,7 @@ body: $body
 
 
 -- ftd.row quote-14-desktop:
-ftd.image-src avatar: $assets.files.quotes-bg.jpeg
+ftd.image-src avatar: $assets.files.static.quotes-bg.jpeg
 optional caption title:
 body body:
 width if not $is-mobile: auto
@@ -1985,7 +2003,7 @@ color: $fpm.color.main.text
 
 
 -- ftd.row quote-14-mobile:
-ftd.image-src avatar: $assets.files.quotes-bg.jpeg
+ftd.image-src avatar: $assets.files.static.quotes-bg.jpeg
 optional caption title:
 body body:
 width if not $is-mobile: auto
@@ -2034,7 +2052,7 @@ color: $fpm.color.main.text
 
 
 -- ftd.row electric:
-ftd.image-src avatar: $assets.files.socrates.png
+ftd.image-src avatar: $assets.files.static.socrates.png
 optional caption title:
 body body:
 width if not $is-mobile: auto
@@ -2109,7 +2127,7 @@ border-radius: 16
 border-width: 2
 padding-vertical: $fpm.space.space-6
 padding-horizontal: $fpm.space.space-6
-ftd.image-src quote-icon: $assets.files.quotes.svg
+ftd.image-src quote-icon: $assets.files.static.quotes.svg
 width: auto
 width $is-mobile: fill
 align: center
@@ -2186,3 +2204,105 @@ padding-vertical: $fpm.space.space-6
 padding-horizontal: $fpm.space.space-6
 width: fill
 border-bottom-radius: 8
+
+
+
+
+
+
+
+
+
+
+-- ftd.column octa:
+optional caption title:
+body body:
+width: fill
+min-height: 300
+background-color: $fpm.color.main.custom.four
+margin-bottom: $fpm.space.space-8
+margin-top: $fpm.space.space-8
+
+--- ftd.column:
+background-image: $assets.files.static.hexagon-10.svg
+width: 150
+height: 150
+anchor: parent
+left: -62
+top: -32
+z-index: 99
+
+--- container: ftd.main
+
+--- ftd.column:
+background-image: $assets.files.static.hexagon-11.svg
+width: 80
+height: 80
+anchor: parent
+left: 44
+top: -34
+z-index: 99
+
+--- container: ftd.main
+
+--- ftd.column:
+background-image: $assets.files.static.hexagon-12.svg
+width: 130
+height: 130
+anchor: parent
+right: -24
+top: -54
+z-index: 99
+
+--- container: ftd.main
+
+--- ftd.column:
+background-image: $assets.files.static.hexagon-13.svg
+width: 140
+height: 140
+anchor: parent
+left: -44
+bottom: -44
+z-index: 99
+
+--- container: ftd.main
+
+--- ftd.column:
+background-image: $assets.files.static.hexagon-14.svg
+width: 120
+height: 120
+anchor: parent
+right: 60
+bottom: -34
+z-index: 999
+
+--- container: ftd.main
+
+--- ftd.column:
+background-image: $assets.files.static.hexagon-9.svg
+width: 150
+height: 150
+anchor: parent
+right: -44
+bottom: -34
+z-index: 99
+
+--- container: ftd.main
+
+--- ftd.column:
+width: percent 70
+align: center
+padding-top: $fpm.space.space-8
+
+--- ftd.text:
+text: $body
+role: $fpm.type.copy-large
+color: $fpm.color.main.custom.two
+max-height: 200
+overflow-y: auto
+
+--- ftd.text: $title
+role: $fpm.type.copy-large
+color: $fpm.color.main.custom.three
+margin-top: $fpm.space.space-8
+margin-left: 150
