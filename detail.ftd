@@ -125,6 +125,7 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 -- ftd.column detail:
 caption title:
+optional string info-right:
 boolean is-open: false
 optional body body:
 spacing: 8
@@ -141,8 +142,12 @@ ftd.color color: $fpm.color.main.text
 
 
 --- ftd.row:
+width: fill
 id: text-container
 spacing: 8
+
+--- ftd.row:
+width: fill
 
 --- ftd.text: &#x25B6;
 if: not $is-open
@@ -157,11 +162,18 @@ role: $fpm.type.copy-tight
 color: $color
 width: 20
 
---- container: text-container
-
 --- ftd.text: $title
 role: $fpm.type.copy-tight
 color: $color
+
+--- container: text-container
+
+--- ftd.text: $info-right
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+white-space: nowrap
+align: right
+margin-top: $fpm.space.space-0
 
 --- container: ftd.main
 
