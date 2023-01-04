@@ -173,7 +173,7 @@ role: $fpm.type.fine-print
 color: $fpm.color.main.text
 white-space: nowrap
 align: right
-margin-top: $fpm.space.space-0
+margin-top: $fpm.space.space-1
 
 --- container: ftd.main
 
