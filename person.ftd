@@ -1,11 +1,16 @@
 -- import: fifthtry.github.io/bling/assets
--- import: fifthtry.github.io/package-doc/doc as pd
+;;-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: $inherited.colors.background.base
+padding-vertical.px.px: 24
+padding-horizontal.px.px: 24
 
-
--- ft.page: `person` and it's Usage
+/-- ft.page: `person` and it's Usage
 
 Badges can be used as part of any component and are available in below formats:
 
@@ -13,12 +18,12 @@ Badges can be used as part of any component and are available in below formats:
 
 
 
--- pd.package: `person`
+/-- pd.package: `person`
 name: fifthtry.github.io/bling/person
 
 Create a single person card OR person cards list using your excel sheet data. 
 
--- cb.code:
+/-- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
@@ -33,7 +38,7 @@ Below is example of `persona-list`.
 Once you add above lines into your web package, add `persona-list` into your 
 `.ftd` files:
 
--- cb.code:
+/-- cb.code:
 lang: ftd
 
 Create a list of persons using below list format:
@@ -64,7 +69,7 @@ minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
 \-- person.persona-list:
 persons: $persons-data
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
@@ -83,7 +88,7 @@ Below is example of `persona-card`.
 Once you add above lines into your web package, add `persona-list` into your 
 `.ftd` files:
 
--- cb.code:
+/-- cb.code:
 lang: ftd
 
 
@@ -98,7 +103,7 @@ address: 66737 Reinke Park, Banglore - 560068
 Sunglass(1, 2, 3), Dare to be scared book 😜, codename game, Bharat
 game, Chai Garam game
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
@@ -115,6 +120,7 @@ Sunglass(1, 2, 3), Dare to be scared book 😜, codename game, Bharat game, Chai
 Garam game
 
 
+-- end: ftd.column
 
 
 
@@ -126,13 +132,14 @@ Garam game
 
 
 
-
--- ftd.column persona-list:
+-- component persona-list:
 person list persons:
-width: fill
 
---- person-data: $obj.title
-$loop$: $persons as $obj
+-- ftd.column:
+width: fill-container
+
+/-- person-data: $obj.title
+$loop$: $person as $obj
 avatar: $obj.avatar
 profile: $obj.profile
 email: $obj.email
@@ -140,7 +147,11 @@ phone: $obj.phone
 address: $obj.address
 body: $obj.body
 
---- container: ftd.main
+
+
+-- end: ftd.column
+
+-- end: persona-list
 
 
 
@@ -149,7 +160,9 @@ body: $obj.body
 
 
 
--- ftd.column persona-card:
+
+
+-- component persona-card:
 caption title:
 optional ftd.image-src avatar: $assets.files.static.amitu.jpg
 optional string profile:
@@ -158,92 +171,98 @@ optional string phone:
 optional string address:
 optional body body:
 boolean show-address: false
-width: fill
-background-color: $fpm.color.main.background.step-1
-padding-horizontal: $fpm.space.space-4
-padding-vertical: $fpm.space.space-4
-border-width: 1
-border-color: $fpm.color.main.border
-border-radius: 6
-margin-bottom: $fpm.space.space-6
 
---- ftd.column:
-width: fill
-id: card-main
-spacing: 12
+-- ftd.column:
+width: fill-container
+background.solid: $inherited.colors.background.step-1
+padding-horizontal.px: 16
+padding-vertical.px: 16
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 6
+margin-bottom.px:24
 
---- ftd.row:
-width: fill
-id: profile-row
-spacing: 24
+-- ftd.column:
+width: fill-container
+;;id: card-main
+spacing.px: 12
 
---- ftd.column:
+-- ftd.row:
+width: fill-container
+;;id: profile-row
+spacing.px: 24
 
---- ftd.image:
-if: $avatar is not null
-src: $avatar
-border-radius: 500
-width: 64
-height: 64
+-- ftd.column:
 
---- container: profile-row
+-- ftd.image:
+if: {$persona-card.avatar != NULL}
+src: $persona-card.avatar
+border-radius.px: 500
+width.fixed.px: 64
+height.fixed.px: 64
 
---- ftd.column:
-width: fill
-spacing: 12
-id: user-info
+-- end: ftd.column
 
---- ftd.text: $title
-role: $fpm.type.copy-large
-color: $fpm.color.main.text-strong
-style: bold
+-- end: ftd.row
 
---- ftd.row:
-width: fill
-spacing: 18
+-- ftd.column:
+width: fill-container
+spacing.px: 12
+;;id: user-info
 
---- ftd.text: $profile
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
+-- ftd.text: $persona-card.title
+role: $inherited.types.copy-large
+color: $inherited.colors.text-strong
+;;style: bold
 
---- ftd.text: $email
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
+-- ftd.row:
+width: fill-container
+spacing.px: 18
 
---- ftd.text: $phone
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
+-- ftd.text: $persona-card.profile
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
---- ftd.text: 🏠
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
-$on-mouse-enter$: $show-address = true
-$on-mouse-leave$: $show-address = false
-$on-click$: $show-address = true
+-- ftd.text: $persona-card.email
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
---- container: user-info
+-- ftd.text: $persona-card.phone
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
---- ftd.column:
-min-height: 18
-width: fill
+-- ftd.text: 🏠
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+;;$on-mouse-enter$: $show-address = true
+;;$on-mouse-leave$: $show-address = false
+;;$on-click$: $show-address = true
 
---- ftd.text: $address
-if: $show-address
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
+-- end: ftd.row
 
---- container: user-info
+-- end: ftd.column
 
+-- ftd.column:
+min-height.fixed.px: 18
+width: fill-container
 
---- container: card-main
+-- ftd.text: $persona-card.address
+if: { $persona-card.show-address }
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
---- ftd.text:
-text: $body
-role: $fpm.type.copy-tight
-color: $fpm.color.main.text-strong
+-- end: ftd.column
 
+-- end: ftd.column
 
---- container: ftd.main
+-- ftd.text:
+text: $persona-card.body
+role: $inherited.types.copy-tight
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- end: persona-card
 
 
 
@@ -263,91 +282,94 @@ optional string phone:
 optional string address:
 optional body body:
 boolean show-address: false
-background-color: $fpm.color.main.background.step-1
-padding-horizontal: $fpm.space.space-4
-padding-vertical: $fpm.space.space-4
-border-width: 1
-border-color: $fpm.color.main.border
-border-radius: 6
-margin-bottom: $fpm.space.space-6
-width: fill
+background.solid: $inherited.colors.background.step-1
+padding-horizontal.px: 16
+padding-vertical.px: 16
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 6
+margin-bottom.px:24
+width: fill-container
 
---- ftd.column:
-width: fill
-id: card-main
-spacing: 12
+-- ftd.column:
+width: fill-container
+;;id: card-main
+spacing.px: 12
 
---- ftd.row:
-width: fill
-id: profile-row
-spacing: 24
+-- ftd.row:
+width: fill-container
+;;id: profile-row
+spacing.px: 24
 
---- ftd.column:
+-- ftd.column:
 
---- ftd.image:
-if: $avatar is not null
-src: $avatar
-border-radius: 500
+-- ftd.image:
+if: {$person-data.avatar != NULL}
+src: $person-data.avatar
+border-radius.px: 500
 width: 64
 height: 64
 
---- container: profile-row
+-- end: ftd.column
 
---- ftd.column:
-width: fill
-spacing: 12
-id: user-info
+-- end: ftd.row
 
---- ftd.text: $title
-role: $fpm.type.copy-large
-color: $fpm.color.main.text-strong
-style: bold
+-- ftd.column:
+width: fill-container
+spacing.px: 12
+;;id: user-info
 
---- ftd.row:
-width: fill
-spacing: 18
+-- ftd.text: $person-data.title
+role: $inherited.types.copy-large
+color: $inherited.colors.text-strong
+;;style: bold
 
---- ftd.text: $profile
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
+-- ftd.row:
+width: fill-container
+spacing.px: 18
 
---- ftd.text: $email
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
+-- ftd.text: $person-data.profile
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
---- ftd.text: $phone
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
+-- ftd.text: $person-data.email
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
---- ftd.text: 🏠
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
-$on-mouse-enter$: $show-address = true
-$on-mouse-leave$: $show-address = false
-$on-click$: $show-address = true
+-- ftd.text: $person-data.phone
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
---- container: user-info
+-- ftd.text: 🏠
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+;;$on-mouse-enter$: $show-address = true
+;;$on-mouse-leave$: $show-address = false
+;;$on-click$: $show-address = true
 
---- ftd.column:
-min-height: 18
-width: fill
+-- end: ftd.row
 
---- ftd.text: $address
-if: $show-address
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
+-- ftd.column:
+min-height.fixed.px: 18
+width: fill-container
 
---- container: user-info
+-- ftd.text: $person-data.address
+if: {$person-data.show-address}
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
+-- end: ftd.column
 
---- container: card-main
+-- end: ftd.column
 
---- ftd.text:
-text: $body
-role: $fpm.type.copy-tight
-color: $fpm.color.main.text-strong
+-- ftd.text:
+text: $person-data.body
+role: $inherited.types.copy-tight
+color: $inherited.colors.text-strong
 
+-- end: ftd.column
 
+-- end: person-data
 
 
 
@@ -372,7 +394,7 @@ optional body body:
 
 -- person list persons-data:
 
--- persons-data: Amit Upadhyay
+-- person: Amit Upadhyay
 profile: CEO, FifthTry Pvt. Ltd.
 avatar: $assets.files.static.amitu.jpg
 email: amitu@fifthtry.com
@@ -384,7 +406,7 @@ Sunglass(1, 2, 3), Dare to be scared book 😜, codename game, Bharat game, Chai
 Garam game
 
 
--- persons-data: Ganesh Salunke
+-- person: Ganesh Salunke
 profile: Senior Frontend Manager
 avatar: $assets.files.static.ganeshs.jpeg
 email: ganesh@fifthtry.com
@@ -394,3 +416,5 @@ address: 6 Spenser Drive, Banglore - 560068
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
 minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+
+-- end: persons-data

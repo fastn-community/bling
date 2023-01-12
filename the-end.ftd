@@ -1,16 +1,19 @@
 -- import: fifthtry.github.io/bling/assets
--- import: fifthtry.github.io/package-doc/doc as pd
-
--- boolean is-mobile: false
-
--- is-mobile: true
-if: $ftd.device == mobile
+;;-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
 
+-- ftd.column:
+width: fill-container
+height: hug-content
+background.solid: $inherited.colors.background.base
+padding-vertical.px.px: 24
+padding-horizontal.px.px: 24
 
--- ft.page: `the-end` and it's Usage
+
+
+/-- ft.page: `the-end` and it's Usage
 
 `-- the-end` can be used as part of blog posts, books, section OR chapter end 
 etc.
@@ -20,12 +23,12 @@ etc.
 
 
 
--- pd.package: `the-end` and it's Usage
+/-- pd.package: `the-end` and it's Usage
 name: fifthtry.github.io/bling/the-end
 
 To use `the-end` on your web package, add below into `FPM.ftd` file:
 
--- cb.code:
+/-- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
@@ -49,12 +52,12 @@ files:
 
 -- tf.h3: 1: `-- marker`
 
---- cb.code: Example code for `-- marker`
+/-- cb.code: Example code for `-- marker`
 lang: ftd
 
 \-- the-end.marker: 
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
@@ -67,12 +70,12 @@ Output of above:
 
 -- tf.h3: 2: `-- pen`
 
---- cb.code: Example code for `-- pen`
+/-- cb.code: Example code for `-- pen`
 lang: ftd
 
 \-- the-end.pen: 
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
@@ -86,12 +89,12 @@ Output of above:
 
 -- tf.h3: 3: `-- ballet`
 
---- cb.code: Example code for `-- ballet`
+/-- cb.code: Example code for `-- ballet`
 lang: ftd
 
 \-- the-end.ballet: 
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
@@ -105,12 +108,12 @@ Output of above:
 
 -- tf.h3: 4: `-- brush`
 
---- cb.code: Example code for `-- brush`
+/-- cb.code: Example code for `-- brush`
 lang: ftd
 
 \-- the-end.brush: 
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
@@ -118,6 +121,7 @@ Output of above:
 -- brush: 
 
 
+-- end: ftd.column
 
 
 
@@ -128,20 +132,24 @@ Output of above:
 
 
 
-
--- ftd.column marker:
+-- component marker:
 ftd.image-src the-end: $assets.files.static.the-end-0.png
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-width: auto
-align: center
 
---- ftd.image:
-src: $the-end
-width: 200
-width if $is-mobile: 150
+-- ftd.column:
+margin-top.px: 24
+margin-bottom.px: 24
+width: auto
+align-self: center
+
+-- ftd.image:
+src: $marker.the-end
+width.fixed.px: 200
+width.fixed.px if { ftd.device == "mobile" }: 150
 height: auto
 
+-- end: ftd.column
+
+-- end: marker
 
 
 
@@ -151,20 +159,26 @@ height: auto
 
 
 
--- ftd.column pen:
+
+-- component pen:
 ftd.image-src the-end: $assets.files.static.the-end-1.png
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-width: auto
-align: center
 
---- ftd.image:
-src: $the-end
-width: 200
-width if $is-mobile: 150
+-- ftd.column:
+margin-top.px: 24
+margin-bottom.px: 24
+width: auto
+align-self: center
+
+-- ftd.image:
+src: $pen.the-end
+width.fixed.px: 200
+width.fixed.px if { ftd.device == "mobile" }: 150
 height: auto
 
 
+-- end: ftd.column
+
+-- end: pen
 
 
 
@@ -172,38 +186,45 @@ height: auto
 
 
 
-
--- ftd.column ballet:
+-- component ballet:
 ftd.image-src the-end: $assets.files.static.the-end-3.png
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-width: auto
-align: center
 
---- ftd.image:
-src: $the-end
-width: 200
-width if $is-mobile: 150
+-- ftd.column:
+margin-top.px: 24
+margin-bottom.px: 24
+width: auto
+align-self: center
+
+-- ftd.image:
+src: $ballet.the-end
+width.fixed.px: 200
+width.fixed.px if { ftd.device == "mobile" }: 150
 height: auto
 
+-- end: ftd.column
+
+-- end: ballet
 
 
 
 
 
 
-
-
-
--- ftd.column brush:
+-- component brush:
 ftd.image-src the-end: $assets.files.static.the-end-4.png
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-width: auto
-align: center
 
---- ftd.image:
-src: $the-end
-width: 200
-width if $is-mobile: 150
+-- ftd.column:
+margin-top.px: 24
+margin-bottom.px: 24
+width: auto
+align-self: center
+
+-- ftd.image:
+src: $brush.the-end
+width.fixed.px: 200
+width.fixed.px if { ftd.device == "mobile" }: 150
 height: auto
+
+-- end: ftd.column
+
+-- end: brush

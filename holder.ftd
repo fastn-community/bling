@@ -1,43 +1,40 @@
--- import: fifthtry.github.io/package-doc/doc as pd
-
--- boolean is-mobile: false
-
--- is-mobile: true
-if: $ftd.device == mobile
+;;-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
 
 
--- ft.page: `holder` and it's Usage
+-- ftd.column:
+width: fill-container
+height: hug-content
+background.solid: $inherited.colors.background.base
+padding-vertical.px: 24
+padding-horizontal.px: 24
+
+/-- ft.page: `holder` and it's Usage
 
 `-- holder` component is a `FTD` container. Here you can add any `ftd` component
 Or any `ftd` code. `-- holder` comes with different UI. Showing below a example of
 `triangular` container.
 
--- ftd.column:
-width: fill
-id: change-container
-
--- pd.package: `holder`
+/-- pd.package: `holder`
 name: fifthtry.github.io/bling/holder
 
 `holder` is a new conversation experience via using `FTD` lang:
 To use `holder` on your web package, add below into `FPM.ftd` file:
 
--- cb.code:
+/-- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
 \-- fpm.auto-import: fifthtry.github.io/bling/holder
-
 
 -- tf.markdown:
 
 Once you add above lines into your web package, add `holder` into your `.ftd` 
 files:
 
--- pd.hidden-code: `-- holder.triangular`
+/-- pd.hidden-code: `-- holder.triangular`
 
 \-- holder.triangular: This is your Title
 
@@ -45,12 +42,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 
-
-
-
-
-
--- tf.h3: Output of above  example:
+-- tf.h3: Output of above example:
 
 -- triangular: This is your Title
 
@@ -58,13 +50,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
--- container: change-container
-
-
-
-
-
--- pd.hidden-code: Multiple `-- holder.triangular` containers:
+/-- pd.hidden-code: Multiple `-- holder.triangular` containers:
 
 \-- holder.triangular: 
 
@@ -72,16 +58,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 
-\--- ft.code:
+\-- ft.code:
 lang: ftd
 
 \-- ftd.column holder:
 optional caption title:
 optional body body:
 width: auto
-width $is-mobile: fill
+width { ftd.device == "mobile" }: fill-container
 
-\--- ft.markdown:
+\-- ft.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -94,16 +80,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 
-\--- ft.code:
+\-- ft.code:
 lang: ftd
 
 \-- ftd.column holder:
 optional caption title:
 optional body body:
 width: auto
-width $is-mobile: fill
+width { ftd.device == "mobile" }: fill-container
 
-\--- ft.markdown:
+\-- ft.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -115,26 +101,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 
-\--- ft.code:
+\-- ft.code:
 lang: ftd
 
 \-- ftd.column holder:
 optional caption title:
 optional body body:
 width: auto
-width $is-mobile: fill
+width { ftd.device == "mobile" }: fill-container
 
-\--- ft.markdown:
+\-- ft.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-
-
-
-
-
-
 
 -- tf.h3: Output of above example:
 
@@ -144,25 +124,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
---- ft.code:
+/-- ft.code:
 lang: ftd
 
 \-- ftd.column holder:
 optional caption title:
 optional body body:
 width: auto
-width $is-mobile: fill
+width { ftd.device == "mobile" }: fill-container
 
---- ft.markdown:
+/-- ft.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
-
-
-
-
-
 
 -- triangular: Lorem ipsum dolor
 make-odd: true
@@ -171,25 +146,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
---- ft.code:
+/-- ft.code:
 lang: ftd
 
 \-- ftd.column holder:
 optional caption title:
 optional body body:
 width: auto
-width $is-mobile: fill
+width { ftd.device == "mobile" }: fill-container
 
---- ft.markdown:
+/-- ft.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
-
-
-
-
-
 
 -- triangular: 
 
@@ -197,21 +167,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
---- ft.code:
+/-- ft.code:
 lang: ftd
 
 \-- ftd.column holder:
 optional caption title:
 optional body body:
 width: auto
-width $is-mobile: fill
+width { ftd.device == "mobile" }: fill-container
 
---- ft.markdown:
+/-- ft.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
+-- end: ftd.column
 
 
 
@@ -221,82 +192,91 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
--- ftd.column triangular:
+
+-- component triangular:
 optional caption title:
 optional body body:
 boolean make-odd: false
+
+-- ftd.column:
 width: auto
-width if $is-mobile: fill
-align: center
-margin-top if not $make-odd: $fpm.space.space-6
-margin-bottom if not $make-odd: 54
-background-color: $fpm.color.main.border
-background-color if $make-odd: $fpm.color.main.background.base
-padding-top : 56
-padding-top if $make-odd: 0
-padding-bottom: 32
-padding-bottom if $make-odd: 0
-padding-horizontal: $fpm.space.space-6
-open: true
-append-at: main-container
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-top.px if { !$triangular.make-odd }: 24
+margin-bottom.px if { !$triangular.make-odd }: 54
+background.solid: $inherited.colors.border
+background.solid if { $triangular.make-odd }: $inherited.colors.background.base
+padding-top.px : 56
+padding-top.px if { $triangular.make-odd }: 0
+padding-bottom.px: 32
+padding-bottom.px if { $triangular.make-odd }: 0
+padding-horizontal.px: 24
+;;open: true
+;;append-at: main-container
 
---- ftd.row:
-if: not $make-odd
-width: 0
-height: 0
-border-top: 50
-border-left: 60
-border-right: 60
-border-top if $is-mobile: 35
-border-left if $is-mobile: 42
-border-right if $is-mobile: 42
-border-top-color: $fpm.color.main.background.base
-border-bottom-color: $fpm.color.main.border
-border-left-color: $fpm.color.main.border
-border-right-color: $fpm.color.main.border
+-- ftd.row:
+if: { !$triangular.make-odd }
+width.fixed.px: 0
+height.fixed.px: 0
+border-top-width.px: 50
+border-left-width.px: 60
+border-right-width.px: 60
+border-top-width.px if { ftd.device == "mobile" }: 35
+border-left-width.px if { ftd.device == "mobile" }: 42
+border-right-width.px if { ftd.device == "mobile" }: 42
+border-top-color: $inherited.colors.background.base
+border-bottom-color: $inherited.colors.border
+border-left-color: $inherited.colors.border
+border-right-color: $inherited.colors.border
 anchor: parent
-left: 50
-top: 0
-z-index: 0
+left.px: 50
+top.px: 0
+;;z-index: 0
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.text: $title
-if: $title is not null
-padding-vertical: $fpm.space.space-4
-color: $fpm.color.main.text
-role: $fpm.type.heading-medium
-style: bold
-width: fill
+-- ftd.text: $triangular.title
+if: { $triangular.title != NULL }
+padding-vertical.px: 16
+color: $inherited.colors.text
+role: $inherited.types.heading-medium
+;;style: bold
+width: fill-container
 
---- ftd.text: 
-if: $body is not null
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.copy-relaxed
-width: fill
+-- ftd.text: 
+if: { $triangular.body != NULL }
+text: $triangular.body
+color: $inherited.colors.text
+role: $inherited.types.copy-relaxed
+width: fill-container
 
---- ftd.column:
-id: main-container
+-- ftd.column:
+;;id: main-container
 
---- container: ftd.main
+-- end: ftd.column
 
---- ftd.row:
-if: not $make-odd
-width: 0
-height: 0
-border-top if not $is-mobile: 50
-border-left if not $is-mobile: 60
-border-right if not $is-mobile: 60
-border-top if $is-mobile: 35
-border-left if $is-mobile: 42
-border-right if $is-mobile: 42
-border-top-color: $fpm.color.main.border
-border-bottom-color: $fpm.color.main.background.base
-border-left-color: $fpm.color.main.background.base
-border-right-color: $fpm.color.main.background.base
+-- ftd.row:
+if: { !$triangular.make-odd }
+width.fixed.px: 0
+height.fixed.px: 0
+border-top-width.px if { ftd.device != "mobile" }: 50
+border-left-width.px if { ftd.device != "mobile" }: 60
+border-right-width.px if { ftd.device != "mobile" }: 60
+border-top-width.px if { ftd.device == "mobile" }: 35
+border-left-width.px if { ftd.device == "mobile" }: 42
+border-right-width.px if { ftd.device == "mobile" }: 42
+border-top-color: $inherited.colors.border
+border-bottom-color: $inherited.colors.background.base
+border-left-color: $inherited.colors.background.base
+border-right-color: $inherited.colors.background.base
 anchor: parent
-right: 50
-bottom: -50
-bottom if $is-mobile: -35
-z-index: 0
+right.px: 50
+bottom.px: -50
+bottom.px if { ftd.device == "mobile" }: -35
+;;z-index: 0
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: triangular

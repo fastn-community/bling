@@ -1,17 +1,19 @@
 -- import: fifthtry.github.io/bling/assets
--- import: fifthtry.github.io/package-doc/doc as pd
-
--- boolean is-mobile: false
-
--- is-mobile: true
-if: $ftd.device == mobile
+;;-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
 
 
 
--- ft.page: `Tip` and it's usage
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: $inherited.colors.background.base
+padding-vertical.px.px: 24
+padding-horizontal.px.px: 24
+
+/-- ft.page: `Tip` and it's usage
 
 `tip` is a new conversation experience via using `FTD` lang. `tip` can be used 
 as part of any component and is available in below formats:
@@ -20,12 +22,12 @@ as part of any component and is available in below formats:
 
 
 
--- pd.package: `tip`
+/-- pd.package: `tip`
 name: fifthtry.github.io/bling/tip
 
 To use `tip` on your web package, add below lines into `FPM.ftd` file:
 
--- cb.code:
+/-- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
@@ -43,7 +45,7 @@ Once you add above lines into your web package, add `tip` into your `.ftd` files
 
 
 
--- cb.code: Basic usage example code:
+/-- cb.code: Basic usage example code:
 lang: ftd
 
 \-- tip.tip: Cool bots hot tip!
@@ -68,7 +70,7 @@ Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
 
 
 
--- cb.code: Advanced usage example code:
+/-- cb.code: Advanced usage example code:
 lang: ftd
 
 \-- tip.tip: Cool bots hot tip !
@@ -76,16 +78,16 @@ lang: ftd
 Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium dolorem 
 queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo inventore!
 
-\--- tf.code: Wow! awesome man!:
+\-- tf.code: Wow! awesome man!:
 lang: ftd
 
-\--- ftd.text: Though the code block appears above, can I have some text below it?
-color: $fpm.color.main.text
-role: $fpm.type.copy-relaxed
+\-- ftd.text: Though the code block appears above, can I have some text below it?
+color: $inherited.colors.text
+role: $inherited.types.copy-relaxed
 
-\--- ftd.text: Though the code block appears above, can I have some text below it?
-color: $fpm.color.main.text
-role: $fpm.type.copy-relaxed
+\-- ftd.text: Though the code block appears above, can I have some text below it?
+color: $inherited.colors.text
+role: $inherited.types.copy-relaxed
 
 
 
@@ -102,71 +104,78 @@ role: $fpm.type.copy-relaxed
 Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium dolorem 
 queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo inventore!
 
---- cb.code: Wow! awesome man!:
+/-- cb.code: Wow! awesome man!:
 lang: ftd
 
-\--- ftd.text: Though the code block appears above, can I have some text below it?
-color: $fpm.color.main.text
-role: $fpm.type.copy-relaxed
+\-- ftd.text: Though the code block appears above, can I have some text below it?
+color: $inherited.colors.text
+role: $inherited.types.copy-relaxed
 
---- ftd.text: Though the code block appears above, can I have some text below it?
-color: $fpm.color.main.text
-role: $fpm.type.copy-relaxed
-
-
+-- ftd.text: Though the code block appears above, can I have some text below it?
+color: $inherited.colors.text
+role: $inherited.types.copy-relaxed
 
 
-
+-- end: ftd.column
 
 
 
 
 
--- ftd.column tip:
+
+
+-- component tip:
 optional caption title:
 optional body body:
 optional ftd.image-src avatar: $assets.files.static.amitu.jpg
-border-color: $fpm.color.main.border
-background-color: $fpm.color.main.background.step-1
-padding: $fpm.space.space-4
-border-radius: 4
-border-width: 1
-width if not $is-mobile: auto
-width if $is-mobile: fill
-min-width: percent 50
-margin-top: $fpm.space.space-2
-margin-bottom: $fpm.space.space-7
-align: center
-append-at: msg-container
 
---- ftd.column:
-width: fill
+-- ftd.column:
+border-color: $inherited.colors.border
+background.solid: $inherited.colors.background.step-1
+padding.px: 16
+border-radius.px: 4
+border-width.px: 1
+width if { ftd.device != "mobile" }: auto
+width if { ftd.device == "mobile" }: fill-container
+min-width.fixed.percent: 50
+margin-top.px: 8
+margin-bottom.px: 32
+align-self: center
+;;append-at: msg-container
 
---- ftd.row:
-align: center
-margin-bottom: $fpm.space.space-6
+-- ftd.column:
+width: fill-container
 
---- ftd.image:
-src: $avatar
-width: 32
-height: 32
-margin-right: $fpm.space.space-4
-margin-top: $fpm.space.space-2
-align: center
-border-radius: 100
+-- ftd.row:
+align-self: center
+margin-bottom.px: 24
 
---- ftd.text: $title
-if: $title is not null
-color: $fpm.color.main.text-strong
-role: $fpm.type.heading-small
+-- ftd.image:
+src: $tip.avatar
+width.fixed.px: 32
+height.fixed.px: 32
+margin-right.px: 16
+margin-top.px: 8
+align-self: center
+border-radius.px: 100
 
---- container: ftd.main
+-- ftd.text: $tip.title
+if: {$tip.title != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
 
---- ftd.column:
-width: fill
-id: msg-container
+-- end: ftd.row
 
---- tf.markdown:
-body: $body
+-- end: ftd.column
 
---- container: ftd.main
+-- ftd.column:
+width: fill-container
+;;id: msg-container
+
+-- tf.markdown:
+body: $tip.body
+
+-- end: ftd.column
+
+-- end: ftd.column
+-- end: tip
