@@ -7,7 +7,7 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/bling/main
 
 
 -- fpm.dependency: fifthtry.github.io/package-doc as pd
--- fpm.dependency: fifthtry.github.io/inter
+-- fpm.dependency: fifthtry.github.io/roboto
 
 
 -- fpm.auto-import: pd
