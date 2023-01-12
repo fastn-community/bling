@@ -1,48 +1,40 @@
 -- import: fifthtry.github.io/bling/assets
--- import: fifthtry.github.io/package-doc/doc as pd
+;;-- import: fifthtry.github.io/package-doc/doc as pd
 
--- boolean is-mobile: false
+/-- ftd.type copy-relax:
+line-height.fixed.px: 18
+size.px: 14
+letter-spacing.px: 0
 
--- is-mobile: true
-if: $ftd.device == mobile
-
--- ftd.font-size copy-relax:
-line-height: 18
-size: 14
-letter-spacing: 0
-
--- ftd.type copy-relaxed: $fpm.font-display
+/-- ftd.responsive-type copy-relaxed: $fpm.font-display
 desktop: $copy-relax
 mobile: $copy-relax
-xl: $copy-relax
 weight: 700
 
--- ftd.font-size heading-40-bold-desktop:
-line-height: 48
-size: 40
-letter-spacing: 0
+/-- ftd.type heading-40-bold-desktop:
+line-height.fixed.px: 48
+size.px: 40
+letter-spacing.px: 0
 
--- ftd.type heading-40-bold: $fpm.font-display
+/-- ftd.responsive-type heading-40-bold: $fpm.font-display
 desktop: $heading-40-bold-desktop
 mobile: $heading-40-bold-desktop
-xl: $heading-40-bold-desktop
 weight: 700
 
--- ftd.font-size heading-small-bold-desktop:
-line-height: 36
-size: 24
-letter-spacing: 0
+/-- ftd.type heading-small-bold-desktop:
+line-height.fixed.px: 36
+size.px: 24
+letter-spacing.px: 0
 
--- ftd.type heading-small-bold: $fpm.font-display
+/-- ftd.type heading-small-bold: $fpm.font-display
 desktop: $heading-small-bold-desktop
 mobile: $heading-small-bold-desktop
 xl: $heading-small-bold-desktop
 weight: 700
 
--- ftd.type fine-print-bold: $fpm.type.fine-print.font
-desktop: $fpm.type.fine-print.desktop
-mobile: $fpm.type.fine-print.mobile
-xl: $fpm.type.fine-print.xl
+/-- ftd.responsive-type fine-print-bold: $inherited.types.fine-print.font
+desktop: $inherited.types.fine-print.desktop
+mobile: $inherited.types.fine-print.mobile
 weight: 700
 
 -- ftd.color image-color:
@@ -50,21 +42,26 @@ light: rgba(192,192,192,0.3)
 dark: rgba(192,192,192,0.3)
 
 
+-- ftd.column:
+width: fill-container
+height: hug-content
+background.solid: $inherited.colors.background.base
+padding-vertical.px.px: 24
+padding-horizontal.px.px: 24
 
 
-
--- ft.page: `quote` and it's Usage
+/-- ft.page: `quote` and it's Usage
 
 `-- quote` can be used as part of blog posts to highlight a quote from blogger 
 OR highlighting important notes on documentation etc.
 
 
--- pd.package: `quote`
+/-- pd.package: `quote`
 name: fifthtry.github.io/bling/quote
 
 To use these quotes on your web package add below into `FPM.ftd` file:
 
--- cb.code:
+//-- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling/quote
@@ -88,7 +85,7 @@ files:
 
 -- tf.h3: 1: `-- charcoal`
 
---- cb.code: Example code for `-- charcoal`
+//-- cb.code: Example code for `-- charcoal`
 lang: ftd
 
 \-- quote.charcoal: Amit Upadhyay
@@ -99,12 +96,12 @@ logo: $assets.files.static.fifthtry.svg
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
 eiusmod tempor incididunt ut labore et dolore magna aliqua..
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
 
---- charcoal: Amit Upadhyay
+-- charcoal: Amit Upadhyay
 label: CEO
 avatar: $assets.files.static.amitu.jpg
 logo: $assets.files.static.fifthtry.svg
@@ -118,7 +115,7 @@ tempor incididunt ut labore et dolore magna aliqua..
 
 -- tf.h3: 2: `-- marengo`
 
---- cb.code: Example code for `-- marengo`
+//-- cb.code: Example code for `-- marengo`
 lang: ftd
 
 \-- quote.marengo: Steve Jobs
@@ -127,11 +124,11 @@ Your time is limited, so don't waste it living someone else's life.
 Don't be trapped by dogma – which is living with the results of other 
 people's thinking.
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- marengo: Steve Jobs
+-- marengo: Steve Jobs
 
 Your time is limited, so don't waste it living someone else's life. Don't 
 be trapped by dogma – which is living with the results of other people's 
@@ -143,7 +140,7 @@ thinking.
 
 -- tf.h3: 3: `-- marengo-hug`
 
---- cb.code: Example code for `-- marengo-hug`
+//-- cb.code: Example code for `-- marengo-hug`
 lang: ftd
 
 \-- quote.marengo-hug: Oprah Winfrey
@@ -151,11 +148,11 @@ lang: ftd
 If you look at what you have in life, you'll always have more.
 If you look at what you don't have in life, you'll never have enough.
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- marengo-hug: Oprah Winfrey
+-- marengo-hug: Oprah Winfrey
 
 If you look at what you have in life, you'll always have more.
 If you look at what you don't have in life, you'll never have enough.
@@ -166,7 +163,7 @@ If you look at what you don't have in life, you'll never have enough.
 
 -- tf.h3: 4: `-- scorpion`
 
---- cb.code: Example code for `-- scorpion`
+//-- cb.code: Example code for `-- scorpion`
 lang: ftd
 
 \-- quote.scorpion: Eleanor Roosevelt
@@ -174,11 +171,11 @@ label: U.S.A.
 
 "The future belongs to those who believe in the beauty of their dreams."
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- scorpion: Eleanor Roosevelt
+-- scorpion: Eleanor Roosevelt
 label: U.S.A.
 
 "The future belongs to those who believe in the beauty of their dreams."
@@ -189,7 +186,7 @@ label: U.S.A.
 
 -- tf.h3: 5: `-- chalice`
 
---- cb.code: Example code for `-- chalice`
+//-- cb.code: Example code for `-- chalice`
 lang: ftd
 
 \-- quote.chalice: Nelson Mandela
@@ -197,11 +194,11 @@ lang: ftd
 The greatest glory in living lies not in never falling, but in rising 
 every time we fall. 
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- chalice: Nelson Mandela
+-- chalice: Nelson Mandela
 
 The greatest glory in living lies not in never falling, but in rising 
 every time we fall. 
@@ -212,7 +209,7 @@ every time we fall.
 
 -- tf.h3: 6: `-- onyx`
 
---- cb.code: Example code for `-- onyx`
+//-- cb.code: Example code for `-- onyx`
 lang: ftd
 
 \-- quote.onyx: Barack Obama
@@ -221,11 +218,11 @@ The real test is not whether you avoid this failure, because you
 won't. It's whether you let it harden or shame you into inaction,
 or whether you learn from it; whether you choose to persevere.
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- onyx: Barack Obama
+-- onyx: Barack Obama
 
 The real test is not whether you avoid this failure, because you 
 won't. It's whether you let it harden or shame you into inaction,
@@ -237,18 +234,18 @@ or whether you learn from it; whether you choose to persevere.
 
 -- tf.h3: 7: `-- silver`
 
---- cb.code: Example code for `-- silver`
+//-- cb.code: Example code for `-- silver`
 lang: ftd
 
 \-- quote.silver: Helen Keller
 
 Life is either a daring adventure or nothing at all.
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- silver: Helen Keller
+-- silver: Helen Keller
 
 Life is either a daring adventure or nothing at all.
 
@@ -257,9 +254,9 @@ Life is either a daring adventure or nothing at all.
 
 
 -- tf.h3: 8: `-- stormcloud`
-id: stormcloud
+;;id: stormcloud
 
---- cb.code: Example code for `-- stormcloud`
+//-- cb.code: Example code for `-- stormcloud`
 lang: ftd
 
 \-- quote.stormcloud: M.K. Gandhi
@@ -268,11 +265,11 @@ lang: ftd
 
  What he thinks he becomes."
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- stormcloud: M.K. Gandhi
+-- stormcloud: M.K. Gandhi
 
 "A man is but a product of his thoughts.
 
@@ -284,18 +281,18 @@ Output of above:
 
 -- tf.h3: 9: `-- vampire`
 
---- cb.code: Example code for `-- vampire`
+//-- cb.code: Example code for `-- vampire`
 lang: ftd
 
 \-- quote.vampire: Thomas Jefferson
 
 "I find that the harder I work, the more luck I seem to have."
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- vampire: Thomas Jefferson
+-- vampire: Thomas Jefferson
 
 "I find that the harder I work, the more luck I seem to have."
 
@@ -305,7 +302,7 @@ Output of above:
 
 -- tf.h3: 10: `-- rustic`
 
---- cb.code: Example code for `-- rustic`
+//-- cb.code: Example code for `-- rustic`
 lang: ftd
 
 \-- quote.rustic: Dr. APJ Abdul Kalam
@@ -313,11 +310,11 @@ lang: ftd
 "All of us do not have equal talent. But, all of us have an equal 
 opportunity to develop our talents."
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- rustic: Dr. APJ Abdul Kalam
+-- rustic: Dr. APJ Abdul Kalam
 
 "All of us do not have equal talent. But, all of us have an equal 
 opportunity to develop our talents."
@@ -328,7 +325,7 @@ opportunity to develop our talents."
 
 -- tf.h3: 11: `-- echo`
 
---- cb.code: Example code for `-- echo`
+//-- cb.code: Example code for `-- echo`
 lang: ftd
 
 \-- quote.echo: Swami Vivekananda
@@ -339,11 +336,11 @@ part of your body be full of that idea, and just leave every other
 idea alone. This is the way to success, and this is the way great 
 spiritual giants are produced."
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- echo: Swami Vivekananda
+-- echo: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; think of 
 it; live on that idea. Let the brain, the body, muscles, nerves, every 
@@ -357,7 +354,7 @@ spiritual giants are produced."
 
 -- tf.h3: 12: `-- window`
 
---- cb.code: Example code for `-- window`
+//-- cb.code: Example code for `-- window`
 lang: ftd
 
 \-- quote.window: Mark Zuckerberg
@@ -365,11 +362,11 @@ lang: ftd
 "If you just work on stuff that you like and you're passionate about, 
 you don't have to have a master plan with how things will play out."
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- window: Mark Zuckerberg
+-- window: Mark Zuckerberg
 
 "If you just work on stuff that you like and you're passionate about, 
 you don't have to have a master plan with how things will play out."
@@ -380,7 +377,7 @@ you don't have to have a master plan with how things will play out."
 
 -- tf.h3: 13: `-- matte`
 
---- cb.code: Example code for `-- matte`
+//-- cb.code: Example code for `-- matte`
 lang: ftd
 
 \-- quote.matte: Swami Vivekananda
@@ -391,11 +388,11 @@ nerves, every part of your body be full of that idea, and just leave
 every other idea alone. This is the way to success, and this is the 
 way great spiritual giants are produced."
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- matte: Swami Vivekananda
+-- matte: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; think of it; live 
 on that idea. Let the brain, the body, muscles, nerves, every part of your body 
@@ -408,18 +405,18 @@ success, and this is the way great spiritual giants are produced."
 
 -- tf.h3: 14: `-- antique`
 
---- cb.code: Example code for `-- antique`
+//-- cb.code: Example code for `-- antique`
 lang: ftd
 
 \-- quote.antique:  Socrates
 
 "Strong minds discuss ideas, average minds."
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- antique:  Socrates
+-- antique:  Socrates
 
 "Strong minds discuss ideas, average minds."
 
@@ -429,18 +426,18 @@ Output of above:
 
 -- tf.h3: 15: `-- bubble`
 
---- cb.code: Example code for `-- bubble`
+//-- cb.code: Example code for `-- bubble`
 lang: ftd
 
 \-- quote.bubble:  Socrates
 
 "To find yourself, think for yourself."
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- bubble:  Socrates
+-- bubble:  Socrates
 
 "To find yourself, think for yourself."
 
@@ -450,7 +447,7 @@ Output of above:
 
 -- tf.h3: 16: `-- electric`
 
---- cb.code: Example code for `-- electric`
+//-- cb.code: Example code for `-- electric`
 lang: ftd
 
 \-- quote.electric:  Socrates
@@ -462,11 +459,11 @@ Your mind is your predicament. It wants to be free of change.
 Free of pain, free of the obligations of life and death. But change is 
 law and no amount of pretending will alter that reality.”
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- electric:  Socrates
+-- electric:  Socrates
 
 “If you don't get what you want, you suffer; if you get what you don't want,
  you suffer; even when you get exactly what you want, you still suffer 
@@ -481,7 +478,7 @@ Output of above:
 
 -- tf.h3: 17: `-- chrome`
 
---- cb.code: Example code for `-- chrome`
+/-- cb.code: Example code for `-- chrome`
 lang: ftd
 
 \-- quote.chrome: Swami Vivekananda
@@ -492,11 +489,11 @@ nerves, every part of your body be full of that idea, and just leave
 every other idea alone. This is the way to success, and this is the 
 way great spiritual giants are produced."
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- chrome: Swami Vivekananda
+-- chrome: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; think of it; live 
 on that idea. Let the brain, the body, muscles, nerves, every part of your body 
@@ -509,7 +506,7 @@ success, and this is the way great spiritual giants are produced."
 
 -- tf.h3: 18: `-- dorian`
 
---- cb.code: Example code for `-- dorian`
+/-- cb.code: Example code for `-- dorian`
 lang: ftd
 
 \-- quote.dorian: Swami Vivekananda
@@ -517,11 +514,11 @@ lang: ftd
 “You have to grow from the inside out. None can teach you, none can 
 make you spiritual. There is no other teacher but your own soul.”
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
---- dorian: Swami Vivekananda
+-- dorian: Swami Vivekananda
 
 “You have to grow from the inside out. None can teach you, none can 
 make you spiritual. There is no other teacher but your own soul.”
@@ -533,7 +530,7 @@ make you spiritual. There is no other teacher but your own soul.”
 
 -- tf.h3: 19: `-- octa`
 
---- cb.code: Example code for `-- octa`
+/-- cb.code: Example code for `-- octa`
 lang: ftd
 
 \-- quote.octa: Swami Vivekananda
@@ -541,7 +538,7 @@ lang: ftd
 
 “Take up one idea. Make that one idea your life; dream of it; think of it; live on that idea. Let the brain, the body, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success, and this is the way great spiritual giants are produced.”
 
---- tf.markdown: 
+-- tf.markdown: 
 
 Output of above:
 
@@ -550,6 +547,7 @@ Output of above:
 
 “Take up one idea. Make that one idea your life; dream of it; think of it; live on that idea. Let the brain, the body, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success, and this is the way great spiritual giants are produced.”
 
+-- end: ftd.column
 
 
 
@@ -560,282 +558,302 @@ Output of above:
 
 
 
+-- component charcoal:
+optional caption title:
+optional ftd.image-src quote-icon: $assets.files.static.quotes.svg
+optional body body:
+optional ftd.image-src avatar:
+optional ftd.image-src logo:
+optional string label:
+;;ftd.color backgroundcolor: $inherited.colors.background.base
 
--- ftd.column charcoal:
+-- ftd.column:
+width: fill-container
+
+-- quote-desktop: $charcoal.title
+if: { ftd.device != "mobile" }
+quote-icon: $charcoal.quote-icon
+body: $charcoal.body
+avatar: $charcoal.avatar
+logo: $charcoal.logo
+label: $charcoal.label
+
+-- quote-mobile: $charcoal.title
+if: { ftd.device == "mobile" }
+body: $charcoal.body
+avatar: $charcoal.avatar
+logo: $charcoal.logo
+label: $charcoal.label
+;;background.solid: $charcoal.backgroundcolor
+
+-- end: ftd.column
+
+-- end: charcoal
+
+
+
+
+
+
+
+
+
+
+-- component quote-desktop:
 optional caption title:
 optional ftd.image-src quote-icon: $assets.files.static.quotes.svg
 optional body body: 
 optional ftd.image-src avatar:
 optional ftd.image-src logo:
 optional string label:
-width: fill
-ftd.color backgroundcolor: $fpm.color.main.background.base
+;;ftd.color backgroundcolor: 
 
 
---- quote-desktop:
-if: not $ft.is-mobile
-quote-icon: $quote-icon
-body: $body
-avatar: $avatar
-logo: $logo
-title: $title
-label: $label
-backgroundcolor: $backgroundcolor
+-- ftd.column:
+;;id: switch-container
+width: fill-container
+padding-vertical.px: 64
+margin-top.px: 24
+margin-bottom.px: 24
 
---- quote-mobile:
-if: $ft.is-mobile
-body: $body
-avatar: $avatar
-logo: $logo
-title: $title
-label: $label
-backgroundcolor: $backgroundcolor
+-- ftd.row:
+max-width.fixed.px: 1000
+spacing.px: 80
+align-self: center
+width: fill-container
 
--- ftd.column quote-desktop:
+-- ftd.image:
+src: $quote-desktop.quote-icon
+width: auto
+height.fixed.px.fixed.px: 72
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: 850
+
+-- ftd.text:
+text: $quote-desktop.body
+role: $inherited.types.heading-large
+color:$inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+;;id: about-container
+margin-top.px: 24
+align-self: center
+max-width.fixed.px: 700
+
+-- ftd.image:
+src: $quote-desktop.avatar
+width: auto
+height.fixed.px.fixed.px: 60
+border-radius.px: 100
+margin-right.px: 20
+
+-- ftd.image:
+src: $quote-desktop.logo
+width: auto
+height.fixed.px.fixed.px: 44
+padding-top.px: 16
+margin-right.px: 48
+
+-- ftd.column: 
+width: fill-container
+
+-- ftd.text: $quote-desktop.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+
+-- ftd.text: $quote-desktop.label
+role: $inherited.types.copy-tight
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: quote-desktop
+
+
+
+
+
+
+
+
+
+
+-- component quote-mobile:
 optional caption title:
 optional ftd.image-src quote-icon: $assets.files.static.quotes.svg
 optional body body: 
 optional ftd.image-src avatar:
 optional ftd.image-src logo:
 optional string label:
-width: fill
-padding-vertical: $fpm.space.space-11
-ftd.color backgroundcolor:
-background-color: $backgroundcolor
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
+;;ftd.color backgroundcolor:
 
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 32
+padding-horizontal.px: 16
+;;background.solid: $quote-mobile:.backgroundcolor
+margin-top.px: 24
+margin-bottom.px: 24
 
---- ftd.row:
-id: switch-container
-spacing: 80
-width: fill
-max-width: 1000
-align: center
-
-
---- ftd.image:
-src: $quote-icon
+-- ftd.image:
+src: $quote-mobile.quote-icon
 width: auto
-height: 72
+height.fixed.px: 42
+align-self: center
+margin-bottom.px: 24
 
-
---- container: switch-container
-
-
---- ftd.column:
-width: fill
-max-width: 850
-
-
---- ftd.text:
-text: $body
-role: $fpm.type.heading-large
-color:$fpm.color.main.text
-
---- ftd.row:
-width: fill
-id: about-container
-margin-top: $fpm.space.space-6
-align: center
-
-
-
-
---- ftd.image:
-src: $avatar
+-- ftd.text:
+text: $quote-mobile.body
 width: auto
-height: 60
-border-radius: 100
-margin-right: $fpm.space.space-5
-
-
-
---- container:about-container
-
-
---- ftd.image:
-src: $logo
-width: auto
-height: 44
-padding-top: $fpm.space.space-4
-margin-right: $fpm.space.space-9
-
---- container:about-container
-
---- ftd.column: 
-width: fill
-
---- ftd.text: $title
-role: $heading-small-bold
-color: $fpm.color.main.text
-
---- ftd.text: $label
-role: $fpm.type.copy-tight
-color: $fpm.color.main.text
-
-
-
-
-
-
-
-
-
-
-
--- ftd.column quote-mobile:
-optional caption title:
-optional ftd.image-src quote-icon: $assets.files.static.quotes.svg
-optional body body: 
-optional ftd.image-src avatar:
-optional ftd.image-src logo:
-optional string label:
-width: fill
-padding-vertical: $fpm.space.space-7
-padding-horizontal: $fpm.space.space-4
-ftd.color backgroundcolor:
-background-color: $backgroundcolor
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-
-
---- ftd.image:
-src: $quote-icon
-width: auto
-height: 42
-align: center
-margin-bottom: $fpm.space.space-6
-
-
---- ftd.text:
-text: $body
-width: auto
-role: $heading-small-bold
-color:$fpm.color.main.text
-margin-bottom: $fpm.space.space-6
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+margin-bottom.px: 24
 text-align: center
 
+-- ftd.row:
+;;id: about-container
+spacing.px: 16
+align-self: center
+margin-bottom.px: 16
 
---- ftd.row:
-id: about-container
-spacing: 16
-align: center
-margin-bottom: $fpm.space.space-4
-
-
-
-
-
---- ftd.image:
-src: $avatar
+-- ftd.image:
+src: $quote-mobile.avatar
 width: auto
-height: 42
-align: center
-border-radius: 100
+height.fixed.px: 42
+align-self: center
+border-radius.px: 100
 
-
-
-
---- ftd.image:
-src: $logo
+-- ftd.image:
+src: $quote-mobile.logo
 width: auto
-height: 24
-align: center
+height.fixed.px: 24
+align-self: center
 
+-- end: ftd.row
 
---- container: about-container
+-- ftd.column: 
+spacing.px: 8
+align-self: center
 
---- ftd.column: 
-spacing: 8
-align: center
+-- ftd.text: $quote-mobile.title
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
+-- ftd.text: $quote-mobile.label
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+align-self: center
 
---- ftd.text: $title
-role: $fine-print-bold
-color: $fpm.color.main.text
+-- end: ftd.column
 
---- ftd.text: $label
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
-align: center
+-- end: ftd.column
 
-
-
-
-
-
-
+-- end: quote-mobile
 
 
 
--- ftd.column marengo:
+
+
+
+
+
+
+
+-- component marengo:
 optional caption title:
 body body:
-ftd.color backgroundcolor: $fpm.color.main.background.base
-width: fill
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
+ftd.color backgroundcolor: $inherited.colors.background.base
 
---- quote-1-desktop: $title
-if: not $ft.is-mobile
-body: $body
-backgroundcolor: $backgroundcolor
+-- ftd.column:
+width: fill-container
+margin-top.px: 24
+margin-bottom.px: 24
 
---- quote-1-mobile: $title
-if: $ft.is-mobile
-body: $body
-backgroundcolor: $backgroundcolor
+-- quote-1-desktop: $marengo.title
+if: { ftd.device != "mobile" }
+body: $marengo.body
+backgroundcolor: $marengo.backgroundcolor
 
+-- quote-1-mobile: $marengo.title
+if: { ftd.device == "mobile" }
+body: $marengo.body
+backgroundcolor: $marengo.backgroundcolor
 
+-- end: ftd.column
 
-
-
-
-
-
+-- end: marengo
 
 
--- ftd.column quote-1-desktop:
+
+
+
+
+
+
+
+
+-- component quote-1-desktop:
 body body:
 optional caption title:
-ftd.color backgroundcolor: $fpm.color.main.background.base
-width: fill
-background-color: $backgroundcolor
-margin-top: $fpm.space.space-5
-margin-bottom: $fpm.space.space-6
-max-width: 1056
+ftd.color backgroundcolor: $inherited.colors.background.base
 
---- ftd.row:
-width: fill
-border-left: 4
-padding-left: $fpm.space.space-8
-border-color: $fpm.color.main.border
+-- ftd.column:
+width: fill-container
+background.solid: $quote-1-desktop.backgroundcolor
+margin-top.px: 20
+margin-bottom.px: 24
+max-width.fixed.px: 1056
 
---- ftd.column:
-width: fill
+-- ftd.row:
+width: fill-container
+border-left-width.px: 4
+padding-left.px: 40
+border-color: $inherited.colors.border
 
---- ftd.text: 
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.copy-large
+-- ftd.column:
+width: fill-container
 
---- ftd.row:
-align: right
-spacing: 8
-margin-top: $fpm.space.space-4
+-- ftd.text: 
+text: $quote-1-desktop.body
+color: $inherited.colors.text
+role: $inherited.types.copy-large
 
---- ftd.text: ~
-align: center
-color: $fpm.color.main.text
-role: $fpm.type.copy-tight
+-- ftd.row:
+align-self: end
+spacing.px: 8
+margin-top.px: 16
 
---- ftd.text: $title
-align: center
-color: $fpm.color.main.text
-role: $fpm.type.fine-print
+-- ftd.text: ~
+align-self: center
+color: $inherited.colors.text
+role: $inherited.types.copy-tight
+
+-- ftd.text: $quote-1-desktop.title
+align-self: center
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 white-space: nowrap
 
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: quote-1-desktop
 
 
 
@@ -845,42 +863,54 @@ white-space: nowrap
 
 
 
--- ftd.column quote-1-mobile:
+
+-- component quote-1-mobile:
+optional caption title:
 body body:
 ftd.color backgroundcolor:
-width: fill
-background-color: $backgroundcolor
-max-width: 1056
-optional caption title:
 
---- ftd.row:
-width: fill
-border-left: 4
-padding-left: $fpm.space.space-7
-border-color: $fpm.color.main.border
+-- ftd.column:
+width: fill-container
+background.solid: $quote-1-mobile.backgroundcolor
+max-width.fixed.px: 1056
 
---- ftd.column:
-width: fill
+-- ftd.row:
+width: fill-container
+border-left-width.px: 4
+padding-left.px: 32
+border-color: $inherited.colors.border
 
---- ftd.text: 
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.copy-tight
+-- ftd.column:
+width: fill-container
 
---- ftd.row:
-align: right
-spacing: 8
+-- ftd.text: 
+text: $quote-1-mobile.body
+color: $inherited.colors.text
+role: $inherited.types.copy-tight
 
---- ftd.text: ~
-color: $fpm.color.main.text
-role: $fpm.type.copy-tight
+-- ftd.row:
+align-self: end
+spacing.px: 8
 
---- ftd.text: $title
-align: right
-color: $fpm.color.main.text
-role: $fpm.type.fine-print
+-- ftd.text: ~
+color: $inherited.colors.text
+role: $inherited.types.copy-tight
+
+-- ftd.text: $quote-1-mobile.title
+align-self: end
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 white-space: nowrap
 
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: quote-1-mobile
 
 
 
@@ -890,81 +920,94 @@ white-space: nowrap
 
 
 
--- ftd.column marengo-hug:
+
+-- component marengo-hug:
 optional caption title:
 body body:
-ftd.color backgroundcolor: $fpm.color.main.background.base
-width: fill
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
+ftd.color backgroundcolor: $inherited.colors.background.base
 
+-- ftd.column:
+width: fill-container
+margin-top.px: 24
+margin-bottom.px: 24
 
+-- quote-2-desktop: $marengo-hug.title
+if: { ftd.device != "mobile" }
+body: $marengo-hug.body
+backgroundcolor: $marengo-hug.backgroundcolor
 
+-- quote-2-mobile: $marengo-hug.title
+if: { ftd.device == "mobile" }
+body: $marengo-hug.body
+backgroundcolor: $marengo-hug.backgroundcolor
 
---- quote-2-desktop: $title
-if: not $ft.is-mobile
-body: $body
-backgroundcolor: $backgroundcolor
+-- end: ftd.column
 
-
-
-
---- quote-2-mobile: $title
-if: $ft.is-mobile
-body: $body
-backgroundcolor: $backgroundcolor
-
-
-
-
-
+-- end: marengo-hug
 
 
 
 
 
--- ftd.column quote-2-desktop:
+
+
+
+
+
+-- component quote-2-desktop:
 body body:
 optional caption title:
-ftd.color backgroundcolor: $fpm.color.main.background.base
-width: fill
-background-color: $backgroundcolor
-margin-top: $fpm.space.space-5
-margin-bottom: $fpm.space.space-6
-max-width: 2056
+ftd.color backgroundcolor: $inherited.colors.background.base
 
---- ftd.row:
-width: fill
-border-left: 4
-padding-left: $fpm.space.space-8
-border-color: $fpm.color.main.border
+-- ftd.column:
+width: fill-container
+background.solid: $quote-2-desktop.backgroundcolor
+margin-top.px: 20
+margin-bottom.px: 24
+max-width.fixed.px: 2056
 
---- ftd.column:
-width: fill
+-- ftd.row:
+width: fill-container
+border-left-width.px: 4
+padding-left.px: 40
+border-color: $inherited.colors.border
 
---- ftd.text: 
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.copy-large
-style: italic
-text-align: right
+-- ftd.column:
+width: fill-container
 
---- ftd.row:
-align: right
-spacing: 8
-margin-top: $fpm.space.space-4
+-- ftd.text: 
+text: $quote-2-desktop.body
+color: $inherited.colors.text
+role: $inherited.types.copy-large
+;;style: italic
+text-align: end
 
---- ftd.text: ~
-align: center
-color: $fpm.color.main.text
-role: $fpm.type.copy-tight
+-- ftd.row:
+align-self: end
+spacing.px: 8
+margin-top.px: 16
 
---- ftd.text: $title
-align: center
-color: $fpm.color.main.text
-role: $fpm.type.fine-print
+-- ftd.text: ~
+align-self: center
+color: $inherited.colors.text
+role: $inherited.types.copy-tight
+
+-- ftd.text: $quote-2-desktop.title
+align-self: center
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 white-space: nowrap
-style: italic
+;;style: italic
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: quote-2-desktop
 
 
 
@@ -975,45 +1018,57 @@ style: italic
 
 
 
--- ftd.column quote-2-mobile:
+-- component quote-2-mobile:
+optional caption title:
 body body:
 ftd.color backgroundcolor:
-width: fill
-background-color: $backgroundcolor
-max-width: 2056
-optional caption title:
 
---- ftd.row:
-width: fill
-border-left: 4
-padding-left: $fpm.space.space-7
-border-color: $fpm.color.main.border
+-- ftd.column:
+width: fill-container
+background.solid: $quote-2-mobile.backgroundcolor
+max-width.fixed.px: 2056
 
---- ftd.column:
-width: fill
+-- ftd.row:
+width: fill-container
+border-left-width.px: 4
+padding-left.px: 32
+border-color: $inherited.colors.border
 
---- ftd.text: 
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.copy-tight
-style: italic
-text-align: right
+-- ftd.column:
+width: fill-container
 
---- ftd.row:
-align: right
-spacing: 8
-margin-top: $fpm.space.space-4
+-- ftd.text: 
+text: $quote-2-mobile.body
+color: $inherited.colors.text
+role: $inherited.types.copy-tight
+;;style: italic
+text-align: end
 
---- ftd.text: ~
-color: $fpm.color.main.text
-role: $fpm.type.copy-tight
+-- ftd.row:
+align-self: end
+spacing.px: 8
+margin-top.px: 16
 
---- ftd.text: $title
-align: right
-color: $fpm.color.main.text
-role: $fpm.type.fine-print
+-- ftd.text: ~
+color: $inherited.colors.text
+role: $inherited.types.copy-tight
+
+-- ftd.text: $quote-2-mobile.title
+align-self: end
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 white-space: nowrap
-style: italic
+;;style: italic
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: quote-2-mobile
 
 
 
@@ -1024,65 +1079,68 @@ style: italic
 
 
 
--- ftd.column scorpion:
+-- component scorpion:
 optional caption title:
 optional string label:
 body body:
-width: fill
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
 
---- quotes:
-body: $body
+-- ftd.column:
+width: fill-container
+margin-top.px: 24
+margin-bottom.px: 24
 
---- ftd.column:
-margin-left: $fpm.space.space-15
-spacing: 8
+-- quotes:
+body: $scorpion.body
+
+-- ftd.column:
+margin-left.px: 45
+spacing.px: 8
 anchor: parent
-bottom: -34
-left: 20
-left if $is-mobile: 5
+bottom.px: -34
+left.px: 20
+left.px if { ftd.device == "mobile" }: 5
 
---- ftd.text: $title
-role: $fpm.type.copy-tight
-color: $fpm.color.main.text
+-- ftd.text: $scorpion.title
+role: $inherited.types.copy-tight
+color: $inherited.colors.text
 
---- ftd.text:
-text: $label
-color: $fpm.color.main.text
-role: $fpm.type.copy-tight
+-- ftd.text:
+text: $scorpion.label
+color: $inherited.colors.text
+role: $inherited.types.copy-tight
 
+-- end: ftd.column
 
+-- end: ftd.column
 
-
-
-
-
-
+-- end: scorpion
 
 
--- ftd.row quotes:
+
+
+
+
+
+
+
+
+-- component quotes:
 body body:
-width: fill
 
+-- ftd.row:
+width: fill-container
 
+-- quotes-desktop:
+if: { ftd.device != "mobile" }
+body: $quotes.body
 
+-- quotes-mobile:
+if: { ftd.device == "mobile" }
+body: $quotes.body
 
+-- end: ftd.row
 
---- quotes-desktop:
-if: not $is-mobile
-body: $body
-
-
-
-
-
---- quotes-mobile:
-if:  $is-mobile
-body: $body
-
-
-
+-- end: quotes
 
 
 
@@ -1090,113 +1148,120 @@ body: $body
 
 
 
--- ftd.row quotes-desktop:
-padding-horizontal: 20
-padding-vertical: 20
+
+
+
+-- component quotes-desktop:
 body body:
-border-width: 3
-border-color: $fpm.color.main.border
-border-radius:20
-max-width: 620
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-margin-right:$fpm.space.space-6
-margin-left: $fpm.space.space-6
 
---- ftd.row:
+-- ftd.row:
+padding-horizontal.px: 20
+padding-vertical.px: 20
+border-width.px: 3
+border-color: $inherited.colors.border
+border-radius.px:20
+max-width.fixed.px: 620
+margin-top.px: 24
+margin-bottom.px: 24
+margin-right.px:24
+
+-- ftd.row:
 anchor: parent
-width: 50
-border-width: 4
-border-color: $fpm.color.main.background.base
-left: 50
-bottom: -4
-z-index: 200
+width.fixed.px: 50
+border-width.px: 4
+border-color: $inherited.colors.background.base
+left.px: 50
+bottom.px: -4
+;;z-index: 200
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.row:
+-- ftd.row:
 anchor: parent
-width: 60
-height: 60
-border-right: 3
-border-right-radius: 6
-border-bottom-radius: -30
-border-radius: 50
-border-color: $fpm.color.main.border
-left: -8
-bottom: -60
-z-index: 200
+width.fixed.px: 60
+height.fixed.px: 60
+border-right-width.px: 3
+border-top-right-radius.px: 6
+border-bottom-right-radius.px: 6
+border-bottom-left-radius.px: -30
+;;border-top-right-radius.px: -30
+border-radius.px: 50
+border-color: $inherited.colors.border
+left.px: -8
+bottom.px: -60
+;;z-index: 200
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.text:
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.heading-large
+-- ftd.text:
+text: $quotes-desktop.body
+color: $inherited.colors.text
+role: $inherited.types.heading-large
 
+-- end: ftd.row
 
-
-
-
-
-
-
+-- end: quotes-desktop
 
 
--- ftd.row quotes-mobile:
-padding-horizontal: 20
-padding-vertical: 20
+
+
+
+
+
+
+
+
+-- component quotes-mobile:
 body body:
-border-width: 3
-border-color: $fpm.color.main.border
-border-radius:20
-width: fill
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-margin-right:$fpm.space.space-6
-margin-left: $fpm.space.space-6
 
---- ftd.row:
+-- ftd.row:
+padding-horizontal.px: 20
+padding-vertical.px: 20
+border-width.px: 3
+border-color: $inherited.colors.border
+border-radius.px: 20
+width: fill-container
+margin-top.px: 24
+margin-bottom.px: 24
+margin-right.px:24
+;;margin-left.px: 24
+
+-- ftd.row:
 anchor: parent
-width: 40
-border-width: 4
-border-color: $fpm.color.main.background.base
-left: 50
-bottom: -4
-z-index: 200
+width.fixed.px: 40
+border-width.px: 4
+border-color: $inherited.colors.background.base
+left.px: 50
+bottom.px: -4
+;;z-index: 200
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.row:
+-- ftd.row:
 anchor: parent
-width: 60
-height: 60
-border-right: 3
-border-right-radius: 6
-border-radius: 50
-border-bottom-radius: -30
-border-color: $fpm.color.main.border
-left: -8
-bottom: -60
-z-index: 200
+width.fixed.px: 60
+height.fixed.px: 60
+border-right-width.px: 3
+border-top-right-radius.px: 6
+border-bottom-right-radius.px: 6
+border-bottom-left-radius.px: -30
+;;border-top-right-radius.px: -30
+border-radius.px: 50
+border-color: $inherited.colors.border
+left.px: -8
+bottom.px: -60
+;;z-index: 200
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.text:
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.heading-medium
+-- ftd.text:
+text: $quotes-mobile.body
+color: $inherited.colors.text
+role: $inherited.types.heading-medium
 
+-- end: ftd.row
 
-
-
-
-
-
-
-
--- ftd.text white: test
-color: $fpm.color.main.text-strong
+-- end: quotes-mobile
 
 
 
@@ -1207,51 +1272,70 @@ color: $fpm.color.main.text-strong
 
 
 
--- ftd.column chalice:
+;;-- ftd.text white: test
+color: $inherited.colors.text-strong
+
+
+
+
+
+
+
+
+
+
+-- component chalice:
 optional caption title:
 body body:
-padding-horizontal: 24
-width: fill
-padding-vertical: $fpm.space.space-7
-align: center
-max-width: 600
-optional ftd.image-src backgroundimage: $assets.files.static.quotes.svg
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
+;;optional ftd.image-src backgroundimage: $assets.files.static.quotes.svg
 
---- ftd.row:
-background-image: $backgroundimage
-width: 84
-height: 84
-width if $is-mobile: 44
-height if $is-mobile: 44
+-- ftd.column:
+padding-horizontal.px: 24
+width: fill-container
+padding-vertical.px: 32
+align-self: center
+max-width.fixed.px: 600
+margin-top.px: 24
+margin-bottom.px: 24
+
+-- ftd.row:
+;;background-image: $chalice.backgroundimage
+width.fixed.px: 84
+height.fixed.px: 84
+width.fixed.px if { ftd.device == "mobile" }: 44
+height.fixed.px if { ftd.device == "mobile" }: 44
 anchor: parent
-top: 10
-top if $is-mobile: 34
-left: 0
-left if $is-mobile: 34
-z-index: 0
+top.px: 10
+top.px if { ftd.device == "mobile" }: 34
+left.px: 0
+left.px if { ftd.device == "mobile" }: 34
+;;z-index: 0
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.column:
-z-index: 1
-padding-left: $fpm.space.space-4
+-- ftd.column:
+;;z-index: 1
+padding-left.px: 16
 
---- ftd.text: $title
-color: $fpm.color.main.text
-role: $fpm.type.copy-tight
-align: center
-margin-bottom: $fpm.space.space-2
+-- ftd.text: $chalice.title
+color: $inherited.colors.text
+role: $inherited.types.copy-tight
+align-self: center
+margin-bottom.px: 8
 
---- ftd.text:
-width: fill
-text: $body
-color: $fpm.color.main.text-strong
-role: $fpm.type.copy-large
-z-index: 200
+-- ftd.text:
+width: fill-container
+text: $chalice.body
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-large
+;;z-index: 200
 text-align: center
 
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: chalice
 
 
 
@@ -1261,48 +1345,61 @@ text-align: center
 
 
 
--- ftd.row onyx:
+
+-- component onyx:
 optional caption title:
 body body:
-ftd.color backgroundcolor: $fpm.color.main.background.step-1
-background-color: $backgroundcolor
+ftd.color backgroundcolor: $inherited.colors.background.step-1
+ftd.color color: $inherited.colors.text
 optional ftd.image-src quote-logo: $assets.files.static.left-quote-circle.png
-padding-vertical: $fpm.space.space-6
-border-left: 5
-padding-right:$fpm.space.space-7
-border-color: $fpm.color.main.text
-spacing: 32
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-width: fill
 
---- ftd.image:
-src: $quote-logo
+-- ftd.row:
+background.solid: $onyx.backgroundcolor
+padding-vertical.px: 24
+border-left-width.px: 5
+padding-right.px: 32
+border-color: $inherited.colors.text
+spacing.px: 32
+margin-top.px: 24
+margin-bottom.px: 24
+width: fill-container
+
+-- ftd.image:
+src: $onyx.quote-logo
 width: auto
-height: 32
-padding-left: 25
+height.fixed.px: 32
+padding-left.px: 25
 
---- ftd.column:
-width: fill
-align: center
-padding-top: 12
-spacing: 12
+-- ftd.column:
+width: fill-container
+align-self: center
+padding-top.px: 12
+spacing.px: 12
 
---- ftd.text:
-text: $body
-role: $fpm.type.copy-relaxed
+-- ftd.text:
+text: $onyx.body
+role: $inherited.types.copy-relaxed
+color: $onyx.color
 
---- ftd.row:
-padding-left: $fpm.space.space-3
+-- ftd.row:
+padding-left.px: 12
 
---- ftd.text: ~
-role: $copy-relaxed
-color: $fpm.color.main.background.step-2
-margin-right: $fpm.space.space-2
+-- ftd.text: ~
+role: $inherited.types.copy-relaxed
+color: $inherited.colors.background.step-2
+margin-right.px: 8
 
---- ftd.text: $title
-role: $copy-relaxed
-color: $fpm.color.main.background.step-2
+-- ftd.text: $onyx.title
+role: $inherited.types.copy-relaxed
+color: $inherited.colors.background.step-2
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: onyx
 
 
 
@@ -1313,86 +1410,100 @@ color: $fpm.color.main.background.step-2
 
 
 
--- ftd.column silver:
+-- component silver:
 optional caption title:
 body body:
-width: fill
 
---- quote-6-desktop: $title
-if: not $is-mobile
-body: $body
+-- ftd.column:
+width: fill-container
 
---- quote-6-mobile: $title
-if: $is-mobile
-body: $body
+-- quote-6-desktop: $silver.title
+if: { ftd.device != "mobile" }
+body: $silver.body
 
+-- quote-6-mobile: $silver.title
+if: { ftd.device == "mobile" }
+body: $silver.body
 
+-- end: ftd.column
 
-
-
-
-
-
+-- end: silver
 
 
--- ftd.column quote-6-desktop:
+
+
+
+
+
+
+
+
+-- component quote-6-desktop:
 optional caption title:
 body body:
-padding-vertical: 32
-padding-horizontal: 32
-gradient-direction: top to bottom
-gradient-colors: grey, black
 ftd.image-src logo: $assets.files.static.quote.png
-width: fill
-max-width: 800
-align: center
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
 
---- ftd.column:
-border-top: 2
-border-color: $fpm.color.main.text
+-- ftd.column:
+padding-vertical.px: 32
+padding-horizontal.px: 32
+;;gradient-direction: top to bottom
+;;gradient-colors: grey, black
+width: fill-container
+max-width.fixed.px: 800
+align-self: center
+margin-top.px: 24
+margin-bottom.px: 24
+
+-- ftd.column:
+border-top-width.px: 2
+border-color: $inherited.colors.text
 anchor: parent
-top: 38
-left: 148
-width: percent 60
-align: center
+top.px: 38
+left.px: 148
+width.fixed.percent: 60
+align-self: center
 
---- container: ftd.main
+-- end: ftd.column
 
---- ftd.column:
-border-bottom: 2
-border-color: $fpm.color.main.text
+-- ftd.column:
+border-bottom-width.px: 2
+border-color: $inherited.colors.text
 anchor: parent
-right: 146
-bottom: 38
-width: percent 60
+right.px: 146
+bottom.px: 38
+width.fixed.percent: 60
 
---- container: ftd.main
+-- end: ftd.column
 
---- ftd.column:
-align: center
-width: percent 60
-padding-vertical: $fpm.space.space-7
-max-height: 400
+-- ftd.column:
+align-self: center
+width.fixed.percent: 60
+padding-vertical.px: 32
+max-height.fixed.px: 400
 
---- ftd.text: 
-text: $body
-role: $heading-40-bold
-color: $fpm.color.main.text
+-- ftd.text: 
+text: $quote-6-desktop.body
+role: $inherited.types.heading-small
+color: $inherited.colors.text
 
---- ftd.text: $title
-role: $fpm.type.heading-small
-color: $fpm.color.main.text
-padding-top: $fpm.space.space-5
+-- ftd.text: $quote-6-desktop.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+padding-top.px: 20
 
---- ftd.image:
+-- ftd.image:
 anchor: parent
-src: $logo
-right: 10
-bottom: -32
-height: 62
-width: 62
+src: $quote-6-desktop.logo
+right.px: 10
+bottom.px: -32
+height.fixed.px: 62
+width.fixed.px: 62
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: quote-6-desktop
 
 
 
@@ -1403,63 +1514,71 @@ width: 62
 
 
 
--- ftd.column quote-6-mobile:
+-- component quote-6-mobile:
 optional caption title:
 body body:
-padding-vertical: $fpm.space.space-4
-padding-horizontal: $fpm.space.space-4
-gradient-direction: top to bottom
-gradient-colors: grey, black
 ftd.image-src logo: $assets.files.static.quote.png
-width: fill
-max-width: 800
-align: center
-margin-top: $fpm.space.space-5
-margin-bottom: $fpm.space.space-6
 
---- ftd.column:
-border-top: 1
-border-color: $fpm.color.main.text
+-- ftd.column:
+padding-vertical.px: 16
+padding-horizontal.px: 16
+;;gradient-direction: top.px to bottom.px
+;;gradient-colors: grey, black
+width: fill-container
+max-width.fixed.px: 800
+align-self: center
+margin-top.px: 20
+margin-bottom.px: 24
+
+-- ftd.column:
+border-top-width.px: 1
+border-color: $inherited.colors.text
 anchor: parent
-top: 18
-left: 44
-width: percent 80
-align: center
+top.px: 18
+left.px: 44
+width.fixed.percent: 80
+align-self: center
 
---- container: ftd.main
+-- end: ftd.column
 
---- ftd.column:
-border-bottom: 1
-border-color: $fpm.color.main.text
+-- ftd.column:
+border-bottom-width.px: 1
+border-color: $inherited.colors.text
 anchor: parent
-right: 44
-bottom: 18
-width: percent 80
+right.px: 44
+bottom.px: 18
+width.fixed.percent: 80
 
---- container: ftd.main
+-- end: ftd.column
 
---- ftd.column:
-align: center
-width: percent 80
-padding-vertical: $fpm.space.space-4
+-- ftd.column:
+align-self: center
+width.fixed.percent: 80
+padding-vertical.px: 16
 
---- ftd.text: 
-text: $body
-role: $heading-small-bold
-color: $fpm.color.main.text
+-- ftd.text: 
+text: $quote-6-mobile.body
+role: $inherited.types.heading-small
+color: $inherited.colors.text
 
---- ftd.text: $title
-role: $fpm.type.copy-relaxed
-color: $fpm.color.main.text
-padding-top: $fpm.space.space-5
+-- ftd.text: $quote-6-mobile.title
+role: $inherited.types.copy-relaxed
+color: $inherited.colors.text
+padding-top.px: 20
 
---- ftd.image:
+-- ftd.image:
 anchor: parent
-src: $logo
-right: 10
-bottom: -12
-height: 32
-width: 32
+src: $quote-6-mobile.logo
+right.px: 10
+bottom.px: -12
+height.fixed.px: 32
+width.fixed.px: 32
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: quote-6-mobile
 
 
 
@@ -1470,53 +1589,63 @@ width: 32
 
 
 
--- ftd.column stormcloud:
+-- component stormcloud:
 optional caption title:
 body body:
-border-width: 16
-border-color: $fpm.color.main.border
-padding-vertical: $fpm.space.space-4
-padding-horizontal: $fpm.space.space-4
-width: fill
-max-width: 320
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-align: center
 
---- ftd.column:
-z-index: 300
+-- ftd.column:
+border-width.px: 16
+border-color: $inherited.colors.border
+padding-vertical.px: 16
+padding-horizontal.px: 16
+width: fill-container
+max-width.fixed.px: 320
+margin-top.px: 24
+margin-bottom.px: 24
+align-self: center
 
---- ftd.text: 
-text: $body
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
-margin-top: $fpm.space.space-4
-margin-bottom: $fpm.space.space-4
+-- ftd.column:
+;;z-index: 300
+
+-- ftd.text: 
+text: $stormcloud.body
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+margin-top.px: 16
+margin-bottom.px: 16
 text-align: center
-align: center
+align-self: center
 
---- ftd.row:
-padding-left: $fpm.space.space-3
-align: right
+-- ftd.row:
+padding-left.px: 12
+align-self: end
 
---- ftd.text: ~
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
-margin-right: $fpm.space.space-2
+-- ftd.text: ~
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+margin-right.px: 8
 
---- ftd.text: $title
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
+-- ftd.text: $stormcloud.title
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.row:
+-- end: ftd.column
+
+-- ftd.row:
 anchor: parent
-background-color: $fpm.color.main.background.base
-left: 32
-right: 32
-top: -16
-bottom: -16
+background.solid: $inherited.colors.background.base
+left.px: 32
+right.px: 32
+top.px: -16
+bottom.px: -16
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: stormcloud
 
 
 
@@ -1527,117 +1656,129 @@ bottom: -16
 
 
 
--- ftd.row vampire:
+-- component vampire:
 optional caption title:
 ftd.image-src left-logo: $assets.files.static.left-quote.png
 ftd.image-src right-logo: $assets.files.static.right-quote-sign.png
 body body:
-width if not $is-mobile: auto
-width if $is-mobile: fill
-min-width: percent 50
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-align: center
 
---- ftd.image:
-src: $left-logo
-height: 120
-width: 24
+-- ftd.row:
+width if { ftd.device != "mobile" }: auto
+width if { ftd.device == "mobile" }: fill-container
+min-width.fixed.percent: 50
+margin-top.px: 24
+margin-bottom.px: 24
+align-self: center
 
---- ftd.column:
-width: fill
-id: text-container
+-- ftd.image:
+src: $vampire.left-logo
+height.fixed.px: 120
+width.fixed.px: 24
 
---- ftd.row:
-width: fill
-min-height: 84
+-- ftd.column:
+width: fill-container
+;;id: text-container
 
---- ftd.text:
-text: $body
-color: $fpm.color.main.text-strong
-role: $fpm.type.copy-tight
-padding-horizontal: $fpm.space.space-7
-margin-top: 16
-margin-bottom: 16
-width: fill
+-- ftd.row:
+width: fill-container
+min-height.fixed.px: 84
+
+-- ftd.text:
+text: $vampire.body
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-tight
+padding-horizontal.px: 32
+margin-top.px: 16
+margin-bottom.px: 16
+width: fill-container
 text-align: center
 
---- container: text-container
+-- end: ftd.row
 
---- ftd.text: $title
-align: right
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
-padding-horizontal: $fpm.space.space-4
+-- ftd.text: $vampire.title
+align-self: end
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+padding-horizontal.px: 16
 
---- container: ftd.main
+-- end: ftd.column
 
---- ftd.image:
-src: $right-logo
-height: 120
-width: 24
+-- ftd.image:
+src: $vampire.right-logo
+height.fixed.px: 120
+width.fixed.px: 24
 
+-- end: ftd.row
 
-
-
-
-
+-- end: vampire
 
 
 
 
--- ftd.column rustic:
+
+
+
+
+
+
+-- component rustic:
 optional caption title:
 body body: 
 ftd.image-src left-logo: $assets.files.static.left-quote.png
 ftd.image-src right-logo: $assets.files.static.right-quote-sign.png
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
+
+-- ftd.column:
+margin-top.px: 24
+margin-bottom.px: 24
 width: auto
-width if $is-mobile: fill
-align: center
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
 
---- ftd.image:
-src: $left-logo
-height: 69
-width: 69
+-- ftd.image:
+src: $rustic.left-logo
+height.fixed.px: 69
+width.fixed.px: 69
 anchor: parent
-top: -12
-left if $is-mobile: 0
-left: -32
-z-index: 0
+top.px: -12
+left.px if { ftd.device == "mobile" }: 0
+left.px: -32
+;;z-index: 0
 
---- ftd.column:
-align: center
-padding-vertical: $fpm.space.space-2
-padding-horizontal: $fpm.space.space-2
-max-width: 756
-z-index: 1
+-- ftd.column:
+align-self: center
+padding-vertical.px: 8
+padding-horizontal.px: 8
+max-width.fixed.px: 756
+;;z-index: 1
 
---- ftd.text:
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.heading-small
-padding-horizontal: $fpm.space.space-7
-margin-top: 16
-margin-bottom: 16
+-- ftd.text:
+text: $rustic.body
+color: $inherited.colors.text
+role: $inherited.types.heading-small
+padding-horizontal.px: 32
+margin-top.px: 16
+margin-bottom.px: 16
 text-align: center
 
---- ftd.text: $title
-align: center
-role: $fpm.type.copy-tight
-color: $fpm.color.main.text
-padding-horizontal: $fpm.space.space-7
+-- ftd.text: $rustic.title
+align-self: center
+role: $inherited.types.copy-tight
+color: $inherited.colors.text
+padding-horizontal.px: 32
 
---- container: ftd.main
+-- end: ftd.column
 
---- ftd.image:
-src: $right-logo
-height: 69
-width: 69
+-- ftd.image:
+src: $rustic.right-logo
+height.fixed.px: 69
+width.fixed.px: 69
 anchor: parent
-right: 0
-bottom: 0
+right.px: 0
+bottom.px: 0
+
+-- end: ftd.column
+
+-- end: rustic
 
 
 
@@ -1648,61 +1789,67 @@ bottom: 0
 
 
 
--- ftd.column echo:
+-- component echo:
 optional caption title:
 ftd.image-src logo: $assets.files.static.right-quote-sign.png
-width: fill
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
 body body:
-max-width: 960
 
---- ftd.row:
-width: fill
-border-left: 10
-padding-left: $fpm.space.space-8
-border-color: $fpm.color.main.border
+-- ftd.column:
+width: fill-container
+margin-top.px: 24
+margin-bottom.px: 24
+max-width.fixed.px: 960
 
---- ftd.column:
-padding-vertical: $fpm.space.space-3
-id: text-container
+-- ftd.row:
+width: fill-container
+border-left-width.px: 10
+padding-left.px: 40
+border-color: $inherited.colors.border
 
---- ftd.text: 
-if: not $is-mobile
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.copy-large
+-- ftd.column:
+padding-vertical.px: 12
+;;id: text-container
 
---- ftd.text: 
-if: $is-mobile
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.copy-large
+-- ftd.text: 
+if: { ftd.device != "mobile" }
+text: $echo.body
+color: $inherited.colors.text
+role: $inherited.types.copy-large
+
+-- ftd.text: 
+if: { ftd.device == "mobile" }
+text: $echo.body
+color: $inherited.colors.text
+role: $inherited.types.copy-large
 text-align: justify
 
---- container: text-container
+-- ftd.text: $echo.title
+color: $inherited.colors.text
+role: $inherited.types.fine-print
+margin-top.px: 12
 
---- ftd.text: $title
-color: $fpm.color.main.text
-role: $fpm.type.fine-print
-style: italic
-margin-top: $fpm.space.space-3
+-- end: ftd.column
 
---- container: ftd.main
-
---- ftd.row:
+-- ftd.row:
 anchor: parent
-padding-vertical: 16
-background-color: $fpm.color.main.background.base
-top: 36
-top if $is-mobile: 64
-left: -8
+padding-vertical.px: 16
+background.solid: $inherited.colors.background.base
+top.px: 36
+top.px if { ftd.device == "mobile" }: 64
+left.px: -8
 
---- ftd.image:
-src: $logo
-width: 32
+-- ftd.image:
+src: $echo.logo
+width.fixed.px: 32
 height: auto
 
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: echo
 
 
 
@@ -1712,105 +1859,120 @@ height: auto
 
 
 
--- ftd.column window:
+
+-- component window:
 caption title:
 body body:
-border-width: 1
-border-color: $fpm.color.main.text
-padding-vertical: $fpm.space.space-7
-padding-horizontal: $fpm.space.space-7
-width: auto
-width if $is-mobile: fill
-min-width: percent 60
-align: center
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
 
---- ftd.text: $title
+-- ftd.column:
+border-width.px: 1
+border-color: $inherited.colors.text
+padding-vertical.px: 32
+padding-horizontal.px: 32
+width: auto
+width if { ftd.device == "mobile" }: fill-container
+min-width.fixed.percent: 60
+align-self: center
+margin-top.px: 24
+margin-bottom.px: 24
+
+-- ftd.text: $window.title
 anchor: parent
-background-color: $fpm.color.main.background.base
-top: -16
-move-right: 270
+background.solid: $inherited.colors.background.base
+top.px: -16
+;;move-right.px: 270
 text-align: center
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
+role: $inherited.types.copy-large
+color: $inherited.colors.text
 white-space: nowrap
-padding-horizontal: $fpm.space.space-6
+padding-horizontal.px: 24
 
---- ftd.text:
-text: $body
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
-style: italic
-padding-top: $fpm.space.space-2
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-align: center
+-- ftd.text:
+text: $window.body
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+;;style: italic
+padding-top.px: 8
+margin-top.px: 24
+margin-bottom.px: 24
+align-self: center
 text-align: center
 
---- container: ftd.main
-
---- ftd.row:
-width: 30
-height: 30
+-- ftd.row:
+width.fixed.px: 30
+height.fixed.px: 30
 anchor: parent
-border-top: 2
-border-right-radius: 100
-border-left-radius: 100
-border-color: $fpm.color.main.text
-background-color: $fpm.color.main.background.base
-left: -16
-top: -11
-rotate: 110
-z-index: 200
+border-top-width.px: 2
+border-top-right-radius.px: 100
+border-bottom-right-radius.px: 100
+border-top-left-radius.px: 100
+border-bottom-left-radius.px: 100
+border-color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+left.px: -16
+top.px: -11
+;;;;rotate: 110
+;;z-index: 200
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.row:
-width: 30
-height: 30
+-- ftd.row:
+width.fixed.px: 30
+height.fixed.px: 30
 anchor: parent
-border-left: 2
-border-right-radius: 100
-border-left-radius: 100
-border-color: $fpm.color.main.text
-background-color: $fpm.color.main.background.base
-left: -16
-bottom: -11
-rotate: 150
-z-index: 200
+border-left-width.px: 2
+border-top-right-radius.px: 100
+border-bottom-right-radius.px: 100
+border-top-left-radius.px: 100
+border-bottom-left-radius.px: 100
+border-color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+left.px: -16
+bottom.px: -11
+;;;;rotate: 150
+;;z-index: 200
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.row:
-width: 30
-height: 30
+-- ftd.row:
+width.fixed.px: 30
+height.fixed.px: 30
 anchor: parent
-border-right: 2
-border-right-radius: 100
-border-left-radius: 100
-border-color: $fpm.color.main.text
-background-color: $fpm.color.main.background.base
-right: -16
-top: -11
-rotate: 160
-z-index: 200
+border-right-width.px: 2
+border-top-right-radius.px: 100
+border-bottom-right-radius.px: 100
+border-top-left-radius.px: 100
+border-bottom-left-radius.px: 100
+border-color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+right.px: -16
+top.px: -11
+;;rotate: 160
+;;z-index: 200
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.row:
-width: 30
-height: 30
+-- ftd.row:
+width.fixed.px: 30
+height.fixed.px: 30
 anchor: parent
-border-bottom: 2
-border-right-radius: 100
-border-left-radius: 100
-border-color: $fpm.color.main.text
-background-color: $fpm.color.main.background.base
-right: -16
-bottom: -11
-rotate: 110
-z-index: 200
+border-bottom-width.px: 2
+border-top-right-radius.px: 100
+border-bottom-right-radius.px: 100
+border-top-left-radius.px: 100
+border-bottom-left-radius.px: 100
+border-color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+right.px: -16
+bottom.px: -11
+;;rotate: 110
+;;z-index: 200
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: window
 
 
 
@@ -1821,105 +1983,124 @@ z-index: 200
 
 
 
--- ftd.column matte:
+-- component matte:
 optional caption title:
 body body:
-padding-vertical: $fpm.space.space-4
+
+-- ftd.column:
+padding-vertical.px: 16
 width: auto
-width if $is-mobile: fill
-align: center
-border-style: dashed
-border-bottom: 2
-border-color: $fpm.color.main.text
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+;;border-style: dashed
+border-bottom-width.px: 2
+border-color: $inherited.colors.text
+margin-top.px: 24
+margin-bottom.px: 24
 
---- ftd.text:
-text: $body
-role: $fpm.type.copy-tight
-color: $fpm.color.main.text
+-- ftd.text:
+text: $matte.body
+role: $inherited.types.copy-tight
+color: $inherited.colors.text
 
---- ftd.row:
-align: right
-padding-top: $fpm.space.space-4
+-- ftd.row:
+align-self: end
+padding-top.px: 16
 
---- ftd.text: ~
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
-margin-right: $fpm.space.space-1
+-- ftd.text: ~
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+margin-right.px: 4
 
---- ftd.text: $title
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
+-- ftd.text: $matte.title
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
+-- end: ftd.row
 
+-- end: ftd.column
 
-
-
-
-
-
+-- end: matte
 
 
--- ftd.row antique:
+
+
+
+
+
+
+
+
+-- component antique:
 ftd.image-src avatar: $assets.files.static.socrates.png
 optional caption title:
 body body:
-width if not $is-mobile: auto
-width if $is-mobile: fill
-min-width: percent 50
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-align: center
 
---- ftd.column:
+-- ftd.row:
+width if { ftd.device != "mobile" }: auto
+width if { ftd.device == "mobile" }: fill-container
+min-width.fixed.percent: 50
+margin-top.px: 24
+margin-bottom.px: 24
+align-self: center
+
+-- ftd.column:
 anchor: parent
-background-color: $image-color
-top: 0
-left: 0
-width: 90
-height: fill
+background.solid: $image-color
+top.px: 0
+left.px: 0
+width.fixed.px: 90
+height: fill-container
 
---- container: ftd.main
+-- end: ftd.column
 
---- ftd.column:
-background-image: $avatar
-width: 90
-height: fill
+-- ftd.column:
+;;background-image: $antique.avatar
+width.fixed.px: 90
+height: fill-container
 anchor: parent
-top: 0
-left: 0
+top.px: 0
+left.px: 0
 
---- container: ftd.main
+-- end: ftd.column
 
---- ftd.column:
-margin-left: 90
-padding-top: $fpm.space.space-4
-padding-horizontal: $fpm.space.space-4
-background-color: $fpm.color.main.background.step-2
-border-radius: 4
-spacing: 8
-max-width if not $is-mobile: percent 30
-width if $is-mobile: fill
+-- ftd.column:
+margin-left.px: 90
+padding-top.px: 16
+padding-horizontal.px: 16
+background.solid: $inherited.colors.background.step-2
+border-radius.px: 4
+spacing.px: 8
+max-width.fixed.percent if { ftd.device != "mobile" }: 30
+width if { ftd.device == "mobile" }: fill-container
 
---- ftd.text:
-text: $body
-role: $heading-40-bold
-color: $fpm.color.main.text
+-- ftd.text:
+text: $antique.body
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+
+-- ftd.row:
+spacing.px: 8
+margin-top.px: 42
+padding-bottom.px: 16
+
+-- ftd.text: ~
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+
+-- ftd.text: $antique.title
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: antique
 
 
---- ftd.row:
-spacing: 8
-margin-top: $fpm.space.space-12
-padding-bottom: $fpm.space.space-4
-
---- ftd.text: ~
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
-
---- ftd.text: $title
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
 
 
 
@@ -1928,70 +2109,84 @@ color: $fpm.color.main.text
 
 
 
-
-
--- ftd.row bubble:
+-- component bubble:
 ftd.image-src avatar: $assets.files.static.socrates.png
 optional caption title:
 body body:
-width: fill
 
---- quote-14-desktop: $title
-if: not $is-mobile
-body: $body
+-- ftd.row:
+width: fill-container
 
---- quote-14-mobile: $title
-if: $is-mobile
-body: $body
+-- quote-14-desktop: $bubble.title
+if: { ftd.device != "mobile" }
+body: $bubble.body
 
+/-- quote-14-mobile: $bubble.title
+if:{ ftd.device == "mobile" }
+body: $bubble.body
 
+-- end: ftd.row
 
-
-
-
-
-
+-- end: bubble
 
 
--- ftd.row quote-14-desktop:
+
+
+
+
+
+
+
+
+-- component quote-14-desktop:
 ftd.image-src avatar: $assets.files.static.quotes-bg.jpeg
 optional caption title:
 body body:
-width if not $is-mobile: auto
-width if $is-mobile: fill
-min-width: percent 50
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-background-image: $avatar
-background-repeat: false
-padding-vertical: $fpm.space.space-8
-padding-horizontal:  $fpm.space.space-8
-align: center
 
---- ftd.column:
-spacing: 8
-background-color: $fpm.color.main.background.base
-align: center
-padding-vertical: $fpm.space.space-8
-padding-horizontal: $fpm.space.space-8
+-- ftd.row:
+width if { ftd.device != "mobile" }: auto
+width if { ftd.device == "mobile" }: fill-container
+min-width.fixed.percent: 50
+margin-top.px: 24
+margin-bottom.px: 24
+;;background-image: $quote-14-desktop.avatar
+;;background-repeat: false
+padding-vertical.px: 40
+padding-horizontal.px:  40
+align-self: center
 
---- ftd.text:
-text: $body
-role: $fpm.type.heading-small
-color: $fpm.color.main.text
+-- ftd.column:
+spacing.px: 8
+background.solid: $inherited.colors.background.base
+align-self: center
+padding-vertical.px: 40
+padding-horizontal.px: 40
+
+-- ftd.text:
+text: $quote-14-desktop.body
+role: $inherited.types.heading-small
+color: $inherited.colors.text
 text-align: justify
 
---- ftd.row:
-spacing: 8
-margin-top: $fpm.space.space-6
+-- ftd.row:
+spacing.px: 8
+margin-top.px: 24
 
---- ftd.text: ~
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
+-- ftd.text: ~
+role: $inherited.types.copy-large
+color: $inherited.colors.text
 
---- ftd.text: $title
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
+-- ftd.text: $quote-14-desktop.title
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: quote-14-desktop
 
 
 
@@ -2002,45 +2197,55 @@ color: $fpm.color.main.text
 
 
 
--- ftd.row quote-14-mobile:
+-- component quote-14-mobile:
 ftd.image-src avatar: $assets.files.static.quotes-bg.jpeg
 optional caption title:
 body body:
-width if not $is-mobile: auto
-width if $is-mobile: fill
-min-width: percent 50
-margin-top: $fpm.space.space-3
-margin-bottom: $fpm.space.space-3
-background-image: $avatar
-background-repeat: false
-padding-vertical: $fpm.space.space-3
-padding-horizontal:  $fpm.space.space-3
-align: center
 
---- ftd.column:
-spacing: 8
-background-color: $fpm.color.main.background.base
-align: center
-padding-vertical: $fpm.space.space-3
-padding-horizontal: $fpm.space.space-3
+-- ftd.row:
+width if { ftd.device != "mobile" }: auto
+width if { ftd.device == "mobile" }: fill-container
+min-width.fixed.percent: 50
+margin-top.px: 12
+margin-bottom.px: 12
+;;background-image: $quote-14-mobile.avatar
+;;background-repeat: false
+padding-vertical.px: 12
+padding-horizontal.px:  12
+align-self: center
 
---- ftd.text:
-text: $body
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
+-- ftd.column:
+spacing.px: 8
+background.solid: $inherited.colors.background.base
+align-self: center
+padding-vertical.px: 12
+padding-horizontal.px: 12
+
+-- ftd.text:
+text: $quote-14-mobile.body
+role: $inherited.types.copy-large
+color: $inherited.colors.text
 text-align: justify
 
---- ftd.row:
-spacing: 8
-margin-top: $fpm.space.space-6
+-- ftd.row:
+spacing.px: 8
+margin-top.px: 24
 
---- ftd.text: ~
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
+-- ftd.text: ~
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
---- ftd.text: $title
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
+-- ftd.text: $quote-14-mobile.title
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: quote-14-mobile
 
 
 
@@ -2051,64 +2256,75 @@ color: $fpm.color.main.text
 
 
 
--- ftd.row electric:
+-- component electric:
 ftd.image-src avatar: $assets.files.static.socrates.png
 optional caption title:
 body body:
-width if not $is-mobile: auto
-width if $is-mobile: fill
-min-width: percent 50
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
-align: center
 
---- ftd.column:
+-- ftd.row:
+width if { ftd.device != "mobile" }: auto
+width if { ftd.device == "mobile" }: fill-container
+min-width.fixed.percent: 50
+margin-top.px: 24
+margin-bottom.px: 24
+align-self: center
+
+-- ftd.column:
 anchor: parent
-background-color: $image-color
-top: 0
-left: 0
-width: 90
-height: fill
+background.solid: $image-color
+top.px: 0
+left.px: 0
+width.fixed.px: 90
+height: fill-container
 
---- container: ftd.main
+-- end: ftd.column
 
---- ftd.column:
-background-image: $avatar
-width: 90
-height: fill
+-- ftd.column:
+;;background-image: $electric.avatar
+width.fixed.px: 90
+height: fill-container
 anchor: parent
-top: 0
-left: 0
+top.px: 0
+left.px: 0
 
---- container: ftd.main
+-- end: ftd.column
 
---- ftd.column:
-margin-left: 90
-padding-top: $fpm.space.space-4
-padding-horizontal: $fpm.space.space-4
-background-color: $fpm.color.main.background.step-2
-border-radius: 4
-spacing: 8
-width: fill
+-- ftd.column:
+margin-left.px: 90
+padding-top.px: 16
+padding-horizontal.px: 16
+background.solid: $inherited.colors.background.step-2
+border-radius.px: 4
+spacing.px: 8
+width: fill-container
+
+-- ftd.text:
+text: $electric.body
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+
+-- ftd.row:
+spacing.px: 8
+margin-top.px: 42
+padding-bottom.px: 16
+
+-- ftd.text: ~
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+
+-- ftd.text: $electric.title
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: electric
 
 
---- ftd.text:
-text: $body
-role: $heading-small-bold
-color: $fpm.color.main.text
-
---- ftd.row:
-spacing: 8
-margin-top: $fpm.space.space-12
-padding-bottom: $fpm.space.space-4
-
---- ftd.text: ~
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
-
---- ftd.text: $title
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
 
 
 
@@ -2117,279 +2333,311 @@ color: $fpm.color.main.text
 
 
 
-
-
--- ftd.column chrome:
+-- component chrome:
 optional caption title:
 body body:
-background-color: $fpm.color.main.background.step-2
-border-radius: 16
-border-width: 2
-padding-vertical: $fpm.space.space-6
-padding-horizontal: $fpm.space.space-6
 ftd.image-src quote-icon: $assets.files.static.quotes.svg
+
+-- ftd.column:
+background.solid: $inherited.colors.background.step-2
+border-radius.px: 16
+border-width.px: 2
+padding-vertical.px: 24
+padding-horizontal.px: 24
 width: auto
-width $is-mobile: fill
-align: center
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-top.px: 24
+margin-bottom.px: 24
 
---- ftd.image:
-src: $quote-icon
-width: 32
-height:auto
-margin-bottom: $fpm.space.space-4
+-- ftd.image:
+src: $chrome.quote-icon
+width.fixed.px: 32
+height: auto
+margin-bottom.px: 16
 
+-- ftd.text: 
+padding-bottom.px: 24
+text: $chrome.body
+color: $inherited.colors.text
+role: $inherited.types.heading-small
+border-bottom-width.px: 2
+border-color: $inherited.colors.text
 
---- ftd.text: 
-padding-bottom: $fpm.space.space-6
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.heading-small
-border-bottom: 2
-border-color: $fpm.color.main.text
+-- ftd.text: $chrome.title
+margin-top.px: 24
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 
+-- end: ftd.column
 
---- ftd.text: $title
-margin-top: $fpm.space.space-6
-color: $fpm.color.main.text
-role: $fpm.type.fine-print
-
-
-
-
+-- end: chrome
 
 
 
 
 
 
--- ftd.column dorian:
+
+
+
+
+-- component dorian:
 optional caption title:
 body body:
+
+-- ftd.column:
 width: auto
-width $is-mobile: fill
-align: center
-margin-top: $fpm.space.space-6
-margin-bottom: $fpm.space.space-6
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-top.px: 24
+margin-bottom.px: 24
 
---- ftd.row:
-width: 30
-height: 30
+-- ftd.row:
+width.fixed.px: 30
+height.fixed.px: 30
 anchor: parent
-background-color: $fpm.color.main.background.step-2
-left: 56
-bottom: 52
-rotate: 132
-z-index: 200
-border-style: solid
+background.solid: $inherited.colors.background.step-2
+left.px: 56
+bottom.px: 52
+;;rotate: 132
+;;z-index: 200
+;;border-style: solid
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.text: 
-padding-bottom: $fpm.space.space-6
-text: $body
-color: $fpm.color.main.text
-role: $fpm.type.heading-small
-background-color: $fpm.color.main.background.step-2
-padding-vertical: $fpm.space.space-6
-padding-horizontal: $fpm.space.space-6
-border-top-radius: 8
+-- ftd.text: 
+padding-bottom.px: 24
+text: $dorian.body
+color: $inherited.colors.text
+role: $inherited.types.heading-small
+background.solid: $inherited.colors.background.step-2
+padding-vertical.px: 24
+padding-horizontal.px: 24
+border-top-right-radius.px: 8
+border-top-left-radius.px: 8
 
---- ftd.text: $title
-color: $fpm.color.main.text
-role: $fpm.type.fine-print
-background-color: $fpm.color.main.background.step-1
-padding-vertical: $fpm.space.space-6
-padding-horizontal: $fpm.space.space-6
-width: fill
-border-bottom-radius: 8
+-- ftd.text: $dorian.title
+color: $inherited.colors.text
+role: $inherited.types.fine-print
+background.solid: $inherited.colors.background.step-1
+padding-vertical.px: 24
+padding-horizontal.px: 24
+width: fill-container
+border-bottom-right-radius.px: 8
+border-bottom-left-radius.px: 8
 
+-- end: ftd.column
 
-
-
-
-
-
-
+-- end: dorian
 
 
--- ftd.column octa:
+
+
+
+
+
+
+
+
+-- component octa:
 optional caption title:
 body body:
-width: fill
 
+-- ftd.column:
+width: fill-container
 
---- octa-desktop:
-if: not $is-mobile
-title: $title
-body: $body
+-- octa-desktop:
+if: { ftd.device != "mobile" }
+title: $octa.title
+body: $octa.body
 
---- container: ftd.main
+-- octa-mobile:
+if: { ftd.device == "mobile" }
+title: $octa.title
+body: $octa.body
 
---- octa-mobile:
-if: $is-mobile
-title: $title
-body: $body
+-- end: ftd.column
 
-
-
-
-
-
+-- end: octa
 
 
 
 
--- ftd.column octa-desktop:
+
+
+
+
+
+
+-- component octa-desktop:
 optional caption title:
 body body:
-width: fill
-min-height: 300
-background-color: $fpm.color.main.custom.seven
-margin-bottom: $fpm.space.space-8
-margin-top: $fpm.space.space-8
-padding-horizontal: $fpm.space.space-10
-padding-vertical: $fpm.space.space-10
 
---- octa-inner:
-title: $title
-body: $body
+-- ftd.column:
+width: fill-container
+min-height.fixed.px: 300
+background.solid: $inherited.colors.custom.seven
+margin-bottom.px: 40
+margin-top.px: 40
+padding-horizontal.px: 40
+padding-vertical.px: 40
 
+-- octa-inner: $octa-desktop.title
+body: $octa-desktop.body
 
+-- end: ftd.column
 
-
-
-
-
+-- end: octa-desktop
 
 
 
 
--- ftd.column octa-mobile:
+
+
+
+
+
+-- component octa-mobile:
 optional caption title:
 body body:
-background-color: $fpm.color.main.custom.seven
-margin-bottom: $fpm.space.space-8
-padding-horizontal: $fpm.space.space-10
-padding-vertical: $fpm.space.space-10
-scale: 0.6
-width: 750
-margin-left: -200
-margin-top: -70
 
---- octa-inner:
-title: $title
-body: $body
+-- ftd.column:
+background.solid: $inherited.colors.custom.seven
+margin-bottom.px: 40
+padding-horizontal.px: 40
+padding-vertical.px: 40
+;;scale: 0.6
+width.fixed.px: 750
+margin-left.px: -200
+margin-top.px: -70
 
+-- octa-inner: $octa-mobile.title
+body: $octa-mobile.body
 
+-- end: ftd.column
 
-
-
-
-
+-- end: octa-mobile
 
 
 
--- ftd.column octa-inner:
+
+
+
+
+
+
+
+-- component octa-inner:
 optional caption title:
 body body:
-width: fill
 
---- ftd.column:
-width: fill
-background-color: $fpm.color.main.background.base
-id: inner-wrap
-min-height: 250
+-- ftd.column:
+width: fill-container
 
+-- ftd.column:
+width: fill-container
+background.solid: $inherited.colors.background.base
+;;id: inner-wrap
+min-height.fixed.px: 250
 
---- ftd.column:
-background-image: $assets.files.static.hexagon-10.svg
-width: 150
-height: 150
+-- ftd.column:
+;;background-image: $assets.files.static.hexagon-10.svg
+width.fixed.px: 150
+height.fixed.px: 150
 anchor: parent
-left: -62
-top: -32
-z-index: 99
+left.px: -62
+top.px: -32
+;;z-index: 99
 
---- container: inner-wrap
+-- end: ftd.column
 
---- ftd.column:
-background-image: $assets.files.static.hexagon-11.svg
-width: 80
-height: 80
+-- ftd.column:
+;;background-image: $assets.files.static.hexagon-11.svg
+width.fixed.px: 80
+height.fixed.px: 80
 anchor: parent
-left: 44
-top: -34
-z-index: 99
+left.px: 44
+top.px: -34
+;;z-index: 99
 
---- container: inner-wrap
+-- end: ftd.column
 
---- ftd.column:
-background-image: $assets.files.static.hexagon-12.svg
-width: 130
-height: 130
+-- ftd.column:
+;;background-image: $assets.files.static.hexagon-12.svg
+width.fixed.px: 130
+height.fixed.px: 130
 anchor: parent
-right: -24
-top: -54
-z-index: 99
+right.px: -24
+top.px: -54
+;;z-index: 99
 
---- container: inner-wrap
+-- end: ftd.column
 
---- ftd.column:
-background-image: $assets.files.static.hexagon-13.svg
-width: 140
-height: 140
+-- ftd.column:
+;;background-image: $assets.files.static.hexagon-13.svg
+width.fixed.px: 140
+height.fixed.px: 140
 anchor: parent
-left: -44
-bottom: -44
-z-index: 99
+left.px: -44
+bottom.px: -44
+;;z-index: 99
 
---- container: inner-wrap
+-- end: ftd.column
 
---- ftd.column:
-background-image: $assets.files.static.hexagon-14.svg
-width: 120
-height: 120
+-- ftd.column:
+;;background-image: $assets.files.static.hexagon-14.svg
+width.fixed.px: 120
+height.fixed.px: 120
 anchor: parent
-right: 60
-bottom: -34
-z-index: 999
+right.px: 60
+bottom.px: -34
+;;z-index: 999
 
---- container: inner-wrap
+-- end: ftd.column
 
---- ftd.column:
-background-image: $assets.files.static.hexagon-9.svg
-width: 150
-height: 150
+-- ftd.column:
+;;background-image: $assets.files.static.hexagon-9.svg
+width.fixed.px: 150
+height.fixed.px: 150
 anchor: parent
-right: -44
-bottom: -34
-z-index: 99
+right.px: -44
+bottom.px: -34
+;;z-index: 99
 
---- container: inner-wrap
+-- end: ftd.column
 
---- ftd.column:
-width: percent 70
-align: center
-padding-top: $fpm.space.space-10
+-- end: ftd.column
 
---- ftd.text:
-text: $body
-role: $fpm.type.copy-tight
-color: $fpm.color.main.custom.three
-max-height: 200
+-- ftd.column:
+width.fixed.percent: 70
+align-self: center
+padding-top.px: 40
+
+-- ftd.text:
+text: $octa-inner.body
+role: $inherited.types.copy-tight
+color: $inherited.colors.custom.three
+max-height.fixed.px: 200
 overflow-y: auto
 
---- ftd.row:
-align: center
-margin-top: $fpm.space.space-10
+-- ftd.row:
+align-self: center
+margin-top.px: 40
 
---- ftd.text: ~
-role: $fpm.type.copy-tight
-color: $fpm.color.main.text
-margin-right: $fpm.space.space-2
+-- ftd.text: ~
+role: $inherited.types.copy-tight
+color: $inherited.colors.text
+margin-right.px: 8
 
---- ftd.text: $title
-role: $fpm.type.copy-tight
-color: $fpm.color.main.custom.three
+-- ftd.text: $octa-inner.title
+role: $inherited.types.copy-tight
+color: $inherited.colors.custom.three
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: octa-inner

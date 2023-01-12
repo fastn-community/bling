@@ -1,94 +1,32 @@
 -- import: fifthtry.github.io/bling/assets
--- import: fifthtry.github.io/package-doc/doc as pd
-
--- boolean is-mobile: false
-
--- is-mobile: true
-if: $ftd.device == mobile
+;;-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
 
 
--- ft.page: Chat & messages
-
-`-- message-left` OR `-- message-right` is a new chatting experience via using 
-`FTD` lang.
-
--- pd.package: `message-left` & `message-right`
-name: fifthtry.github.io/bling/chat
-
-To use these components on your web package, add below into `FPM.ftd` file:
-
--- cb.code:
-lang: ftd
-
-\-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling/chat
+-- ftd.column:
+height: hug-content
+width: fill-container
+background.solid: $inherited.colors.background.base
+padding-vertical.px: 24
+padding-horizontal.px: 24
 
 -- tf.markdown:
 
 Once you add above lines into your web package, add `message-left` OR `message-right`
 into your `.ftd` files:
 
--- cb.code: `-- message-left` basic usage example code:
-lang: ftd
-
-\-- chat.message-left: Hellow World! 😀
-
-
-
-
-
 -- message-left: Hello World! 😀
 
-
-
-
-
--- cb.code: `-- message-right` basic usage example code:
-lang: ftd
-
-\-- chat.message-right: Hey Buddy! 👋
-
-
-
-
-
 -- message-right: Hey Buddy! 👋
-
-
-
-
 
 -- tf.h3: How to create custom component, using default attributes?
 
 `FTD` lang is flexible and you can define your custom names to the default component.
 Below are few examples of custom names:
 
---- cb.code: Example: with custom name as below:
-lang: ftd
-
-\-- chat.message-left amitu:
-optional caption title:
-title: $title
-
-\-- chat.message-right me:
-optional caption title:
-title: $title
-
 -- tf.h3: How to use above custom name:
-
---- cb.code: `-- amitu` & `-- me` usage:
-lang: ftd
-
-\-- amitu: Hello World! `ftd` is awesome
-
-\-- me: Hello there! `ftd` is flexible
-
-
-
-
 
 -- tf.markdown:
 
@@ -96,158 +34,95 @@ You can change default `avatar` and use custom image as avatar, add your custom
 images into your package and use them via changing `avatar` attribute value 
 as given below example:
 
--- cb.code: Example: chat with custom avatar:
-lang: ftd
-
-\-- chat.message-left amitu:
-optional caption title:
-ftd.image-src avatar: $assets.files.static.amitu.jpg
-title: $title
-avatar: $avatar
-
-
--- cb.code: Example: with `rounded-avatar` as `true` (by default its `false`):
-lang: ftd
-
-\-- chat.message-right me:
-optional caption title:
-ftd.image-src avatar: $assets.files.static.ganeshs.jpeg
-boolean rounded-image: true
-title: $title
-avatar: $avatar
-rounded-avatar: $rounded-image
-
 -- tf.markdown:
 
 Now use `-- amitu` normally:
 
--- cb.code: `-- amitu` with custom `avatar`:
-lang: ftd
-
-\-- amitu: Hello World! liking `ftd` lang?
-\-- me: Hey! `ftd` is awesome! 🤘
-
-
-
-
 -- tf.h3: Output of above custom component:
 
---- ftd.column:
-width if not $is-mobile: 450
-padding if not $is-mobile: 24
-border-radius: 20
-background-color: $fpm.color.main.background.base
+-- ftd.column:
+width.fixed.px if { ftd.device != "mobile" }: 450
+padding.px if { ftd.device != "mobile" }: 24
+border-radius.px: 20
+background.solid: $inherited.colors.background.base
 
---- message-left: Hello World! liking `ftd` lang?
+-- message-left: Hello World! liking `ftd` lang?
 avatar: $assets.files.static.amitu.jpg
 round-avatar: true
 
---- message-right: Hey! `ftd` is awesome! 🤘
+-- message-right: Hey! `ftd` is awesome! 🤘
 avatar: $assets.files.static.ganeshs.jpeg
 round-avatar: true
 
-
-
-
-
+-- end: ftd.column
 
 -- tf.h3: Real-life example of a chat, using `message` `left` & `right`:
 
-
 -- ftd.column:
-width if not $is-mobile: 380
-padding if not $is-mobile: 24
-border-radius: 20
-background-color: $fpm.color.main.background.base
-
-
-
-
+width.fixed.px if { ftd.device != "mobile" }: 380
+padding.px if { ftd.device != "mobile" }: 24
+border-radius.px: 20
+background.solid: $inherited.colors.background.base
 
 -- message-left: Hey Buddy!
 pull-top: -4
 
---- ftd.column:
-margin-top: 4
+-- ftd.column:
+margin-top.px: 4
 
---- tf.markdown:
+-- tf.markdown:
 
 uis nostrud exercitation ullaril mco labil oris nisi ut aliquip ex ea commo 
 dorli consequa duis aute irure dolor lorii
 
---- ftd.column:
-margin-top: -14
-width: fill
+-- end: ftd.column
 
---- cb.code: Below is code:
-lang: ftd
+-- end: message-left
 
-\-- message-left: Hi! 
-\-- ftd.text: Hi!
+-- ftd.column:
+margin-top.px: 14
+width: fill-container
 
---- ftd.column:
-margin-top: -11
-
-
-
-
+-- ftd.column:
+margin-top.px: -11
 
 -- message-right: Yo! 
 pull-top: -4
 
---- ftd.column:
-margin-top: 4
+-- ftd.column:
+margin-top.px: 4
 
---- tf.markdown:
+-- tf.markdown:
 
 in voluptate velit esse cillum dolor er eu fugiat nulla pariatur. Excepte urla sint occaecat cupidatat nor proident,
 
---- cb.code: Wow! awesome man!:
-lang: ftd
+-- ftd.text: Sed ut perspiciatis unde omnis isa te natus error sit volupta tem.
+color: $inherited.colors.text
+role: $inherited.types.label-big
 
-\-- message-right: Yo! 
-\-- ftd.text: Yo! 
+-- end: ftd.column
 
---- ftd.text: Sed ut perspiciatis unde omnis isa te natus error sit volupta tem.
-color: $fpm.color.main.text
-role: $fpm.type.label-big
+-- end: message-right
 
+-- end: ftd.column
 
-
-
+-- end: ftd.column
 
 -- message-left: 🤘
 
-
-
-
-
 -- message-right: 👍👍
-
-
-
-
 
 -- message-left: Lorem ipsum dolor sit amet,
 
-
-
-
-
 -- message-right: sed do eiusmod tempor ut
-
-
-
-
 
 -- message-left: Lorem ipsum
 
-
-
-
-
 -- message-right: sed do eiusmod
 
+-- end: ftd.column
+
+-- end: ftd.column
 
 
 
@@ -256,57 +131,72 @@ role: $fpm.type.label-big
 
 
 
--- ftd.column message-left:
+
+
+-- component message-left:
 optional caption title:
 ftd.image-src avatar: $assets.files.static.amitu.jpg
 boolean round-avatar: true
-margin-bottom: $fpm.space.space-4
 integer pull-top: 0
-append-at: msg-container
-id: message
+children container:
+;;append-at: msg-container
+;;id: message
 
---- ftd.column:
-width: fill
+-- ftd.column:
+margin-bottom.px: 16
 
---- ftd.row:
-width: fill
-id: chat-right
+-- ftd.column:
+width: fill-container
 
---- ftd.image:
-if: not $round-avatar
-src: $avatar
-width: 32
-height: auto
-margin-right: $fpm.space.space-4
+-- ftd.row:
+width: fill-container
+;;id: chat-right
 
---- ftd.image:
-if: $round-avatar
-src: $avatar
-width: 32
-height: auto
-margin-right: $fpm.space.space-4
-border-radius: 32
+-- ftd.image:
+if: {!$message-left.round-avatar}
+src: $message-left.avatar
+width.fixed.px: 32
+height: hug-content
+margin-right.px: 16
 
---- container: chat-right
+-- ftd.image:
+if: {$message-left.round-avatar}
+src: $message-left.avatar
+width.fixed.px: 32
+height: hug-content
+margin-right.px: 16
+border-radius.px: 32
 
---- ftd.column:
-border-width: 1
-border-color: $fpm.color.main.border
-background-color: $fpm.color.main.background.step-1
-padding: $fpm.space.space-3
-border-radius: 4
-width: fill
-id: msg-container
+-- ftd.column:
+border-width.px: 1
+border-color: $inherited.colors.border
+background.solid: $inherited.colors.background.step-1
+padding.px: 12
+border-radius.px: 4
+width: fill-container
+;;id: msg-container
 
---- ftd.text:
-text: $title
-color: $fpm.color.main.text
-role: $fpm.type.label-big
-width: fill
-text-align: left
-margin-top: $pull-top
+-- ftd.text: $message-left.title
+color: $inherited.colors.text
+role: $inherited.types.label-big
+width: fill-container
+text-align: start
+margin-top.px: $message-left.pull-top
 
---- container: ftd.main
+-- ftd.column:
+children: $message-left.container
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: message-left
 
 
 
@@ -317,55 +207,67 @@ margin-top: $pull-top
 
 
 
--- ftd.column message-right:
+-- component message-right:
 optional caption title:
 ftd.image-src avatar: $assets.files.static.ganeshs.jpeg
 boolean round-avatar: true
-margin-bottom: $fpm.space.space-4
 integer pull-top: 0
-append-at: msg-container
-id: message
-align: right
+children container:
+;;append-at: msg-container
+;;id: message
 
---- ftd.column:
-width: fill
- 
---- ftd.row:
-width: fill
-id: chat-right
+-- ftd.column:
+margin-bottom.px: 16
+align-content: right
+width: fill-container
 
---- ftd.column:
-border-width: 1
-border-color: $fpm.color.main.border
-background-color: $fpm.color.main.background.step-1
-padding: $fpm.space.space-3
-border-radius: 4
-id: msg-container
-align: right
+-- ftd.column:
 
---- ftd.text:
-text: $title
-color: $fpm.color.main.text
-role: $fpm.type.label-big
-width: fill
-text-align: right
-margin-top: $pull-top
+-- ftd.row:
+width: fill-container
+;;id: chat-right
 
---- container: chat-right
+-- ftd.column:
+border-width.px: 1
+border-color: $inherited.colors.border
+background.solid: $inherited.colors.background.step-1
+padding.px: 12
+border-radius.px: 4
+;;id: msg-container
 
---- ftd.image:
-if: not $round-avatar
-src: $avatar
-width: 32
-height: auto
-margin-left: $fpm.space.space-4
+-- ftd.text: $message-right.title
+color: $inherited.colors.text
+role: $inherited.types.label-big
+width: fill-container
+text-align: end
+margin-top.px: $message-right.pull-top
 
---- ftd.image:
-if: $round-avatar
-src: $avatar
-width: 32
-height: auto
-margin-left: $fpm.space.space-4
-border-radius: 32
+-- ftd.column:
+children: $message-right.container
 
---- container: ftd.main
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.image:
+if: {!$message-right.round-avatar}
+src: $message-right.avatar
+width.fixed.px: 32
+height: hug-content
+margin-left.px: 16
+
+-- ftd.image:
+if: {$message-right.round-avatar}
+src: $message-right.avatar
+width.fixed.px: 32
+height: hug-content
+margin-left.px: 16
+border-radius.px: 32
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: message-right

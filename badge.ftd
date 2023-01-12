@@ -1,32 +1,32 @@
+-- import: fpm
 -- import: fifthtry.github.io/bling/assets
--- import: fifthtry.github.io/package-doc/doc as pd
+;;-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
 
 
--- ft.page: `badge` and it's Usage
+-- ftd.column:
+height: hug-content
+width: fill-container
+background.solid: $inherited.colors.background.step-1
+padding-vertical.px: 24
+padding-horizontal.px: 24
+
+/-- ft.page: `badge` and it's Usage
 
 Badges can be used as part of any component and are available in below formats:
 
-
-
-
-
--- pd.package: `badge`
+/-- pd.package: `badge`
 name: fifthtry.github.io/bling/badge
 
 To use these badges on your web package, add below lines into `FPM.ftd` file:
 
--- cb.code:
+/-- cb.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling/badge
-
-
-
-
+/-- fpm.dependency: fifthtry.github.io/bling
+/-- fpm.auto-import: fifthtry.github.io/bling/badge
 
 -- tf.markdown:
 
@@ -43,12 +43,12 @@ Once you add above lines into your web package, add `badge` into your `.ftd` fil
 
 
 -- badge-output: Light Badge:
+light: true
 
-
---- cb.code: Example code for `badge` `light` is by default true:
+/--- cb.code: Example code for `badge` `light` is by default true:
 lang: ftd
 
-\-- badge.badge: Light
+/-- badge: Light
 
 
 
@@ -58,10 +58,10 @@ lang: ftd
 dark: true
 light: false
 
---- cb.code: Example code for dark `badge`:
+/--- cb.code: Example code for dark `badge`:
 lang: ftd
 
-\-- badge.badge: Dark
+/-- badge: Dark
 dark: true
 
 
@@ -72,10 +72,10 @@ dark: true
 primary: true
 light: false
 
---- cb.code: Example code for primary `badge`:
+/--- cb.code: Example code for primary `badge`:
 lang: ftd
 
-\-- badge.badge: Primary
+/-- badge: Primary
 primary: true
 
 
@@ -86,10 +86,10 @@ primary: true
 secondary: true
 light: false
 
---- cb.code: Example code for secondary `badge`:
+/--- cb.code: Example code for secondary `badge`:
 lang: ftd
 
-\-- badge.badge: Secondary
+/-- badge: Secondary
 secondary: true
 
 
@@ -100,10 +100,10 @@ secondary: true
 success: true
 light: false
 
---- cb.code: Example code for success `badge`:
+/--- cb.code: Example code for success `badge`:
 lang: ftd
 
-\-- badge.badge: Success
+/-- badge: Success
 success: true
 
 
@@ -114,10 +114,10 @@ success: true
 danger: true
 light: false
 
---- cb.code: Example code for danger `badge`:
+/--- cb.code: Example code for danger `badge`:
 lang: ftd
 
-\-- badge.badge: Danger
+/-- badge: Danger
 danger: true
 
 
@@ -128,10 +128,10 @@ danger: true
 warning: true
 light: false
 
---- cb.code: Example code for warning `badge`:
+/--- cb.code: Example code for warning `badge`:
 lang: ftd
 
-\-- badge.badge: Warning
+/-- badge: Warning
 warning: true
 
 
@@ -142,12 +142,13 @@ warning: true
 info: true
 light: false
 
---- cb.code: Example code for info `badge`:
+/--- cb.code: Example code for info `badge`:
 lang: ftd
 
-\-- badge.badge: Info
+/-- badge: Info
 info: true
 
+-- end: ftd.column
 
 
 
@@ -156,88 +157,98 @@ info: true
 
 
 
-
--- ftd.column all-badges:
+-- component all-badges:
 caption title:
-width: fill
-margin-bottom: $fpm.space.space-6
 
---- ftd.column:
-if: $ft.is-mobile
-width: fill
+-- ftd.column:
+width: fill-container
+margin-bottom.px: 24
 
---- tf.h3: $title
-align: center
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
 
---- ftd.column:
-width: fill
+-- tf.h3: $all-badges.title
+
+-- ftd.column:
+width: fill-container
 overflow-x: auto
 
---- ftd.row:
-width: fill
-margin-left: -16
+-- ftd.row:
+width: fill-container
+margin-left.px: -16
 
---- badge: Light
+-- badge: Light
 light: true
 
---- badge: Dark
+-- badge: Dark
 dark: true
 
---- badge: Primary
+-- badge: Primary
 primary: true
 
---- badge: Secondary
+-- badge: Secondary
 secondary: true
 
---- badge: Info
+-- badge: Info
 info: true
 
---- badge: Warning
+-- badge: Warning
 warning: true
 
---- badge: Success
+-- badge: Success
 success: true
 
---- badge: Danger
+-- badge: Danger
 danger: true
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.column:
-if: not $ft.is-mobile
-width: fill
+-- end: ftd.column
 
---- tf.h3: $title
-align: center
+-- end: ftd.column
 
---- ftd.row:
-width: fill
-margin-left: -16
+-- ftd.column:
+if: { ftd.device != "mobile" }
+width: fill-container
 
---- badge: Light
+-- tf.h3: $all-badges.title
+
+-- ftd.row:
+width: fill-container
+margin-left.px: -16
+
+-- badge: Light
 light: true
 
---- badge: Dark
+-- badge: Dark
 dark: true
 
---- badge: Primary
+-- badge: Primary
 primary: true
 
---- badge: Secondary
+-- badge: Secondary
 secondary: true
 
---- badge: Info
+-- badge: Info
 info: true
 
---- badge: Warning
+-- badge: Warning
 warning: true
 
---- badge: Success
+-- badge: Success
 success: true
 
---- badge: Danger
+-- badge: Danger
 danger: true
 
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: all-badges
 
 
 
@@ -247,8 +258,10 @@ danger: true
 
 
 
--- ftd.column badge-output:
-caption title: 
+
+-- component badge-output:
+caption title:
+optional body body:
 boolean light: true
 boolean dark: false
 boolean primary: false
@@ -257,52 +270,51 @@ boolean success: false
 boolean danger: false
 boolean warning: false
 boolean info: false
-width: fill
 
---- ftd.row:
+-- ftd.column:
+width: fill-container
 
---- tf.h3: $title
-align: center
+-- ftd.row:
 
---- badge: Light 
-if: $light
+-- tf.h3: $badge-output.title
+
+-- badge: Light 
+if: { $badge-output.light }
 light: true
-align: center
 
---- badge: Dark 
-if: $dark
+-- badge: Dark 
+if: { $badge-output.dark }
 dark: true
-align: center
 
---- badge: Primary
-if: $primary
+-- badge: Primary
+if: { $badge-output.primary }
 primary: true
-align: center
 
---- badge: Secondary
-if: $secondary
+-- badge: Secondary
+if: { $badge-output.secondary }
 secondary: true
-align: center
 
---- badge: Success
-if: $success
+-- badge: Success
+if: { $badge-output.success }
 success: true
-align: center
 
---- badge: Danger
-if: $danger
+-- badge: Danger
+if: {$badge-output.danger}
 danger: true
-align: center
 
---- badge: Warning
-if: $warning
+-- badge: Warning
+if: { $badge-output.warning }
 warning: true
-align: center
 
---- badge: Info
-if: $info
+-- badge: Info
+if: { $badge-output.info }
 info: true
-align: center
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: badge-output
 
 
 
@@ -313,9 +325,9 @@ align: center
 
 
 
--- ftd.text badge: $title
+-- component badge:
 caption title: 
-boolean light: true
+boolean light: false
 boolean dark: false
 boolean primary: false
 boolean secondary: false
@@ -323,22 +335,28 @@ boolean success: false
 boolean danger: false
 boolean warning: false
 boolean info: false
-role: $fpm.type.fine-print
-color: $fpm.color.main.background.base
-color if $dark: $fpm.color.main.text-strong
-color if $primary: $fpm.color.main.text-strong
-color if $secondary: $fpm.color.main.text-strong
-color if $danger: $fpm.color.main.text-strong
-margin-left: $fpm.space.space-4
-background-color if $light: $fpm.color.main.text
-background-color if $dark: $fpm.color.main.background.step-2
-background-color if $primary: $fpm.color.main.cta-primary.base
-background-color if $secondary: $fpm.color.main.cta-secondary.base
-background-color if $success: $fpm.color.main.success.base
-background-color if $danger: $fpm.color.main.error.base
-background-color if $warning: $fpm.color.main.warning.base
-background-color if $info: $fpm.color.main.info.base
-padding-vertical: $fpm.space.space-2
-padding-horizontal: $fpm.space.space-3
-border-radius: 10
+
+-- ftd.text: $badge.title
+role: $inherited.types.fine-print
+color: $inherited.colors.background.base
+color if {$badge.dark}: $inherited.colors.text-strong
+color if {$badge.primary}: $inherited.colors.text-strong
+color if {$badge.secondary}: $inherited.colors.text-strong
+color if {$badge.danger}: $inherited.colors.text-strong
+background.solid if { $badge.light }: $inherited.colors.text
+background.solid if { $badge.dark }: $inherited.colors.background.step-2
+background.solid if {$badge.primary}: $inherited.colors.cta-primary.base
+background.solid if {$badge.secondary}: $inherited.colors.cta-secondary.base
+background.solid if {$badge.success}: $inherited.colors.success.base
+background.solid if {$badge.danger}: $inherited.colors.error.base
+background.solid if {$badge.warning}: $inherited.colors.warning.base
+background.solid if {$badge.info}: $inherited.colors.info.base
+padding-vertical.px: 8
+padding-horizontal.px: 12
+border-radius.px: 10
 white-space: nowrap
+align-self: center
+margin-left.px: 16
+;;margin-top.px: 20
+
+-- end: badge

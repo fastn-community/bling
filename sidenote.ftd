@@ -1,51 +1,56 @@
--- import: fifthtry.github.io/package-doc/doc as pd
+;;-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
 
 
--- ftd.font-size copy-tight-medium-desktop:
-line-height: 20
-size: 16
-letter-spacing: 0
+/-- ftd.type copy-tight-medium-desktop:
+line-height.px: 20
+size.px: 16
+letter-spacing.px: 0
 
--- ftd.type copy-tight-medium: $fpm.font-display
+/-- ftd.responsive-type copy-tight-medium:
 desktop: $copy-tight-medium-desktop
 mobile: $copy-tight-medium-desktop
-xl: $copy-tight-medium-desktop
 weight: 600
 
--- ftd.font-size copy-tight-bold-desktop:
-line-height: 20
-size: 16
-letter-spacing: 0
+/-- ftd.type copy-tight-bold-desktop:
+line-height.px: 20
+size.px: 16
+letter-spacing.px: 0
 
--- ftd.type copy-tight-bold: $fpm.font-display
+/-- ftd.responsive-type copy-tight-bold:
 desktop: $copy-tight-bold-desktop
 mobile: $copy-tight-bold-desktop
-xl: $copy-tight-bold-desktop
 weight: 700
 
 
 
 
 
--- ft.page: `sidenote` and it's Usage
+/-- ft.page: `sidenote` and it's Usage
 
 `-- sidenote` can be used as part of blog posts.
 
 
 
 
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: $inherited.colors.background.base
+padding-vertical.px.px: 24
+padding-horizontal.px.px: 24
 
--- pd.package: `sidenote` and it's Usage
+
+/-- pd.package: `sidenote` and it's Usage
 name: fifthtry.github.io/bling/sidenote
 
 `sidenote` is a new conversation experience via using `FTD` lang:
 
 To use `sidenote` on your web package, add below into `FPM.ftd` file:
 
--- cb.code:
+/-- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
@@ -60,7 +65,7 @@ lang: ftd
 Once you add above lines into your web package, add `sidenote` into your `.ftd` 
 files:
 
--- cb.code: Example code for `-- sidenote`
+/-- cb.code: Example code for `-- sidenote`
 lang: ftd
 
 \-- sidenote.sidenote: 
@@ -88,7 +93,7 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 -- tf.h3: Advanced usage example:
 
--- cb.code: Advanced example code for `-- sidenote`
+/-- cb.code: Advanced example code for `-- sidenote`
 lang: ftd
 
 \-- sidenote.sidenote:
@@ -103,12 +108,13 @@ minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
 
 -- tf.h3: Output of above advanced example:
 
---- sidenote: 
+-- sidenote: 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
 minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
 
+-- end: ftd.column
 
 
 
@@ -117,45 +123,38 @@ minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
 
 
 
+-- component sidenote:
+optional body body: 
+optional ftd.color bordercolor: $inherited.colors.border-strong
+optional ftd.color backgroundcolor: $inherited.colors.background.step-2
 
--- ftd.row sidenote:
-optional body body:
-padding-vertical: $fpm.space.space-4
-padding-horizontal:$fpm.space.space-7
-optional ftd.color bordercolor: $fpm.color.main.border-strong
-border-color: $bordercolor
-border-width: 1
-optional ftd.color backgroundcolor: $fpm.color.main.background.step-2
-background-color: $backgroundcolor
-border-radius: 8
-max-width: 800
+-- ftd.column:
+padding-vertical.px: 16
+padding-horizontal.px: 32
+border-color: $sidenote.bordercolor
+border-width.px: 1
+background.solid: $sidenote.backgroundcolor
+border-radius.px: 8
+max-width.fixed.px: 800
 width: auto
-align: center
+align-self: center
 
---- ftd.text: Sidenote:
-anchor: parent
-top: 15
-left: 32
-role: $copy-tight-bold
-color: $fpm.color.main.text-strong
+-- ftd.text: Sidenote:
+role: $inherited.types.copy-tight
+color: $inherited.colors.text-strong
 
---- ftd.text:
-text: $body
-role: $fpm.type.copy-tight
-color: $fpm.color.main.text
+-- ftd.text:
+text: $sidenote.body
+role: $inherited.types.copy-tight
+color: $inherited.colors.text
 text-align: justify
-text-indent: 84
+;;text-indent: 84
 
-
-
-
-
-
-
-
-
-
--- ftd.text bold: color
+/-- ftd.text: color
 role: $copy-tight-medium
-border-bottom:1
-border-style: solid
+border-bottom.px: 1
+;;border-style: solid
+
+-- end: ftd.column
+
+-- end: sidenote
