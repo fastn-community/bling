@@ -51,7 +51,7 @@ avatar: $assets.files.static.amitu.jpg
 round-avatar: true
 
 -- message-right: Hey! `ftd` is awesome! 🤘
-avatar: $assets.files.static.ganeshs.jpeg
+avatar: $assets.files.static.ganeshs.jpg
 round-avatar: true
 
 -- end: ftd.column
@@ -209,7 +209,7 @@ children: $message-left.container
 
 -- component message-right:
 optional caption title:
-ftd.image-src avatar: $assets.files.static.ganeshs.jpeg
+ftd.image-src avatar: $assets.files.static.ganeshs.jpg
 boolean round-avatar: true
 integer pull-top: 0
 children container:
