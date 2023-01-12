@@ -340,7 +340,7 @@ spiritual giants are produced."
 
 Output of above:
 
-/-- echo: Swami Vivekananda
+-- echo: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; think of 
 it; live on that idea. Let the brain, the body, muscles, nerves, every 
@@ -1789,7 +1789,7 @@ bottom.px: 0
 
 
 
-/-- component echo:
+-- component echo:
 optional caption title:
 ftd.image-src logo: $assets.files.static.right-quote-sign.png
 body body:
@@ -1823,14 +1823,12 @@ color: $inherited.colors.text
 role: $inherited.types.copy-large
 text-align: justify
 
--- end: ftd.column
-
 -- ftd.text: $echo.title
 color: $inherited.colors.text
 role: $inherited.types.fine-print
 margin-top.px: 12
 
--- end: ftd.row
+-- end: ftd.column
 
 -- ftd.row:
 anchor: parent
@@ -1843,7 +1841,9 @@ left.px: -8
 -- ftd.image:
 src: $echo.logo
 width.fixed.px: 32
-height.fixed.px: auto
+height: auto
+
+-- end: ftd.row
 
 -- end: ftd.row
 
