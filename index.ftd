@@ -4,10 +4,12 @@
 -- import: fifthtry.github.io/bling/quote
 -- import: fifthtry.github.io/package-doc/doc as pd
 
+-- component white:
 
--- ftd.text white: test
+-- ftd.text: test
 color: $inherited.colors.text-strong
 
+-- end: white
 
 
 -- ft.page:
@@ -53,7 +55,7 @@ natus err or sit voluptatem accusantiu.
 -- quote.scorpion: Abraham Lincoln
 label: U.S.A.
 
-"In the end, {white:it's not the years} in your {white:life} that 
+"In the end, {white: it's not the years} in your {white:life} that 
 count. It's the {white:life} in your years."
 
 
