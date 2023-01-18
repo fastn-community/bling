@@ -282,14 +282,14 @@ width: fill-container
 if: {!$message-left.round-avatar}
 src: $message-left.avatar
 width.fixed.px: 32
-height: hug-content
+height: auto
 margin-right.px: 16
 
 -- ftd.image:
 if: {$message-left.round-avatar}
 src: $message-left.avatar
 width.fixed.px: 32
-height: hug-content
+height: auto
 margin-right.px: 16
 border-radius.px: 32
 
@@ -379,14 +379,14 @@ children: $message-right.container
 if: {!$message-right.round-avatar}
 src: $message-right.avatar
 width.fixed.px: 32
-height: hug-content
+height: auto
 margin-left.px: 16
 
 -- ftd.image:
 if: {$message-right.round-avatar}
 src: $message-right.avatar
 width.fixed.px: 32
-height: hug-content
+height: auto
 margin-left.px: 16
 border-radius.px: 32
 
