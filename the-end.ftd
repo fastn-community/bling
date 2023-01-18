@@ -1,19 +1,10 @@
 -- import: fifthtry.github.io/bling/assets
-;;-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
 
--- ftd.column:
-width: fill-container
-height: hug-content
-background.solid: $inherited.colors.background.base
-padding-vertical.px.px: 24
-padding-horizontal.px.px: 24
-
-
-
-/-- ft.page: `the-end` and it's Usage
+-- ft.page: `the-end` and it's Usage
 
 `-- the-end` can be used as part of blog posts, books, section OR chapter end 
 etc.
@@ -23,12 +14,12 @@ etc.
 
 
 
-/-- pd.package: `the-end` and it's Usage
+-- pd.package: `the-end` and it's Usage
 name: fifthtry.github.io/bling/the-end
 
 To use `the-end` on your web package, add below into `FPM.ftd` file:
 
-/-- cb.code:
+-- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
@@ -52,7 +43,7 @@ files:
 
 -- tf.h3: 1: `-- marker`
 
-/-- cb.code: Example code for `-- marker`
+-- cb.code: Example code for `-- marker`
 lang: ftd
 
 \-- the-end.marker: 
@@ -70,7 +61,7 @@ Output of above:
 
 -- tf.h3: 2: `-- pen`
 
-/-- cb.code: Example code for `-- pen`
+-- cb.code: Example code for `-- pen`
 lang: ftd
 
 \-- the-end.pen: 
@@ -89,7 +80,7 @@ Output of above:
 
 -- tf.h3: 3: `-- ballet`
 
-/-- cb.code: Example code for `-- ballet`
+-- cb.code: Example code for `-- ballet`
 lang: ftd
 
 \-- the-end.ballet: 
@@ -108,7 +99,7 @@ Output of above:
 
 -- tf.h3: 4: `-- brush`
 
-/-- cb.code: Example code for `-- brush`
+-- cb.code: Example code for `-- brush`
 lang: ftd
 
 \-- the-end.brush: 
@@ -121,7 +112,7 @@ Output of above:
 -- brush: 
 
 
--- end: ftd.column
+-- end: ft.page
 
 
 

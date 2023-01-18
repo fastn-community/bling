@@ -1,115 +1,96 @@
 -- import: fifthtry.github.io/bling/assets
-;;-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
 
 
-/-- ft.page: `detail` and it's Usage
+-- ft.page: `detail` and it's Usage
 
 `-- detail` can be used as part of blog posts, OR inside page.
 
-/-- pd.package: `detail` and it's Usage
+-- pd.package: `detail` and it's Usage
 name: fifthtry.github.io/bling/detail
 
 `detail` is a new conversation experience via using `FTD` lang:
 
 To use `detail` on your web package, add below into `FPM.ftd` file:
 
-/-- cb.code:
+-- cb.code:
 lang: ftd
 
-/\-- fpm.dependency: fifthtry.github.io/bling
-/\-- fpm.auto-import: fifthtry.github.io/bling/detail
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/detail
 
-
-
-
-
--- ftd.column:
-height: fill-container
-width: fill-container
-background.solid: $inherited.colors.background.base
-padding-vertical.px: 24
-padding-horizontal.px: 24
-
--- tf.markdown:
+\-- tf.markdown:
 
 Once you add above lines into your web package, add `detail` into your `.ftd` 
 files:
 
-/-- cb.code: Example code for `-- detail`
+\-- cb.code: Example code for `-- detail`
 lang: ftd
 
-/-- detail.detail: Lorem ipsum dolor
+\-- detail.detail: Lorem ipsum dolor
 is-open: true
 
-/--- tf.markdown:
+\-- tf.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt.
 
-/--- cb.code: details
+-- cb.code: details
 lang: ftd
  
-/-- detail.detail: Lorem ipsum dolor
+\-- detail.detail: Lorem ipsum dolor
  is-open: true
  
-/-- detail.detail: Lorem ipsum dolor
+\-- detail.detail: Lorem ipsum dolor
 
-/--- tf.markdown:
+\-- tf.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt.
 
-/-- detail.detail: Lorem ipsum dolor
+\-- detail.detail: Lorem ipsum dolor
+info-right: Some info at right side
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
-
-
-
 
 
 -- tf.h3: Output of above example:
 
 -- detail: Lorem ipsum dolor
-is-open: true
+$is-open: true
 
 -- tf.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt.
 
-/-- cb.code: details
+-- cb.code: details
 lang: ftd
  
-/-- detail.detail: Lorem ipsum dolor
+\-- detail.detail: Lorem ipsum dolor
 is-open: true
 
 -- end: detail
-
-
-
-
 
 -- detail: Lorem ipsum dolor
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt.
 
-
-
-
-
 -- detail: Lorem ipsum dolor
+info-right: Some info at right side
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
--- end: ftd.column
+-- end: ft.page
 
 
 
@@ -123,29 +104,27 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 -- component detail:
 caption title:
 optional string info-right:
-boolean is-open: false
+boolean $is-open: false
 optional body body:
 children container:
-;;id: code-container
-;;append-at: code-container
 
 -- ftd.column:
 spacing.px: 8
-;;$on-click$: toggle $is-open
+$on-click$: $ftd.toggle($a = $detail.is-open)
 max-width.fixed.px: 800
 padding.px: 12
-width: auto
-;;open: true
-margin-bottom.px: 28
+width: fill-container
+width if { $detail.info-right != NULL }: fill-container
+margin-bottom.px: 20
 color: $inherited.colors.text
 
 -- ftd.row:
 width: fill-container
-;;id: text-container
 spacing.px: 8
 
 -- ftd.row:
 width: fill-container
+align-self: start
 
 -- ftd.text: &#x25B6;
 if: { !$detail.is-open }
@@ -166,19 +145,25 @@ color: $inherited.colors.text
 
 -- end: ftd.row
 
--- end: ftd.row
+-- ftd.row:
+width: hug-content
+align-self: end
 
-/-- ftd.text: $detail.info-right
-role: $inherited.types.fine-print
+-- ftd.text: $detail.info-right
+if: { $detail.info-right != NULL }
+role: $inherited.types.copy-tight
 color: $inherited.colors.text
 white-space: nowrap
-text-align: end
-margin-top.px: 4
+align-self: end
+
+-- end: ftd.row
+
+-- end: ftd.row
+
 
 -- ftd.column:
 width: fill-container
 if: {$detail.is-open}
-;;id: code-container
 border-width.px: 1
 border-color: $inherited.colors.border
 background.solid: $inherited.colors.background.step-1
@@ -192,6 +177,8 @@ color: $inherited.colors.text
 
 -- ftd.column:
 children: $detail.container
+width: fill-container
+;;width if { $detail.info-right != NULL }: fill-container
 
 -- end: ftd.column
 

@@ -1,29 +1,23 @@
 -- import: fifthtry.github.io/bling/assets
-;;-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
--- ftd.column:
-width: fill-container
-height: fill-container
-background.solid: $inherited.colors.background.base
-padding-vertical.px.px: 24
-padding-horizontal.px.px: 24
 
-/-- ft.page: `person` and it's Usage
+-- ft.page: `person` and it's Usage
 
-Badges can be used as part of any component and are available in below formats:
+Person component can be used as part of any component and are available in below formats:
 
 
 
 
 
-/-- pd.package: `person`
+-- pd.package: `person`
 name: fifthtry.github.io/bling/person
 
 Create a single person card OR person cards list using your excel sheet data. 
 
-/-- cb.code:
+-- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
@@ -38,7 +32,7 @@ Below is example of `persona-list`.
 Once you add above lines into your web package, add `persona-list` into your 
 `.ftd` files:
 
-/-- cb.code:
+-- cb.code:
 lang: ftd
 
 Create a list of persons using below list format:
@@ -88,7 +82,7 @@ Below is example of `persona-card`.
 Once you add above lines into your web package, add `persona-list` into your 
 `.ftd` files:
 
-/-- cb.code:
+-- cb.code:
 lang: ftd
 
 
@@ -120,9 +114,7 @@ Sunglass(1, 2, 3), Dare to be scared book 😜, codename game, Bharat game, Chai
 Garam game
 
 
--- end: ftd.column
-
-
+-- end: ft.page
 
 
 
@@ -138,16 +130,14 @@ person list persons:
 -- ftd.column:
 width: fill-container
 
-/-- person-data: $obj.title
-$loop$: $person as $obj
+-- person-data: $obj.title
+$loop$: $persona-list.persons as $obj
 avatar: $obj.avatar
 profile: $obj.profile
 email: $obj.email
 phone: $obj.phone
 address: $obj.address
 body: $obj.body
-
-
 
 -- end: ftd.column
 
@@ -273,7 +263,7 @@ color: $inherited.colors.text-strong
 
 
 
--- ftd.column person-data:
+-- component person-data:
 caption title:
 optional ftd.image-src avatar: $assets.files.static.amitu.jpg
 optional string profile:
@@ -282,6 +272,8 @@ optional string phone:
 optional string address:
 optional body body:
 boolean show-address: false
+
+-- ftd.column: 
 background.solid: $inherited.colors.background.step-1
 padding-horizontal.px: 16
 padding-vertical.px: 16
@@ -307,12 +299,13 @@ spacing.px: 24
 if: {$person-data.avatar != NULL}
 src: $person-data.avatar
 border-radius.px: 500
-width: 64
-height: 64
+width.fixed.px: 64
+height.fixed.px: 64
 
 -- end: ftd.column
 
 -- end: ftd.row
+
 
 -- ftd.column:
 width: fill-container
@@ -366,6 +359,8 @@ color: $inherited.colors.text
 text: $person-data.body
 role: $inherited.types.copy-tight
 color: $inherited.colors.text-strong
+
+-- end: ftd.column
 
 -- end: ftd.column
 

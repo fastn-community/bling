@@ -1,4 +1,4 @@
-;;-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
@@ -9,7 +9,7 @@ line-height.px: 16
 size.px: 14
 letter-spacing.px: 0
 
--- ftd.responsive-type fine-print-bold: $fpm.font-display
+-- ftd.responsive-type fine-print-bold:
 desktop: $fine-print-bold-desktop
 mobile: $fine-print-bold-desktop
 weight: 700
@@ -18,35 +18,28 @@ weight: 700
 line-height.px: 20
 size.px: 16
 letter-spacing.px: 0
-
--- ftd.responsive-type copy-tight-bold: $fpm.font-display
-desktop: $copy-tight-bold-desktop
-mobile: $copy-tight-bold-desktop
 weight: 700
 
+-- ftd.responsive-type copy-tight-bold: 
+desktop: $copy-tight-bold-desktop
+mobile: $copy-tight-bold-desktop
 
 
 
 
--- ftd.column:
-width: fill-container
-height: fill-container
-background.solid: $inherited.colors.background.base
-padding-vertical.px.px: 24
-padding-horizontal.px.px: 24
 
-/-- ft.page: `note` and it's Usage
+-- ft.page: `note` and it's Usage
 
 `-- note` can be used as part of blog posts.
 
-/-- pd.package: `note` and it's Usage
+-- pd.package: `note` and it's Usage
 name: fifthtry.github.io/bling/note
 
 `note` is a new conversation experience via using `FTD` lang:
 
 To use `note` on your web package, add below into `FPM.ftd` file:
 
-/-- cb.code:
+-- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
@@ -57,7 +50,7 @@ lang: ftd
 Once you add above lines into your web package, add `note` into your `.ftd` 
 files:
 
-/-- cb.code: Example code for `-- note`
+-- cb.code: Example code for `-- note`
 lang: ftd
 
 \-- note.note: This is your Title
@@ -76,7 +69,7 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 -- tf.h3: Advanced usage of `-- note`:
 
-/-- cb.code: Advanced example code for `-- note`
+-- cb.code: Advanced example code for `-- note`
 lang: ftd
 
 \-- note.note: This is your Title
@@ -94,7 +87,7 @@ Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
 minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
 
--- end: ftd.column
+-- end: ft.page
 
 
 

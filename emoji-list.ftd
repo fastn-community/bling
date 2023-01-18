@@ -1,5 +1,4 @@
-
-;;-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
@@ -11,7 +10,7 @@ line-height: 28
 size: 20
 letter-spacing.px: 0
 
--- ftd.type copy-large-bold: $fpm.font-display
+-- ftd.type copy-large-bold: 
 desktop: $copy-large-bold-desktop
 mobile: $copy-large-bold-desktop
 xl: $copy-large-bold-desktop
@@ -19,15 +18,7 @@ weight: 700
 
 
 
--- ftd.column:
-height: fill-container
-width: fill-container
-background.solid: $inherited.colors.background.base
-padding-vertical.px: 24
-padding-horizontal.px: 24
-
-
-/-- ft.page: `emoji-list` and it's Usage
+-- ft.page: `emoji-list` and it's Usage
 
 `-- emoji-list` can be used as part of blog posts.
 
@@ -35,18 +26,18 @@ padding-horizontal.px: 24
 
 
 
-/-- pd.package: `emoji-list` and it's Usage
+-- pd.package: `emoji-list` and it's Usage
 name: fifthtry.github.io/bling/emoji-list
 
 `emoji-list` is a new conversation experience via using `FTD` lang:
 
 To use `emoji-list` on your web package, add below into `FPM.ftd` file:
 
-/-- cb.code:
+-- cb.code:
 lang: ftd
 
-/\-- fpm.dependency: fifthtry.github.io/bling
-/\-- fpm.auto-import: fifthtry.github.io/bling/emoji-list
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/emoji-list
 
 
 
@@ -57,7 +48,7 @@ lang: ftd
 Once you add above lines into your web package, add `emoji-list` into your `.ftd` 
 files:
 
-/-- cb.code: Example code for `-- emoji-list`
+-- cb.code: Example code for `-- emoji-list`
 lang: ftd
 
 \-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -106,7 +97,11 @@ minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
--- end: ftd.column
+-- end: ft.page
+
+
+
+
 
 
 

@@ -4,13 +4,9 @@
 -- import: fifthtry.github.io/bling/quote
 -- import: fifthtry.github.io/package-doc/doc as pd
 
--- boolean is-mobile: false
-
--- is-mobile: true
-if: $ftd.device == mobile
 
 -- ftd.text white: test
-color: $fpm.color.main.text-strong
+color: $inherited.colors.text-strong
 
 
 
@@ -29,75 +25,30 @@ we are trying to create rich variety of components to spice up such blog posts.
 
 To use bling components on your web package, add below into `FPM.ftd` file:
 
--- cb.code:
+-- ft.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling
+\-- fpm.dependency: fifthtry.github.io/bling as bling
+\-- fpm.auto-import: bling
 
 
 -- ft.h2: Below are some sample Bling Components:
 
---- ftd.column:
-width: 380
-width if $is-mobile: fill
-margin-top: $fpm.space.space-5
+-- ft.h3: Chat Message:
 
---- ftd.text: Chat Message:
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
-margin-bottom: $fpm.space.space-10
-margin-top: $fpm.space.space-6
+-- chat.message-left: Hey Buddy! liking `ftd`? 🙂
 
---- chat.message-left: Hey Buddy! liking `ftd`? 🙂
+-- chat.message-right: Hi! `ftd` language is awesome! 👍🏻
 
---- chat.message-right: Hi! `ftd` language is awesome! 👍🏻
+-- ft.h3: Tip:
 
-
-
-
-
--- ftd.column:
-border-top: 2
-border-style: double
-border-color: $fpm.color.main.text
-margin-bottom: $fpm.space.space-10
-margin-top: $fpm.space.space-10
-width: fill
-
-
---- ftd.text: Tip:
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
-margin-bottom: $fpm.space.space-0
-margin-top: $fpm.space.space-10
-
-
--- ftd.column:
-width: 380
-width if $is-mobile: fill
-align: center
-
---- tip.tip: Cool bots hot tip!
+-- tip.tip: Cool bots hot tip!
 
 Sed ut perspiciatis unde omnis iste rolf
 natus err or sit voluptatem accusantiu.
 
 
--- ftd.column:
-border-top: 2
-border-style: double
-margin-top: $fpm.space.space-10
-border-color: $fpm.color.main.text
-margin-bottom: $fpm.space.space-4
-width: fill
-
-
--- ftd.text: Quotes: `-- scorpion` sample
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
-margin-top: $fpm.space.space-10
-
+-- ft.h3: Quotes: `-- scorpion` sample
 
 -- quote.scorpion: Abraham Lincoln
 label: U.S.A.
@@ -106,20 +57,7 @@ label: U.S.A.
 count. It's the {white:life} in your years."
 
 
--- ftd.column:
-border-top: 2
-border-style: double
-margin-top: $fpm.space.space-10
-border-color: $fpm.color.main.text
-margin-bottom: $fpm.space.space-4
-width: fill
-
-
---- ftd.text: Quotes: `-- echo` sample
-role: $fpm.type.copy-large
-color: $fpm.color.main.text
-margin-bottom: $fpm.space.space-0
-margin-top: $fpm.space.space-10
+-- ft.h3: Quotes: `-- echo` sample
 
 
 -- quote.echo: Swami Vivekananda
@@ -131,4 +69,5 @@ idea alone. This is the way to success, and this is the way great
 spiritual giants are produced."
 
 
+-- end: ft.page
 

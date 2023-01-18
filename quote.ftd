@@ -1,38 +1,38 @@
 -- import: fifthtry.github.io/bling/assets
-;;-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/doc as pd
 
 /-- ftd.type copy-relax:
 line-height.fixed.px: 18
 size.px: 14
 letter-spacing.px: 0
 
-/-- ftd.responsive-type copy-relaxed: $fpm.font-display
+-- ftd.responsive-type copy-relaxed: 
 desktop: $copy-relax
 mobile: $copy-relax
 weight: 700
 
-/-- ftd.type heading-40-bold-desktop:
+-- ftd.type heading-40-bold-desktop:
 line-height.fixed.px: 48
 size.px: 40
 letter-spacing.px: 0
 
-/-- ftd.responsive-type heading-40-bold: $fpm.font-display
+-- ftd.responsive-type heading-40-bold:
 desktop: $heading-40-bold-desktop
 mobile: $heading-40-bold-desktop
 weight: 700
 
-/-- ftd.type heading-small-bold-desktop:
+-- ftd.type heading-small-bold-desktop:
 line-height.fixed.px: 36
 size.px: 24
 letter-spacing.px: 0
 
-/-- ftd.type heading-small-bold: $fpm.font-display
+-- ftd.type heading-small-bold: 
 desktop: $heading-small-bold-desktop
 mobile: $heading-small-bold-desktop
 xl: $heading-small-bold-desktop
 weight: 700
 
-/-- ftd.responsive-type fine-print-bold: $inherited.types.fine-print.font
+-- ftd.responsive-type fine-print-bold: $inherited.types.fine-print.font
 desktop: $inherited.types.fine-print.desktop
 mobile: $inherited.types.fine-print.mobile
 weight: 700
@@ -42,26 +42,19 @@ light: rgba(192,192,192,0.3)
 dark: rgba(192,192,192,0.3)
 
 
--- ftd.column:
-width: fill-container
-height: hug-content
-background.solid: $inherited.colors.background.base
-padding-vertical.px.px: 24
-padding-horizontal.px.px: 24
 
-
-/-- ft.page: `quote` and it's Usage
+-- ft.page: `quote` and it's Usage
 
 `-- quote` can be used as part of blog posts to highlight a quote from blogger 
 OR highlighting important notes on documentation etc.
 
 
-/-- pd.package: `quote`
+-- pd.package: `quote`
 name: fifthtry.github.io/bling/quote
 
 To use these quotes on your web package add below into `FPM.ftd` file:
 
-//-- cb.code:
+-- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling/quote
@@ -77,7 +70,7 @@ files:
 
 
 
--- tf.h3: List of quotes we designed for you:
+-- tf.h2: List of quotes we designed for you:
 
 
 
@@ -85,7 +78,7 @@ files:
 
 -- tf.h3: 1: `-- charcoal`
 
-//-- cb.code: Example code for `-- charcoal`
+-- cb.code: Example code for `-- charcoal`
 lang: ftd
 
 \-- quote.charcoal: Amit Upadhyay
@@ -115,7 +108,7 @@ tempor incididunt ut labore et dolore magna aliqua..
 
 -- tf.h3: 2: `-- marengo`
 
-//-- cb.code: Example code for `-- marengo`
+-- cb.code: Example code for `-- marengo`
 lang: ftd
 
 \-- quote.marengo: Steve Jobs
@@ -140,7 +133,7 @@ thinking.
 
 -- tf.h3: 3: `-- marengo-hug`
 
-//-- cb.code: Example code for `-- marengo-hug`
+-- cb.code: Example code for `-- marengo-hug`
 lang: ftd
 
 \-- quote.marengo-hug: Oprah Winfrey
@@ -163,7 +156,7 @@ If you look at what you don't have in life, you'll never have enough.
 
 -- tf.h3: 4: `-- scorpion`
 
-//-- cb.code: Example code for `-- scorpion`
+-- cb.code: Example code for `-- scorpion`
 lang: ftd
 
 \-- quote.scorpion: Eleanor Roosevelt
@@ -186,7 +179,7 @@ label: U.S.A.
 
 -- tf.h3: 5: `-- chalice`
 
-//-- cb.code: Example code for `-- chalice`
+-- cb.code: Example code for `-- chalice`
 lang: ftd
 
 \-- quote.chalice: Nelson Mandela
@@ -209,7 +202,7 @@ every time we fall.
 
 -- tf.h3: 6: `-- onyx`
 
-//-- cb.code: Example code for `-- onyx`
+-- cb.code: Example code for `-- onyx`
 lang: ftd
 
 \-- quote.onyx: Barack Obama
@@ -234,7 +227,7 @@ or whether you learn from it; whether you choose to persevere.
 
 -- tf.h3: 7: `-- silver`
 
-//-- cb.code: Example code for `-- silver`
+-- cb.code: Example code for `-- silver`
 lang: ftd
 
 \-- quote.silver: Helen Keller
@@ -254,9 +247,8 @@ Life is either a daring adventure or nothing at all.
 
 
 -- tf.h3: 8: `-- stormcloud`
-;;id: stormcloud
 
-//-- cb.code: Example code for `-- stormcloud`
+-- cb.code: Example code for `-- stormcloud`
 lang: ftd
 
 \-- quote.stormcloud: M.K. Gandhi
@@ -281,7 +273,7 @@ Output of above:
 
 -- tf.h3: 9: `-- vampire`
 
-//-- cb.code: Example code for `-- vampire`
+-- cb.code: Example code for `-- vampire`
 lang: ftd
 
 \-- quote.vampire: Thomas Jefferson
@@ -302,7 +294,7 @@ Output of above:
 
 -- tf.h3: 10: `-- rustic`
 
-//-- cb.code: Example code for `-- rustic`
+-- cb.code: Example code for `-- rustic`
 lang: ftd
 
 \-- quote.rustic: Dr. APJ Abdul Kalam
@@ -325,7 +317,7 @@ opportunity to develop our talents."
 
 -- tf.h3: 11: `-- echo`
 
-//-- cb.code: Example code for `-- echo`
+-- cb.code: Example code for `-- echo`
 lang: ftd
 
 \-- quote.echo: Swami Vivekananda
@@ -354,7 +346,7 @@ spiritual giants are produced."
 
 -- tf.h3: 12: `-- window`
 
-//-- cb.code: Example code for `-- window`
+-- cb.code: Example code for `-- window`
 lang: ftd
 
 \-- quote.window: Mark Zuckerberg
@@ -377,7 +369,7 @@ you don't have to have a master plan with how things will play out."
 
 -- tf.h3: 13: `-- matte`
 
-//-- cb.code: Example code for `-- matte`
+-- cb.code: Example code for `-- matte`
 lang: ftd
 
 \-- quote.matte: Swami Vivekananda
@@ -405,7 +397,7 @@ success, and this is the way great spiritual giants are produced."
 
 -- tf.h3: 14: `-- antique`
 
-//-- cb.code: Example code for `-- antique`
+-- cb.code: Example code for `-- antique`
 lang: ftd
 
 \-- quote.antique:  Socrates
@@ -426,7 +418,7 @@ Output of above:
 
 -- tf.h3: 15: `-- bubble`
 
-//-- cb.code: Example code for `-- bubble`
+-- cb.code: Example code for `-- bubble`
 lang: ftd
 
 \-- quote.bubble:  Socrates
@@ -447,7 +439,7 @@ Output of above:
 
 -- tf.h3: 16: `-- electric`
 
-//-- cb.code: Example code for `-- electric`
+-- cb.code: Example code for `-- electric`
 lang: ftd
 
 \-- quote.electric:  Socrates
@@ -478,7 +470,7 @@ Output of above:
 
 -- tf.h3: 17: `-- chrome`
 
-/-- cb.code: Example code for `-- chrome`
+-- cb.code: Example code for `-- chrome`
 lang: ftd
 
 \-- quote.chrome: Swami Vivekananda
@@ -506,7 +498,7 @@ success, and this is the way great spiritual giants are produced."
 
 -- tf.h3: 18: `-- dorian`
 
-/-- cb.code: Example code for `-- dorian`
+-- cb.code: Example code for `-- dorian`
 lang: ftd
 
 \-- quote.dorian: Swami Vivekananda
@@ -528,7 +520,7 @@ make you spiritual. There is no other teacher but your own soul.”
 
 
 
--- tf.h3: 19: `-- octa`
+/-- tf.h3: 19: `-- octa`
 
 /-- cb.code: Example code for `-- octa`
 lang: ftd
@@ -538,17 +530,16 @@ lang: ftd
 
 “Take up one idea. Make that one idea your life; dream of it; think of it; live on that idea. Let the brain, the body, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success, and this is the way great spiritual giants are produced.”
 
--- tf.markdown: 
+/-- tf.markdown: 
 
 Output of above:
 
--- octa: Swami Vivekananda
+/-- octa: Swami Vivekananda
 
 
 “Take up one idea. Make that one idea your life; dream of it; think of it; live on that idea. Let the brain, the body, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success, and this is the way great spiritual giants are produced.”
 
--- end: ftd.column
-
+-- end: ft.page
 
 
 
@@ -565,7 +556,7 @@ optional body body:
 optional ftd.image-src avatar:
 optional ftd.image-src logo:
 optional string label:
-;;ftd.color backgroundcolor: $inherited.colors.background.base
+ftd.color backgroundcolor: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
@@ -577,6 +568,7 @@ body: $charcoal.body
 avatar: $charcoal.avatar
 logo: $charcoal.logo
 label: $charcoal.label
+backgroundcolor: $charcoal.backgroundcolor
 
 -- quote-mobile: $charcoal.title
 if: { ftd.device == "mobile" }
@@ -584,7 +576,7 @@ body: $charcoal.body
 avatar: $charcoal.avatar
 logo: $charcoal.logo
 label: $charcoal.label
-;;background.solid: $charcoal.backgroundcolor
+backgroundcolor: $charcoal.backgroundcolor
 
 -- end: ftd.column
 
@@ -606,15 +598,15 @@ optional body body:
 optional ftd.image-src avatar:
 optional ftd.image-src logo:
 optional string label:
-;;ftd.color backgroundcolor: 
+ftd.color backgroundcolor:
 
 
 -- ftd.column:
-;;id: switch-container
 width: fill-container
 padding-vertical.px: 64
 margin-top.px: 24
 margin-bottom.px: 24
+background.solid: $quote-desktop.backgroundcolor
 
 -- ftd.row:
 max-width.fixed.px: 1000
@@ -642,7 +634,6 @@ color:$inherited.colors.text
 
 -- ftd.row:
 width: fill-container
-;;id: about-container
 margin-top.px: 24
 align-self: center
 max-width.fixed.px: 700
@@ -696,13 +687,13 @@ optional body body:
 optional ftd.image-src avatar:
 optional ftd.image-src logo:
 optional string label:
-;;ftd.color backgroundcolor:
+ftd.color backgroundcolor:
 
 -- ftd.column:
 width: fill-container
 padding-vertical.px: 32
 padding-horizontal.px: 16
-;;background.solid: $quote-mobile:.backgroundcolor
+background.solid: $quote-mobile.backgroundcolor
 margin-top.px: 24
 margin-bottom.px: 24
 
@@ -722,7 +713,6 @@ margin-bottom.px: 24
 text-align: center
 
 -- ftd.row:
-;;id: about-container
 spacing.px: 16
 align-self: center
 margin-bottom.px: 16
@@ -979,7 +969,7 @@ width: fill-container
 text: $quote-2-desktop.body
 color: $inherited.colors.text
 role: $inherited.types.copy-large
-;;style: italic
+;;style: italic -- TODO FTD 0.3
 text-align: end
 
 -- ftd.row:
@@ -997,7 +987,7 @@ align-self: center
 color: $inherited.colors.text
 role: $inherited.types.fine-print
 white-space: nowrap
-;;style: italic
+;;style: italic -- TODO FTD 0.3
 
 -- end: ftd.row
 
@@ -1041,7 +1031,7 @@ width: fill-container
 text: $quote-2-mobile.body
 color: $inherited.colors.text
 role: $inherited.types.copy-tight
-;;style: italic
+;;style: italic -- TODO FTD 0.3
 text-align: end
 
 -- ftd.row:
@@ -1058,7 +1048,7 @@ align-self: end
 color: $inherited.colors.text
 role: $inherited.types.fine-print
 white-space: nowrap
-;;style: italic
+;;style: italic -- TODO FTD 0.3
 
 -- end: ftd.row
 
@@ -1172,7 +1162,7 @@ border-width.px: 4
 border-color: $inherited.colors.background.base
 left.px: 50
 bottom.px: -4
-;;z-index: 200
+z-index: 200
 
 -- end: ftd.row
 
@@ -1181,15 +1171,15 @@ anchor: parent
 width.fixed.px: 60
 height.fixed.px: 60
 border-right-width.px: 3
+border-radius.px: 50
 border-top-right-radius.px: 6
 border-bottom-right-radius.px: 6
 border-bottom-left-radius.px: -30
-;;border-top-right-radius.px: -30
-border-radius.px: 50
+border-top-left-radius.px: -30
 border-color: $inherited.colors.border
 left.px: -8
 bottom.px: -60
-;;z-index: 200
+z-index: 200
 
 -- end: ftd.row
 
@@ -1224,7 +1214,7 @@ width: fill-container
 margin-top.px: 24
 margin-bottom.px: 24
 margin-right.px:24
-;;margin-left.px: 24
+margin-left.px: 24
 
 -- ftd.row:
 anchor: parent
@@ -1233,7 +1223,7 @@ border-width.px: 4
 border-color: $inherited.colors.background.base
 left.px: 50
 bottom.px: -4
-;;z-index: 200
+z-index: 200
 
 -- end: ftd.row
 
@@ -1245,12 +1235,12 @@ border-right-width.px: 3
 border-top-right-radius.px: 6
 border-bottom-right-radius.px: 6
 border-bottom-left-radius.px: -30
-;;border-top-right-radius.px: -30
+border-top-left-radius.px: -30
 border-radius.px: 50
 border-color: $inherited.colors.border
 left.px: -8
 bottom.px: -60
-;;z-index: 200
+z-index: 200
 
 -- end: ftd.row
 
@@ -1287,7 +1277,7 @@ color: $inherited.colors.text-strong
 -- component chalice:
 optional caption title:
 body body:
-;;optional ftd.image-src backgroundimage: $assets.files.static.quotes.svg
+;;optional ftd.image-src backgroundimage: $assets.files.static.quotes.svg -- TODO FTD 0.3
 
 -- ftd.column:
 padding-horizontal.px: 24
@@ -1299,7 +1289,7 @@ margin-top.px: 24
 margin-bottom.px: 24
 
 -- ftd.row:
-;;background-image: $chalice.backgroundimage
+;; background-image: $chalice.backgroundimage -- TODO FTD 0.3
 width.fixed.px: 84
 height.fixed.px: 84
 width.fixed.px if { ftd.device == "mobile" }: 44
@@ -1309,12 +1299,12 @@ top.px: 10
 top.px if { ftd.device == "mobile" }: 34
 left.px: 0
 left.px if { ftd.device == "mobile" }: 34
-;;z-index: 0
+z-index: 0
 
 -- end: ftd.row
 
 -- ftd.column:
-;;z-index: 1
+z-index: 1
 padding-left.px: 16
 
 -- ftd.text: $chalice.title
@@ -1328,7 +1318,7 @@ width: fill-container
 text: $chalice.body
 color: $inherited.colors.text-strong
 role: $inherited.types.copy-large
-;;z-index: 200
+z-index: 200
 text-align: center
 
 -- end: ftd.column
@@ -1446,8 +1436,8 @@ ftd.image-src logo: $assets.files.static.quote.png
 -- ftd.column:
 padding-vertical.px: 32
 padding-horizontal.px: 32
-;;gradient-direction: top to bottom
-;;gradient-colors: grey, black
+;;gradient-direction: top to bottom -- TODO FTD 0.3
+;;gradient-colors: grey, black -- TODO FTD 0.3
 width: fill-container
 max-width.fixed.px: 800
 align-self: center
@@ -1522,8 +1512,8 @@ ftd.image-src logo: $assets.files.static.quote.png
 -- ftd.column:
 padding-vertical.px: 16
 padding-horizontal.px: 16
-;;gradient-direction: top.px to bottom.px
-;;gradient-colors: grey, black
+;;gradient-direction: top.px to bottom.px  -- TODO FTD 0.3
+;;gradient-colors: grey, black -- TODO FTD 0.3
 width: fill-container
 max-width.fixed.px: 800
 align-self: center
@@ -1605,7 +1595,7 @@ margin-bottom.px: 24
 align-self: center
 
 -- ftd.column:
-;;z-index: 300
+z-index: 300
 
 -- ftd.text: 
 text: $stormcloud.body
@@ -1677,7 +1667,6 @@ width.fixed.px: 24
 
 -- ftd.column:
 width: fill-container
-;;id: text-container
 
 -- ftd.row:
 width: fill-container
@@ -1742,14 +1731,14 @@ anchor: parent
 top.px: -12
 left.px if { ftd.device == "mobile" }: 0
 left.px: -32
-;;z-index: 0
+z-index: 0
 
 -- ftd.column:
 align-self: center
 padding-vertical.px: 8
 padding-horizontal.px: 8
 max-width.fixed.px: 756
-;;z-index: 1
+z-index: 1
 
 -- ftd.text:
 text: $rustic.body
@@ -1808,7 +1797,6 @@ border-color: $inherited.colors.border
 
 -- ftd.column:
 padding-vertical.px: 12
-;;id: text-container
 
 -- ftd.text: 
 if: { ftd.device != "mobile" }
@@ -1880,7 +1868,7 @@ margin-bottom.px: 24
 anchor: parent
 background.solid: $inherited.colors.background.base
 top.px: -16
-;;move-right.px: 270
+;;move-right.px: 270  -- TODO FTD 0.3
 text-align: center
 role: $inherited.types.copy-large
 color: $inherited.colors.text
@@ -1891,7 +1879,7 @@ padding-horizontal.px: 24
 text: $window.body
 role: $inherited.types.copy-large
 color: $inherited.colors.text
-;;style: italic
+;;style: italic -- TODO FTD 0.3
 padding-top.px: 8
 margin-top.px: 24
 margin-bottom.px: 24
@@ -1911,8 +1899,8 @@ border-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 left.px: -16
 top.px: -11
-;;;;rotate: 110
-;;z-index: 200
+;; rotate.px: 110 -- TODO FTD 0.3
+z-index: 200
 
 -- end: ftd.row
 
@@ -1929,8 +1917,8 @@ border-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 left.px: -16
 bottom.px: -11
-;;;;rotate: 150
-;;z-index: 200
+;; rotate: 150 -- TODO FTD 0.3
+z-index: 200
 
 -- end: ftd.row
 
@@ -1947,8 +1935,8 @@ border-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 right.px: -16
 top.px: -11
-;;rotate: 160
-;;z-index: 200
+;; rotate: 160 -- TODO FTD 0.3
+z-index: 200
 
 -- end: ftd.row
 
@@ -1965,8 +1953,8 @@ border-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 right.px: -16
 bottom.px: -11
-;;rotate: 110
-;;z-index: 200
+;; rotate: 110 -- TODO FTD 0.3
+z-index: 200
 
 -- end: ftd.row
 
@@ -1992,7 +1980,7 @@ padding-vertical.px: 16
 width: auto
 width if { ftd.device == "mobile" }: fill-container
 align-self: center
-;;border-style: dashed
+;;border-style: dashed -- TODO FTD 0.3
 border-bottom-width.px: 2
 border-color: $inherited.colors.text
 margin-top.px: 24
@@ -2055,7 +2043,7 @@ height: fill-container
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $antique.avatar
+;;background-image: $antique.avatar -- TODO FTD 0.3
 width.fixed.px: 90
 height: fill-container
 anchor: parent
@@ -2149,8 +2137,8 @@ width if { ftd.device == "mobile" }: fill-container
 min-width.fixed.percent: 50
 margin-top.px: 24
 margin-bottom.px: 24
-;;background-image: $quote-14-desktop.avatar
-;;background-repeat: false
+;;background-image: $quote-14-desktop.avatar -- TODO FTD 0.3
+;;background-repeat: false -- TODO FTD 0.3
 padding-vertical.px: 40
 padding-horizontal.px:  40
 align-self: center
@@ -2208,8 +2196,8 @@ width if { ftd.device == "mobile" }: fill-container
 min-width.fixed.percent: 50
 margin-top.px: 12
 margin-bottom.px: 12
-;;background-image: $quote-14-mobile.avatar
-;;background-repeat: false
+;;background-image: $quote-14-mobile.avatar -- TODO FTD 0.3
+;;background-repeat: false -- TODO FTD 0.3
 padding-vertical.px: 12
 padding-horizontal.px:  12
 align-self: center
@@ -2280,7 +2268,7 @@ height: fill-container
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $electric.avatar
+;;background-image: $electric.avatar -- TODO FTD 0.3
 width.fixed.px: 90
 height: fill-container
 anchor: parent
@@ -2400,9 +2388,9 @@ anchor: parent
 background.solid: $inherited.colors.background.step-2
 left.px: 56
 bottom.px: 52
-;;rotate: 132
-;;z-index: 200
-;;border-style: solid
+;; rotate: 132 -- TODO FTD 0.3
+z-index: 200
+;; border-style: solid -- TODO FTD 0.3
 
 -- end: ftd.row
 
@@ -2507,7 +2495,7 @@ background.solid: $inherited.colors.custom.seven
 margin-bottom.px: 40
 padding-horizontal.px: 40
 padding-vertical.px: 40
-;;scale: 0.6
+;;scale: 0.6 -- TODO FTD 0.3
 width.fixed.px: 750
 margin-left.px: -200
 margin-top.px: -70
@@ -2538,72 +2526,72 @@ width: fill-container
 -- ftd.column:
 width: fill-container
 background.solid: $inherited.colors.background.base
-;;id: inner-wrap
+;;id: inner-wrap -- TODO FTD 0.3
 min-height.fixed.px: 250
 
 -- ftd.column:
-;;background-image: $assets.files.static.hexagon-10.svg
+;;background-image: $assets.files.static.hexagon-10.svg -- TODO FTD 0.3
 width.fixed.px: 150
 height.fixed.px: 150
 anchor: parent
 left.px: -62
 top.px: -32
-;;z-index: 99
+z-index: 99
 
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $assets.files.static.hexagon-11.svg
+;;background-image: $assets.files.static.hexagon-11.svg -- TODO FTD 0.3
 width.fixed.px: 80
 height.fixed.px: 80
 anchor: parent
 left.px: 44
 top.px: -34
-;;z-index: 99
+z-index: 99
 
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $assets.files.static.hexagon-12.svg
+;;background-image: $assets.files.static.hexagon-12.svg -- TODO FTD 0.3
 width.fixed.px: 130
 height.fixed.px: 130
 anchor: parent
 right.px: -24
 top.px: -54
-;;z-index: 99
+z-index: 99
 
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $assets.files.static.hexagon-13.svg
+;;background-image: $assets.files.static.hexagon-13.svg -- TODO FTD 0.3
 width.fixed.px: 140
 height.fixed.px: 140
 anchor: parent
 left.px: -44
 bottom.px: -44
-;;z-index: 99
+z-index: 99
 
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $assets.files.static.hexagon-14.svg
+;;background-image: $assets.files.static.hexagon-14.svg -- TODO FTD 0.3
 width.fixed.px: 120
 height.fixed.px: 120
 anchor: parent
 right.px: 60
 bottom.px: -34
-;;z-index: 999
+z-index: 999
 
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $assets.files.static.hexagon-9.svg
+;;background-image: $assets.files.static.hexagon-9.svg -- TODO FTD 0.3
 width.fixed.px: 150
 height.fixed.px: 150
 anchor: parent
 right.px: -44
 bottom.px: -34
-;;z-index: 99
+z-index: 99
 
 -- end: ftd.column
 

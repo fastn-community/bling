@@ -1,5 +1,5 @@
 -- import: fifthtry.github.io/bling/assets
-;;-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
@@ -10,23 +10,14 @@ line-height: 18
 size: 14
 letter-spacing: 0
 
--- ftd.type copy-relaxed: $fpm.font-display
+-- ftd.type copy-relaxed: 
 desktop: $copy-relax
 mobile: $copy-relax
 xl: $copy-relax
 weight: 700
 
 
--- ftd.column:
-height: hug-content
-width: fill-container
-background.solid: $inherited.colors.background.base
-padding-vertical.px: 24
-padding-horizontal.px: 24
-
-
-
-/-- ft.page: `divider` and it's Usage
+-- ft.page: `divider` and it's Usage
 
 `divider` can be used as end of blog post, section OR chapter end.
 
@@ -34,12 +25,12 @@ padding-horizontal.px: 24
 
 
 
-/-- pd.package: `divider` and it's Usage
+-- pd.package: `divider` and it's Usage
 name: fifthtry.github.io/bling/divider
 
 To use `divider` on your web package, add below into `FPM.ftd` file:
 
-/-- cb.code:
+-- cb.code:
 lang: ftd
 
 \-- fpm.dependency: fifthtry.github.io/bling
@@ -60,7 +51,7 @@ files:
 
 -- tf.h3: 1.1: `-- heart-end` without end-mark and title
 
-/-- cb.code: Example code for `-- heart-end`
+-- cb.code: Example code for `-- heart-end`
 lang: ftd
 
 \-- divider.heart-end: 
@@ -78,7 +69,7 @@ Output of above:
 
 -- tf.h3: 1.2: `-- heart-end` with end-mark
 
-/-- cb.code: Example code for `-- heart-end`
+-- cb.code: Example code for `-- heart-end`
 lang: ftd
 
 \-- divider.heart-end: 
@@ -98,7 +89,7 @@ end-mark: true
 
 -- tf.h3: 1.3: `-- heart-end` with end-mark and title text
 
-/-- cb.code: Example code for `-- heart-end`
+-- cb.code: Example code for `-- heart-end`
 lang: ftd
 
 \-- divider.heart-end: Thank You
@@ -118,7 +109,7 @@ end-mark: true
 
 -- tf.h3: 2.1: `-- diamond` without end-mark and title
 
-/-- cb.code: Example code for `-- diamond`
+-- cb.code: Example code for `-- diamond`
 lang: ftd
 
 \-- divider.diamond: 
@@ -136,7 +127,7 @@ Output of above:
 
 -- tf.h3: 2.2: `-- diamond` with end-mark
 
-/-- cb.code: Example code for `-- diamond`
+-- cb.code: Example code for `-- diamond`
 lang: ftd
 
 \-- divider.diamond: 
@@ -156,7 +147,7 @@ end-mark: true
 
 -- tf.h3: 2.3: `-- diamond` with end-mark and title text
 
-/-- cb.code: Example code for `-- diamond`
+-- cb.code: Example code for `-- diamond`
 lang: ftd
 
 \-- divider.diamond: Thank You
@@ -176,7 +167,7 @@ end-mark: true
 
 -- tf.h3: 3.1: `-- arrow` without end-mark and title
 
-/-- cb.code: Example code for `-- arrow`
+-- cb.code: Example code for `-- arrow`
 lang: ftd
 
 \-- divider.arrow: 
@@ -194,7 +185,7 @@ Output of above:
 
 -- tf.h3: 3.2: `-- arrow` with end-mark
 
-/-- cb.code: Example code for `-- arrow`
+-- cb.code: Example code for `-- arrow`
 lang: ftd
 
 \-- divider.arrow: 
@@ -214,7 +205,7 @@ end-mark: true
 
 -- tf.h3: 3.3: `-- arrow` with end-mark and title text
 
-/-- cb.code: Example code for `-- arrow`
+-- cb.code: Example code for `-- arrow`
 lang: ftd
 
 \-- divider.arrow: Thank You
@@ -234,7 +225,7 @@ end-mark: true
 
 -- tf.h3: 4.1: `-- wavy` without end-mark and title
 
-/-- cb.code: Example code for `-- wavy`
+-- cb.code: Example code for `-- wavy`
 lang: ftd
 
 \-- divider.wavy: 
@@ -252,7 +243,7 @@ Output of above:
 
 -- tf.h3: 4.2: `-- wavy` with end-mark
 
-/-- cb.code: Example code for `-- wavy`
+-- cb.code: Example code for `-- wavy`
 lang: ftd
 
 \-- divider.wavy: 
@@ -272,7 +263,7 @@ end-mark: true
 
 -- tf.h3: 4.3: `-- wavy` with end-mark and title text
 
-/-- cb.code: Example code for `-- wavy`
+-- cb.code: Example code for `-- wavy`
 lang: ftd
 
 \-- divider.wavy: Thank You
@@ -292,7 +283,7 @@ end-mark: true
 
 -- tf.h3: 5.1: `-- angled` without end-mark and title
 
-/-- cb.code: Example code for `-- angled`
+-- cb.code: Example code for `-- angled`
 lang: ftd
 
 \-- divider.angled: 
@@ -310,7 +301,7 @@ Output of above:
 
 -- tf.h3: 5.2: `-- angled` with end-mark
 
-/-- cb.code: Example code for `-- angled`
+-- cb.code: Example code for `-- angled`
 lang: ftd
 
 \-- divider.angled: 
@@ -330,7 +321,7 @@ end-mark: true
 
 -- tf.h3: 5.3: `-- angled` with end-mark and title text
 
-/-- cb.code: Example code for `-- angled`
+-- cb.code: Example code for `-- angled`
 lang: ftd
 
 \-- divider.angled: Thank You
@@ -350,7 +341,7 @@ end-mark: true
 
 -- tf.h3: 6.1: `-- lines` without end-mark and title
 
-/-- cb.code: Example code for `-- lines`
+-- cb.code: Example code for `-- lines`
 lang: ftd
 
 \-- divider.lines: 
@@ -368,7 +359,7 @@ Output of above:
 
 -- tf.h3: 6.2: `-- lines` with end-mark
 
-/-- cb.code: Example code for `-- lines`
+-- cb.code: Example code for `-- lines`
 lang: ftd
 
 \-- divider.lines: 
@@ -388,7 +379,7 @@ end-mark: true
 
 -- tf.h3: 6.3: `-- lines` with end-mark and title text
 
-/-- cb.code: Example code for `-- lines`
+-- cb.code: Example code for `-- lines`
 lang: ftd
 
 \-- divider.lines: Thank You
@@ -408,7 +399,7 @@ end-mark: true
 
 -- tf.h3: 7.1: `-- rounded` without end-mark and title
 
-/-- cb.code: Example code for `-- rounded`
+-- cb.code: Example code for `-- rounded`
 lang: ftd
 
 \-- divider.rounded: 
@@ -426,7 +417,7 @@ Output of above:
 
 -- tf.h3: 7.2: `-- rounded` with end-mark
 
-/-- cb.code: Example code for `-- rounded`
+-- cb.code: Example code for `-- rounded`
 lang: ftd
 
 \-- divider.rounded: 
@@ -446,7 +437,7 @@ end-mark: true
 
 -- tf.h3: 7.3: `-- rounded` with end-mark and title text
 
-/-- cb.code: Example code for `-- rounded`
+-- cb.code: Example code for `-- rounded`
 lang: ftd
 
 \-- divider.rounded: Thank You
@@ -467,7 +458,7 @@ end-mark: true
 
 -- tf.h3: 8.1: `-- rigger` without end-mark and title
 
-/-- cb.code: Example code for `-- rigger`
+-- cb.code: Example code for `-- rigger`
 lang: ftd
 
 \-- divider.rigger: 
@@ -485,7 +476,7 @@ Output of above:
 
 -- tf.h3: 8.2: `-- rigger` with end-mark
 
-/-- cb.code: Example code for `-- rigger`
+-- cb.code: Example code for `-- rigger`
 lang: ftd
 
 \-- divider.rigger: 
@@ -505,7 +496,7 @@ end-mark: true
 
 -- tf.h3: 8.3: `-- rigger` with end-mark and title text
 
-/-- cb.code: Example code for `-- rigger`
+-- cb.code: Example code for `-- rigger`
 lang: ftd
 
 \-- divider.rigger: Thank You
@@ -521,7 +512,7 @@ end-mark: true
 
 
 
--- end: ftd.column
+-- end: ft.page
 
 
 

@@ -1,34 +1,28 @@
--- import: fpm
 -- import: fifthtry.github.io/bling/assets
-;;-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/doc as pd
 
 
 
 
 
--- ftd.column:
-height: hug-content
-width: fill-container
-background.solid: $inherited.colors.background.step-1
-padding-vertical.px: 24
-padding-horizontal.px: 24
 
-/-- ft.page: `badge` and it's Usage
+-- ft.page: `badge` and it's Usage
 
 Badges can be used as part of any component and are available in below formats:
 
-/-- pd.package: `badge`
+
+-- pd.package: `badge`
 name: fifthtry.github.io/bling/badge
 
 To use these badges on your web package, add below lines into `FPM.ftd` file:
 
-/-- cb.code:
+-- ft.code:
 lang: ftd
 
-/-- fpm.dependency: fifthtry.github.io/bling
-/-- fpm.auto-import: fifthtry.github.io/bling/badge
+\-- fpm.dependency: fifthtry.github.io/bling
+\-- fpm.auto-import: fifthtry.github.io/bling/badge
 
--- tf.markdown:
+-- ft.markdown:
 
 Once you add above lines into your web package, add `badge` into your `.ftd` files:
 
@@ -45,10 +39,11 @@ Once you add above lines into your web package, add `badge` into your `.ftd` fil
 -- badge-output: Light Badge:
 light: true
 
-/--- cb.code: Example code for `badge` `light` is by default true:
+
+-- ft.code: Example code for `badge` `light` is by default true:
 lang: ftd
 
-/-- badge: Light
+\-- badge: Light
 
 
 
@@ -58,10 +53,10 @@ lang: ftd
 dark: true
 light: false
 
-/--- cb.code: Example code for dark `badge`:
+-- ft.code: Example code for dark `badge`:
 lang: ftd
 
-/-- badge: Dark
+\-- badge: Dark
 dark: true
 
 
@@ -72,10 +67,10 @@ dark: true
 primary: true
 light: false
 
-/--- cb.code: Example code for primary `badge`:
+-- ft.code: Example code for primary `badge`:
 lang: ftd
 
-/-- badge: Primary
+\-- badge: Primary
 primary: true
 
 
@@ -86,10 +81,10 @@ primary: true
 secondary: true
 light: false
 
-/--- cb.code: Example code for secondary `badge`:
+-- ft.code: Example code for secondary `badge`:
 lang: ftd
 
-/-- badge: Secondary
+\-- badge: Secondary
 secondary: true
 
 
@@ -100,10 +95,10 @@ secondary: true
 success: true
 light: false
 
-/--- cb.code: Example code for success `badge`:
+-- ft.code: Example code for success `badge`:
 lang: ftd
 
-/-- badge: Success
+\-- badge: Success
 success: true
 
 
@@ -114,10 +109,10 @@ success: true
 danger: true
 light: false
 
-/--- cb.code: Example code for danger `badge`:
+-- ft.code: Example code for danger `badge`:
 lang: ftd
 
-/-- badge: Danger
+\-- badge: Danger
 danger: true
 
 
@@ -128,10 +123,10 @@ danger: true
 warning: true
 light: false
 
-/--- cb.code: Example code for warning `badge`:
+-- ft.code: Example code for warning `badge`:
 lang: ftd
 
-/-- badge: Warning
+\-- badge: Warning
 warning: true
 
 
@@ -142,13 +137,13 @@ warning: true
 info: true
 light: false
 
-/--- cb.code: Example code for info `badge`:
+-- ft.code: Example code for info `badge`:
 lang: ftd
 
-/-- badge: Info
+\-- badge: Info
 info: true
 
--- end: ftd.column
+-- end: ft.page
 
 
 
