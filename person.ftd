@@ -175,12 +175,12 @@ margin-bottom.px:24
 -- ftd.column:
 width: fill-container
 ;;id: card-main
-spacing.px: 12
+spacing.fixed.px: 12
 
 -- ftd.row:
 width: fill-container
 ;;id: profile-row
-spacing.px: 24
+spacing.fixed.px: 24
 
 -- ftd.column:
 
@@ -197,7 +197,7 @@ height.fixed.px: 64
 
 -- ftd.column:
 width: fill-container
-spacing.px: 12
+spacing.fixed.px: 12
 ;;id: user-info
 
 -- ftd.text: $persona-card.title
@@ -207,7 +207,7 @@ color: $inherited.colors.text-strong
 
 -- ftd.row:
 width: fill-container
-spacing.px: 18
+spacing.fixed.px: 18
 
 -- ftd.text: $persona-card.profile
 role: $inherited.types.fine-print
@@ -286,12 +286,12 @@ width: fill-container
 -- ftd.column:
 width: fill-container
 ;;id: card-main
-spacing.px: 12
+spacing.fixed.px: 12
 
 -- ftd.row:
 width: fill-container
 ;;id: profile-row
-spacing.px: 24
+spacing.fixed.px: 24
 
 -- ftd.column:
 
@@ -309,7 +309,7 @@ height.fixed.px: 64
 
 -- ftd.column:
 width: fill-container
-spacing.px: 12
+spacing.fixed.px: 12
 ;;id: user-info
 
 -- ftd.text: $person-data.title
@@ -319,7 +319,7 @@ color: $inherited.colors.text-strong
 
 -- ftd.row:
 width: fill-container
-spacing.px: 18
+spacing.fixed.px: 18
 
 -- ftd.text: $person-data.profile
 role: $inherited.types.fine-print

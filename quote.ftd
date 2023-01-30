@@ -4,7 +4,7 @@
 /-- ftd.type copy-relax:
 line-height.fixed.px: 18
 size.px: 14
-letter-spacing.px: 0
+letter-spacing.fixed.px: 0
 
 -- ftd.responsive-type copy-relaxed: 
 desktop: $copy-relax
@@ -14,7 +14,7 @@ weight: 700
 -- ftd.type heading-40-bold-desktop:
 line-height.fixed.px: 48
 size.px: 40
-letter-spacing.px: 0
+letter-spacing.fixed.px: 0
 
 -- ftd.responsive-type heading-40-bold:
 desktop: $heading-40-bold-desktop
@@ -24,7 +24,7 @@ weight: 700
 -- ftd.type heading-small-bold-desktop:
 line-height.fixed.px: 36
 size.px: 24
-letter-spacing.px: 0
+letter-spacing.fixed.px: 0
 
 -- ftd.type heading-small-bold: 
 desktop: $heading-small-bold-desktop
@@ -610,7 +610,7 @@ background.solid: $quote-desktop.backgroundcolor
 
 -- ftd.row:
 max-width.fixed.px: 1000
-spacing.px: 80
+spacing.fixed.px: 80
 align-self: center
 width: fill-container
 
@@ -713,7 +713,7 @@ margin-bottom.px: 24
 text-align: center
 
 -- ftd.row:
-spacing.px: 16
+spacing.fixed.px: 16
 align-self: center
 margin-bottom.px: 16
 
@@ -733,7 +733,7 @@ align-self: center
 -- end: ftd.row
 
 -- ftd.column: 
-spacing.px: 8
+spacing.fixed.px: 8
 align-self: center
 
 -- ftd.text: $quote-mobile.title
@@ -821,7 +821,7 @@ role: $inherited.types.copy-large
 
 -- ftd.row:
 align-self: end
-spacing.px: 8
+spacing.fixed.px: 8
 margin-top.px: 16
 
 -- ftd.text: ~
@@ -880,7 +880,7 @@ role: $inherited.types.copy-tight
 
 -- ftd.row:
 align-self: end
-spacing.px: 8
+spacing.fixed.px: 8
 
 -- ftd.text: ~
 color: $inherited.colors.text
@@ -974,7 +974,7 @@ text-align: end
 
 -- ftd.row:
 align-self: end
-spacing.px: 8
+spacing.fixed.px: 8
 margin-top.px: 16
 
 -- ftd.text: ~
@@ -1036,7 +1036,7 @@ text-align: end
 
 -- ftd.row:
 align-self: end
-spacing.px: 8
+spacing.fixed.px: 8
 margin-top.px: 16
 
 -- ftd.text: ~
@@ -1084,7 +1084,7 @@ body: $scorpion.body
 
 -- ftd.column:
 margin-left.px: 45
-spacing.px: 8
+spacing.fixed.px: 8
 anchor: parent
 bottom.px: -34
 left.px: 20
@@ -1349,7 +1349,7 @@ padding-vertical.px: 24
 border-left-width.px: 5
 padding-right.px: 32
 border-color: $inherited.colors.text
-spacing.px: 32
+spacing.fixed.px: 32
 margin-top.px: 24
 margin-bottom.px: 24
 width: fill-container
@@ -1364,7 +1364,7 @@ padding-left.px: 25
 width: fill-container
 align-self: center
 padding-top.px: 12
-spacing.px: 12
+spacing.fixed.px: 12
 
 -- ftd.text:
 text: $onyx.body
@@ -2058,7 +2058,7 @@ padding-top.px: 16
 padding-horizontal.px: 16
 background.solid: $inherited.colors.background.step-2
 border-radius.px: 4
-spacing.px: 8
+spacing.fixed.px: 8
 max-width.fixed.percent if { ftd.device != "mobile" }: 30
 width if { ftd.device == "mobile" }: fill-container
 
@@ -2068,7 +2068,7 @@ role: $inherited.types.heading-small
 color: $inherited.colors.text
 
 -- ftd.row:
-spacing.px: 8
+spacing.fixed.px: 8
 margin-top.px: 42
 padding-bottom.px: 16
 
@@ -2144,7 +2144,7 @@ padding-horizontal.px:  40
 align-self: center
 
 -- ftd.column:
-spacing.px: 8
+spacing.fixed.px: 8
 background.solid: $inherited.colors.background.base
 align-self: center
 padding-vertical.px: 40
@@ -2157,7 +2157,7 @@ color: $inherited.colors.text
 text-align: justify
 
 -- ftd.row:
-spacing.px: 8
+spacing.fixed.px: 8
 margin-top.px: 24
 
 -- ftd.text: ~
@@ -2203,7 +2203,7 @@ padding-horizontal.px:  12
 align-self: center
 
 -- ftd.column:
-spacing.px: 8
+spacing.fixed.px: 8
 background.solid: $inherited.colors.background.base
 align-self: center
 padding-vertical.px: 12
@@ -2216,7 +2216,7 @@ color: $inherited.colors.text
 text-align: justify
 
 -- ftd.row:
-spacing.px: 8
+spacing.fixed.px: 8
 margin-top.px: 24
 
 -- ftd.text: ~
@@ -2283,7 +2283,7 @@ padding-top.px: 16
 padding-horizontal.px: 16
 background.solid: $inherited.colors.background.step-2
 border-radius.px: 4
-spacing.px: 8
+spacing.fixed.px: 8
 width: fill-container
 
 -- ftd.text:
@@ -2292,7 +2292,7 @@ role: $inherited.types.heading-small
 color: $inherited.colors.text
 
 -- ftd.row:
-spacing.px: 8
+spacing.fixed.px: 8
 margin-top.px: 42
 padding-bottom.px: 16
 

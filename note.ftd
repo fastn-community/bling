@@ -7,7 +7,7 @@
 -- ftd.type fine-print-bold-desktop:
 line-height.px: 16
 size.px: 14
-letter-spacing.px: 0
+letter-spacing.fixed.px: 0
 
 -- ftd.responsive-type fine-print-bold:
 desktop: $fine-print-bold-desktop
@@ -17,7 +17,7 @@ weight: 700
 -- ftd.type copy-tight-bold-desktop:
 line-height.px: 20
 size.px: 16
-letter-spacing.px: 0
+letter-spacing.fixed.px: 0
 weight: 700
 
 -- ftd.responsive-type copy-tight-bold: 
@@ -111,7 +111,7 @@ padding-horizontal.px: 16
 background.solid: $note.backgroundcolor
 border-color: $note.bordercolor
 border-width.px: 1
-spacing.px: 16
+spacing.fixed.px: 16
 width: auto
 border-radius.px: 6
 max-width.fixed.px: 800
@@ -126,7 +126,7 @@ role: $inherited.types.heading-medium
 
 -- ftd.column:
 width: fill-container
-spacing.px: 8
+spacing.fixed.px: 8
 
 -- ftd.text: $note.title
 role: $copy-tight-bold

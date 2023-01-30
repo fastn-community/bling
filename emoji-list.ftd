@@ -8,7 +8,7 @@
 -- ftd.font-size copy-large-bold-desktop:
 line-height: 28
 size: 20
-letter-spacing.px: 0
+letter-spacing.fixed.px: 0
 
 -- ftd.type copy-large-bold: 
 desktop: $copy-large-bold-desktop
@@ -116,7 +116,7 @@ caption or body body:
 max-width.fixed.px: 800
 margin-bottom.px: 12
 width: auto
-spacing.px: 10
+spacing.fixed.px: 10
 
 -- ftd.text: $emoji-list.emoji
 color:$inherited.colors.text

@@ -109,7 +109,7 @@ optional body body:
 children container:
 
 -- ftd.column:
-spacing.px: 8
+spacing.fixed.px: 8
 $on-click$: $ftd.toggle($a = $detail.is-open)
 max-width.fixed.px: 800
 padding.px: 12
@@ -120,7 +120,7 @@ color: $inherited.colors.text
 
 -- ftd.row:
 width: fill-container
-spacing.px: 8
+spacing.fixed.px: 8
 
 -- ftd.row:
 width: fill-container
