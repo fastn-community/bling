@@ -210,7 +210,7 @@ lang: ftd
 
 -- ftd.text: Sed ut perspiciatis unde omnis isa te natus error sit volupta tem.
 color: $inherited.colors.text
-role: $inherited.types.label-big
+role: $inherited.types.label-large
 
 -- end: message-right
 
@@ -304,7 +304,7 @@ width: fill-container
 
 -- ftd.text: $message-left.title
 color: $inherited.colors.text
-role: $inherited.types.label-big
+role: $inherited.types.label-large
 width: fill-container
 text-align: start
 margin-top.px: $message-left.pull-top
@@ -363,7 +363,7 @@ border-radius.px: 4
 
 -- ftd.text: $message-right.title
 color: $inherited.colors.text
-role: $inherited.types.label-big
+role: $inherited.types.label-large
 width: fill-container
 text-align: end
 margin-top.px: $message-right.pull-top

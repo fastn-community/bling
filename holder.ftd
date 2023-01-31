@@ -245,7 +245,7 @@ width: fill-container
 if: { $triangular.body != NULL }
 text: $triangular.body
 color: $inherited.colors.text
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 width: fill-container
 
 

@@ -660,7 +660,7 @@ role: $inherited.types.heading-small
 color: $inherited.colors.text
 
 -- ftd.text: $quote-desktop.label
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 
 -- end: ftd.column
@@ -827,7 +827,7 @@ margin-top.px: 16
 -- ftd.text: ~
 align-self: center
 color: $inherited.colors.text
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 
 -- ftd.text: $quote-1-desktop.title
 align-self: center
@@ -876,7 +876,7 @@ width: fill-container
 -- ftd.text: 
 text: $quote-1-mobile.body
 color: $inherited.colors.text
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 
 -- ftd.row:
 align-self: end
@@ -884,7 +884,7 @@ spacing.fixed.px: 8
 
 -- ftd.text: ~
 color: $inherited.colors.text
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 
 -- ftd.text: $quote-1-mobile.title
 align-self: end
@@ -980,7 +980,7 @@ margin-top.px: 16
 -- ftd.text: ~
 align-self: center
 color: $inherited.colors.text
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 
 -- ftd.text: $quote-2-desktop.title
 align-self: center
@@ -1030,7 +1030,7 @@ width: fill-container
 -- ftd.text: 
 text: $quote-2-mobile.body
 color: $inherited.colors.text
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 ;;style: italic -- TODO FTD 0.3
 text-align: end
 
@@ -1041,7 +1041,7 @@ margin-top.px: 16
 
 -- ftd.text: ~
 color: $inherited.colors.text
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 
 -- ftd.text: $quote-2-mobile.title
 align-self: end
@@ -1091,13 +1091,13 @@ left.px: 20
 left.px if { ftd.device == "mobile" }: 5
 
 -- ftd.text: $scorpion.title
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 
 -- ftd.text:
 text: $scorpion.label
 color: $inherited.colors.text
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 
 -- end: ftd.column
 
@@ -1309,7 +1309,7 @@ padding-left.px: 16
 
 -- ftd.text: $chalice.title
 color: $inherited.colors.text
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 align-self: center
 margin-bottom.px: 8
 
@@ -1368,19 +1368,19 @@ spacing.fixed.px: 12
 
 -- ftd.text:
 text: $onyx.body
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $onyx.color
 
 -- ftd.row:
 padding-left.px: 12
 
 -- ftd.text: ~
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.background.step-2
 margin-right.px: 8
 
 -- ftd.text: $onyx.title
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.background.step-2
 
 -- end: ftd.row
@@ -1552,7 +1552,7 @@ role: $inherited.types.heading-small
 color: $inherited.colors.text
 
 -- ftd.text: $quote-6-mobile.title
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 padding-top.px: 20
 
@@ -1675,7 +1675,7 @@ min-height.fixed.px: 84
 -- ftd.text:
 text: $vampire.body
 color: $inherited.colors.text-strong
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 padding-horizontal.px: 32
 margin-top.px: 16
 margin-bottom.px: 16
@@ -1751,7 +1751,7 @@ text-align: center
 
 -- ftd.text: $rustic.title
 align-self: center
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 padding-horizontal.px: 32
 
@@ -1988,7 +1988,7 @@ margin-bottom.px: 24
 
 -- ftd.text:
 text: $matte.body
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 
 -- ftd.row:
@@ -2604,7 +2604,7 @@ padding-top.px: 40
 
 -- ftd.text:
 text: $octa-inner.body
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.custom.three
 max-height.fixed.px: 200
 overflow-y: auto
@@ -2614,12 +2614,12 @@ align-self: center
 margin-top.px: 40
 
 -- ftd.text: ~
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 margin-right.px: 8
 
 -- ftd.text: $octa-inner.title
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.custom.three
 
 -- end: ftd.row

@@ -247,7 +247,7 @@ color: $inherited.colors.text
 
 -- ftd.text:
 text: $persona-card.body
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text-strong
 
 -- end: ftd.column
@@ -357,7 +357,7 @@ color: $inherited.colors.text
 
 -- ftd.text:
 text: $person-data.body
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text-strong
 
 -- end: ftd.column
