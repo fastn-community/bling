@@ -76,11 +76,11 @@ lang: ftd
 
 \-- ftd.text: Though the code block appears above, can I have some text below it?
 color: $inherited.colors.text
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 
 \-- ftd.text: Though the code block appears above, can I have some text below it?
 color: $inherited.colors.text
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 
 
 
@@ -99,11 +99,11 @@ lang: ftd
 
 \-- ftd.text: can I have some text below it?
 color: $inherited.colors.text
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 
 -- ftd.text: can I have some text below it?
 color: $inherited.colors.text
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 
 -- end: tip
 

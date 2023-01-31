@@ -135,12 +135,12 @@ width.fixed.px: 20
 
 -- ftd.text: &#x25BC;
 if: { $detail.is-open }
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 width.fixed.px: 20
 
 -- ftd.text: $detail.title
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 
 -- end: ftd.row
@@ -151,7 +151,7 @@ align-self: end
 
 -- ftd.text: $detail.info-right
 if: { $detail.info-right != NULL }
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 white-space: nowrap
 align-self: end
@@ -172,7 +172,7 @@ border-radius.px: 4
 
 -- ftd.text: $detail.body
 if: {$detail.body != NULL}
-role: $inherited.types.label-big
+role: $inherited.types.label-large
 color: $inherited.colors.text
 
 -- ftd.column:

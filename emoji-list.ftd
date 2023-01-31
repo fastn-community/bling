@@ -120,12 +120,12 @@ spacing.fixed.px: 10
 
 -- ftd.text: $emoji-list.emoji
 color:$inherited.colors.text
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 
 -- ftd.text:
 text: $emoji-list.body
 color: $inherited.colors.text
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 

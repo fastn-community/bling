@@ -130,12 +130,12 @@ width: auto
 align-self: center
 
 -- ftd.text: Sidenote:
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text-strong
 
 -- ftd.text:
 text: $sidenote.body
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 text-align: justify
 ;;text-indent: 84
