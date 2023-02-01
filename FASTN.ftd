@@ -1,0 +1,38 @@
+-- import: fastn
+
+-- fastn.package: fifthtry.github.io/bling
+zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
+download-base-url: https://raw.githubusercontent.com/fifthtry/bling/main
+
+
+
+-- fastn.dependency: fifthtry.github.io/package-doc as pd
+-- fastn.dependency: fifthtry.github.io/roboto
+
+
+-- fastn.auto-import: pd
+-- fastn.auto-import: fastn
+-- fastn.auto-import: pd/typography as tf
+-- fastn.auto-import: pd/code-block as cb
+-- fastn.auto-import: pd/forest-theme as ft
+-- fastn.auto-import: fifthtry.github.io/bling/FASTN/config
+
+
+
+
+-- fastn.sitemap:
+
+# Home: index.html
+
+- Badge: /badge/
+- Message: /chat/
+- Person Card: /person/
+- Tip: /tip/
+- Detail: /detail/
+- Note: /note/
+- Emoji-list: /emoji-list/
+- Sidenote: /sidenote/
+- Quotes: /quote/
+- The End Mark: /the-end/
+- Holder: /holder/
+-Divider: /divider/
