@@ -14,13 +14,13 @@ name: fifthtry.github.io/bling/detail
 
 `detail` is a new conversation experience via using `FTD` lang:
 
-To use `detail` on your web package, add below into `FPM.ftd` file:
+To use `detail` on your web package, add below into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling/detail
+\-- fastn.dependency: fifthtry.github.io/bling
+\-- fastn.auto-import: fifthtry.github.io/bling/detail
 
 \-- tf.markdown:
 

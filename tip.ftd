@@ -18,13 +18,13 @@ as part of any component and is available in below formats:
 -- pd.package: `tip`
 name: fifthtry.github.io/bling/tip
 
-To use `tip` on your web package, add below lines into `FPM.ftd` file:
+To use `tip` on your web package, add below lines into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling/tip
+\-- fastn.dependency: fifthtry.github.io/bling
+\-- fastn.auto-import: fifthtry.github.io/bling/tip
 
 
 

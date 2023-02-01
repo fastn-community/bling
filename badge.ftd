@@ -14,13 +14,13 @@ Badges can be used as part of any component and are available in below formats:
 -- pd.package: `badge`
 name: fifthtry.github.io/bling/badge
 
-To use these badges on your web package, add below lines into `FPM.ftd` file:
+To use these badges on your web package, add below lines into `FASTN.ftd` file:
 
 -- ft.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling/badge
+\-- fastn.dependency: fifthtry.github.io/bling
+\-- fastn.auto-import: fifthtry.github.io/bling/badge
 
 -- ft.markdown:
 

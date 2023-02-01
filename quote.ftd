@@ -52,13 +52,13 @@ OR highlighting important notes on documentation etc.
 -- pd.package: `quote`
 name: fifthtry.github.io/bling/quote
 
-To use these quotes on your web package add below into `FPM.ftd` file:
+To use these quotes on your web package add below into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling/quote
-\-- fpm.auto-import: fifthtry.github.io/bling/quote
+\-- fastn.dependency: fifthtry.github.io/bling/quote
+\-- fastn.auto-import: fifthtry.github.io/bling/quote
 
 
 -- tf.markdown:

@@ -25,13 +25,13 @@ Bling is for making most content pages more interesting. Normally content pages,
 post, or news article etc, only have headings, single quote, image and code block. With bling 
 we are trying to create rich variety of components to spice up such blog posts.
 
-To use bling components on your web package, add below into `FPM.ftd` file:
+To use bling components on your web package, add below into `FASTN.ftd` file:
 
 -- ft.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling as bling
-\-- fpm.auto-import: bling
+\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.auto-import: bling
 
 
 -- ft.h2: Below are some sample Bling Components:

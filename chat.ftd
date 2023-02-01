@@ -13,13 +13,13 @@
 -- pd.package: `message-left` & `message-right`
 name: fifthtry.github.io/bling/chat
 
-To use these components on your web package, add below into `FPM.ftd` file:
+To use these components on your web package, add below into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling/chat
+\-- fastn.dependency: fifthtry.github.io/bling
+\-- fastn.auto-import: fifthtry.github.io/bling/chat
 
 -- tf.markdown:
 

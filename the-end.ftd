@@ -17,13 +17,13 @@ etc.
 -- pd.package: `the-end` and it's Usage
 name: fifthtry.github.io/bling/the-end
 
-To use `the-end` on your web package, add below into `FPM.ftd` file:
+To use `the-end` on your web package, add below into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling/the-end
+\-- fastn.dependency: fifthtry.github.io/bling
+\-- fastn.auto-import: fifthtry.github.io/bling/the-end
 
 
 

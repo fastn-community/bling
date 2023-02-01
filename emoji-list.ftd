@@ -31,13 +31,13 @@ name: fifthtry.github.io/bling/emoji-list
 
 `emoji-list` is a new conversation experience via using `FTD` lang:
 
-To use `emoji-list` on your web package, add below into `FPM.ftd` file:
+To use `emoji-list` on your web package, add below into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling/emoji-list
+\-- fastn.dependency: fifthtry.github.io/bling
+\-- fastn.auto-import: fifthtry.github.io/bling/emoji-list
 
 
 

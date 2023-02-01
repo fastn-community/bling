@@ -14,13 +14,13 @@ Or any `ftd` code. `-- holder` comes with different UI. Showing below a example 
 name: fifthtry.github.io/bling/holder
 
 `holder` is a new conversation experience via using `FTD` lang:
-To use `holder` on your web package, add below into `FPM.ftd` file:
+To use `holder` on your web package, add below into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling/holder
+\-- fastn.dependency: fifthtry.github.io/bling
+\-- fastn.auto-import: fifthtry.github.io/bling/holder
 
 -- tf.markdown:
 

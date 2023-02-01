@@ -28,13 +28,13 @@ weight: 700
 -- pd.package: `divider` and it's Usage
 name: fifthtry.github.io/bling/divider
 
-To use `divider` on your web package, add below into `FPM.ftd` file:
+To use `divider` on your web package, add below into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fpm.dependency: fifthtry.github.io/bling
-\-- fpm.auto-import: fifthtry.github.io/bling/divider
+\-- fastn.dependency: fifthtry.github.io/bling
+\-- fastn.auto-import: fifthtry.github.io/bling/divider
 
 
 
