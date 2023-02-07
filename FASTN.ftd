@@ -6,15 +6,15 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/bling/main
 
 
 
--- fastn.dependency: fifthtry.github.io/package-doc as pd
+-- fastn.dependency: fifthtry.github.io/package-doc
 -- fastn.dependency: fifthtry.github.io/roboto
 
 
--- fastn.auto-import: pd
+-- fastn.auto-import: fifthtry.github.io/package-doc as pd
 -- fastn.auto-import: fastn
--- fastn.auto-import: pd/typography as tf
--- fastn.auto-import: pd/code-block as cb
--- fastn.auto-import: pd/forest-theme as ft
+-- fastn.auto-import: fifthtry.github.io/package-doc/typography as tf
+-- fastn.auto-import: fifthtry.github.io/package-doc/code-block as cb
+-- fastn.auto-import: fifthtry.github.io/package-doc/forest-theme as ft
 -- fastn.auto-import: fifthtry.github.io/bling/FASTN/config
 
 
