@@ -12,15 +12,15 @@ Badges can be used as part of any component and are available in below formats:
 
 
 -- pd.package: `badge`
-name: fifthtry.github.io/bling/badge
+name: fifthtry.github.io/bling
 
 To use these badges on your web package, add below lines into `FASTN.ftd` file:
 
 -- ft.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling
-\-- fastn.auto-import: fifthtry.github.io/bling/badge
+\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.auto-import: bling/badge as badge
 
 -- ft.markdown:
 
@@ -43,7 +43,7 @@ light: true
 -- ft.code: Example code for `badge` `light` is by default true:
 lang: ftd
 
-\-- badge: Light
+\-- badge.badge: Light
 
 
 
@@ -56,7 +56,7 @@ light: false
 -- ft.code: Example code for dark `badge`:
 lang: ftd
 
-\-- badge: Dark
+\-- badge.badge: Dark
 dark: true
 
 
@@ -70,7 +70,7 @@ light: false
 -- ft.code: Example code for primary `badge`:
 lang: ftd
 
-\-- badge: Primary
+\-- badge.badge: Primary
 primary: true
 
 
@@ -84,7 +84,7 @@ light: false
 -- ft.code: Example code for secondary `badge`:
 lang: ftd
 
-\-- badge: Secondary
+\-- badge.badge: Secondary
 secondary: true
 
 
@@ -98,7 +98,7 @@ light: false
 -- ft.code: Example code for success `badge`:
 lang: ftd
 
-\-- badge: Success
+\-- badge.badge: Success
 success: true
 
 
@@ -112,7 +112,7 @@ light: false
 -- ft.code: Example code for danger `badge`:
 lang: ftd
 
-\-- badge: Danger
+\-- badge.badge: Danger
 danger: true
 
 
@@ -126,7 +126,7 @@ light: false
 -- ft.code: Example code for warning `badge`:
 lang: ftd
 
-\-- badge: Warning
+\-- badge.badge: Warning
 warning: true
 
 
@@ -140,7 +140,7 @@ light: false
 -- ft.code: Example code for info `badge`:
 lang: ftd
 
-\-- badge: Info
+\-- badge.badge: Info
 info: true
 
 -- end: ft.page

@@ -11,15 +11,15 @@
 `FTD` lang.
 
 -- pd.package: `message-left` & `message-right`
-name: fifthtry.github.io/bling/chat
+name: fifthtry.github.io/bling
 
 To use these components on your web package, add below into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling
-\-- fastn.auto-import: fifthtry.github.io/bling/chat
+\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.auto-import: bling/chat as chat
 
 -- tf.markdown:
 
@@ -31,7 +31,9 @@ lang: ftd
 
 \-- chat.message-left: Hellow World! 😀
 
+some body of the chat here
 
+\-- end: chat.message-left
 
 
 
@@ -46,118 +48,15 @@ lang: ftd
 
 \-- chat.message-right: Hey Buddy! 👋
 
+some body of the chat here
 
+\-- end: chat.message-right
 
 
 
 -- message-right: Hey Buddy! 👋
 
 
-
-
-
--- tf.h3: How to create custom component, using default attributes?
-
-`FTD` lang is flexible and you can define your custom names to the default component.
-Below are few examples of custom names:
-
--- cb.code: Example: with custom name as below:
-lang: ftd
-
-\-- component amitu:
-optional caption title:
-
-\-- chat.message-left:
-title: $amitu.title
-
-\-- end: amitu
-
-\-- component me:
-optional caption title:
-
-\-- chat.message-right:
-title: $me.title
-
-\-- end: me
-
--- tf.h3: How to use above custom name:
-
--- cb.code: `-- amitu` & `-- me` usage:
-lang: ftd
-
-\-- amitu: Hello World! `ftd` is awesome
-
-\-- me: Hello there! `ftd` is flexible
-
-
-
-
-
--- tf.markdown:
-
-You can change default `avatar` and use custom image as avatar, add your custom 
-images into your package and use them via changing `avatar` attribute value 
-as given below example:
-
--- cb.code: Example: chat with custom avatar:
-lang: ftd
-
-\-- component amitu:
-optional caption title:
-ftd.image-src avatar: $assets.files.static.amitu.jpg
-
-\-- chat.message-left amitu:
-title: $amitu.title
-avatar: $amitu.avatar
-
-\-- end: amitu
-
--- cb.code: Example: with `rounded-avatar` as `true` (by default its `false`):
-lang: ftd
-
-\-- component me:
-optional caption title:
-ftd.image-src avatar: $assets.files.static.ganeshs.jpeg
-boolean rounded-image: true
-
-\-- chat.message-right me:
-title: $me.title
-avatar: $me.avatar
-rounded-avatar: $me.rounded-image
-
-\-- end: me
-
--- tf.markdown:
-
-Now use `-- amitu` normally:
-
--- cb.code: `-- amitu` with custom `avatar`:
-lang: ftd
-
-\-- amitu: Hello World! liking `ftd` lang?
-\-- me: Hey! `ftd` is awesome! 🤘
-
-
-
-
--- tf.h3: Output of above custom component:
-
--- ftd.column:
-width.fixed.px if {ftd.device != "mobile"}: 450
-padding.px if {ftd.device != "mobile"}: 24
-border-radius.px: 20
-background.solid: $inherited.colors.background.base
-
--- message-left: Hello World! liking `ftd` lang?
-avatar: $assets.files.static.amitu.jpg
-round-avatar: true
-
--- message-right: Hey! `ftd` is awesome! 🤘
-avatar: $assets.files.static.ganeshs.jpg
-round-avatar: true
-
-
--- end: ftd.column
 
 -- tf.h3: Real-life example of a chat, using `message` `left` & `right`:
 

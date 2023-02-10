@@ -19,8 +19,8 @@ To use `holder` on your web package, add below into `FASTN.ftd` file:
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling
-\-- fastn.auto-import: fifthtry.github.io/bling/holder
+\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.auto-import: bling/holder as holder
 
 -- tf.markdown:
 
@@ -34,6 +34,9 @@ files:
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+\-- end: holder.triangular
+
 
 -- tf.h3: Output of above example:
 
@@ -108,6 +111,8 @@ width { ftd.device == "mobile" }: fill-container
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+\-- end: holder.triangular
 
 -- tf.h3: Output of above example:
 

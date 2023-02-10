@@ -16,15 +16,15 @@ as part of any component and is available in below formats:
 
 
 -- pd.package: `tip`
-name: fifthtry.github.io/bling/tip
+name: fifthtry.github.io/bling
 
 To use `tip` on your web package, add below lines into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling
-\-- fastn.auto-import: fifthtry.github.io/bling/tip
+\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.auto-import: bling/tip as tip
 
 
 
@@ -45,7 +45,7 @@ lang: ftd
 
 Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
 
-
+\-- end: tip
 
 
 
@@ -82,7 +82,7 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.text
 role: $inherited.types.copy-regular
 
-
+\-- end: tip
 
 
 

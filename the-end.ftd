@@ -15,7 +15,7 @@ etc.
 
 
 -- pd.package: `the-end` and it's Usage
-name: fifthtry.github.io/bling/the-end
+name: fifthtry.github.io/bling
 
 To use `the-end` on your web package, add below into `FASTN.ftd` file:
 
@@ -23,7 +23,7 @@ To use `the-end` on your web package, add below into `FASTN.ftd` file:
 lang: ftd
 
 \-- fastn.dependency: fifthtry.github.io/bling
-\-- fastn.auto-import: fifthtry.github.io/bling/the-end
+\-- fastn.auto-import: bling/the-end as the-end
 
 
 

@@ -10,7 +10,7 @@
 `-- detail` can be used as part of blog posts, OR inside page.
 
 -- pd.package: `detail` and it's Usage
-name: fifthtry.github.io/bling/detail
+name: fifthtry.github.io/bling
 
 `detail` is a new conversation experience via using `FTD` lang:
 
@@ -20,14 +20,14 @@ To use `detail` on your web package, add below into `FASTN.ftd` file:
 lang: ftd
 
 \-- fastn.dependency: fifthtry.github.io/bling
-\-- fastn.auto-import: fifthtry.github.io/bling/detail
+\-- fastn.auto-import: bling/detail as detail
 
-\-- tf.markdown:
+-- tf.markdown:
 
 Once you add above lines into your web package, add `detail` into your `.ftd` 
 files:
 
-\-- cb.code: Example code for `-- detail`
+-- cb.code: Example code for `-- detail`
 lang: ftd
 
 \-- detail.detail: Lorem ipsum dolor
@@ -38,11 +38,13 @@ is-open: true
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt.
 
--- cb.code: details
+\-- cb.code: details
 lang: ftd
  
-\-- detail.detail: Lorem ipsum dolor
+\\-- detail.detail: Lorem ipsum dolor
  is-open: true
+
+\-- end: detail.detail
  
 \-- detail.detail: Lorem ipsum dolor
 
@@ -50,6 +52,8 @@ lang: ftd
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt.
+
+\-- end: detail.detail
 
 \-- detail.detail: Lorem ipsum dolor
 info-right: Some info at right side
@@ -59,6 +63,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
+\-- end: detail.detail
 
 -- tf.h3: Output of above example:
 

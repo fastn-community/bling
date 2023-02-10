@@ -27,7 +27,7 @@ weight: 700
 
 
 -- pd.package: `emoji-list` and it's Usage
-name: fifthtry.github.io/bling/emoji-list
+name: fifthtry.github.io/bling
 
 `emoji-list` is a new conversation experience via using `FTD` lang:
 
@@ -36,8 +36,8 @@ To use `emoji-list` on your web package, add below into `FASTN.ftd` file:
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling
-\-- fastn.auto-import: fifthtry.github.io/bling/emoji-list
+\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.auto-import: bling/emoji-list as el
 
 
 
@@ -51,19 +51,19 @@ files:
 -- cb.code: Example code for `-- emoji-list`
 lang: ftd
 
-\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+\-- el.emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
 emoji: 💫
 
-\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+\-- el.emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
 emoji: 🌟
 
-\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+\-- el.emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
 emoji: 💥
 
-\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+\-- el.emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
 emoji: 🌺
 
-\-- emoji-list: 
+\-- el.emoji-list: 
 emoji: ✨
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 

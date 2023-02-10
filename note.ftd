@@ -33,7 +33,7 @@ mobile: $copy-tight-bold-desktop
 `-- note` can be used as part of blog posts.
 
 -- pd.package: `note` and it's Usage
-name: fifthtry.github.io/bling/note
+name: fifthtry.github.io/bling
 
 `note` is a new conversation experience via using `FTD` lang:
 
@@ -43,7 +43,7 @@ To use `note` on your web package, add below into `FASTN.ftd` file:
 lang: ftd
 
 \-- fastn.dependency: fifthtry.github.io/bling
-\-- fastn.auto-import: fifthtry.github.io/bling/note
+\-- fastn.auto-import: bling/note as note
 
 -- tf.markdown:
 
