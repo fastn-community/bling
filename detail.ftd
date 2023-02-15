@@ -20,7 +20,9 @@ To use `detail` on your web package, add below into `FASTN.ftd` file:
 lang: ftd
 
 \-- fastn.dependency: fifthtry.github.io/bling
+
 \-- fastn.auto-import: bling/detail as detail
+
 
 -- tf.markdown:
 
@@ -95,8 +97,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
--- end: ft.page
 
+-- end: ft.page
 
 
 
@@ -111,11 +113,13 @@ caption title:
 optional string info-right:
 boolean $is-open: false
 optional body body:
+optional ftd.image-src image:
+integer width: 20
+boolean $show-image: false
 children container:
 
 -- ftd.column:
 spacing.fixed.px: 8
-$on-click$: $ftd.toggle($a = $detail.is-open)
 max-width.fixed.px: 800
 padding.px: 12
 width: fill-container
@@ -131,18 +135,31 @@ spacing.fixed.px: 8
 width: fill-container
 align-self: start
 
+-- ftd.image:
+if:  { detail.image != NULL}
+src: $detail.image 
+width.fixed.px: $detail.width
+height: auto
+margin-right.px: 12
+
+-- ftd.column:
+if:  { detail.image == NULL}
+$on-click$: $ftd.toggle($a = $detail.is-open)
+
 -- ftd.text: &#x25B6;
-if: { !$detail.is-open }
+if: { !detail.is-open }
 padding-top.px: 2
 role: $inherited.types.fine-print
 color: $inherited.colors.text
 width.fixed.px: 20
 
 -- ftd.text: &#x25BC;
-if: { $detail.is-open }
+if: { detail.is-open }
 role: $inherited.types.copy-small
 color: $inherited.colors.text
 width.fixed.px: 20
+
+-- end: ftd.column
 
 -- ftd.text: $detail.title
 role: $inherited.types.copy-small
