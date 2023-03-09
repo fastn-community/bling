@@ -246,12 +246,12 @@ Life is either a daring adventure or nothing at all.
 
 
 
--- tf.h3: 8: `-- stormcloud`
+-- tf.h3: 8: `-- storm-cloud`
 
--- cb.code: Example code for `-- stormcloud`
+-- cb.code: Example code for `-- storm-cloud`
 lang: ftd
 
-\-- quote.stormcloud: M.K. Gandhi
+\-- quote.storm-cloud: M.K. Gandhi
 
 "A man is but a product of his thoughts.
 
@@ -261,7 +261,7 @@ lang: ftd
 
 Output of above:
 
--- stormcloud: M.K. Gandhi
+-- storm-cloud: M.K. Gandhi
 
 "A man is but a product of his thoughts.
 
@@ -1579,7 +1579,7 @@ width.fixed.px: 32
 
 
 
--- component stormcloud:
+-- component storm-cloud:
 optional caption title:
 body body:
 
@@ -1598,7 +1598,7 @@ align-self: center
 z-index: 300
 
 -- ftd.text: 
-text: $stormcloud.body
+text: $storm-cloud.body
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 margin-top.px: 16
@@ -1615,7 +1615,7 @@ role: $inherited.types.fine-print
 color: $inherited.colors.text
 margin-right.px: 8
 
--- ftd.text: $stormcloud.title
+-- ftd.text: $storm-cloud.title
 role: $inherited.types.fine-print
 color: $inherited.colors.text
 
@@ -1635,7 +1635,7 @@ bottom.px: -16
 
 -- end: ftd.column
 
--- end: stormcloud
+-- end: storm-cloud
 
 
 
