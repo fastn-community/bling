@@ -7,7 +7,7 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/bling/main
 
 
 -- fastn.dependency: fifthtry.github.io/package-doc
--- fastn.dependency: fifthtry.github.io/roboto
+-- fastn.dependency: fifthtry.github.io/roboto-font
 
 
 -- fastn.auto-import: fifthtry.github.io/package-doc as pd
