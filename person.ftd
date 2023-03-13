@@ -1,0 +1,415 @@
+-- import: fifthtry.github.io/bling/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+
+
+
+-- ft.page: `person` and it's Usage
+
+Person component can be used as part of any component and are available in below formats:
+
+
+
+
+
+-- pd.package: `person`
+name: fifthtry.github.io/bling
+
+Create a single person card OR person cards list using your excel sheet data. 
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/bling
+\-- fastn.auto-import: bling/person as person
+
+
+
+-- tf.markdown: 
+
+Below is example of `persona-list`.
+
+Once you add above lines into your web package, add `persona-list` into your 
+`.ftd` files:
+
+-- cb.code:
+lang: ftd
+
+Create a list of persons using below list format:
+
+\-- person.person list persons-data:
+
+\-- persons-data : Amit Upadhyay
+profile: CEO, FifthTry Pvt. Ltd.
+avatar: $assets.files.static.amitu.jpg
+email: amitu@fifthtry.com
+phone: +91 1234123412
+address: 66737 Reinke Park, Banglore - 560068
+
+Sunglass(1, 2, 3), Dare to be scared book 😜, codename game, Bharat 
+game, Chai Garam game
+
+\-- persons-data: Ganesh Salunke
+profile: Senior Frontend Manager
+avatar: $assets.files.static.ganeshs.jpg
+email: ganesh@fifthtry.com
+phone: +91 222123412
+address: 6 Spenser Drive, Banglore - 560068
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+
+\-- person.persona-list:
+persons: $persons-data
+
+-- tf.markdown: 
+
+Output of above:
+
+
+-- persona-list:
+persons: $persons-data
+
+
+
+
+
+-- tf.markdown: 
+
+Below is example of `persona-card`.
+
+Once you add above lines into your web package, add `persona-list` into your 
+`.ftd` files:
+
+-- cb.code:
+lang: ftd
+
+
+\-- person.persona-card: Amit Upadhyay
+profile: CEO, FifthTry Pvt. Ltd.
+avatar: $assets.files.static.amitu.jpg
+email: amitu@fifthtry.com
+phone: +91 1234123412
+address: 66737 Reinke Park, Banglore - 560068
+
+
+Sunglass(1, 2, 3), Dare to be scared book 😜, codename game, Bharat
+game, Chai Garam game
+
+-- tf.markdown: 
+
+Output of above:
+
+
+-- persona-card: Amit Upadhyay
+profile: CEO, FifthTry Pvt. Ltd.
+avatar: $assets.files.static.amitu.jpg
+email: amitu@fifthtry.com
+phone: +91 1234123412
+address: 66737 Reinke Park, Banglore - 560068
+
+
+Sunglass(1, 2, 3), Dare to be scared book 😜, codename game, Bharat game, Chai 
+Garam game
+
+
+-- end: ft.page
+
+
+
+
+
+
+
+
+
+-- component persona-list:
+person list persons:
+
+-- ftd.column:
+width: fill-container
+
+-- person-data: $obj.title
+$loop$: $persona-list.persons as $obj
+avatar: $obj.avatar
+profile: $obj.profile
+email: $obj.email
+phone: $obj.phone
+address: $obj.address
+body: $obj.body
+
+-- end: ftd.column
+
+-- end: persona-list
+
+
+
+
+
+
+
+
+
+
+-- component persona-card:
+caption title:
+optional ftd.image-src avatar: $assets.files.static.amitu.jpg
+optional string profile:
+optional string email:
+optional string phone:
+optional string address:
+optional body body:
+boolean show-address: false
+
+-- ftd.column:
+width: fill-container
+background.solid: $inherited.colors.background.step-1
+padding-horizontal.px: 16
+padding-vertical.px: 16
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 6
+margin-bottom.px:24
+
+-- ftd.column:
+width: fill-container
+;;id: card-main
+spacing.fixed.px: 12
+
+-- ftd.row:
+width: fill-container
+;;id: profile-row
+spacing.fixed.px: 24
+
+-- ftd.column:
+
+-- ftd.image:
+if: {$persona-card.avatar != NULL}
+src: $persona-card.avatar
+border-radius.px: 500
+width.fixed.px: 64
+height.fixed.px: 64
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 12
+;;id: user-info
+
+-- ftd.text: $persona-card.title
+role: $inherited.types.copy-large
+color: $inherited.colors.text-strong
+;;style: bold
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 18
+
+-- ftd.text: $persona-card.profile
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.text: $persona-card.email
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.text: $persona-card.phone
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.text: 🏠
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+;;$on-mouse-enter$: $show-address = true
+;;$on-mouse-leave$: $show-address = false
+;;$on-click$: $show-address = true
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+min-height.fixed.px: 18
+width: fill-container
+
+-- ftd.text: $persona-card.address
+if: { $persona-card.show-address }
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.text:
+text: $persona-card.body
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- end: persona-card
+
+
+
+
+
+
+
+
+
+
+-- component person-data:
+caption title:
+optional ftd.image-src avatar: $assets.files.static.amitu.jpg
+optional string profile:
+optional string email:
+optional string phone:
+optional string address:
+optional body body:
+boolean show-address: false
+
+-- ftd.column: 
+background.solid: $inherited.colors.background.step-1
+padding-horizontal.px: 16
+padding-vertical.px: 16
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 6
+margin-bottom.px:24
+width: fill-container
+
+-- ftd.column:
+width: fill-container
+;;id: card-main
+spacing.fixed.px: 12
+
+-- ftd.row:
+width: fill-container
+;;id: profile-row
+spacing.fixed.px: 24
+
+-- ftd.column:
+
+-- ftd.image:
+if: {$person-data.avatar != NULL}
+src: $person-data.avatar
+border-radius.px: 500
+width.fixed.px: 64
+height.fixed.px: 64
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 12
+;;id: user-info
+
+-- ftd.text: $person-data.title
+role: $inherited.types.copy-large
+color: $inherited.colors.text-strong
+;;style: bold
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 18
+
+-- ftd.text: $person-data.profile
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.text: $person-data.email
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.text: $person-data.phone
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.text: 🏠
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+;;$on-mouse-enter$: $show-address = true
+;;$on-mouse-leave$: $show-address = false
+;;$on-click$: $show-address = true
+
+-- end: ftd.row
+
+-- ftd.column:
+min-height.fixed.px: 18
+width: fill-container
+
+-- ftd.text: $person-data.address
+if: {$person-data.show-address}
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.text:
+text: $person-data.body
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: person-data
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- record person:
+caption title:
+optional ftd.image-src avatar:
+optional string profile:
+optional string email:
+optional string phone:
+optional string address:
+optional body body:
+
+-- person list persons-data:
+
+-- person: Amit Upadhyay
+profile: CEO, FifthTry Pvt. Ltd.
+avatar: $assets.files.static.amitu.jpg
+email: amitu@fifthtry.com
+phone: +91 1234123412
+address: 66737 Reinke Park, Banglore - 560068
+
+
+Sunglass(1, 2, 3), Dare to be scared book 😜, codename game, Bharat game, Chai 
+Garam game
+
+
+-- person: Ganesh Salunke
+profile: Senior Frontend Manager
+avatar: $assets.files.static.ganeshs.jpg
+email: ganesh@fifthtry.com
+phone: +91 222123412
+address: 6 Spenser Drive, Banglore - 560068
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+
+-- end: persons-data

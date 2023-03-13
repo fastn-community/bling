@@ -1,0 +1,179 @@
+-- import: fifthtry.github.io/bling/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+
+
+
+
+
+-- ft.page: `Tip` and it's usage
+
+`tip` is a new conversation experience via using `FTD` lang. `tip` can be used 
+as part of any component and is available in below formats:
+
+
+
+
+
+-- pd.package: `tip`
+name: fifthtry.github.io/bling
+
+To use `tip` on your web package, add below lines into `FASTN.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.auto-import: bling/tip as tip
+
+
+
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `tip` into your `.ftd` files:
+
+
+
+
+
+-- cb.code: Basic usage example code:
+lang: ftd
+
+\-- tip.tip: Cool bots hot tip!
+
+Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
+
+\-- end: tip
+
+
+
+-- tf.h3: Output of above basic example:
+
+
+
+
+
+-- tip: Cool bots hot tip!
+
+Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
+
+
+
+
+
+-- cb.code: Advanced usage example code:
+lang: ftd
+
+\-- tip.tip: Cool bots hot tip !
+
+Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium dolorem 
+queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo inventore!
+
+\-- tf.code: Wow! awesome man!:
+lang: ftd
+
+\-- ftd.text: Though the code block appears above, can I have some text below it?
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+\-- ftd.text: Though the code block appears above, can I have some text below it?
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+\-- end: tip
+
+
+
+-- tf.h3: Output of above advanced usage example:
+
+
+-- tip: Cool bots hot tip !
+
+Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium dolorem 
+queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo inventore!
+
+-- cb.code: Wow! awesome!:
+lang: ftd
+
+\-- ftd.text: can I have some text below it?
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+-- ftd.text: can I have some text below it?
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+-- end: tip
+
+
+-- end: ft.page
+
+
+
+
+
+
+
+-- component tip:
+optional caption title:
+optional body body:
+optional ftd.image-src avatar: $assets.files.static.amitu.jpg
+children tip-wrap:
+
+-- ftd.column:
+border-color: $inherited.colors.border
+background.solid: $inherited.colors.background.step-1
+padding.px: 16
+border-radius.px: 4
+border-width.px: 1
+width if { ftd.device != "mobile" }: auto
+width if { ftd.device == "mobile" }: fill-container
+min-width.fixed.percent: 50
+margin-top.px: 8
+margin-bottom.px: 32
+align-self: center
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.row:
+align-self: center
+margin-bottom.px: 24
+
+-- ftd.image:
+src: $tip.avatar
+width.fixed.px: 32
+height.fixed.px: 32
+margin-right.px: 16
+margin-top.px: 8
+align-self: center
+border-radius.px: 100
+
+-- ftd.text: $tip.title
+if: {$tip.title != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+
+-- tf.markdown:
+body: $tip.body
+
+-- end: ftd.column
+
+-- ftd.column:
+children: $tip.tip-wrap
+width: fill-container
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: tip

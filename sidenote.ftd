@@ -1,0 +1,150 @@
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+
+
+
+
+-- ftd.type copy-tight-medium-desktop:
+line-height.px: 20
+size.px: 16
+letter-spacing.fixed.px: 0
+
+-- ftd.responsive-type copy-tight-medium:
+desktop: $copy-tight-medium-desktop
+mobile: $copy-tight-medium-desktop
+weight: 600
+
+-- ftd.type copy-tight-bold-desktop:
+line-height.px: 20
+size.px: 16
+letter-spacing.fixed.px: 0
+weight: 700
+
+-- ftd.responsive-type copy-tight-bold:
+desktop: $copy-tight-bold-desktop
+mobile: $copy-tight-bold-desktop
+
+
+
+
+
+-- ft.page: `sidenote` and it's Usage
+
+`-- sidenote` can be used as part of blog posts.
+
+
+-- pd.package: `sidenote` and it's Usage
+name: fifthtry.github.io/bling
+
+`sidenote` is a new conversation experience via using `FTD` lang:
+
+To use `sidenote` on your web package, add below into `FASTN.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.auto-import: bling/sidenote as sidenote
+
+
+
+
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `sidenote` into your `.ftd` 
+files:
+
+-- cb.code: Example code for `-- sidenote`
+lang: ftd
+
+\-- sidenote.sidenote: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+
+
+
+
+-- tf.h3: Output of above basic example:
+
+-- sidenote:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+
+
+
+
+-- tf.h3: Advanced usage example:
+
+-- cb.code: Advanced example code for `-- sidenote`
+lang: ftd
+
+\-- sidenote.sidenote:
+
+Lorem ipsum dolor sit ame, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
+
+
+
+
+
+-- tf.h3: Output of above advanced example:
+
+-- sidenote: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
+
+-- end: ft.page
+
+
+
+
+
+
+
+
+-- component sidenote:
+optional body body: 
+optional ftd.color bordercolor: $inherited.colors.border-strong
+optional ftd.color backgroundcolor: $inherited.colors.background.step-2
+
+-- ftd.column:
+padding-vertical.px: 16
+padding-horizontal.px: 32
+border-color: $sidenote.bordercolor
+border-width.px: 1
+background.solid: $sidenote.backgroundcolor
+border-radius.px: 8
+max-width.fixed.px: 800
+width: auto
+align-self: center
+
+-- ftd.text: Sidenote:
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- ftd.text:
+text: $sidenote.body
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+text-align: justify
+;;text-indent: 84
+
+/-- ftd.text: color
+role: $copy-tight-medium
+border-bottom.px: 1
+;;border-style: solid
+
+-- end: ftd.column
+
+-- end: sidenote

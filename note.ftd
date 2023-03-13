@@ -1,0 +1,130 @@
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+
+
+
+
+
+
+
+
+
+-- ft.page: `note` and it's Usage
+
+`-- note` can be used as part of blog posts.
+
+-- pd.package: `note` and it's Usage
+name: fifthtry.github.io/bling
+
+`note` is a new conversation experience via using `FTD` lang:
+
+To use `note` on your web package, add below into `FASTN.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/bling
+\-- fastn.auto-import: bling/note as note
+
+-- tf.markdown:
+
+Once you add above lines into your web package, add `note` into your `.ftd` 
+files:
+
+-- cb.code: Example code for `-- note`
+lang: ftd
+
+\-- note.note: This is your Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+-- tf.h3: Output of above basic example:
+
+-- note: This is your Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+-- tf.h3: Advanced usage of `-- note`:
+
+-- cb.code: Advanced example code for `-- note`
+lang: ftd
+
+\-- note.note: This is your Title
+
+Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud {bold: exercitation ullamco 
+laboris nisi ut.}
+
+-- tf.h3: Output of above advanced example:
+
+-- note: This is your Title
+
+Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
+
+-- end: ft.page
+
+
+
+
+
+
+
+
+
+
+-- component note:
+caption title:
+optional body body:
+optional string emoji: 📝
+optional ftd.color backgroundcolor: $inherited.colors.text
+optional ftd.color bordercolor: $inherited.colors.text-strong
+
+-- ftd.row:
+padding-vertical.px: 16
+padding-horizontal.px: 16
+background.solid: $note.backgroundcolor
+border-color: $note.bordercolor
+border-width.px: 1
+spacing.fixed.px: 16
+width: auto
+border-radius.px: 6
+max-width.fixed.px: 800
+align-self: center
+
+-- ftd.column:
+
+-- ftd.text: $note.emoji
+role: $inherited.types.heading-medium
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 8
+
+-- ftd.text: $note.title
+role: $inherited.types.button-medium
+color: $inherited.colors.background.step-1
+
+-- ftd.text:
+text: $note.body
+role: $inherited.types.fine-print
+color: $inherited.colors.background.step-1
+
+/-- ftd.text bold: color
+role: $inherited.types.button-medium
+border-bottom.px :1
+border-style: dashed
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: note
