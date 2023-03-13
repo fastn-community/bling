@@ -4,25 +4,6 @@
 
 
 
--- ftd.type fine-print-bold-desktop:
-line-height.px: 16
-size.px: 14
-letter-spacing.px: 0
-
--- ftd.responsive-type fine-print-bold:
-desktop: $fine-print-bold-desktop
-mobile: $fine-print-bold-desktop
-weight: 700
-
--- ftd.type copy-tight-bold-desktop:
-line-height.px: 20
-size.px: 16
-letter-spacing.px: 0
-weight: 700
-
--- ftd.responsive-type copy-tight-bold: 
-desktop: $copy-tight-bold-desktop
-mobile: $copy-tight-bold-desktop
 
 
 
@@ -129,16 +110,16 @@ width: fill-container
 spacing.fixed.px: 8
 
 -- ftd.text: $note.title
-role: $copy-tight-bold
+role: $inherited.types.button-medium
 color: $inherited.colors.background.step-1
 
 -- ftd.text:
 text: $note.body
-role: $fine-print-bold
+role: $inherited.types.fine-print
 color: $inherited.colors.background.step-1
 
 /-- ftd.text bold: color
-role: $fine-print-bold
+role: $inherited.types.button-medium
 border-bottom.px :1
 border-style: dashed
 
