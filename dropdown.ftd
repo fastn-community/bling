@@ -6,13 +6,10 @@
 
 
 
--- ft.page: Dark, light, system mode `dropdown` and it's Usage
+-- ft.page: Dropdown and it's Usage
 
 `dropdown` component can be used as part of any component and are available in 
 below format:
-
-
-
 
 
 -- pd.package: `dropdown`
