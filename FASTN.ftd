@@ -37,3 +37,6 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/bling/main
 - Holder: /holder/
 - Divider: /divider/
 - Dropdown: /dropdown/
+
+# GitHub
+  url: https://github.com/FifthTry/bling
