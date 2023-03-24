@@ -4,7 +4,7 @@
 
 
 
--- ft.page: `the-end` and it's Usage
+-- bling.page: `the-end` and it's Usage
 
 `-- the-end` can be used as part of blog posts, books, section OR chapter end 
 etc.
@@ -112,7 +112,7 @@ Output of above:
 -- brush: 
 
 
--- end: ft.page
+-- end: bling.page
 
 
 

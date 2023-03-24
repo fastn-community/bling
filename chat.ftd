@@ -5,7 +5,7 @@
 
 
 
--- ft.page: Chat & messages
+-- bling.page: Chat & messages
 
 `-- message-left` OR `-- message-right` is a new chatting experience via using 
 `FTD` lang.
@@ -149,7 +149,7 @@ role: $inherited.types.label-large
 
 -- end: ftd.column
 
--- end: ft.page
+-- end: bling.page
 
 
 

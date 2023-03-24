@@ -28,7 +28,7 @@ mobile: $copy-tight-bold-desktop
 
 
 
--- ft.page: `sidenote` and it's Usage
+-- bling.page: `sidenote` and it's Usage
 
 `-- sidenote` can be used as part of blog posts.
 
@@ -104,7 +104,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
 minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
 
--- end: ft.page
+-- end: bling.page
 
 
 

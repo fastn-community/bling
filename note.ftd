@@ -9,7 +9,7 @@
 
 
 
--- ft.page: `note` and it's Usage
+-- bling.page: `note` and it's Usage
 
 `-- note` can be used as part of blog posts.
 
@@ -68,7 +68,7 @@ Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
 minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
 
--- end: ft.page
+-- end: bling.page
 
 
 

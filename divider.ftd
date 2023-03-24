@@ -17,7 +17,7 @@ xl: $copy-relax
 weight: 700
 
 
--- ft.page: `divider` and it's Usage
+-- bling.page: `divider` and it's Usage
 
 `divider` can be used as end of blog post, section OR chapter end.
 
@@ -512,7 +512,7 @@ end-mark: true
 
 
 
--- end: ft.page
+-- end: bling.page
 
 
 

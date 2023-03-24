@@ -5,7 +5,7 @@
 
 
 
--- ft.page: `detail` and it's Usage
+-- bling.page: `detail` and it's Usage
 
 `-- detail` can be used as part of blog posts, OR inside page.
 
@@ -98,7 +98,7 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
--- end: ft.page
+-- end: bling.page
 
 
 
