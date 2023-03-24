@@ -43,7 +43,7 @@ dark: rgba(192,192,192,0.3)
 
 
 
--- ft.page: `quote` and it's Usage
+-- bling.page: `quote` and it's Usage
 
 `-- quote` can be used as part of blog posts to highlight a quote from blogger 
 OR highlighting important notes on documentation etc.
@@ -539,7 +539,7 @@ Output of above:
 
 “Take up one idea. Make that one idea your life; dream of it; think of it; live on that idea. Let the brain, the body, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success, and this is the way great spiritual giants are produced.”
 
--- end: ft.page
+-- end: bling.page
 
 
 

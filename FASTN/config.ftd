@@ -1,4 +1,28 @@
--- import: pd/forest-theme as ft
+-- import: fifthtry.github.io/package-doc/forest-theme as ft
+-- import: fifthtry.github.io/package-doc/footer
 
 
 -- $ft.site-name: Bling Components
+
+
+
+
+-- component page:
+children wrapper:
+optional caption title:
+optional body body:
+
+-- ft.page:
+site-logo: $ft.site-logo
+title: $page.title
+body: $page.body
+wrapper: $page.wrapper
+show-footer: true
+
+-- ft.page.footer:
+
+-- footer.fastn-footer:
+
+-- end: ft.page.footer
+
+-- end: page

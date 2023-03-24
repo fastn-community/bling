@@ -6,7 +6,7 @@
 
 
 
--- ft.page: `Tip` and it's usage
+-- bling.page: `Tip` and it's usage
 
 `tip` is a new conversation experience via using `FTD` lang. `tip` can be used 
 as part of any component and is available in below formats:
@@ -108,7 +108,7 @@ role: $inherited.types.copy-regular
 -- end: tip
 
 
--- end: ft.page
+-- end: bling.page
 
 
 
