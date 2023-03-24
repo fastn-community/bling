@@ -11,6 +11,7 @@
 children wrapper:
 optional caption title:
 optional body body:
+string site-name: Bling Components
 
 -- ft.page:
 site-logo: $ft.site-logo
@@ -18,6 +19,7 @@ title: $page.title
 body: $page.body
 wrapper: $page.wrapper
 show-footer: true
+site-name: $page.site-name
 
 -- ft.page.footer:
 
