@@ -18,7 +18,7 @@ weight: 700
 
 
 
--- ft.page: `emoji-list` and it's Usage
+-- bling.page: `emoji-list` and it's Usage
 
 `-- emoji-list` can be used as part of blog posts.
 
@@ -97,7 +97,7 @@ minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 
 
--- end: ft.page
+-- end: bling.page
 
 
 

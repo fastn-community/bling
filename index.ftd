@@ -12,7 +12,7 @@ color: $inherited.colors.text-strong
 -- end: white
 
 
--- ft.page:
+-- bling.page:
 
 
 -- pd.package: Bling components
@@ -71,5 +71,5 @@ idea alone. This is the way to success, and this is the way great
 spiritual giants are produced."
 
 
--- end: ft.page
+-- end: bling.page
 

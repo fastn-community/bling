@@ -4,7 +4,7 @@
 
 
 
--- ft.page: `person` and it's Usage
+-- bling.page: `person` and it's Usage
 
 Person component can be used as part of any component and are available in below formats:
 
@@ -114,7 +114,7 @@ Sunglass(1, 2, 3), Dare to be scared book 😜, codename game, Bharat game, Chai
 Garam game
 
 
--- end: ft.page
+-- end: bling.page
 
 
 

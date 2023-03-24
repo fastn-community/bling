@@ -4,7 +4,7 @@
 
 
 
--- ft.page: `holder` and it's Usage
+-- bling.page: `holder` and it's Usage
 
 `-- holder` component is a `FTD` container. Here you can add any `ftd` component
 Or any `ftd` code. `-- holder` comes with different UI. Showing below a example of
@@ -192,7 +192,7 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 -- end: triangular
 
--- end: ft.page
+-- end: bling.page
 
 
 
