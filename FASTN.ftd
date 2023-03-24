@@ -9,6 +9,8 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/bling/main
 -- fastn.dependency: fifthtry.github.io/package-doc
 -- fastn.dependency: fifthtry.github.io/roboto-font
 -- fastn.dependency: fifthtry.github.io/footer
+-- fastn.dependency: fifthtry.github.io/sailing-shark-cs
+-- fastn.dependency: fifthtry.github.io/saturated-sunset-cs
 
 
 -- fastn.auto-import: fifthtry.github.io/package-doc as pd
