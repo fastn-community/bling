@@ -47,6 +47,8 @@ download: sample.ftd
 \-- read-more.read-more: Read more...
 link: read-more/
 
+some body or extra text
+
 -- cb.rendered.output:
 
 -- read-more: Read more: 
@@ -77,6 +79,8 @@ download: sample.ftd
 link: read-more/
 position: center
 
+some body or extra text
+
 -- cb.rendered.output:
 
 -- read-more: Read more: 
@@ -98,6 +102,8 @@ download: sample.ftd
 \-- read-more.read-more: Read more...
 link: read-more/
 position: left
+
+some body or extra text
 
 -- cb.rendered.output:
 
