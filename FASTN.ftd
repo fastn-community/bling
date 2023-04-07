@@ -27,19 +27,20 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/bling/main
 
 # Home: index.html
 
-- Badge: /badge/
-- Message: /chat/
-- Person Card: /person/
-- Tip: /tip/
-- Detail: /detail/
-- Note: /note/
-- Emoji-list: /emoji-list/
-- Sidenote: /sidenote/
-- Quotes: /quote/
-- The End Mark: /the-end/
-- Holder: /holder/
-- Divider: /divider/
-- Dropdown: /dropdown/
+- Badge: badge/
+- Message: chat/
+- Person Card: person/
+- Tip: tip/
+- Detail: detail/
+- Note: note/
+- Emoji-list: emoji-list/
+- Sidenote: sidenote/
+- Quotes: quote/
+- The End Mark: the-end/
+- Holder: holder/
+- Divider: divider/
+- Dropdown: dropdown/
+- Read more: read-more/
 
 # GitHub
   url: https://github.com/FifthTry/bling

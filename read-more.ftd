@@ -1,0 +1,158 @@
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+
+
+
+
+
+
+
+
+
+-- bling.page: `read-more` and it's Usage
+
+`-- read-more` can be used as part of blog posts, `fastn` pages, anywhere inside
+`fastn` web projects you wish.
+
+-- pd.package: `read-more` and it's Usage
+name: fifthtry.github.io/bling
+
+`read-more` is a new conversation experience with your users via using `fastn`
+lang:
+
+To use `read-more` on your web package, add below dependency into `FASTN.ftd`
+file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/bling
+
+-- tf.markdown:
+
+Once you add above lines into your web package, import `read-more` into your
+`.ftd` files:
+
+-- cb.code:
+lang: ftd
+
+\-- import: fifthtry.github.io/bling/read-more
+
+-- cb.rendered: `default` position
+copy: true
+download: sample.ftd
+
+-- cb.rendered.input:
+
+\-- read-more.read-more: Read more...
+link: read-more/
+
+-- cb.rendered.output:
+
+-- read-more: Read more: 
+link: read-more/
+
+some body or extra text
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- tf.h3: `position` attribute usage:
+
+`read-more` `position` attribute:
+
+- Default `position: right` align `read-more` to right of the component
+- `position: center` align `read-more` to center of the component
+- `position: start` align `read-more` to start of the component
+
+
+-- cb.rendered: `center` position
+copy: true
+download: sample.ftd
+
+-- cb.rendered.input:
+
+\-- read-more.read-more: Read more...
+link: read-more/
+position: center
+
+-- cb.rendered.output:
+
+-- read-more: Read more: 
+link: read-more/
+position: center
+
+some body or extra text
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- cb.rendered: `left` position
+copy: true
+download: sample.ftd
+
+-- cb.rendered.input:
+
+\-- read-more.read-more: Read more...
+link: read-more/
+position: left
+
+-- cb.rendered.output:
+
+-- read-more: Read more: 
+link: read-more/
+position: left
+
+some body or extra text
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- end: bling.page
+
+
+
+
+
+
+
+
+
+
+-- component read-more:
+caption title:
+optional body body:
+string link: /
+optional string position: right
+boolean $hover: false
+
+-- ftd.row:
+border-color:  $inherited.colors.success.border
+border-color if { read-more.hover }: $inherited.colors.border
+border-bottom-width.px: 1
+spacing.fixed.px: 8
+align-self if { read-more.position == "right" }: end
+align-self if { read-more.position == "center" }: center
+align-self if { read-more.position == "start" }: start
+link: $read-more.link
+margin-vertical.px: 24
+color: $inherited.colors.success.text
+color if { read-more.hover }: $inherited.colors.text
+role: $inherited.types.button-medium
+$on-mouse-enter$: $ftd.set-bool($a = $read-more.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $read-more.hover, v = false)
+
+-- ftd.text: $read-more.title
+
+-- ftd.text:
+if: { read-more.body != NULL }
+role: $inherited.types.copy-small
+
+$read-more.body
+
+-- end: ftd.row
+
+-- end: read-more
