@@ -41,13 +41,10 @@ weight: 700
 light: rgba(192,192,192,0.3)
 dark: rgba(192,192,192,0.3)
 
-
-
 -- bling.page: `quote` and it's Usage
 
-`-- quote` can be used as part of blog posts to highlight a quote from blogger 
+`-- quote` can be used as part of blog posts to highlight a quote from blogger
 OR highlighting important notes on documentation etc.
-
 
 -- pd.package: `quote`
 name: fifthtry.github.io/bling
@@ -60,21 +57,12 @@ lang: ftd
 \-- fastn.dependency: fifthtry.github.io/bling as bling
 \-- fastn.auto-import: bling/quote as quote
 
-
 -- tf.markdown:
 
-Once you add above lines into your web package, add `quote` into your `.ftd` 
+Once you add above lines into your web package, add `quote` into your `.ftd`
 files:
 
-
-
-
-
 -- tf.h2: List of quotes we designed for you:
-
-
-
-
 
 -- tf.h3: 1: `-- charcoal`
 
@@ -86,25 +74,20 @@ label: CEO
 avatar: $assets.files.static.amitu.jpg
 logo: $assets.files.static.fifthtry.svg
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-eiusmod tempor incididunt ut labore et dolore magna aliqua..
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua..
 
 -- tf.markdown: 
 
 Output of above:
-
 
 -- charcoal: Amit Upadhyay
 label: CEO
 avatar: $assets.files.static.amitu.jpg
 logo: $assets.files.static.fifthtry.svg
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-tempor incididunt ut labore et dolore magna aliqua..
-
-
-
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua..
 
 -- tf.h3: 2: `-- marengo`
 
@@ -113,9 +96,9 @@ lang: ftd
 
 \-- quote.marengo: Steve Jobs
 
-Your time is limited, so don't waste it living someone else's life. 
-Don't be trapped by dogma – which is living with the results of other 
-people's thinking.
+Your time is limited, so don't waste it living someone else's life. Don't be
+trapped by dogma – which is living with the results of other people's
+thinking.
 
 -- tf.markdown: 
 
@@ -123,13 +106,9 @@ Output of above:
 
 -- marengo: Steve Jobs
 
-Your time is limited, so don't waste it living someone else's life. Don't 
-be trapped by dogma – which is living with the results of other people's 
+Your time is limited, so don't waste it living someone else's life. Don't be
+trapped by dogma – which is living with the results of other people's
 thinking.
-
-
-
-
 
 -- tf.h3: 3: `-- marengo-hug`
 
@@ -138,8 +117,8 @@ lang: ftd
 
 \-- quote.marengo-hug: Oprah Winfrey
 
-If you look at what you have in life, you'll always have more.
-If you look at what you don't have in life, you'll never have enough.
+If you look at what you have in life, you'll always have more. If you look at
+what you don't have in life, you'll never have enough.
 
 -- tf.markdown: 
 
@@ -147,12 +126,8 @@ Output of above:
 
 -- marengo-hug: Oprah Winfrey
 
-If you look at what you have in life, you'll always have more.
-If you look at what you don't have in life, you'll never have enough.
-
-
-
-
+If you look at what you have in life, you'll always have more. If you look at
+what you don't have in life, you'll never have enough.
 
 -- tf.h3: 4: `-- scorpion`
 
@@ -173,10 +148,6 @@ label: U.S.A.
 
 "The future belongs to those who believe in the beauty of their dreams."
 
-
-
-
-
 -- tf.h3: 5: `-- chalice`
 
 -- cb.code: Example code for `-- chalice`
@@ -184,8 +155,8 @@ lang: ftd
 
 \-- quote.chalice: Nelson Mandela
 
-The greatest glory in living lies not in never falling, but in rising 
-every time we fall. 
+The greatest glory in living lies not in never falling, but in rising every time
+we fall. 
 
 -- tf.markdown: 
 
@@ -193,12 +164,8 @@ Output of above:
 
 -- chalice: Nelson Mandela
 
-The greatest glory in living lies not in never falling, but in rising 
-every time we fall. 
-
-
-
-
+The greatest glory in living lies not in never falling, but in rising every time
+we fall. 
 
 -- tf.h3: 6: `-- onyx`
 
@@ -207,9 +174,9 @@ lang: ftd
 
 \-- quote.onyx: Barack Obama
 
-The real test is not whether you avoid this failure, because you 
-won't. It's whether you let it harden or shame you into inaction,
-or whether you learn from it; whether you choose to persevere.
+The real test is not whether you avoid this failure, because you won't. It's
+whether you let it harden or shame you into inaction, or whether you learn from
+it; whether you choose to persevere.
 
 -- tf.markdown: 
 
@@ -217,13 +184,9 @@ Output of above:
 
 -- onyx: Barack Obama
 
-The real test is not whether you avoid this failure, because you 
-won't. It's whether you let it harden or shame you into inaction,
-or whether you learn from it; whether you choose to persevere.
-
-
-
-
+The real test is not whether you avoid this failure, because you won't. It's
+whether you let it harden or shame you into inaction, or whether you learn from
+it; whether you choose to persevere.
 
 -- tf.h3: 7: `-- silver`
 
@@ -242,10 +205,6 @@ Output of above:
 
 Life is either a daring adventure or nothing at all.
 
-
-
-
-
 -- tf.h3: 8: `-- storm-cloud`
 
 -- cb.code: Example code for `-- storm-cloud`
@@ -253,9 +212,7 @@ lang: ftd
 
 \-- quote.storm-cloud: M.K. Gandhi
 
-"A man is but a product of his thoughts.
-
- What he thinks he becomes."
+"A man is but a product of his thoughts. What he thinks he becomes."
 
 -- tf.markdown: 
 
@@ -263,13 +220,7 @@ Output of above:
 
 -- storm-cloud: M.K. Gandhi
 
-"A man is but a product of his thoughts.
-
- What he thinks he becomes."
-
-
-
-
+"A man is but a product of his thoughts. What he thinks he becomes."
 
 -- tf.h3: 9: `-- vampire`
 
@@ -288,10 +239,6 @@ Output of above:
 
 "I find that the harder I work, the more luck I seem to have."
 
-
-
-
-
 -- tf.h3: 10: `-- rustic`
 
 -- cb.code: Example code for `-- rustic`
@@ -299,8 +246,8 @@ lang: ftd
 
 \-- quote.rustic: Dr. APJ Abdul Kalam
 
-"All of us do not have equal talent. But, all of us have an equal 
-opportunity to develop our talents."
+"All of us do not have equal talent. But, all of us have an equal opportunity to
+develop our talents."
 
 -- tf.markdown: 
 
@@ -308,12 +255,8 @@ Output of above:
 
 -- rustic: Dr. APJ Abdul Kalam
 
-"All of us do not have equal talent. But, all of us have an equal 
-opportunity to develop our talents."
-
-
-
-
+"All of us do not have equal talent. But, all of us have an equal opportunity to
+develop our talents."
 
 -- tf.h3: 11: `-- echo`
 
@@ -322,11 +265,10 @@ lang: ftd
 
 \-- quote.echo: Swami Vivekananda
 
-"Take up one idea. Make that one idea your life; dream of it; think of 
-it; live on that idea. Let the brain, the body, muscles, nerves, every 
-part of your body be full of that idea, and just leave every other 
-idea alone. This is the way to success, and this is the way great 
-spiritual giants are produced."
+"Take up one idea. Make that one idea your life; dream of it; think of it; live
+ on that idea. Let the brain, the body, muscles, nerves, every part of your
+ body be full of that idea, and just leave every other idea alone. This is the
+ way to success, and this is the way great spiritual giants are produced."
 
 -- tf.markdown: 
 
@@ -334,15 +276,10 @@ Output of above:
 
 -- echo: Swami Vivekananda
 
-"Take up one idea. Make that one idea your life; dream of it; think of 
-it; live on that idea. Let the brain, the body, muscles, nerves, every 
-part of your body be full of that idea, and just leave every other 
-idea alone. This is the way to success, and this is the way great 
-spiritual giants are produced."
-
-
-
-
+"Take up one idea. Make that one idea your life; dream of it; think of it; live
+ on that idea. Let the brain, the body, muscles, nerves, every part of your
+ body be full of that idea, and just leave every other idea alone. This is the
+ way to success, and this is the way great spiritual giants are produced."
 
 -- tf.h3: 12: `-- window`
 
@@ -351,8 +288,8 @@ lang: ftd
 
 \-- quote.window: Mark Zuckerberg
 
-"If you just work on stuff that you like and you're passionate about, 
-you don't have to have a master plan with how things will play out."
+"If you just work on stuff that you like and you're passionate about, you don't
+ have to have a master plan with how things will play out."
 
 -- tf.markdown: 
 
@@ -360,12 +297,8 @@ Output of above:
 
 -- window: Mark Zuckerberg
 
-"If you just work on stuff that you like and you're passionate about, 
-you don't have to have a master plan with how things will play out."
-
-
-
-
+"If you just work on stuff that you like and you're passionate about, you don't
+ have to have a master plan with how things will play out."
 
 -- tf.h3: 13: `-- matte`
 
@@ -374,11 +307,10 @@ lang: ftd
 
 \-- quote.matte: Swami Vivekananda
 
-"Take up one idea. Make that one idea your life; dream of it; 
-think of it; live on that idea. Let the brain, the body, muscles, 
-nerves, every part of your body be full of that idea, and just leave 
-every other idea alone. This is the way to success, and this is the 
-way great spiritual giants are produced."
+"Take up one idea. Make that one idea your life; dream of it; think of it; live
+ on that idea. Let the brain, the body, muscles, nerves, every part of your
+ body be full of that idea, and just leave every other idea alone. This is the
+ way to success, and this is the way great spiritual giants are produced."
 
 -- tf.markdown: 
 
@@ -386,21 +318,17 @@ Output of above:
 
 -- matte: Swami Vivekananda
 
-"Take up one idea. Make that one idea your life; dream of it; think of it; live 
-on that idea. Let the brain, the body, muscles, nerves, every part of your body 
-be full of that idea, and just leave every other idea alone. This is the way to 
-success, and this is the way great spiritual giants are produced."
-
-
-
-
+"Take up one idea. Make that one idea your life; dream of it; think of it; live
+ on that idea. Let the brain, the body, muscles, nerves, every part of your
+ body be full of that idea, and just leave every other idea alone. This is the
+ way to success, and this is the way great spiritual giants are produced."
 
 -- tf.h3: 14: `-- antique`
 
 -- cb.code: Example code for `-- antique`
 lang: ftd
 
-\-- quote.antique:  Socrates
+\-- quote.antique: Socrates
 
 "Strong minds discuss ideas, average minds."
 
@@ -408,20 +336,16 @@ lang: ftd
 
 Output of above:
 
--- antique:  Socrates
+-- antique: Socrates
 
 "Strong minds discuss ideas, average minds."
-
-
-
-
 
 -- tf.h3: 15: `-- bubble`
 
 -- cb.code: Example code for `-- bubble`
 lang: ftd
 
-\-- quote.bubble:  Socrates
+\-- quote.bubble: Socrates
 
 "To find yourself, think for yourself."
 
@@ -429,44 +353,34 @@ lang: ftd
 
 Output of above:
 
--- bubble:  Socrates
+-- bubble: Socrates
 
 "To find yourself, think for yourself."
-
-
-
-
 
 -- tf.h3: 16: `-- electric`
 
 -- cb.code: Example code for `-- electric`
 lang: ftd
 
-\-- quote.electric:  Socrates
+\-- quote.electric: Socrates
 
-“If you don't get what you want, you suffer; if you get what you 
-don't want, you suffer; even when you get exactly what you want, 
-you still suffer because you can't hold on to it forever. 
-Your mind is your predicament. It wants to be free of change. 
-Free of pain, free of the obligations of life and death. But change is 
-law and no amount of pretending will alter that reality.”
+“If you don't get what you want, you suffer; if you get what you don't want, you
+ suffer; even when you get exactly what you want, you still suffer because you
+ can't hold on to it forever. Your mind is your predicament. It wants to be
+ free of change. Free of pain, free of the obligations of life and death. But
+ change is law and no amount of pretending will alter that reality.”
 
 -- tf.markdown: 
 
 Output of above:
 
--- electric:  Socrates
+-- electric: Socrates
 
-“If you don't get what you want, you suffer; if you get what you don't want,
- you suffer; even when you get exactly what you want, you still suffer 
- because you can't hold on to it forever. Your mind is your predicament. 
- It wants to be free of change. Free of pain, free of the obligations of 
- life and death. But change is law and no amount of pretending will alter
- that reality.”
-
-
-
-
+“If you don't get what you want, you suffer; if you get what you don't want, you
+ suffer; even when you get exactly what you want, you still suffer because you
+ can't hold on to it forever. Your mind is your predicament. It wants to be
+ free of change. Free of pain, free of the obligations of life and death. But
+ change is law and no amount of pretending will alter that reality.”
 
 -- tf.h3: 17: `-- chrome`
 
@@ -475,11 +389,10 @@ lang: ftd
 
 \-- quote.chrome: Swami Vivekananda
 
-"Take up one idea. Make that one idea your life; dream of it; 
-think of it; live on that idea. Let the brain, the body, muscles, 
-nerves, every part of your body be full of that idea, and just leave 
-every other idea alone. This is the way to success, and this is the 
-way great spiritual giants are produced."
+"Take up one idea. Make that one idea your life; dream of it; think of it; live
+ on that idea. Let the brain, the body, muscles, nerves, every part of your
+ body be full of that idea, and just leave every other idea alone. This is the
+ way to success, and this is the way great spiritual giants are produced."
 
 -- tf.markdown: 
 
@@ -487,14 +400,10 @@ Output of above:
 
 -- chrome: Swami Vivekananda
 
-"Take up one idea. Make that one idea your life; dream of it; think of it; live 
-on that idea. Let the brain, the body, muscles, nerves, every part of your body 
-be full of that idea, and just leave every other idea alone. This is the way to 
-success, and this is the way great spiritual giants are produced."
-
-
-
-
+"Take up one idea. Make that one idea your life; dream of it; think of it; live
+ on that idea. Let the brain, the body, muscles, nerves, every part of your
+ body be full of that idea, and just leave every other idea alone. This is the
+ way to success, and this is the way great spiritual giants are produced."
 
 -- tf.h3: 18: `-- dorian`
 
@@ -503,8 +412,8 @@ lang: ftd
 
 \-- quote.dorian: Swami Vivekananda
 
-“You have to grow from the inside out. None can teach you, none can 
-make you spiritual. There is no other teacher but your own soul.”
+“You have to grow from the inside out. None can teach you, none can make you
+ spiritual. There is no other teacher but your own soul.”
 
 -- tf.markdown: 
 
@@ -512,13 +421,8 @@ Output of above:
 
 -- dorian: Swami Vivekananda
 
-“You have to grow from the inside out. None can teach you, none can 
-make you spiritual. There is no other teacher but your own soul.”
-
-
-
-
-
+“You have to grow from the inside out. None can teach you, none can make you
+ spiritual. There is no other teacher but your own soul.”
 
 /-- tf.h3: 19: `-- octa`
 
@@ -527,8 +431,10 @@ lang: ftd
 
 \-- quote.octa: Swami Vivekananda
 
-
-“Take up one idea. Make that one idea your life; dream of it; think of it; live on that idea. Let the brain, the body, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success, and this is the way great spiritual giants are produced.”
+“Take up one idea. Make that one idea your life; dream of it; think of it; live
+ on that idea. Let the brain, the body, muscles, nerves, every part of your
+ body be full of that idea, and just leave every other idea alone. This is the
+ way to success, and this is the way great spiritual giants are produced.”
 
 /-- tf.markdown: 
 
@@ -536,10 +442,13 @@ Output of above:
 
 /-- octa: Swami Vivekananda
 
-
-“Take up one idea. Make that one idea your life; dream of it; think of it; live on that idea. Let the brain, the body, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success, and this is the way great spiritual giants are produced.”
+“Take up one idea. Make that one idea your life; dream of it; think of it; live
+ on that idea. Let the brain, the body, muscles, nerves, every part of your
+ body be full of that idea, and just leave every other idea alone. This is the
+ way to success, and this is the way great spiritual giants are produced.”
 
 -- end: bling.page
+
 
 
 
@@ -600,7 +509,6 @@ optional ftd.image-src logo:
 optional string label:
 ftd.color backgroundcolor:
 
-
 -- ftd.column:
 width: fill-container
 padding-vertical.px: 64
@@ -617,16 +525,17 @@ width: fill-container
 -- ftd.image:
 src: $quote-desktop.quote-icon
 width: auto
-height.fixed.px.fixed.px: 72
+height.fixed.px: 72
 
 -- ftd.column:
 width: fill-container
 max-width.fixed.px: 850
 
 -- ftd.text:
-text: $quote-desktop.body
 role: $inherited.types.heading-large
 color:$inherited.colors.text
+
+$quote-desktop.body
 
 -- end: ftd.column
 
@@ -641,14 +550,14 @@ max-width.fixed.px: 700
 -- ftd.image:
 src: $quote-desktop.avatar
 width: auto
-height.fixed.px.fixed.px: 60
+height.fixed.px: 60
 border-radius.px: 100
 margin-right.px: 20
 
 -- ftd.image:
 src: $quote-desktop.logo
 width: auto
-height.fixed.px.fixed.px: 44
+height.fixed.px: 44
 padding-top.px: 16
 margin-right.px: 48
 
@@ -705,12 +614,13 @@ align-self: center
 margin-bottom.px: 24
 
 -- ftd.text:
-text: $quote-mobile.body
 width: auto
 role: $inherited.types.heading-small
 color: $inherited.colors.text
 margin-bottom.px: 24
 text-align: center
+
+$quote-mobile.body
 
 -- ftd.row:
 spacing.fixed.px: 16
@@ -966,11 +876,12 @@ border-color: $inherited.colors.border
 width: fill-container
 
 -- ftd.text: 
-text: $quote-2-desktop.body
 color: $inherited.colors.text
 role: $inherited.types.copy-large
-;;style: italic -- TODO FTD 0.3
+style: italic
 text-align: end
+
+$quote-2-desktop.body
 
 -- ftd.row:
 align-self: end
@@ -987,7 +898,7 @@ align-self: center
 color: $inherited.colors.text
 role: $inherited.types.fine-print
 white-space: nowrap
-;;style: italic -- TODO FTD 0.3
+style: italic
 
 -- end: ftd.row
 
@@ -1027,12 +938,13 @@ border-color: $inherited.colors.border
 -- ftd.column:
 width: fill-container
 
--- ftd.text: 
-text: $quote-2-mobile.body
+-- ftd.text:
 color: $inherited.colors.text
 role: $inherited.types.copy-small
-;;style: italic -- TODO FTD 0.3
+style: italic
 text-align: end
+
+$quote-2-mobile.body
 
 -- ftd.row:
 align-self: end
@@ -1048,7 +960,7 @@ align-self: end
 color: $inherited.colors.text
 role: $inherited.types.fine-print
 white-space: nowrap
-;;style: italic -- TODO FTD 0.3
+style: italic
 
 -- end: ftd.row
 
@@ -1149,7 +1061,7 @@ padding-horizontal.px: 20
 padding-vertical.px: 20
 border-width.px: 3
 border-color: $inherited.colors.border
-border-radius.px:20
+border-radius.px: 20
 max-width.fixed.px: 620
 margin-top.px: 24
 margin-bottom.px: 24
@@ -1184,9 +1096,10 @@ z-index: 200
 -- end: ftd.row
 
 -- ftd.text:
-text: $quotes-desktop.body
 color: $inherited.colors.text
 role: $inherited.types.heading-large
+
+$quotes-desktop.body
 
 -- end: ftd.row
 
@@ -1213,7 +1126,7 @@ border-radius.px: 20
 width: fill-container
 margin-top.px: 24
 margin-bottom.px: 24
-margin-right.px:24
+margin-right.px: 24
 margin-left.px: 24
 
 -- ftd.row:
@@ -1245,9 +1158,10 @@ z-index: 200
 -- end: ftd.row
 
 -- ftd.text:
-text: $quotes-mobile.body
 color: $inherited.colors.text
 role: $inherited.types.heading-medium
+
+$quotes-mobile.body
 
 -- end: ftd.row
 
@@ -1262,22 +1176,10 @@ role: $inherited.types.heading-medium
 
 
 
-;;-- ftd.text white: test
-color: $inherited.colors.text-strong
-
-
-
-
-
-
-
-
-
-
 -- component chalice:
 optional caption title:
 body body:
-;;optional ftd.image-src backgroundimage: $assets.files.static.quotes.svg -- TODO FTD 0.3
+;;optional ftd.image-src backgroundimage: $assets.files.static.quotes.svg
 
 -- ftd.column:
 padding-horizontal.px: 24
@@ -1289,7 +1191,7 @@ margin-top.px: 24
 margin-bottom.px: 24
 
 -- ftd.row:
-;; background-image: $chalice.backgroundimage -- TODO FTD 0.3
+;;background-image: $chalice.backgroundimage
 width.fixed.px: 84
 height.fixed.px: 84
 width.fixed.px if { ftd.device == "mobile" }: 44
@@ -1367,9 +1269,10 @@ padding-top.px: 12
 spacing.fixed.px: 12
 
 -- ftd.text:
-text: $onyx.body
 role: $inherited.types.copy-regular
 color: $onyx.color
+
+$onyx.body
 
 -- ftd.row:
 padding-left.px: 12
@@ -1512,7 +1415,7 @@ ftd.image-src logo: $assets.files.static.quote.png
 -- ftd.column:
 padding-vertical.px: 16
 padding-horizontal.px: 16
-;;gradient-direction: top.px to bottom.px  -- TODO FTD 0.3
+;;gradient-direction: top.px to bottom.px -- TODO FTD 0.3
 ;;gradient-colors: grey, black -- TODO FTD 0.3
 width: fill-container
 max-width.fixed.px: 800
@@ -1546,10 +1449,11 @@ align-self: center
 width.fixed.percent: 80
 padding-vertical.px: 16
 
--- ftd.text: 
-text: $quote-6-mobile.body
+-- ftd.text:
 role: $inherited.types.heading-small
 color: $inherited.colors.text
+
+$quote-6-mobile.body
 
 -- ftd.text: $quote-6-mobile.title
 role: $inherited.types.copy-regular
@@ -1597,14 +1501,15 @@ align-self: center
 -- ftd.column:
 z-index: 300
 
--- ftd.text: 
-text: $storm-cloud.body
+-- ftd.text:
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 margin-top.px: 16
 margin-bottom.px: 16
 text-align: center
 align-self: center
+
+$storm-cloud.body
 
 -- ftd.row:
 padding-left.px: 12
@@ -1673,7 +1578,6 @@ width: fill-container
 min-height.fixed.px: 84
 
 -- ftd.text:
-text: $vampire.body
 color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 padding-horizontal.px: 32
@@ -1681,6 +1585,8 @@ margin-top.px: 16
 margin-bottom.px: 16
 width: fill-container
 text-align: center
+
+$vampire.body
 
 -- end: ftd.row
 
@@ -1741,13 +1647,14 @@ max-width.fixed.px: 756
 z-index: 1
 
 -- ftd.text:
-text: $rustic.body
 color: $inherited.colors.text
 role: $inherited.types.heading-small
 padding-horizontal.px: 32
 margin-top.px: 16
 margin-bottom.px: 16
 text-align: center
+
+$rustic.body
 
 -- ftd.text: $rustic.title
 align-self: center
@@ -1800,16 +1707,18 @@ padding-vertical.px: 12
 
 -- ftd.text: 
 if: { ftd.device != "mobile" }
-text: $echo.body
 color: $inherited.colors.text
 role: $inherited.types.copy-large
 
+$echo.body
+
 -- ftd.text: 
 if: { ftd.device == "mobile" }
-text: $echo.body
 color: $inherited.colors.text
 role: $inherited.types.copy-large
 text-align: justify
+
+text: $echo.body
 
 -- ftd.text: $echo.title
 color: $inherited.colors.text
@@ -1868,7 +1777,7 @@ margin-bottom.px: 24
 anchor: parent
 background.solid: $inherited.colors.background.base
 top.px: -16
-;;move-right.px: 270  -- TODO FTD 0.3
+;;move-right.px: 270 -- TODO FTD 0.3
 text-align: center
 role: $inherited.types.copy-large
 color: $inherited.colors.text
@@ -1876,15 +1785,16 @@ white-space: nowrap
 padding-horizontal.px: 24
 
 -- ftd.text:
-text: $window.body
 role: $inherited.types.copy-large
 color: $inherited.colors.text
-;;style: italic -- TODO FTD 0.3
+style: italic
 padding-top.px: 8
 margin-top.px: 24
 margin-bottom.px: 24
 align-self: center
 text-align: center
+
+$window.body
 
 -- ftd.row:
 width.fixed.px: 30
@@ -1980,16 +1890,17 @@ padding-vertical.px: 16
 width: auto
 width if { ftd.device == "mobile" }: fill-container
 align-self: center
-;;border-style: dashed -- TODO FTD 0.3
+border-style: dashed
 border-bottom-width.px: 2
 border-color: $inherited.colors.text
 margin-top.px: 24
 margin-bottom.px: 24
 
 -- ftd.text:
-text: $matte.body
 role: $inherited.types.copy-small
 color: $inherited.colors.text
+
+$matte.body
 
 -- ftd.row:
 align-self: end
@@ -2043,7 +1954,7 @@ height: fill-container
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $antique.avatar -- TODO FTD 0.3
+;;background-image: $antique.avatar
 width.fixed.px: 90
 height: fill-container
 anchor: parent
@@ -2063,9 +1974,10 @@ max-width.fixed.percent if { ftd.device != "mobile" }: 30
 width if { ftd.device == "mobile" }: fill-container
 
 -- ftd.text:
-text: $antique.body
 role: $inherited.types.heading-small
 color: $inherited.colors.text
+
+$antique.body
 
 -- ftd.row:
 spacing.fixed.px: 8
@@ -2109,7 +2021,7 @@ width: fill-container
 if: { ftd.device != "mobile" }
 body: $bubble.body
 
-/-- quote-14-mobile: $bubble.title
+-- quote-14-mobile: $bubble.title
 if:{ ftd.device == "mobile" }
 body: $bubble.body
 
@@ -2140,7 +2052,7 @@ margin-bottom.px: 24
 ;;background-image: $quote-14-desktop.avatar -- TODO FTD 0.3
 ;;background-repeat: false -- TODO FTD 0.3
 padding-vertical.px: 40
-padding-horizontal.px:  40
+padding-horizontal.px: 40
 align-self: center
 
 -- ftd.column:
@@ -2151,10 +2063,11 @@ padding-vertical.px: 40
 padding-horizontal.px: 40
 
 -- ftd.text:
-text: $quote-14-desktop.body
 role: $inherited.types.heading-small
 color: $inherited.colors.text
 text-align: justify
+
+$quote-14-desktop.body
 
 -- ftd.row:
 spacing.fixed.px: 8
@@ -2199,7 +2112,7 @@ margin-bottom.px: 12
 ;;background-image: $quote-14-mobile.avatar -- TODO FTD 0.3
 ;;background-repeat: false -- TODO FTD 0.3
 padding-vertical.px: 12
-padding-horizontal.px:  12
+padding-horizontal.px: 12
 align-self: center
 
 -- ftd.column:
@@ -2210,10 +2123,11 @@ padding-vertical.px: 12
 padding-horizontal.px: 12
 
 -- ftd.text:
-text: $quote-14-mobile.body
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 text-align: justify
+
+$quote-14-mobile.body
 
 -- ftd.row:
 spacing.fixed.px: 8
@@ -2287,9 +2201,10 @@ spacing.fixed.px: 8
 width: fill-container
 
 -- ftd.text:
-text: $electric.body
 role: $inherited.types.heading-small
 color: $inherited.colors.text
+
+$electric.body
 
 -- ftd.row:
 spacing.fixed.px: 8
@@ -2346,11 +2261,12 @@ margin-bottom.px: 16
 
 -- ftd.text: 
 padding-bottom.px: 24
-text: $chrome.body
 color: $inherited.colors.text
 role: $inherited.types.heading-small
 border-bottom-width.px: 2
 border-color: $inherited.colors.text
+
+$chrome.body
 
 -- ftd.text: $chrome.title
 margin-top.px: 24
@@ -2390,13 +2306,12 @@ left.px: 56
 bottom.px: 52
 ;; rotate: 132 -- TODO FTD 0.3
 z-index: 200
-;; border-style: solid -- TODO FTD 0.3
+border-style: solid
 
 -- end: ftd.row
 
 -- ftd.text: 
 padding-bottom.px: 24
-text: $dorian.body
 color: $inherited.colors.text
 role: $inherited.types.heading-small
 background.solid: $inherited.colors.background.step-2
@@ -2404,6 +2319,8 @@ padding-vertical.px: 24
 padding-horizontal.px: 24
 border-top-right-radius.px: 8
 border-top-left-radius.px: 8
+
+$dorian.body
 
 -- ftd.text: $dorian.title
 color: $inherited.colors.text
@@ -2435,14 +2352,12 @@ body body:
 -- ftd.column:
 width: fill-container
 
--- octa-desktop:
+-- octa-desktop: $octa.title
 if: { ftd.device != "mobile" }
-title: $octa.title
 body: $octa.body
 
--- octa-mobile:
+-- octa-mobile: $octa.title
 if: { ftd.device == "mobile" }
-title: $octa.title
 body: $octa.body
 
 -- end: ftd.column
@@ -2526,7 +2441,6 @@ width: fill-container
 -- ftd.column:
 width: fill-container
 background.solid: $inherited.colors.background.base
-;;id: inner-wrap -- TODO FTD 0.3
 min-height.fixed.px: 250
 
 -- ftd.column:
@@ -2603,11 +2517,12 @@ align-self: center
 padding-top.px: 40
 
 -- ftd.text:
-text: $octa-inner.body
 role: $inherited.types.copy-small
 color: $inherited.colors.custom.three
 max-height.fixed.px: 200
 overflow-y: auto
+
+$octa-inner.body
 
 -- ftd.row:
 align-self: center
