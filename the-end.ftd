@@ -1,18 +1,10 @@
 -- import: fifthtry.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
-
-
-
 -- bling.page: `the-end` and it's Usage
 
-`-- the-end` can be used as part of blog posts, books, section OR chapter end 
+`-- the-end` can be used as part of blog posts, books, section OR chapter end
 etc.
-
-
-
-
-
 
 -- pd.package: `the-end` and it's Usage
 name: fifthtry.github.io/bling
@@ -25,21 +17,12 @@ lang: ftd
 \-- fastn.dependency: fifthtry.github.io/bling
 \-- fastn.auto-import: bling/the-end as the-end
 
-
-
-
-
 -- tf.markdown:
 
-Once you add above lines into your web package, add `the-end` into your `.ftd` 
+Once you add above lines into your web package, add `the-end` into your `.ftd`
 files:
 
-
-
-
-
 -- tf.h3: List of end-marks we designed for you:
-
 
 -- tf.h3: 1: `-- marker`
 
@@ -52,12 +35,7 @@ lang: ftd
 
 Output of above:
 
-
--- marker: 
-
-
-
-
+-- marker:
 
 -- tf.h3: 2: `-- pen`
 
@@ -70,13 +48,7 @@ lang: ftd
 
 Output of above:
 
-
--- pen: 
-
-
-
-
-
+-- pen:
 
 -- tf.h3: 3: `-- ballet`
 
@@ -89,13 +61,7 @@ lang: ftd
 
 Output of above:
 
-
--- ballet: 
-
-
-
-
-
+-- ballet:
 
 -- tf.h3: 4: `-- brush`
 
@@ -108,9 +74,7 @@ lang: ftd
 
 Output of above:
 
-
 -- brush: 
-
 
 -- end: bling.page
 
@@ -166,10 +130,12 @@ width.fixed.px: 200
 width.fixed.px if { ftd.device == "mobile" }: 150
 height: auto
 
-
 -- end: ftd.column
 
 -- end: pen
+
+
+
 
 
 
@@ -195,6 +161,10 @@ height: auto
 -- end: ftd.column
 
 -- end: ballet
+
+
+
+
 
 
 
