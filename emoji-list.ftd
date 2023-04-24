@@ -1,10 +1,5 @@
 -- import: fifthtry.github.io/package-doc/doc as pd
 
-
-
-
-
-
 -- ftd.font-size copy-large-bold-desktop:
 line-height: 28
 size: 20
@@ -16,15 +11,9 @@ mobile: $copy-large-bold-desktop
 xl: $copy-large-bold-desktop
 weight: 700
 
-
-
 -- bling.page: `emoji-list` and it's Usage
 
 `-- emoji-list` can be used as part of blog posts.
-
-
-
-
 
 -- pd.package: `emoji-list` and it's Usage
 name: fifthtry.github.io/bling
@@ -39,14 +28,10 @@ lang: ftd
 \-- fastn.dependency: fifthtry.github.io/bling as bling
 \-- fastn.auto-import: bling/emoji-list as el
 
-
-
-
-
 -- tf.markdown:
 
-Once you add above lines into your web package, add `emoji-list` into your `.ftd` 
-files:
+Once you add above lines into your web package, add `emoji-list` into your
+`.ftd` files:
 
 -- cb.code: Example code for `-- emoji-list`
 lang: ftd
@@ -65,13 +50,10 @@ emoji: 🌺
 
 \-- el.emoji-list: 
 emoji: ✨
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 
-
-
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- tf.h3: Output of above basic example:
 
@@ -90,12 +72,9 @@ emoji: 🌺
 -- emoji-list: 
 emoji: ✨
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-
-
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- end: bling.page
 
@@ -119,7 +98,7 @@ width: auto
 spacing.fixed.px: 10
 
 -- ftd.text: $emoji-list.emoji
-color:$inherited.colors.text
+color: $inherited.colors.text
 role: $inherited.types.copy-small
 
 -- ftd.text:
