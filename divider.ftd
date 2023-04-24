@@ -1,10 +1,6 @@
 -- import: fifthtry.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
-
-
-
-
 -- ftd.font-size copy-relax:
 line-height: 18
 size: 14
@@ -16,14 +12,9 @@ mobile: $copy-relax
 xl: $copy-relax
 weight: 700
 
-
 -- bling.page: `divider` and it's Usage
 
 `divider` can be used as end of blog post, section OR chapter end.
-
-
-
-
 
 -- pd.package: `divider` and it's Usage
 name: fifthtry.github.io/bling
@@ -36,18 +27,12 @@ lang: ftd
 \-- fastn.dependency: fifthtry.github.io/bling as bling
 \-- fastn.auto-import: bling/divider as divider
 
-
-
-
-
 -- tf.markdown:
 
-Once you add above lines into your web package, add `divider` into your `.ftd` 
+Once you add above lines into your web package, add `divider` into your `.ftd`
 files:
 
-
 -- tf.h3: List of page dividers we designed for you:
-
 
 -- tf.h3: 1.1: `-- heart-end` without end-mark and title
 
@@ -60,12 +45,7 @@ lang: ftd
 
 Output of above:
 
-
 -- heart-end: 
-
-
-
-
 
 -- tf.h3: 1.2: `-- heart-end` with end-mark
 
@@ -79,13 +59,8 @@ end-mark: true
 
 Output of above:
 
-
 -- heart-end: 
 end-mark: true
-
-
-
-
 
 -- tf.h3: 1.3: `-- heart-end` with end-mark and title text
 
@@ -99,13 +74,8 @@ end-mark: true
 
 Output of above:
 
-
 -- heart-end: Thank You
 end-mark: true
-
-
-
-
 
 -- tf.h3: 2.1: `-- diamond` without end-mark and title
 
@@ -118,12 +88,7 @@ lang: ftd
 
 Output of above:
 
-
--- diamond: 
-
-
-
-
+-- diamond:
 
 -- tf.h3: 2.2: `-- diamond` with end-mark
 
@@ -137,13 +102,8 @@ end-mark: true
 
 Output of above:
 
-
 -- diamond: 
 end-mark: true
-
-
-
-
 
 -- tf.h3: 2.3: `-- diamond` with end-mark and title text
 
@@ -157,13 +117,8 @@ end-mark: true
 
 Output of above:
 
-
 -- diamond: Thank You
 end-mark: true
-
-
-
-
 
 -- tf.h3: 3.1: `-- arrow` without end-mark and title
 
@@ -176,12 +131,7 @@ lang: ftd
 
 Output of above:
 
-
 -- arrow: 
-
-
-
-
 
 -- tf.h3: 3.2: `-- arrow` with end-mark
 
@@ -195,13 +145,8 @@ end-mark: true
 
 Output of above:
 
-
 -- arrow: 
 end-mark: true
-
-
-
-
 
 -- tf.h3: 3.3: `-- arrow` with end-mark and title text
 
@@ -215,13 +160,8 @@ end-mark: true
 
 Output of above:
 
-
 -- arrow: Thank You
 end-mark: true
-
-
-
-
 
 -- tf.h3: 4.1: `-- wavy` without end-mark and title
 
@@ -234,12 +174,7 @@ lang: ftd
 
 Output of above:
 
-
 -- wavy: 
-
-
-
-
 
 -- tf.h3: 4.2: `-- wavy` with end-mark
 
@@ -253,13 +188,8 @@ end-mark: true
 
 Output of above:
 
-
 -- wavy: 
 end-mark: true
-
-
-
-
 
 -- tf.h3: 4.3: `-- wavy` with end-mark and title text
 
@@ -273,13 +203,8 @@ end-mark: true
 
 Output of above:
 
-
 -- wavy: Thank You
 end-mark: true
-
-
-
-
 
 -- tf.h3: 5.1: `-- angled` without end-mark and title
 
@@ -292,12 +217,7 @@ lang: ftd
 
 Output of above:
 
-
 -- angled: 
-
-
-
-
 
 -- tf.h3: 5.2: `-- angled` with end-mark
 
@@ -311,13 +231,8 @@ end-mark: true
 
 Output of above:
 
-
 -- angled: 
 end-mark: true
-
-
-
-
 
 -- tf.h3: 5.3: `-- angled` with end-mark and title text
 
@@ -331,13 +246,8 @@ end-mark: true
 
 Output of above:
 
-
 -- angled: Thank You
 end-mark: true
-
-
-
-
 
 -- tf.h3: 6.1: `-- lines` without end-mark and title
 
@@ -350,12 +260,7 @@ lang: ftd
 
 Output of above:
 
-
--- lines: 
-
-
-
-
+-- lines:
 
 -- tf.h3: 6.2: `-- lines` with end-mark
 
@@ -369,13 +274,8 @@ end-mark: true
 
 Output of above:
 
-
 -- lines: 
 end-mark: true
-
-
-
-
 
 -- tf.h3: 6.3: `-- lines` with end-mark and title text
 
@@ -389,13 +289,8 @@ end-mark: true
 
 Output of above:
 
-
 -- lines: Thank You
 end-mark: true
-
-
-
-
 
 -- tf.h3: 7.1: `-- rounded` without end-mark and title
 
@@ -408,12 +303,7 @@ lang: ftd
 
 Output of above:
 
-
 -- rounded: 
-
-
-
-
 
 -- tf.h3: 7.2: `-- rounded` with end-mark
 
@@ -427,13 +317,8 @@ end-mark: true
 
 Output of above:
 
-
 -- rounded: 
 end-mark: true
-
-
-
-
 
 -- tf.h3: 7.3: `-- rounded` with end-mark and title text
 
@@ -447,14 +332,8 @@ end-mark: true
 
 Output of above:
 
-
 -- rounded: Thank You
 end-mark: true
-
-
-
-
-
 
 -- tf.h3: 8.1: `-- rigger` without end-mark and title
 
@@ -467,12 +346,7 @@ lang: ftd
 
 Output of above:
 
-
 -- rigger: 
-
-
-
-
 
 -- tf.h3: 8.2: `-- rigger` with end-mark
 
@@ -486,13 +360,8 @@ end-mark: true
 
 Output of above:
 
-
 -- rigger: 
 end-mark: true
-
-
-
-
 
 -- tf.h3: 8.3: `-- rigger` with end-mark and title text
 
@@ -506,21 +375,10 @@ end-mark: true
 
 Output of above:
 
-
 -- rigger: Thank You
 end-mark: true
 
-
-
 -- end: bling.page
-
-
-
-
-
-
-
-
 
 
 
@@ -550,7 +408,7 @@ width: fill-container
 height: auto
 
 -- ftd.image:
-if: {$heart-end.end-mark}
+if: { heart-end.end-mark }
 src: $heart-end.the-end
 width.fixed.px: 100
 height: auto
@@ -558,19 +416,17 @@ align-self: center
 margin-top.px: 24
 
 -- ftd.text: $heart-end.title
-if: { $heart-end.title != NULL }
+if: { heart-end.title != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 text-align: center
 align-self: center
 white-space: nowrap
-;;;; style: italic
 margin-top.px: 16
 
 -- end: ftd.column
 
 -- end: heart-end
-
 
 
 
@@ -587,7 +443,6 @@ optional caption title:
 ftd.image-src divider-icon: $assets.files.static.divider-2.svg
 optional ftd.image-src the-end: $assets.files.static.the-end-1.png
 
-
 -- ftd.column:
 margin-top.px: 24
 margin-bottom.px: 24
@@ -601,7 +456,7 @@ width: fill-container
 height: auto
 
 -- ftd.image:
-if: {$diamond.end-mark}
+if: { diamond.end-mark }
 src: $diamond.the-end
 width.fixed.px: 150
 height: auto
@@ -609,13 +464,12 @@ align-self: center
 margin-top.px: 24
 
 -- ftd.text: $diamond.title
-if: {$diamond.title != NULL}
+if: { diamond.title != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 text-align: center
 align-self: center
 white-space: nowrap
-;;;; style: italic
 margin-top.px: 16
 
 -- end: ftd.column
@@ -650,7 +504,7 @@ width: fill-container
 height: auto
 
 -- ftd.image:
-if: {$arrow.end-mark}
+if: { arrow.end-mark }
 src: $arrow.the-end
 width.fixed.px: 150
 height: auto
@@ -658,20 +512,17 @@ align-self: center
 margin-top.px: 24
 
 -- ftd.text: $arrow.title
-if: {$arrow.title != NULL}
+if: { arrow.title != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 text-align: center
 align-self: center
 white-space: nowrap
-;;;; style: italic
 margin-top.px: 16
 
 -- end: ftd.column
 
 -- end: arrow
-
-
 
 
 
@@ -701,7 +552,7 @@ width: fill-container
 height: auto
 
 -- ftd.image:
-if: {$wavy.end-mark}
+if: { wavy.end-mark }
 src: $wavy.the-end
 width.fixed.px: 150
 height: auto
@@ -709,13 +560,12 @@ align-self: center
 margin-top.px: 24
 
 -- ftd.text: $wavy.title
-if: {$wavy.title != NULL}
+if: { wavy.title != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 text-align: center
 align-self: center
 white-space: nowrap
-;;;; style: italic
 margin-top.px: 16
 
 -- end: ftd.column
@@ -750,7 +600,7 @@ width: fill-container
 height: auto
 
 -- ftd.image:
-if: {$angled.end-mark}
+if: { angled.end-mark }
 src: $angled.the-end
 width.fixed.px: 120
 height: auto
@@ -758,15 +608,13 @@ align-self: center
 margin-top.px: 24
 
 -- ftd.text: $angled.title
-if: {$angled.title != NULL}
+if: { angled.title != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 text-align: center
 align-self: center
 white-space: nowrap
-;;;; style: italic
 margin-top.px: 16
-
 
 -- end: ftd.column
 
@@ -800,7 +648,7 @@ width: auto
 height: auto
 
 -- ftd.image:
-if: { $lines.end-mark }
+if: { lines.end-mark }
 src: $lines.the-end
 width.fixed.px: 120
 height: auto
@@ -808,13 +656,12 @@ align-self: center
 margin-top.px: 24
 
 -- ftd.text: $lines.title
-if: { $lines.title != NULL }
+if: { lines.title != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 text-align: center
 align-self: center
 white-space: nowrap
-;; style: italic
 margin-top.px: 16
 
 -- end: ftd.column
@@ -849,7 +696,7 @@ width: fill-container
 height: auto
 
 -- ftd.image:
-if: {$rounded.end-mark}
+if: { rounded.end-mark }
 src: $rounded.the-end
 width.fixed.px: 100
 height: auto
@@ -857,21 +704,17 @@ align-self: center
 margin-top.px: 24
 
 -- ftd.text: $rounded.title
-if: {$rounded.title != NULL}
+if: { rounded.title != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 text-align: center
 align-self: center
 white-space: nowrap
-;; style: italic
 margin-top.px: 16
 
 -- end: ftd.column
 
 -- end: rounded
-
-
-
 
 
 
@@ -901,7 +744,7 @@ width: fill-container
 height: auto
 
 -- ftd.image:
-if: {$rigger.end-mark}
+if: { rigger.end-mark }
 src: $rigger.the-end
 width.fixed.px: 100
 height: auto
@@ -909,13 +752,12 @@ align-self: center
 margin-top.px: 24
 
 -- ftd.text: $rigger.title
-if: {$rigger.title != NULL}
+if: { rigger.title != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 text-align: center
 align-self: center
 white-space: nowrap
-;; style: italic
 margin-top.px: 16
 
 -- end: ftd.column
