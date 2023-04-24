@@ -1,19 +1,16 @@
 -- import: fifthtry.github.io/package-doc/doc as pd
 
-
-
-
-
 -- bling.page: `holder` and it's Usage
 
 `-- holder` component is a `FTD` container. Here you can add any `ftd` component
-Or any `ftd` code. `-- holder` comes with different UI. Showing below a example of
-`triangular` container.
+Or any `ftd` code. `-- holder` comes with different UI. Showing below a example
+of `triangular` container.
 
 -- pd.package: `holder`
 name: fifthtry.github.io/bling/holder
 
-`holder` is a new conversation experience via using `FTD` lang:
+`holder` is a new conversation experience via using `FTD` lang: 
+
 To use `holder` on your web package, add below into `FASTN.ftd` file:
 
 -- cb.code:
@@ -24,35 +21,34 @@ lang: ftd
 
 -- tf.markdown:
 
-Once you add above lines into your web package, add `holder` into your `.ftd` 
+Once you add above lines into your web package, add `holder` into your `.ftd`
 files:
 
 -- pd.hidden-code: `-- holder.triangular`
 
 \-- holder.triangular: This is your Title
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 \-- end: holder.triangular
-
 
 -- tf.h3: Output of above example:
 
 -- triangular: This is your Title
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- pd.hidden-code: Multiple `-- holder.triangular` containers:
 
 \-- holder.triangular: 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 \-- ft.code:
 lang: ftd
@@ -65,16 +61,16 @@ width { ftd.device == "mobile" }: fill-container
 
 \-- ft.markdown:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 \-- holder.triangular: Lorem ipsum dolor
 make-odd: true <default: false - make true for middle container>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 \-- ft.code:
 lang: ftd
@@ -87,15 +83,15 @@ width { ftd.device == "mobile" }: fill-container
 
 \-- ft.markdown:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 \-- holder.triangular: 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 \-- ft.code:
 lang: ftd
@@ -108,9 +104,9 @@ width { ftd.device == "mobile" }: fill-container
 
 \-- ft.markdown:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 \-- end: holder.triangular
 
@@ -118,9 +114,9 @@ ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 
 -- triangular: 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- ft.code:
 lang: ftd
@@ -136,18 +132,18 @@ color: $inherited.colors.text.dark
 role: $inherited.types.copy-regular
 width: fill-container
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- end: triangular
 
 -- triangular: Lorem ipsum dolor
 make-odd: true
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- ft.code:
 lang: ftd
@@ -160,17 +156,17 @@ width { ftd.device == "mobile" }: fill-container
 
 -- ft.markdown:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- end: triangular
 
 -- triangular: 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- ft.code:
 lang: ftd
@@ -186,9 +182,9 @@ color: $inherited.colors.text.dark
 role: $inherited.types.copy-regular
 width: fill-container
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- end: triangular
 
@@ -213,18 +209,18 @@ children trangle-wrap:
 width: auto
 width if { ftd.device == "mobile" }: fill-container
 align-self: center
-margin-top.px if { !$triangular.make-odd }: 24
-margin-bottom.px if { !$triangular.make-odd }: 54
+margin-top.px if { !triangular.make-odd }: 24
+margin-bottom.px if { !triangular.make-odd }: 54
 background.solid: $inherited.colors.border
-background.solid if { $triangular.make-odd }: $inherited.colors.background.base
-padding-top.px : 56
-padding-top.px if { $triangular.make-odd }: 0
+background.solid if { triangular.make-odd }: $inherited.colors.background.base
+padding-top.px: 56
+padding-top.px if { triangular.make-odd }: 0
 padding-bottom.px: 32
-padding-bottom.px if { $triangular.make-odd }: 0
+padding-bottom.px if { triangular.make-odd }: 0
 padding-horizontal.px: 24
 
 -- ftd.row:
-if: { !$triangular.make-odd }
+if: { !triangular.make-odd }
 width.fixed.px: 0
 height.fixed.px: 0
 border-top-width.px: 50
@@ -245,23 +241,22 @@ z-index: 0
 -- end: ftd.row
 
 -- ftd.text: $triangular.title
-if: { $triangular.title != NULL }
+if: { triangular.title != NULL }
 padding-vertical.px: 16
 color: $inherited.colors.text.dark
 role: $inherited.types.heading-medium
-;;style: bold -- TODO FTD 0.3
 width: fill-container
 
 -- ftd.text: 
-if: { $triangular.body != NULL }
-text: $triangular.body
+if: { triangular.body != NULL }
 color: $inherited.colors.text.dark
 role: $inherited.types.copy-regular
 width: fill-container
 
+$triangular.body
 
 -- ftd.row:
-if: { !$triangular.make-odd }
+if: { !triangular.make-odd }
 width.fixed.px: 0
 height.fixed.px: 0
 border-top-width.px if { ftd.device != "mobile" }: 50
@@ -287,7 +282,6 @@ width: fill-container
 children: $triangular.trangle-wrap
 
 -- end: ftd.column
-
 
 -- end: ftd.column
 
