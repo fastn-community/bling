@@ -1,14 +1,5 @@
 -- import: fifthtry.github.io/package-doc/doc as pd
 
-
-
-
-
-
-
-
-
-
 -- bling.page: `read-more` and it's Usage
 
 `-- read-more` can be used as part of blog posts, `fastn` pages, anywhere inside
@@ -67,7 +58,6 @@ some body or extra text
 - Default `position: right` align `read-more` to right of the component
 - `position: center` align `read-more` to center of the component
 - `position: start` align `read-more` to start of the component
-
 
 -- cb.rendered: `center` position
 copy: true
@@ -136,7 +126,7 @@ optional string position: right
 boolean $hover: false
 
 -- ftd.row:
-border-color:  $inherited.colors.success.border
+border-color: $inherited.colors.success.border
 border-color if { read-more.hover }: $inherited.colors.border
 border-bottom-width.px: 1
 spacing.fixed.px: 8
