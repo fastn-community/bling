@@ -1,10 +1,6 @@
 -- import: fifthtry.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
-
-
-
-
 -- bling.page: `detail` and it's Usage
 
 `-- detail` can be used as part of blog posts, OR inside page.
@@ -23,10 +19,9 @@ lang: ftd
 
 \-- fastn.auto-import: bling/detail as detail
 
-
 -- tf.markdown:
 
-Once you add above lines into your web package, add `detail` into your `.ftd` 
+Once you add above lines into your web package, add `detail` into your `.ftd`
 files:
 
 -- cb.code: Example code for `-- detail`
@@ -37,8 +32,8 @@ is-open: true
 
 \-- tf.markdown:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt.
 
 \-- cb.code: details
 lang: ftd
@@ -52,18 +47,17 @@ lang: ftd
 
 \-- tf.markdown:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt.
 
 \-- end: detail.detail
 
 \-- detail.detail: Lorem ipsum dolor
 info-right: Some info at right side
 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 \-- end: detail.detail
 
@@ -74,8 +68,8 @@ $is-open: true
 
 -- tf.markdown:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt.
 
 -- cb.code: details
 lang: ftd
@@ -87,18 +81,18 @@ is-open: true
 
 -- detail: Lorem ipsum dolor
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt.
 
 -- detail: Lorem ipsum dolor
 info-right: Some info at right side
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- end: bling.page
+
 
 
 
@@ -136,14 +130,14 @@ width: fill-container
 align-self: start
 
 -- ftd.image:
-if:  { detail.image != NULL}
+if: { detail.image != NULL }
 src: $detail.image 
 width.fixed.px: $detail.width
 height: auto
 margin-right.px: 12
 
 -- ftd.column:
-if:  { detail.image == NULL}
+if: { detail.image == NULL }
 $on-click$: $ftd.toggle($a = $detail.is-open)
 
 -- ftd.text: &#x25B6;
@@ -182,10 +176,9 @@ align-self: end
 
 -- end: ftd.row
 
-
 -- ftd.column:
 width: fill-container
-if: {$detail.is-open}
+if: { $detail.is-open }
 border-width.px: 1
 border-color: $inherited.colors.border
 background.solid: $inherited.colors.background.step-1
@@ -193,14 +186,13 @@ padding.px: 12
 border-radius.px: 4
 
 -- ftd.text: $detail.body
-if: {$detail.body != NULL}
+if: { $detail.body != NULL }
 role: $inherited.types.label-large
 color: $inherited.colors.text
 
 -- ftd.column:
 children: $detail.container
 width: fill-container
-;;width if { $detail.info-right != NULL }: fill-container
 
 -- end: ftd.column
 
