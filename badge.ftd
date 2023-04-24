@@ -1,15 +1,9 @@
 -- import: fifthtry.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
-
-
-
-
-
 -- bling.page: `badge` and it's Usage
 
 Badges can be used as part of any component and are available in below formats:
-
 
 -- pd.package: `badge`
 name: fifthtry.github.io/bling
@@ -24,30 +18,18 @@ lang: ftd
 
 -- ft.markdown:
 
-Once you add above lines into your web package, add `badge` into your `.ftd` files:
-
-
-
-
+Once you add above lines into your web package, add `badge` into your `.ftd`
+files:
 
 -- all-badges: All `badge` examples:
 
-
-
-
-
 -- badge-output: Light Badge:
 light: true
-
 
 -- ft.code: Example code for `badge` `light` is by default true:
 lang: ftd
 
 \-- badge.badge: Light
-
-
-
-
 
 -- badge-output: Dark Badge:
 dark: true
@@ -59,10 +41,6 @@ lang: ftd
 \-- badge.badge: Dark
 dark: true
 
-
-
-
-
 -- badge-output: Primary Badge:
 primary: true
 light: false
@@ -72,10 +50,6 @@ lang: ftd
 
 \-- badge.badge: Primary
 primary: true
-
-
-
-
 
 -- badge-output: Secondary Badge:
 secondary: true
@@ -87,10 +61,6 @@ lang: ftd
 \-- badge.badge: Secondary
 secondary: true
 
-
-
-
-
 -- badge-output: Success Badge:
 success: true
 light: false
@@ -100,10 +70,6 @@ lang: ftd
 
 \-- badge.badge: Success
 success: true
-
-
-
-
 
 -- badge-output: Danger Badge:
 danger: true
@@ -115,10 +81,6 @@ lang: ftd
 \-- badge.badge: Danger
 danger: true
 
-
-
-
-
 -- badge-output: Warning Badge:
 warning: true
 light: false
@@ -128,10 +90,6 @@ lang: ftd
 
 \-- badge.badge: Warning
 warning: true
-
-
-
-
 
 -- badge-output: Info Badge:
 info: true
@@ -144,6 +102,8 @@ lang: ftd
 info: true
 
 -- end: bling.page
+
+
 
 
 
@@ -294,7 +254,7 @@ if: { $badge-output.success }
 success: true
 
 -- badge: Danger
-if: {$badge-output.danger}
+if: { $badge-output.danger }
 danger: true
 
 -- badge: Warning
@@ -321,7 +281,7 @@ info: true
 
 
 -- component badge:
-caption title: 
+caption title:
 boolean light: false
 boolean dark: false
 boolean primary: false
@@ -334,24 +294,23 @@ boolean info: false
 -- ftd.text: $badge.title
 role: $inherited.types.fine-print
 color: $inherited.colors.background.base
-color if {$badge.dark}: $inherited.colors.text-strong
-color if {$badge.primary}: $inherited.colors.text-strong
-color if {$badge.secondary}: $inherited.colors.text-strong
-color if {$badge.danger}: $inherited.colors.text-strong
+color if { $badge.dark }: $inherited.colors.text-strong
+color if { $badge.primary }: $inherited.colors.text-strong
+color if { $badge.secondary }: $inherited.colors.text-strong
+color if { $badge.danger }: $inherited.colors.text-strong
 background.solid if { $badge.light }: $inherited.colors.text
 background.solid if { $badge.dark }: $inherited.colors.background.step-2
-background.solid if {$badge.primary}: $inherited.colors.cta-primary.base
-background.solid if {$badge.secondary}: $inherited.colors.cta-secondary.base
-background.solid if {$badge.success}: $inherited.colors.success.base
-background.solid if {$badge.danger}: $inherited.colors.error.base
-background.solid if {$badge.warning}: $inherited.colors.warning.base
-background.solid if {$badge.info}: $inherited.colors.info.base
+background.solid if { $badge.primary }: $inherited.colors.cta-primary.base
+background.solid if { $badge.secondary }: $inherited.colors.cta-secondary.base
+background.solid if { $badge.success }: $inherited.colors.success.base
+background.solid if { $badge.danger }: $inherited.colors.error.base
+background.solid if { $badge.warning }: $inherited.colors.warning.base
+background.solid if { $badge.info }: $inherited.colors.info.base
 padding-vertical.px: 8
 padding-horizontal.px: 12
 border-radius.px: 10
 white-space: nowrap
 align-self: center
 margin-left.px: 16
-;;margin-top.px: 20
 
 -- end: badge
