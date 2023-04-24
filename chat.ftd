@@ -1,13 +1,9 @@
 -- import: fifthtry.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
-
-
-
-
 -- bling.page: Chat & messages
 
-`-- message-left` OR `-- message-right` is a new chatting experience via using 
+`-- message-left` OR `-- message-right` is a new chatting experience via using
 `FTD` lang.
 
 -- pd.package: `message-left` & `message-right`
@@ -23,8 +19,8 @@ lang: ftd
 
 -- tf.markdown:
 
-Once you add above lines into your web package, add `message-left` OR `message-right`
-into your `.ftd` files:
+Once you add above lines into your web package, add `message-left` OR
+`message-right` into your `.ftd` files:
 
 -- cb.code: `-- message-left` basic usage example code:
 lang: ftd
@@ -35,13 +31,7 @@ some body of the chat here
 
 \-- end: chat.message-left
 
-
-
 -- message-left: Hello World! 😀
-
-
-
-
 
 -- cb.code: `-- message-right` basic usage example code:
 lang: ftd
@@ -52,11 +42,7 @@ some body of the chat here
 
 \-- end: chat.message-right
 
-
-
 -- message-right: Hey Buddy! 👋
-
-
 
 -- tf.h3: Real-life example of a chat, using `message` `left` & `right`:
 
@@ -74,7 +60,7 @@ margin-top.px: 4
 
 -- tf.markdown:
 
-uis nostrud exercitation ullaril mco labil oris nisi ut aliquip ex ea commo 
+uis nostrud exercitation ullaril mco labil oris nisi ut aliquip ex ea commo
 dorli consequa duis aute irure dolor lorii
 
 -- ftd.column:
@@ -92,14 +78,13 @@ margin-top.px: -11
 
 -- end: message-left
 
-
-
 -- message-right: Yo! 
 pull-top: -4
 
 -- tf.markdown:
 
-in voluptate velit esse cillum dolor er eu fugiat nulla pariatur. Excepte urla sint occaecat cupidatat nor proident,
+in voluptate velit esse cillum dolor er eu fugiat nulla pariatur. Excepte urla
+sint occaecat cupidatat nor proident,
 
 -- cb.code: Wow! awesome man!:
 lang: ftd
@@ -113,37 +98,15 @@ role: $inherited.types.label-large
 
 -- end: message-right
 
-
-
 -- message-left: 🤘
-
-
-
-
 
 -- message-right: 👍👍
 
-
-
-
-
 -- message-left: Lorem ipsum dolor sit amet,
-
-
-
-
 
 -- message-right: sed do eiusmod tempor ut
 
-
-
-
-
 -- message-left: Lorem ipsum
-
-
-
-
 
 -- message-right: sed do eiusmod
 
@@ -175,17 +138,16 @@ width: fill-container
 
 -- ftd.row:
 width: fill-container
-;;id: chat-right
 
 -- ftd.image:
-if: {!$message-left.round-avatar}
+if: { !$message-left.round-avatar }
 src: $message-left.avatar
 width.fixed.px: 32
 height: auto
 margin-right.px: 16
 
 -- ftd.image:
-if: {$message-left.round-avatar}
+if: { $message-left.round-avatar }
 src: $message-left.avatar
 width.fixed.px: 32
 height: auto
@@ -199,7 +161,6 @@ background.solid: $inherited.colors.background.step-1
 padding.px: 12
 border-radius.px: 4
 width: fill-container
-;;id: msg-container
 
 -- ftd.text: $message-left.title
 color: $inherited.colors.text
@@ -238,8 +199,6 @@ ftd.image-src avatar: $assets.files.static.ganeshs.jpg
 boolean round-avatar: true
 integer pull-top: 0
 children container:
-;;append-at: msg-container
-;;id: message
 
 -- ftd.column:
 margin-bottom.px: 16
@@ -250,7 +209,6 @@ width: fill-container
 
 -- ftd.row:
 width: fill-container
-;;id: chat-right
 
 -- ftd.column:
 border-width.px: 1
@@ -258,7 +216,6 @@ border-color: $inherited.colors.border
 background.solid: $inherited.colors.background.step-1
 padding.px: 12
 border-radius.px: 4
-;;id: msg-container
 
 -- ftd.text: $message-right.title
 color: $inherited.colors.text
@@ -275,14 +232,14 @@ children: $message-right.container
 -- end: ftd.column
 
 -- ftd.image:
-if: {!$message-right.round-avatar}
+if: { !$message-right.round-avatar }
 src: $message-right.avatar
 width.fixed.px: 32
 height: auto
 margin-left.px: 16
 
 -- ftd.image:
-if: {$message-right.round-avatar}
+if: { $message-right.round-avatar }
 src: $message-right.avatar
 width.fixed.px: 32
 height: auto
