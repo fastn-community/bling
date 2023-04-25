@@ -2282,6 +2282,7 @@ role: $inherited.types.fine-print
 -- component dorian:
 optional caption title:
 body body:
+ftd.background-image image: $assets.files.static.down.svg
 
 -- ftd.column:
 width: auto
@@ -2291,15 +2292,23 @@ margin-top.px: 24
 margin-bottom.px: 24
 
 -- ftd.row:
-width.fixed.px: 30
-height.fixed.px: 30
+width.fixed.px: 0
+height.fixed.px: 0
+border-top-width.px if { ftd.device != "mobile" }: 30
+border-left-width.px if { ftd.device != "mobile" }: 30
+border-right-width.px if { ftd.device != "mobile" }: 30
+border-top-width.px if { ftd.device == "mobile" }: 35
+border-left-width.px if { ftd.device == "mobile" }: 42
+border-right-width.px if { ftd.device == "mobile" }: 42
+border-top-color: $inherited.colors.background.step-2
+border-bottom-color: $inherited.colors.background.step-1
+border-left-color: $inherited.colors.background.step-1
+border-right-color: $inherited.colors.background.step-1
 anchor: parent
-background.solid: $inherited.colors.background.step-2
-left.px: 56
-bottom.px: 52
-;; rotate: 132 - TODO FTD 0.3
-z-index: 200
-border-style: solid
+left.px: 58
+bottom.px: 43
+bottom.px if { ftd.device == "mobile" }: -35
+z-index: 0
 
 -- end: ftd.row
 
@@ -2312,6 +2321,7 @@ padding-vertical.px: 24
 padding-horizontal.px: 24
 border-top-right-radius.px: 8
 border-top-left-radius.px: 8
+z-index: 10
 
 $dorian.body
 
