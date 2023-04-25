@@ -1926,7 +1926,7 @@ color: $inherited.colors.text
 
 
 -- component antique:
-ftd.background-image avatar: $assets.files.static.socrates.png
+ftd.background-image avatar: $assets.files.static.antique.jpg
 optional caption title:
 body body:
 
@@ -1943,8 +1943,9 @@ anchor: parent
 background.solid: $image-color
 top.px: 0
 left.px: 0
-width.fixed.px: 90
+width.fixed.px: 100
 height: fill-container
+z-index: -1
 
 -- end: ftd.column
 
@@ -1955,6 +1956,9 @@ height: fill-container
 anchor: parent
 top.px: 0
 left.px: 0
+border-top-left-radius.px: 4
+border-bottom-left-radius.px: 4
+z-index: 0
 
 -- end: ftd.column
 
@@ -1963,10 +1967,11 @@ margin-left.px: 90
 padding-top.px: 16
 padding-horizontal.px: 16
 background.solid: $inherited.colors.background.step-2
-border-radius.px: 4
 spacing.fixed.px: 8
 max-width.fixed.percent if { ftd.device != "mobile" }: 30
 width if { ftd.device == "mobile" }: fill-container
+border-top-right-radius.px: 4
+border-bottom-right-radius.px: 4
 
 -- ftd.text:
 role: $inherited.types.heading-small
