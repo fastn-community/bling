@@ -1174,7 +1174,7 @@ $quotes-mobile.body
 -- component chalice:
 optional caption title:
 body body:
-;;optional ftd.image-src backgroundimage: $assets.files.static.quotes.svg
+ftd.background-image bg-image: $assets.files.static.quotes.svg
 
 -- ftd.column:
 padding-horizontal.px: 24
@@ -1186,7 +1186,7 @@ margin-top.px: 24
 margin-bottom.px: 24
 
 -- ftd.row:
-;;background-image: $chalice.backgroundimage
+background.image: $chalice.bg-image
 width.fixed.px: 84
 height.fixed.px: 84
 width.fixed.px if { ftd.device == "mobile" }: 44
@@ -1334,8 +1334,8 @@ ftd.image-src logo: $assets.files.static.quote.png
 -- ftd.column:
 padding-vertical.px: 32
 padding-horizontal.px: 32
-;;gradient-direction: top to bottom
-;;gradient-colors: grey, black
+;; gradient-direction: top to bottom - TODO FTD 0.3
+;; gradient-colors: grey, black - TODO FTD 0.3
 width: fill-container
 max-width.fixed.px: 800
 align-self: center
@@ -1410,8 +1410,8 @@ ftd.image-src logo: $assets.files.static.quote.png
 -- ftd.column:
 padding-vertical.px: 16
 padding-horizontal.px: 16
-;;gradient-direction: top.px to bottom.px
-;;gradient-colors: grey, black
+;; gradient-direction: top.px to bottom.px - TODO FTD 0.3
+;; gradient-colors: grey, black - TODO FTD 0.3
 width: fill-container
 max-width.fixed.px: 800
 align-self: center
@@ -1772,7 +1772,7 @@ margin-bottom.px: 24
 anchor: parent
 background.solid: $inherited.colors.background.base
 top.px: -16
-;;move-right.px: 270
+;; move-right.px: 270 - TODO FTD 0.3
 text-align: center
 role: $inherited.types.copy-large
 color: $inherited.colors.text
@@ -1804,7 +1804,7 @@ border-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 left.px: -16
 top.px: -11
-;; rotate.px: 110
+;; rotate.px: 110 - TODO FTD 0.3
 z-index: 200
 
 -- end: ftd.row
@@ -1822,7 +1822,7 @@ border-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 left.px: -16
 bottom.px: -11
-;; rotate: 150
+;; rotate: 150 - TODO FTD 0.3
 z-index: 200
 
 -- end: ftd.row
@@ -1840,7 +1840,7 @@ border-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 right.px: -16
 top.px: -11
-;; rotate: 160
+;; rotate: 160 - TODO FTD 0.3
 z-index: 200
 
 -- end: ftd.row
@@ -1858,7 +1858,7 @@ border-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 right.px: -16
 bottom.px: -11
-;; rotate: 110
+;; rotate: 110 - TODO FTD 0.3
 z-index: 200
 
 -- end: ftd.row
@@ -1926,7 +1926,7 @@ color: $inherited.colors.text
 
 
 -- component antique:
-ftd.image-src avatar: $assets.files.static.socrates.png
+ftd.background-image avatar: $assets.files.static.socrates.png
 optional caption title:
 body body:
 
@@ -1949,7 +1949,7 @@ height: fill-container
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $antique.avatar
+background.image: $antique.avatar
 width.fixed.px: 90
 height: fill-container
 anchor: parent
@@ -2034,7 +2034,7 @@ body: $bubble.body
 
 
 -- component quote-14-desktop:
-ftd.image-src avatar: $assets.files.static.quotes-bg.jpeg
+ftd.background-image avatar: $assets.files.static.quotes-bg.jpeg
 optional caption title:
 body body:
 
@@ -2044,8 +2044,7 @@ width if { ftd.device == "mobile" }: fill-container
 min-width.fixed.percent: 50
 margin-top.px: 24
 margin-bottom.px: 24
-;;background-image: $quote-14-desktop.avatar
-;;background-repeat: false
+background.image: $quote-14-desktop.avatar
 padding-vertical.px: 40
 padding-horizontal.px: 40
 align-self: center
@@ -2094,7 +2093,7 @@ color: $inherited.colors.text
 
 
 -- component quote-14-mobile:
-ftd.image-src avatar: $assets.files.static.quotes-bg.jpeg
+ftd.background-image avatar: $assets.files.static.quotes-bg.jpeg
 optional caption title:
 body body:
 
@@ -2104,8 +2103,7 @@ width if { ftd.device == "mobile" }: fill-container
 min-width.fixed.percent: 50
 margin-top.px: 12
 margin-bottom.px: 12
-;;background-image: $quote-14-mobile.avatar
-;;background-repeat: false
+background.image: $quote-14-mobile.avatar
 padding-vertical.px: 12
 padding-horizontal.px: 12
 align-self: center
@@ -2154,7 +2152,7 @@ color: $inherited.colors.text
 
 
 -- component electric:
-ftd.image-src avatar: $assets.files.static.socrates.png
+ftd.background-image avatar: $assets.files.static.socrates.png
 optional caption title:
 body body:
 
@@ -2177,7 +2175,7 @@ height: fill-container
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $electric.avatar
+background.image: $electric.avatar
 width.fixed.px: 90
 height: fill-container
 anchor: parent
@@ -2299,7 +2297,7 @@ anchor: parent
 background.solid: $inherited.colors.background.step-2
 left.px: 56
 bottom.px: 52
-;; rotate: 132
+;; rotate: 132 - TODO FTD 0.3
 z-index: 200
 border-style: solid
 
@@ -2405,7 +2403,7 @@ background.solid: $inherited.colors.custom.seven
 margin-bottom.px: 40
 padding-horizontal.px: 40
 padding-vertical.px: 40
-;;scale: 0.6
+;; scale: 0.6 - TODO FTD 0.3
 width.fixed.px: 750
 margin-left.px: -200
 margin-top.px: -70
@@ -2428,7 +2426,7 @@ body: $octa-mobile.body
 
 -- component octa-inner:
 optional caption title:
-body body:
+body body: 
 
 -- ftd.column:
 width: fill-container
@@ -2439,7 +2437,7 @@ background.solid: $inherited.colors.background.base
 min-height.fixed.px: 250
 
 -- ftd.column:
-;;background-image: $assets.files.static.hexagon-10.svg
+background.image: $assets.files.static.hexagon-10.svg
 width.fixed.px: 150
 height.fixed.px: 150
 anchor: parent
@@ -2450,7 +2448,7 @@ z-index: 99
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $assets.files.static.hexagon-11.svg
+background.image: $assets.files.static.hexagon-11.svg 
 width.fixed.px: 80
 height.fixed.px: 80
 anchor: parent
@@ -2461,7 +2459,7 @@ z-index: 99
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $assets.files.static.hexagon-12.svg
+background.image: $assets.files.static.hexagon-12.svg
 width.fixed.px: 130
 height.fixed.px: 130
 anchor: parent
@@ -2472,7 +2470,7 @@ z-index: 99
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $assets.files.static.hexagon-13.svg
+background.image: $assets.files.static.hexagon-13.svg
 width.fixed.px: 140
 height.fixed.px: 140
 anchor: parent
@@ -2483,7 +2481,7 @@ z-index: 99
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $assets.files.static.hexagon-14.svg
+background.image: $assets.files.static.hexagon-14.svg
 width.fixed.px: 120
 height.fixed.px: 120
 anchor: parent
@@ -2494,7 +2492,7 @@ z-index: 999
 -- end: ftd.column
 
 -- ftd.column:
-;;background-image: $assets.files.static.hexagon-9.svg
+background.image: $assets.files.static.hexagon-9.svg
 width.fixed.px: 150
 height.fixed.px: 150
 anchor: parent
