@@ -2285,8 +2285,38 @@ body body:
 ftd.background-image image: $assets.files.static.down.svg
 
 -- ftd.column:
+width: fill-container
+
+-- dorian-desktop: $dorian.title
+if: { ftd.device != "mobile" }
+body: $dorian.body
+image: $dorian.image
+
+-- dorian-mobile: $dorian.title
+if: { ftd.device == "mobile" }
+body: $dorian.body
+image: $dorian.image
+
+-- end: ftd.column
+
+-- end: dorian
+
+
+
+
+
+
+
+
+
+
+-- component dorian-desktop:
+optional caption title:
+body body:
+ftd.background-image image:
+
+-- ftd.column:
 width: auto
-width if { ftd.device == "mobile" }: fill-container
 align-self: center
 margin-top.px: 24
 margin-bottom.px: 24
@@ -2294,12 +2324,9 @@ margin-bottom.px: 24
 -- ftd.row:
 width.fixed.px: 0
 height.fixed.px: 0
-border-top-width.px if { ftd.device != "mobile" }: 30
-border-left-width.px if { ftd.device != "mobile" }: 30
-border-right-width.px if { ftd.device != "mobile" }: 30
-border-top-width.px if { ftd.device == "mobile" }: 35
-border-left-width.px if { ftd.device == "mobile" }: 42
-border-right-width.px if { ftd.device == "mobile" }: 42
+border-top-width.px: 30
+border-left-width.px: 30
+border-right-width.px: 30
 border-top-color: $inherited.colors.background.step-2
 border-bottom-color: $inherited.colors.background.step-1
 border-left-color: $inherited.colors.background.step-1
@@ -2307,7 +2334,6 @@ border-right-color: $inherited.colors.background.step-1
 anchor: parent
 left.px: 58
 bottom.px: 43
-bottom.px if { ftd.device == "mobile" }: -35
 z-index: 0
 
 -- end: ftd.row
@@ -2323,9 +2349,9 @@ border-top-right-radius.px: 8
 border-top-left-radius.px: 8
 z-index: 10
 
-$dorian.body
+$dorian-desktop.body
 
--- ftd.text: $dorian.title
+-- ftd.text: $dorian-desktop.title
 color: $inherited.colors.text
 role: $inherited.types.fine-print
 background.solid: $inherited.colors.background.step-1
@@ -2337,7 +2363,71 @@ border-bottom-left-radius.px: 8
 
 -- end: ftd.column
 
--- end: dorian
+-- end: dorian-desktop
+
+
+
+
+
+
+
+
+
+
+-- component dorian-mobile:
+optional caption title:
+body body:
+ftd.background-image image:
+
+-- ftd.column:
+width: fill-container
+align-self: center
+margin-top.px: 24
+margin-bottom.px: 24
+
+-- ftd.row:
+width.fixed.px: 0
+height.fixed.px: 0
+border-top-width.px: 30
+border-left-width.px: 30
+border-right-width.px: 30
+border-top-color: $inherited.colors.background.step-2
+border-bottom-color: $inherited.colors.background.step-2
+border-left-color: $inherited.colors.background.step-1
+border-right-color: $inherited.colors.background.step-1
+anchor: parent
+left.px: 15
+bottom.px: 45
+z-index: 0
+
+-- end: ftd.row
+
+-- ftd.text: 
+padding-bottom.px: 24
+color: $inherited.colors.text
+role: $inherited.types.heading-small
+background.solid: $inherited.colors.background.step-2
+padding-vertical.px: 24
+padding-horizontal.px: 24
+border-top-right-radius.px: 8
+border-top-left-radius.px: 8
+z-index: 10
+
+$dorian-mobile.body
+
+-- ftd.text: $dorian-mobile.title
+color: $inherited.colors.text
+role: $inherited.types.fine-print
+background.solid: $inherited.colors.background.step-1
+padding-vertical.px: 24
+padding-horizontal.px: 24
+width: fill-container
+border-bottom-right-radius.px: 8
+border-bottom-left-radius.px: 8
+
+-- end: ftd.column
+
+-- end: dorian-mobile
 
 
 
