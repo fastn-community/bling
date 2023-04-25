@@ -1,9 +1,5 @@
 -- import: fifthtry.github.io/package-doc/doc as pd
 
-
-
-
-
 -- ftd.type copy-tight-medium-desktop:
 line-height.px: 20
 size.px: 16
@@ -24,14 +20,9 @@ weight: 700
 desktop: $copy-tight-bold-desktop
 mobile: $copy-tight-bold-desktop
 
-
-
-
-
 -- bling.page: `sidenote` and it's Usage
 
 `-- sidenote` can be used as part of blog posts.
-
 
 -- pd.package: `sidenote` and it's Usage
 name: fifthtry.github.io/bling
@@ -46,13 +37,9 @@ lang: ftd
 \-- fastn.dependency: fifthtry.github.io/bling as bling
 \-- fastn.auto-import: bling/sidenote as sidenote
 
-
-
-
-
 -- tf.markdown:
 
-Once you add above lines into your web package, add `sidenote` into your `.ftd` 
+Once you add above lines into your web package, add `sidenote` into your `.ftd`
 files:
 
 -- cb.code: Example code for `-- sidenote`
@@ -60,26 +47,17 @@ lang: ftd
 
 \-- sidenote.sidenote: 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
-
-
-
-
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- tf.h3: Output of above basic example:
 
 -- sidenote:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut
-
-
-
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- tf.h3: Advanced usage example:
 
@@ -88,23 +66,21 @@ lang: ftd
 
 \-- sidenote.sidenote:
 
-Lorem ipsum dolor sit ame, consectetur adipiscing elit, sed do 
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
-
-
-
-
+Lorem ipsum dolor sit ame, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud {bold: exercitation ullamco laboris nisi ut.}
 
 -- tf.h3: Output of above advanced example:
 
 -- sidenote: 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-minim veniam, quis nostrud {bold: exercitation ullamco laboris nisi ut.}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud {bold: exercitation ullamco laboris nisi ut.}
 
 -- end: bling.page
+
+
 
 
 
@@ -134,16 +110,11 @@ role: $inherited.types.copy-small
 color: $inherited.colors.text-strong
 
 -- ftd.text:
-text: $sidenote.body
 role: $inherited.types.copy-small
 color: $inherited.colors.text
 text-align: justify
-;;text-indent: 84
 
-/-- ftd.text: color
-role: $copy-tight-medium
-border-bottom.px: 1
-;;border-style: solid
+$sidenote.body
 
 -- end: ftd.column
 

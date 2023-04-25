@@ -1,19 +1,10 @@
 -- import: fifthtry.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
-
-
-
-
-
 -- bling.page: `Tip` and it's usage
 
-`tip` is a new conversation experience via using `FTD` lang. `tip` can be used 
+`tip` is a new conversation experience via using `FTD` lang. `tip` can be used
 as part of any component and is available in below formats:
-
-
-
-
 
 -- pd.package: `tip`
 name: fifthtry.github.io/bling
@@ -26,17 +17,10 @@ lang: ftd
 \-- fastn.dependency: fifthtry.github.io/bling as bling
 \-- fastn.auto-import: bling/tip as tip
 
-
-
-
-
 -- tf.markdown:
 
-Once you add above lines into your web package, add `tip` into your `.ftd` files:
-
-
-
-
+Once you add above lines into your web package, add `tip` into your `.ftd`
+files:
 
 -- cb.code: Basic usage example code:
 lang: ftd
@@ -47,29 +31,20 @@ Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
 
 \-- end: tip
 
-
-
 -- tf.h3: Output of above basic example:
-
-
-
-
 
 -- tip: Cool bots hot tip!
 
 Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
-
-
-
-
 
 -- cb.code: Advanced usage example code:
 lang: ftd
 
 \-- tip.tip: Cool bots hot tip !
 
-Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium dolorem 
-queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo inventore!
+Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
+dolorem queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo
+inventore!
 
 \-- tf.code: Wow! awesome man!:
 lang: ftd
@@ -84,15 +59,13 @@ role: $inherited.types.copy-regular
 
 \-- end: tip
 
-
-
 -- tf.h3: Output of above advanced usage example:
-
 
 -- tip: Cool bots hot tip !
 
-Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium dolorem 
-queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo inventore!
+Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
+dolorem queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo
+inventore!
 
 -- cb.code: Wow! awesome!:
 lang: ftd
@@ -107,8 +80,10 @@ role: $inherited.types.copy-regular
 
 -- end: tip
 
-
 -- end: bling.page
+
+
+
 
 
 
@@ -152,7 +127,7 @@ align-self: center
 border-radius.px: 100
 
 -- ftd.text: $tip.title
-if: {$tip.title != NULL}
+if: { tip.title != NULL }
 color: $inherited.colors.text-strong
 role: $inherited.types.heading-small
 
