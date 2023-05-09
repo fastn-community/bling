@@ -465,8 +465,9 @@ ftd.color backgroundcolor: $inherited.colors.background.base
 -- ftd.column:
 width: fill-container
 
+-- ftd.desktop:
+
 -- quote-desktop: $charcoal.title
-if: { ftd.device != "mobile" }
 quote-icon: $charcoal.quote-icon
 body: $charcoal.body
 avatar: $charcoal.avatar
@@ -474,13 +475,18 @@ logo: $charcoal.logo
 label: $charcoal.label
 backgroundcolor: $charcoal.backgroundcolor
 
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
 -- quote-mobile: $charcoal.title
-if: { ftd.device == "mobile" }
 body: $charcoal.body
 avatar: $charcoal.avatar
 logo: $charcoal.logo
 label: $charcoal.label
 backgroundcolor: $charcoal.backgroundcolor
+
+-- end: ftd.mobile
 
 -- end: ftd.column
 
@@ -675,15 +681,21 @@ width: fill-container
 margin-top.px: 24
 margin-bottom.px: 24
 
+-- ftd.desktop:
+
 -- quote-1-desktop: $marengo.title
-if: { ftd.device != "mobile" }
 body: $marengo.body
 backgroundcolor: $marengo.backgroundcolor
 
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
 -- quote-1-mobile: $marengo.title
-if: { ftd.device == "mobile" }
 body: $marengo.body
 backgroundcolor: $marengo.backgroundcolor
+
+-- end: ftd.mobile
 
 -- end: ftd.column
 
@@ -826,15 +838,22 @@ width: fill-container
 margin-top.px: 24
 margin-bottom.px: 24
 
+-- ftd.desktop:
+
 -- quote-2-desktop: $marengo-hug.title
-if: { ftd.device != "mobile" }
 body: $marengo-hug.body
 backgroundcolor: $marengo-hug.backgroundcolor
 
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
 -- quote-2-mobile: $marengo-hug.title
-if: { ftd.device == "mobile" }
 body: $marengo-hug.body
 backgroundcolor: $marengo-hug.backgroundcolor
+
+-- end: ftd.mobile
 
 -- end: ftd.column
 
@@ -1027,13 +1046,19 @@ body body:
 -- ftd.row:
 width: fill-container
 
+-- ftd.desktop:
+
 -- quotes-desktop:
-if: { ftd.device != "mobile" }
 body: $quotes.body
 
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
 -- quotes-mobile:
-if: { ftd.device == "mobile" }
 body: $quotes.body
+
+-- end: ftd.mobile
 
 -- end: ftd.row
 
@@ -1305,13 +1330,19 @@ body body:
 -- ftd.column:
 width: fill-container
 
+-- ftd.desktop:
+
 -- quote-6-desktop: $silver.title
-if: { ftd.device != "mobile" }
 body: $silver.body
 
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
 -- quote-6-mobile: $silver.title
-if: { ftd.device == "mobile" }
 body: $silver.body
+
+-- end: ftd.mobile
 
 -- end: ftd.column
 
@@ -1553,7 +1584,7 @@ ftd.image-src right-logo: $assets.files.static.right-quote-sign.png
 body body:
 
 -- ftd.row:
-width if { ftd.device != "mobile" }: auto
+width: auto
 width if { ftd.device == "mobile" }: fill-container
 min-width.fixed.percent: 50
 margin-top.px: 24
@@ -1700,20 +1731,26 @@ border-color: $inherited.colors.border
 -- ftd.column:
 padding-vertical.px: 12
 
--- ftd.text: 
-if: { ftd.device != "mobile" }
+-- ftd.desktop:
+
+-- ftd.text:
 color: $inherited.colors.text
 role: $inherited.types.copy-large
 
 $echo.body
 
--- ftd.text: 
-if: { ftd.device == "mobile" }
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
+-- ftd.text:
 color: $inherited.colors.text
 role: $inherited.types.copy-large
 text-align: justify
-
 text: $echo.body
+
+-- end: ftd.mobile
 
 -- ftd.text: $echo.title
 color: $inherited.colors.text
@@ -1931,7 +1968,7 @@ optional caption title:
 body body:
 
 -- ftd.row:
-width if { ftd.device != "mobile" }: auto
+width: auto
 width if { ftd.device == "mobile" }: fill-container
 min-width.fixed.percent: 50
 margin-top.px: 24
@@ -2017,13 +2054,19 @@ body body:
 -- ftd.row:
 width: fill-container
 
+-- ftd.desktop:
+
 -- quote-14-desktop: $bubble.title
-if: { ftd.device != "mobile" }
 body: $bubble.body
 
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
 -- quote-14-mobile: $bubble.title
-if:{ ftd.device == "mobile" }
 body: $bubble.body
+
+-- end: ftd.mobile
 
 -- end: ftd.row
 
@@ -2044,7 +2087,7 @@ optional caption title:
 body body:
 
 -- ftd.row:
-width if { ftd.device != "mobile" }: auto
+width: auto
 width if { ftd.device == "mobile" }: fill-container
 min-width.fixed.percent: 50
 margin-top.px: 24
@@ -2103,7 +2146,7 @@ optional caption title:
 body body:
 
 -- ftd.row:
-width if { ftd.device != "mobile" }: auto
+width: auto
 width if { ftd.device == "mobile" }: fill-container
 min-width.fixed.percent: 50
 margin-top.px: 12
@@ -2162,7 +2205,7 @@ optional caption title:
 body body:
 
 -- ftd.row:
-width if { ftd.device != "mobile" }: auto
+width: auto
 width if { ftd.device == "mobile" }: fill-container
 min-width.fixed.percent: 50
 margin-top.px: 24
@@ -2292,15 +2335,22 @@ ftd.background-image image: $assets.files.static.down.svg
 -- ftd.column:
 width: fill-container
 
+-- ftd.desktop:
+
 -- dorian-desktop: $dorian.title
-if: { ftd.device != "mobile" }
 body: $dorian.body
 image: $dorian.image
 
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
 -- dorian-mobile: $dorian.title
-if: { ftd.device == "mobile" }
 body: $dorian.body
 image: $dorian.image
+
+-- end: ftd.mobile
 
 -- end: ftd.column
 
@@ -2450,13 +2500,19 @@ body body:
 -- ftd.column:
 width: fill-container
 
+-- ftd.desktop:
+
 -- octa-desktop: $octa.title
-if: { ftd.device != "mobile" }
 body: $octa.body
 
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
 -- octa-mobile: $octa.title
-if: { ftd.device == "mobile" }
 body: $octa.body
+
+-- end: ftd.mobile
 
 -- end: ftd.column
 
