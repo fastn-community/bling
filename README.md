@@ -1,11 +1,11 @@
-# Bling is a collection of `FTD` components
+# Bling is a collection of `fastn` components
 
 > Bling is for making most content pages more interesting. Normally content pages, like a blog post, or news article etc, only have headings, single quote, image and code block. With bling we are trying to create rich variety of components to spice up such blog posts.
 
-`fastn-community.github.io/bling` is a `ftd` component library which contains various `ftd` 
+`fastn-community.github.io/bling` is a `fastn` component library which contains various `fastn` 
 componets can be used on your pages. 
 
-To use this `ftd` library on your web package, add below lines into `FASTN.ftd` file:
+To use this `fastn` library on your web package, add below lines into `FASTN.ftd` file:
 ```ftd
 \-- fastn.dependency: fastn-community.github.io/bling
 \-- fastn.auto-import: fastn-community.github.io/bling/badge
