@@ -16,7 +16,7 @@ weight: 700
 `-- emoji-list` can be used as part of blog posts.
 
 -- pd.package: `emoji-list` and it's Usage
-name: fifthtry.github.io/bling
+name: fastn-community.github.io/bling
 
 `emoji-list` is a new conversation experience via using `FTD` lang:
 
@@ -25,7 +25,7 @@ To use `emoji-list` on your web package, add below into `FASTN.ftd` file:
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.dependency: fastn-community.github.io/bling as bling
 \-- fastn.auto-import: bling/emoji-list as el
 
 -- tf.markdown:

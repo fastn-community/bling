@@ -1,4 +1,4 @@
--- import: fifthtry.github.io/bling/assets
+-- import: fastn-community.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
 -- bling.page: Chat & messages
@@ -7,14 +7,14 @@
 `FTD` lang.
 
 -- pd.package: `message-left` & `message-right`
-name: fifthtry.github.io/bling
+name: fastn-community.github.io/bling
 
 To use these components on your web package, add below into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.dependency: fastn-community.github.io/bling as bling
 \-- fastn.auto-import: bling/chat as chat
 
 -- tf.markdown:

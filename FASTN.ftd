@@ -1,13 +1,11 @@
 -- import: fastn
 
--- fastn.package: fifthtry.github.io/bling
-zip: github.com/fifthtry/bling/archive/refs/heads/main.zip
-download-base-url: https://raw.githubusercontent.com/fifthtry/bling/main
+-- fastn.package: fastn-community.github.io/bling
 
 
 
 -- fastn.dependency: fifthtry.github.io/package-doc
--- fastn.dependency: fifthtry.github.io/roboto-font
+-- fastn.dependency: fastn-community.github.io/roboto-font
 -- fastn.dependency: fifthtry.github.io/footer
 -- fastn.dependency: fifthtry.github.io/sailing-shark-cs
 -- fastn.dependency: fifthtry.github.io/saturated-sunset-cs
@@ -18,7 +16,7 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/bling/main
 -- fastn.auto-import: fifthtry.github.io/package-doc/typography as tf
 -- fastn.auto-import: fifthtry.github.io/package-doc/code-block as cb
 -- fastn.auto-import: fifthtry.github.io/package-doc/forest-theme as ft
--- fastn.auto-import: fifthtry.github.io/bling/FASTN/config as bling
+-- fastn.auto-import: fastn-community.github.io/bling/FASTN/config as bling
 
 
 

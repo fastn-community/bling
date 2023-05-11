@@ -25,7 +25,7 @@ mobile: $copy-tight-bold-desktop
 `-- sidenote` can be used as part of blog posts.
 
 -- pd.package: `sidenote` and it's Usage
-name: fifthtry.github.io/bling
+name: fastn-community.github.io/bling
 
 `sidenote` is a new conversation experience via using `FTD` lang:
 
@@ -34,7 +34,7 @@ To use `sidenote` on your web package, add below into `FASTN.ftd` file:
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.dependency: fastn-community.github.io/bling as bling
 \-- fastn.auto-import: bling/sidenote as sidenote
 
 -- tf.markdown:

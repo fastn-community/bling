@@ -1,4 +1,4 @@
--- import: fifthtry.github.io/bling/assets
+-- import: fastn-community.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
 -- bling.page: `Tip` and it's usage
@@ -7,14 +7,14 @@
 as part of any component and is available in below formats:
 
 -- pd.package: `tip`
-name: fifthtry.github.io/bling
+name: fastn-community.github.io/bling
 
 To use `tip` on your web package, add below lines into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.dependency: fastn-community.github.io/bling as bling
 \-- fastn.auto-import: bling/tip as tip
 
 -- tf.markdown:

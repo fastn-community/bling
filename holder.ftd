@@ -7,7 +7,7 @@ Or any `ftd` code. `-- holder` comes with different UI. Showing below a example
 of `triangular` container.
 
 -- pd.package: `holder`
-name: fifthtry.github.io/bling/holder
+name: fastn-community.github.io/bling/holder
 
 `holder` is a new conversation experience via using `FTD` lang: 
 
@@ -16,7 +16,7 @@ To use `holder` on your web package, add below into `FASTN.ftd` file:
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.dependency: fastn-community.github.io/bling as bling
 \-- fastn.auto-import: bling/holder as holder
 
 -- tf.markdown:
