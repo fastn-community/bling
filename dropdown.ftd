@@ -1,4 +1,4 @@
--- import: fifthtry.github.io/bling/assets
+-- import: fastn-community.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
 -- string $selected-item: Option 1
@@ -26,15 +26,15 @@ caption title:
 below format:
 
 -- pd.package: `dropdown`
-name: fifthtry.github.io/bling
+name: fastn-community.github.io/bling
 
 Add below depedencies into your FASTN.ftd file.
 
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling
-\-- fastn.auto-import: fifthtry.github.io/bling/dropdown
+\-- fastn.dependency: fastn-community.github.io/bling
+\-- fastn.auto-import: fastn-community.github.io/bling/dropdown
 
 -- tf.markdown: 
 

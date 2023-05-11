@@ -1,4 +1,4 @@
--- import: fifthtry.github.io/bling/assets
+-- import: fastn-community.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
 -- bling.page: `the-end` and it's Usage
@@ -7,14 +7,14 @@
 etc.
 
 -- pd.package: `the-end` and it's Usage
-name: fifthtry.github.io/bling
+name: fastn-community.github.io/bling
 
 To use `the-end` on your web package, add below into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling
+\-- fastn.dependency: fastn-community.github.io/bling
 \-- fastn.auto-import: bling/the-end as the-end
 
 -- tf.markdown:

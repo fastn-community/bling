@@ -6,7 +6,7 @@
 `fastn` web projects you wish.
 
 -- pd.package: `read-more` and it's Usage
-name: fifthtry.github.io/bling
+name: fastn-community.github.io/bling
 
 `read-more` is a new conversation experience with your users via using `fastn`
 lang:
@@ -17,7 +17,7 @@ file:
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling
+\-- fastn.dependency: fastn-community.github.io/bling
 
 -- tf.markdown:
 
@@ -27,7 +27,7 @@ Once you add above lines into your web package, import `read-more` into your
 -- cb.code:
 lang: ftd
 
-\-- import: fifthtry.github.io/bling/read-more
+\-- import: fastn-community.github.io/bling/read-more
 
 -- cb.rendered: `default` position
 copy: true

@@ -1,15 +1,15 @@
--- import: fifthtry.github.io/bling/assets
--- import: fifthtry.github.io/bling/chat
--- import: fifthtry.github.io/bling/tip
--- import: fifthtry.github.io/bling/quote
+-- import: fastn-community.github.io/bling/assets
+-- import: fastn-community.github.io/bling/chat
+-- import: fastn-community.github.io/bling/tip
+-- import: fastn-community.github.io/bling/quote
 -- import: fifthtry.github.io/package-doc/doc as pd
 
 -- bling.page:
 
 -- pd.package: Bling components
-name: fifthtry.github.io/bling
+name: fastn-community.github.io/bling
 
-`fifthtry.github.io/bling` is a component library which contains various `ftd`
+`fastn-community.github.io/bling` is a component library which contains various `ftd`
 components can be used on your pages.
 
 Bling is for making most content pages more interesting. Normally content pages,
@@ -22,7 +22,7 @@ To use bling components on your web package, add below into `FASTN.ftd` file:
 -- ft.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.dependency: fastn-community.github.io/bling as bling
 \-- fastn.auto-import: bling
 
 -- ft.h2: Below are some sample Bling Components:

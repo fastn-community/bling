@@ -1,4 +1,4 @@
--- import: fifthtry.github.io/bling/assets
+-- import: fastn-community.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
 -- bling.page: `badge` and it's Usage
@@ -6,14 +6,14 @@
 Badges can be used as part of any component and are available in below formats:
 
 -- pd.package: `badge`
-name: fifthtry.github.io/bling
+name: fastn-community.github.io/bling
 
 To use these badges on your web package, add below lines into `FASTN.ftd` file:
 
 -- ft.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.dependency: fastn-community.github.io/bling as bling
 \-- fastn.auto-import: bling/badge as badge
 
 -- ft.markdown:

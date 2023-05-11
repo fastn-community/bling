@@ -1,4 +1,4 @@
--- import: fifthtry.github.io/bling/assets
+-- import: fastn-community.github.io/bling/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
 
 -- ftd.font-size copy-relax:
@@ -17,14 +17,14 @@ weight: 700
 `divider` can be used as end of blog post, section OR chapter end.
 
 -- pd.package: `divider` and it's Usage
-name: fifthtry.github.io/bling
+name: fastn-community.github.io/bling
 
 To use `divider` on your web package, add below into `FASTN.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/bling as bling
+\-- fastn.dependency: fastn-community.github.io/bling as bling
 \-- fastn.auto-import: bling/divider as divider
 
 -- tf.markdown:
