@@ -1,0 +1,248 @@
+-- import: fastn-community.github.io/bling/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+-- bling.page: `twitter-card` and it's Usage
+
+twitter-card component can be used as part of any component and are available in
+below formats:
+
+-- pd.package: `twitter-card`
+name: fastn-community.github.io/bling
+
+Create a single twitter-card card OR twitter cards list using your tweet data. 
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+\-- fastn.auto-import: bling/twitter-card
+
+-- tf.markdown: 
+
+Below is example of `twitter-card`.
+
+
+-- cb.rendered:
+
+-- cb.rendered.input:
+
+\-- card:
+user: $amitu
+created_at: 9:19 AM · Oct 29, 2020
+place: $amitu.location
+reply_count: 1
+retweet_count: 9
+favorite_count: 1
+
+Just launched http://fifthtry.com homepage! Will give you some idea of what I
+quit Acko to build. If you are developer, engineering manager, product manager,
+it’s relevant to you!
+
+Please reply or DM me with what you think about it, will be immensely helpful
+and appreciated.
+
+-- cb.rendered.output:
+
+-- card:
+user: $amitu
+created_at: 9:19 AM · Oct 29, 2020
+place: $amitu.location
+reply_count: 1
+retweet_count: 9
+favorite_count: 1
+
+Just launched http://fifthtry.com homepage! Will give you some idea of what I
+quit Acko to build. If you are developer, engineering manager, product manager,
+it’s relevant to you!
+
+Please reply or DM me with what you think about it, will be immensely helpful
+and appreciated.
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+
+-- end: bling.page
+
+
+
+
+
+
+
+
+
+
+-- component card:
+user user:
+body text:
+string created_at:
+optional boolean truncated: false
+string place:
+integer reply_count: 
+integer retweet_count:
+integer favorite_count:
+
+-- ftd.column:
+width.fixed.px: 500
+padding.px: 16
+background.solid: $inherited.colors.background.base
+border-radius.px: 10
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
+border-width.px: 1
+border-color: $inherited.colors.border
+spacing.fixed.px: 16
+
+-- ftd.row:
+id: card-header
+align-content: center
+width: fill-container
+spacing.fixed.px: 8
+
+-- ftd.image:
+if: { $card.user.profile_image_url != NULL }
+src: $card.user.profile_image_url
+height.fixed.px: 48
+border-radius.px: 100
+link: $card.user.url
+
+-- ftd.image:
+if: { $card.user.profile_image_url == NULL }
+src: $assets.files.static.avatar.svg
+height.fixed.px: 48
+border-radius.px: 100
+link: $card.user.url
+
+-- ftd.column:
+margin-left.px: 8
+width: fill-container
+
+-- ftd.text: $card.user.name
+color: $inherited.colors.text-strong
+role: $inherited.types.button-large
+link: $card.user.url
+
+-- ftd.row:
+align-content: center
+link: $card.user.url
+
+-- ftd.text: @
+color: $inherited.colors.text-strong
+
+-- ftd.text: $card.user.screen_name
+color: $inherited.colors.text-strong
+role: $inherited.types.fine-print
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $assets.files.static.twitter-icon.svg
+width.fixed.px: 36
+height.fixed.px: 36
+link: $card.user.url
+
+-- end: ftd.row
+
+-- ftd.text: 
+color: $inherited.colors.text-strong
+
+$card.text
+
+-- ftd.row:
+align-content: center
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+spacing.fixed.px: 8
+
+-- ftd.text: $card.created_at
+
+-- ftd.text: ·
+role: $inherited.types.fine-print
+color: $inherited.colors.text-strong
+
+-- ftd.text: $card.place
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+spacing.fixed.px: 25
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 4
+
+-- ftd.image:
+src: $assets.files.static.comments.svg
+width.fixed.px: 24
+height.fixed.px: 24
+
+-- ftd.integer: $card.reply_count
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 4
+
+-- ftd.image:
+src: $assets.files.static.retweet.svg
+width.fixed.px: 24
+height.fixed.px: 24
+
+-- ftd.integer: $card.retweet_count
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 4
+
+-- ftd.image:
+src: $assets.files.static.favorite.svg
+width.fixed.px: 24
+height.fixed.px: 24
+
+-- ftd.integer: $card.favorite_count
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: card
+
+
+
+
+-- record user:
+caption name:
+string screen_name:
+string location:
+string url:
+string description:
+boolean verified: true
+integer followers_count: 
+ftd.image-src profile_image_url:
+
+
+
+
+
+
+-- user amitu:
+name: Amit Upadhyay
+screen_name: amitu
+location: Banglore
+url: https://twitter.com/amitu
+description: AmitU is building fastn.com
+verified: true
+followers_count: 918
+profile_image_url: $assets.files.static.amitu.jpg
