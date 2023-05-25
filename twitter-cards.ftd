@@ -130,10 +130,22 @@ link: $card.user.url
 margin-left.px: 8
 width: fill-container
 
+-- ftd.row:
+align-content: center
+link: $card.user.url
+spacing.fixed.px: 4
+
 -- ftd.text: $card.user.name
 color: $inherited.colors.text-strong
 role: $inherited.types.button-large
-link: $card.user.url
+
+-- ftd.image:
+if: { card.user.verified }
+src: $assets.files.static.verified.svg
+width.fixed.px: 18
+height.fixed.px: 18
+
+-- end: ftd.row
 
 -- ftd.row:
 align-content: center
