@@ -26,7 +26,17 @@ Below is example of `twitter-card`.
 
 -- cb.rendered.input:
 
-\-- card:
+\-- $twitter-card.user amitu:
+name: Amit Upadhyay
+screen_name: amitu
+location: Banglore
+url: https://twitter.com/amitu
+description: AmitU is building fastn.com
+verified: true
+followers_count: 918
+profile_image_url: $assets.files.static.amitu.jpg
+
+\-- $twitter-card.card:
 user: $amitu
 created_at: 9:19 AM · Oct 29, 2020
 place: $amitu.location
@@ -85,7 +95,8 @@ integer retweet_count:
 integer favorite_count:
 
 -- ftd.column:
-width.fixed.px: 500
+width.fixed.px if { ftd.device == "desktop" }: 500
+width if { ftd.device == "mobile" }: fill-container
 padding.px: 16
 background.solid: $inherited.colors.background.base
 border-radius.px: 10
