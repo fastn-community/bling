@@ -1724,8 +1724,8 @@ max-width.fixed.px: 960
 
 -- ftd.row:
 width: fill-container
-border-left-width.px: 10
-padding-left.px: 40
+border-left-width.px: 8
+padding-left.px: 52
 border-color: $inherited.colors.border
 
 -- ftd.column:
@@ -1762,10 +1762,9 @@ margin-top.px: 12
 -- ftd.row:
 anchor: parent
 padding-vertical.px: 16
-background.solid: $inherited.colors.background.base
 top.px: 36
 top.px if { ftd.device == "mobile" }: 64
-left.px: -8
+left.px: 8
 
 -- ftd.image:
 src: $echo.logo
