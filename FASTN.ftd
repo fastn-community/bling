@@ -2,21 +2,17 @@
 
 -- fastn.package: fastn-community.github.io/bling
 
+-- fastn.dependency: fastn-community.github.io/site-doc
+-- fastn.dependency: fastn-community.github.io/code-block
+-- fastn.dependency: fastn-community.github.io/footer
+-- fastn.dependency: fastn-community.github.io/typography
 
-
--- fastn.dependency: fifthtry.github.io/package-doc
--- fastn.dependency: fastn-community.github.io/roboto-font
--- fastn.dependency: fifthtry.github.io/footer
--- fastn.dependency: fifthtry.github.io/sailing-shark-cs
--- fastn.dependency: fifthtry.github.io/saturated-sunset-cs
-
-
--- fastn.auto-import: fifthtry.github.io/package-doc as pd
+-- fastn.auto-import: fastn-community.github.io/site-doc
+-- fastn.auto-import: fastn-community.github.io/code-block as cb
+-- fastn.auto-import: fastn-community.github.io/bling/assets
+-- fastn.auto-import: fastn-community.github.io/typography as tf
 -- fastn.auto-import: fastn
--- fastn.auto-import: fifthtry.github.io/package-doc/typography as tf
--- fastn.auto-import: fifthtry.github.io/package-doc/code-block as cb
--- fastn.auto-import: fifthtry.github.io/package-doc/forest-theme as ft
--- fastn.auto-import: fastn-community.github.io/bling/FASTN/config as bling
+
 
 
 
@@ -25,21 +21,19 @@
 
 # Home: index.html
 
-- Badge: badge/
-- Message: chat/
-- Person Card: person/
-- Tip: tip/
-- Twitter-cards: twitter-cards/
-- Detail: detail/
-- Note: note/
-- Emoji-list: emoji-list/
-- Sidenote: sidenote/
-- Quotes: quote/
-- The End Mark: the-end/
-- Holder: holder/
-- Divider: divider/
-- Dropdown: dropdown/
-- Read more: read-more/
+- Bling Overview: index.html
+- Documentation: badge/
+  - Badge: badge/
+  - Collapse: collapse/
+  - Emoji-list: emoji-list/
+  - Holder: holder/
+  - Message: chat/
+  - Note: note/
+  - Quotes: quote/
+  - Read more: read-more/
+  - Sidenote: sidenote/
+  - Tip: tip/
+  - Twitter-cards: twitter-cards/
 
 # GitHub
   url: https://github.com/fastn-community/bling

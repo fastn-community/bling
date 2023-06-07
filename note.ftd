@@ -1,64 +1,73 @@
--- import: fifthtry.github.io/package-doc/doc as pd
 
--- bling.page: `note` and it's Usage
+-- site-doc.doc-home: Documentation - Note
+site-title: Bling
+show-tabs: false
 
-`-- note` can be used as part of blog posts.
+-- site-doc.component-doc: `note`
+package-link: https://fastn-community.github.io/bling/note/
+package-name: fastn-community.github.io/bling/note
+info: `-- note` can be used as part of any component inside your fastn web projects.
 
--- pd.package: `note` and it's Usage
-name: fastn-community.github.io/bling
+A "note component" typically refers to a UI component used to display a note or
+a small piece of information within a user interface. It is commonly used in
+applications, websites, or documentation systems to present brief explanations,
+tips, warnings, or other important information to users.
 
-`note` is a new conversation experience via using `FTD` lang:
+-- site-doc.header: How to use
 
-To use `note` on your web package, add below into `FASTN.ftd` file:
-
--- cb.code:
+-- cb.code: Add `bling` dependency into your FASTN.ftd
 lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/bling
-\-- fastn.auto-import: bling/note as note
 
--- tf.markdown:
-
-Once you add above lines into your web package, add `note` into your `.ftd`
-files:
-
--- cb.code: Example code for `-- note`
+-- cb.code: `-- note`
 lang: ftd
+
+\-- import: fastn-community.github.io/bling/note
 
 \-- note.note: This is your Title
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
+nostrud exercitation ullamco laboris nisi ut.
 
--- tf.h3: Output of above basic example:
+
+-- site-doc.header: Examples
+
+-- site-doc.output:
+colors: $ftd.default-colors
+types: $ftd.default-types
 
 -- note: This is your Title
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
+nostrud exercitation ullamco laboris nisi ut.
 
--- tf.h3: Advanced usage of `-- note`:
+-- end: site-doc.output
 
--- cb.code: Advanced example code for `-- note`
-lang: ftd
+-- site-doc.header: Properties:
 
-\-- note.note: This is your Title
+Below are details of all properties of `badge` component.
 
-Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud {bold: exercitation ullamco laboris nisi ut.}
+-- site-doc.component-property: `title`
+type: Caption (`required`)
 
--- tf.h3: Output of above advanced example:
+It's used to add title to `note` component.
 
--- note: This is your Title
+-- site-doc.component-property: `body`
+type: Body (`optional`)
 
-Lorem ipsum dolor sit amet, {bold: consectetur adipiscing} elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud {bold: exercitation ullamco laboris nisi ut.}
+It's used to add body content to `note` component.
 
--- end: bling.page
+-- site-doc.component-property: `emoji`
+type: Body (`optional`)
+
+It's used to add emoji icon to `note` component.
+
+-- end: site-doc.component-doc
+
+-- end: site-doc.doc-home
 
 
 
@@ -73,14 +82,12 @@ quis nostrud {bold: exercitation ullamco laboris nisi ut.}
 caption title:
 optional body body:
 optional string emoji: 📝
-optional ftd.color backgroundcolor: $inherited.colors.text
-optional ftd.color bordercolor: $inherited.colors.text-strong
 
 -- ftd.row:
-padding-vertical.px: 16
-padding-horizontal.px: 16
-background.solid: $note.backgroundcolor
-border-color: $note.bordercolor
+padding-vertical.px: 12
+padding-horizontal.px: 12
+background.solid: transparent
+border-color: $inherited.colors.cta-primary.border
 border-width.px: 1
 spacing.fixed.px: 16
 width: auto
@@ -101,17 +108,12 @@ spacing.fixed.px: 8
 
 -- ftd.text: $note.title
 role: $inherited.types.button-medium
-color: $inherited.colors.background.step-1
+color: $inherited.colors.text
 
 -- ftd.text:
 text: $note.body
-role: $inherited.types.fine-print
-color: $inherited.colors.background.step-1
-
-/-- ftd.text bold: color
-role: $inherited.types.button-medium
-border-bottom.px: 1
-border-style: dashed
+role: $inherited.types.copy-small
+color: $inherited.colors.text
 
 -- end: ftd.column
 

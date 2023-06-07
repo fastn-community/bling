@@ -2,53 +2,46 @@
 -- import: fastn-community.github.io/bling/chat
 -- import: fastn-community.github.io/bling/tip
 -- import: fastn-community.github.io/bling/quote
--- import: fifthtry.github.io/package-doc/doc as pd
 
--- bling.page:
 
--- pd.package: Bling components
-name: fastn-community.github.io/bling
 
-`fastn-community.github.io/bling` is a component library which contains various
-`ftd` components can be used on your pages.
 
-Bling is for making most content pages more interesting. Normally content pages,
-like a blog post, or news article etc, only have headings, single quote, image
-and code block. With bling we are trying to create rich variety of components
-to spice up such blog posts.
 
-To use bling components on your web package, add below into `FASTN.ftd` file:
 
--- ft.code:
-lang: ftd
 
-\-- fastn.dependency: fastn-community.github.io/bling as bling
-\-- fastn.auto-import: bling
+-- site-doc.doc-home: fastn package: Bling
+license-url: https://github.com/fastn-community/footer/blob/main/LICENSE
+current-package: fastn-community.github.io/footer
+show-tabs: false
+site-title: Bling
 
--- ft.h2: Below are some sample Bling Components:
+-- site-doc.output:
+colors: $ftd.default-colors
 
--- ft.h3: Chat Message:
+-- ftd.column:
+width.fixed.px if { ftd.device != "mobile" }: 380
+width: fill-container
+padding.px if { ftd.device != "mobile" }: 24
+padding.px if { ftd.device == "mobile" }: 16
+border-radius.px: 10
+background.solid: $inherited.colors.background.base
 
--- chat.message-left: Hey Buddy! liking `ftd`? 🙂
+-- chat.message-left: Hey Buddy! liking `fastn`? 🙂
 
--- chat.message-right: Hi! `ftd` language is awesome! 👍🏻
+-- chat.message-right: Hi! [`fastn`](https://fastn.com/) language is awesome! 👍🏻
 
--- ft.h3: Tip:
+-- end: ftd.column
 
 -- tip.tip: Cool bots hot tip!
 
 Sed ut perspiciatis unde omnis iste rolf
 natus err or sit voluptatem accusantiu.
 
--- ft.h3: Quotes: `-- scorpion` sample
-
 -- quote.scorpion: Abraham Lincoln
 label: U.S.A.
 
-"In the end, {white: it's not the years} in your {white:life} that count. It's
- the {white:life} in your years."
-
--- ft.h3: Quotes: `-- echo` sample
+"In the end, it's not the years in your life that count. It's the life in your
+ years."
 
 -- quote.echo: Swami Vivekananda
 
@@ -57,4 +50,23 @@ label: U.S.A.
  body be full of that idea, and just leave every other idea alone. This is the
  way to success, and this is the way great spiritual giants are produced."
 
--- end: bling.page
+-- end: site-doc.output
+
+-- site-doc.header: What is a bling component?
+
+Bling components are for making your fastn pages more interesting. Normally
+content pages, like a blog post, or news article etc, only have headings,
+single quote, image and code block. With bling we are trying to create rich
+variety of components to spice up such blog posts.
+
+-- site-doc.header: How to use bling
+
+To use bling components on your fastn web project, add below into `FASTN.ftd`
+file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+
+-- end: site-doc.doc-home

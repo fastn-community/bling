@@ -1,57 +1,39 @@
--- import: fifthtry.github.io/package-doc/doc as pd
 
--- ftd.type copy-tight-medium-desktop:
-line-height.px: 20
-size.px: 16
-letter-spacing.fixed.px: 0
+-- site-doc.doc-home: Documentation - Sidenote
+site-title: Bling
+show-tabs: false
 
--- ftd.responsive-type copy-tight-medium:
-desktop: $copy-tight-medium-desktop
-mobile: $copy-tight-medium-desktop
-weight: 600
+-- site-doc.component-doc: `sidenote`
+package-link: https://fastn-community.github.io/bling/sidenote/
+package-name: fastn-community.github.io/bling/sidenote
+info: `-- sidenote` can be used as part of any component inside your fastn web projects.
 
--- ftd.type copy-tight-bold-desktop:
-line-height.px: 20
-size.px: 16
-letter-spacing.fixed.px: 0
-weight: 700
+A "sidenote component" is a UI component used to display additional or
+supplementary information related to the main content within a user interface.
 
--- ftd.responsive-type copy-tight-bold:
-desktop: $copy-tight-bold-desktop
-mobile: $copy-tight-bold-desktop
+-- site-doc.header: How to use
 
--- bling.page: `sidenote` and it's Usage
-
-`-- sidenote` can be used as part of blog posts.
-
--- pd.package: `sidenote` and it's Usage
-name: fastn-community.github.io/bling
-
-`sidenote` is a new conversation experience via using `FTD` lang:
-
-To use `sidenote` on your web package, add below into `FASTN.ftd` file:
-
--- cb.code:
+-- cb.code: Add `bling` dependency into your FASTN.ftd
 lang: ftd
 
-\-- fastn.dependency: fastn-community.github.io/bling as bling
-\-- fastn.auto-import: bling/sidenote as sidenote
+\-- fastn.dependency: fastn-community.github.io/bling
 
--- tf.markdown:
-
-Once you add above lines into your web package, add `sidenote` into your `.ftd`
-files:
-
--- cb.code: Example code for `-- sidenote`
+-- cb.code: `-- sidenote`
 lang: ftd
 
-\-- sidenote.sidenote: 
+\-- import: fastn-community.github.io/bling/sidenote
+
+\-- sidenote.sidenote:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 nostrud exercitation ullamco laboris nisi ut
 
--- tf.h3: Output of above basic example:
+-- site-doc.header: Example
+
+-- site-doc.output:
+colors: $ftd.default-colors
+types: $ftd.default-types
 
 -- sidenote:
 
@@ -59,26 +41,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 nostrud exercitation ullamco laboris nisi ut
 
--- tf.h3: Advanced usage example:
+-- end: site-doc.output
 
--- cb.code: Advanced example code for `-- sidenote`
-lang: ftd
+-- site-doc.header: Properties:
 
-\-- sidenote.sidenote:
+Below are details of all properties of `sidenote` component.
 
-Lorem ipsum dolor sit ame, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud {bold: exercitation ullamco laboris nisi ut.}
+-- site-doc.component-property: `body`
+type: Body (`required`)
 
--- tf.h3: Output of above advanced example:
+It's used to add body content to read-more component.
 
--- sidenote: 
+-- end: site-doc.component-doc
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud {bold: exercitation ullamco laboris nisi ut.}
-
--- end: bling.page
+-- end: site-doc.doc-home
 
 
 
@@ -91,15 +67,13 @@ nostrud {bold: exercitation ullamco laboris nisi ut.}
 
 -- component sidenote:
 optional body body: 
-optional ftd.color bordercolor: $inherited.colors.border-strong
-optional ftd.color backgroundcolor: $inherited.colors.background.step-2
 
 -- ftd.column:
 padding-vertical.px: 16
 padding-horizontal.px: 32
-border-color: $sidenote.bordercolor
+border-color: $inherited.colors.border-strong
 border-width.px: 1
-background.solid: $sidenote.backgroundcolor
+background.solid: $inherited.colors.background.step-2
 border-radius.px: 8
 max-width.fixed.px: 800
 width: auto

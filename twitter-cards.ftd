@@ -1,32 +1,30 @@
--- import: fastn-community.github.io/bling/assets
--- import: fifthtry.github.io/package-doc/doc as pd
 
--- bling.page: `twitter-card` and it's Usage
+-- site-doc.doc-home: Documentation - Twitter Cards
+site-title: Bling
+show-tabs: false
 
-twitter-card component can be used as part of any component and are available in
-below formats:
+-- site-doc.component-doc: `twitter-cards`
+package-link: https://fastn-community.github.io/bling/twitter-cards/
+package-name: fastn-community.github.io/bling/twitter-cards
+info: `-- twitter-cards` can be used as part of any component inside your fastn web projects.
 
--- pd.package: `twitter-card`
-name: fastn-community.github.io/bling
+The twitter card includes a title, a brief description, a thumbnail image, and
+the Twitter handle of the account sharing the link. It provides a basic preview
+of the shared content on twitter.
 
-Create a single twitter-card card OR twitter cards list using your tweet data. 
+-- site-doc.header: How to use
 
--- cb.code:
+-- cb.code: Add `bling` dependency into your FASTN.ftd
 lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/bling
-\-- fastn.auto-import: bling/twitter-card
 
--- tf.markdown: 
+-- cb.code: `twitter-cards`
+lang: ftd
 
-Below is example of `twitter-card`.
+\-- import: fastn-community.github.io/bling/twitter-cards
 
-
--- cb.rendered:
-
--- cb.rendered.input:
-
-\-- $twitter-card.user amitu:
+\-- twitter-cards.user amitu:
 name: Amit Upadhyay
 screen_name: amitu
 location: Banglore
@@ -36,7 +34,7 @@ verified: true
 followers_count: 918
 profile_image_url: $assets.files.static.amitu.jpg
 
-\-- $twitter-card.card:
+\-- twitter-cards.card:
 user: $amitu
 created_at: 9:19 AM · Oct 29, 2020
 place: $amitu.location
@@ -44,14 +42,18 @@ reply_count: 1
 retweet_count: 9
 favorite_count: 1
 
-Just launched http://fifthtry.com homepage! Will give you some idea of
-what I quit Acko to build. If you are developer, engineering manager, 
-product manager, it’s relevant to you!
+Just launched http://fifthtry.com homepage! Will give you some idea of what I
+quit Acko to build. If you are developer, engineering manager, product manager,
+it’s relevant to you!
 
-Please reply or DM me with what you think about it, will be immensely
-helpful and appreciated.
+Please reply or DM me with what you think about it, will be immensely helpful
+and appreciated.
 
--- cb.rendered.output:
+-- site-doc.header: Example
+
+-- site-doc.output:
+colors: $ftd.default-colors
+types: $ftd.default-types
 
 -- card:
 user: $amitu
@@ -68,12 +70,109 @@ it’s relevant to you!
 Please reply or DM me with what you think about it, will be immensely helpful
 and appreciated.
 
--- end: cb.rendered.output
+-- end: site-doc.output
 
--- end: cb.rendered
+-- site-doc.header: Properties:
 
+Below are details of all properties of `tip` component.
 
--- end: bling.page
+-- site-doc.component-property: `user`
+type: Record (`required`)
+
+It's used to add user details to the `card` component.
+
+Below are properties of `user` record:
+
+-- cb.code:
+lang: ftd
+
+\-- tip.user amitu:
+name: Amit Upadhyay
+screen_name: amitu
+location: Banglore
+url: https://twitter.com/amitu
+description: AmitU is building fastn.com
+verified: true
+followers_count: 918
+profile_image_url: $assets.files.static.amitu.jpg
+
+-- site-doc.component-property: `name`
+type: Caption (`required`)
+
+It's used to add user name.
+
+-- site-doc.component-property: `screen_name`
+type: String (`required`)
+
+It's used to add user's twitter account screen_name.
+
+-- site-doc.component-property: `location`
+type: String (`required`)
+
+It's used to add tweet location, the location from which the tweet was twitted.
+
+-- site-doc.component-property: `url`
+type: String (`required`)
+
+It's used to add tweet link.
+
+-- site-doc.component-property: `description`
+type: String (`required`)
+
+It's used to add tweet description.
+
+-- site-doc.component-property: `verified`
+type: Boolean (`optional`, Default: `false`)
+
+Set `verified` property value as `true` if your twitter account is verified. 
+
+If you pass value as `true` then blue tick will be shown after user name in the
+card.
+
+-- site-doc.component-property: `followers_count`
+type: Integer (`required`)
+
+It's used to add twitter followers count as integer. 
+
+-- site-doc.component-property: `profile_image_url`
+type: ftd.image-src (`required`)
+
+It's used to add twitter account user profile image url/link. 
+
+-- site-doc.component-property: `text`
+type: Body (`required`)
+
+It's used to add body content to `card` component.
+
+-- site-doc.component-property: `created_at`
+type: String (`required`)
+
+It's used to add show tweet timestamp.
+
+-- site-doc.component-property: `place`
+type: String (`required`)
+
+It's used to add show tweet location, which is added in `tip.user` record in
+`location` property.
+
+-- site-doc.component-property: `reply_count`
+type: Integer (`required`)
+
+It's used to add tweet comments or reply count. 
+
+-- site-doc.component-property: `retweet_count`
+type: Integer (`required`)
+
+It's used to add retweet count.
+
+-- site-doc.component-property: `favorite_count`
+type: Integer (`required`)
+
+It's used to add tweet likes count.
+
+-- end: site-doc.component-doc
+
+-- end: site-doc.doc-home
 
 
 
@@ -251,7 +350,7 @@ string screen_name:
 string location:
 string url:
 string description:
-boolean verified: true
+boolean verified: false
 integer followers_count: 
 ftd.image-src profile_image_url:
 
