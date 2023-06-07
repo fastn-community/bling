@@ -1,113 +1,101 @@
--- import: fifthtry.github.io/package-doc/doc as pd
 
--- bling.page: `read-more` and it's Usage
+-- site-doc.doc-home: Documentation - Read More
+site-title: Bling
+show-tabs: false
 
-`-- read-more` can be used as part of blog posts, `fastn` pages, anywhere inside
-`fastn` web projects you wish.
+-- site-doc.component-doc: `read-more`
+package-link: https://fastn-community.github.io/bling/read-more/
+package-name: fastn-community.github.io/bling/read-more
+info: `-- read-more` can be used as part of any component inside your fastn web projects.
 
--- pd.package: `read-more` and it's Usage
-name: fastn-community.github.io/bling
+A "Read More" link is a user interface element commonly used in web content to
+provide a way for users to access additional or extended content beyond an
+initial excerpt or summary. It is typically used when the content is truncated
+to a certain length to save space or provide a preview, and users can click
+the "Read More" link to expand or view the full content.
 
-`read-more` is a new conversation experience with your users via using `fastn`
-lang:
+-- site-doc.header: How to use
 
-To use `read-more` on your web package, add below dependency into `FASTN.ftd`
-file:
-
--- cb.code:
+-- cb.code: Add `bling` dependency into your FASTN.ftd
 lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/bling
 
--- tf.markdown:
-
-Once you add above lines into your web package, import `read-more` into your
-`.ftd` files:
-
--- cb.code:
+-- cb.code: `-- read-more`
 lang: ftd
 
 \-- import: fastn-community.github.io/bling/read-more
 
--- cb.rendered: `default` position
-copy: true
-download: sample.ftd
-
--- cb.rendered.input:
-
-\-- read-more.read-more: Read more...
+\-- read-more.read-more: Read more: 
 link: read-more/
 
-some body or extra text
+Default position is `right`
 
--- cb.rendered.output:
+\-- read-more.read-more: Read more: 
+link: read-more/
+position: center
+
+Center position of `read-more`
+
+\-- read-more.read-more: Read more: 
+link: read-more/
+position: left
+
+Left position of `read-more`
+
+-- site-doc.header: Example
+
+-- site-doc.output:
+colors: $ftd.default-colors
+types: $ftd.default-types
 
 -- read-more: Read more: 
 link: read-more/
 
-some body or extra text
-
--- end: cb.rendered.output
-
--- end: cb.rendered
-
--- tf.h3: `position` attribute usage:
-
-`read-more` `position` attribute:
-
-- Default `position: right` align `read-more` to right of the component
-- `position: center` align `read-more` to center of the component
-- `position: start` align `read-more` to start of the component
-
--- cb.rendered: `center` position
-copy: true
-download: sample.ftd
-
--- cb.rendered.input:
-
-\-- read-more.read-more: Read more...
-link: read-more/
-position: center
-
-some body or extra text
-
--- cb.rendered.output:
+Default position is `right`
 
 -- read-more: Read more: 
 link: read-more/
 position: center
 
-some body or extra text
-
--- end: cb.rendered.output
-
--- end: cb.rendered
-
--- cb.rendered: `left` position
-copy: true
-download: sample.ftd
-
--- cb.rendered.input:
-
-\-- read-more.read-more: Read more...
-link: read-more/
-position: left
-
-some body or extra text
-
--- cb.rendered.output:
+Center position of `read-more`
 
 -- read-more: Read more: 
 link: read-more/
 position: left
 
-some body or extra text
+Left position of `read-more`
 
--- end: cb.rendered.output
+-- end: site-doc.output
 
--- end: cb.rendered
+-- site-doc.header: Properties:
 
--- end: bling.page
+Below are details of all properties of `read-more` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+It's used to add title which is clickable.
+
+-- site-doc.component-property: `body`
+type: Body (`optional`)
+
+It's used to add body content to read-more component.
+
+-- site-doc.component-property: `link`
+type: String (`required`)
+
+It's used to add link to read-more component.
+
+-- site-doc.component-property: `position`
+type: String (`optional`, default: `right`)
+
+It's used to move read-more component position. You can use `start`, `center` or
+`right` to change its position respectively.
+
+-- end: site-doc.component-doc
+
+-- end: site-doc.doc-home
 
 
 

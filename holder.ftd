@@ -1,136 +1,76 @@
--- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fastn-community.github.io/bling/collapse
 
--- bling.page: `holder` and it's Usage
+-- site-doc.doc-home: Documentation - Holder
+site-title: Bling
+show-tabs: false
 
-`-- holder` component is a `FTD` container. Here you can add any `ftd` component
-Or any `ftd` code. `-- holder` comes with different UI. Showing below a example
-of `triangular` container.
+-- site-doc.component-doc: `holder`
+package-link: https://fastn-community.github.io/bling/holder/
+package-name: fastn-community.github.io/bling/holder
+info: `-- holder` can be used as part of any component inside your fastn web projects.
 
--- pd.package: `holder`
-name: fastn-community.github.io/bling/holder
+The triangle bubble holder web component provides an attractive and
+attention-grabbing way to present quotes or important text within a web page.
+It enhances the visual appeal and readability of the content while providing a
+clear visual indication of the quoted content.
 
-`holder` is a new conversation experience via using `FTD` lang: 
+-- site-doc.header: How to use
 
-To use `holder` on your web package, add below into `FASTN.ftd` file:
+-- cb.code: Add `bling` dependency into your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+
+-- cb.code: `-- triangular`
+lang: ftd
+
+\-- import: fastn-community.github.io/bling/holder
+
+\-- holder.triangular: A Triangle Quote Component
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
+\-- cb.code:
+lang: java
+
+if (condition) {
+    // code block
+    statement1;
+    statement2;
+    // ...
+}
+
+\-- collapse.collapse: Lorem ipsum dolor
+info-right: Dolor sit amet
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
+\-- end: holder.triangular
+
+-- site-doc.header: Example
+
+-- triangular: A Triangle Quote Component
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- cb.code:
-lang: ftd
+lang: java
 
-\-- fastn.dependency: fastn-community.github.io/bling as bling
-\-- fastn.auto-import: bling/holder as holder
+if (condition) {
+    // code block
+    statement1;
+    statement2;
+    // ...
+}
 
--- tf.markdown:
-
-Once you add above lines into your web package, add `holder` into your `.ftd`
-files:
-
--- pd.hidden-code: `-- holder.triangular`
-
-\-- holder.triangular: This is your Title
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
-\-- end: holder.triangular
-
--- tf.h3: Output of above example:
-
--- triangular: This is your Title
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
--- pd.hidden-code: Multiple `-- holder.triangular` containers:
-
-\-- holder.triangular: 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
-\-- ft.code:
-lang: ftd
-
-\-- ftd.column holder:
-optional caption title:
-optional body body:
-width: auto
-width { ftd.device == "mobile" }: fill-container
-
-\-- ft.markdown:
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
-\-- holder.triangular: Lorem ipsum dolor
-make-odd: true <default: false - make true for middle container>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
-\-- ft.code:
-lang: ftd
-
-\-- ftd.column holder:
-optional caption title:
-optional body body:
-width: auto
-width { ftd.device == "mobile" }: fill-container
-
-\-- ft.markdown:
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
-\-- holder.triangular: 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
-\-- ft.code:
-lang: ftd
-
-\-- ftd.column holder:
-optional caption title:
-optional body body:
-width: auto
-width { ftd.device == "mobile" }: fill-container
-
-\-- ft.markdown:
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
-\-- end: holder.triangular
-
--- tf.h3: Output of above example:
-
--- triangular: 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
--- ft.code:
-lang: ftd
-
-\-- ftd.column holder:
-optional caption title:
-optional body body:
-width: auto
-width { ftd.device == "mobile" }: fill-container
-
--- ftd.text:
-color: $inherited.colors.text.dark
-role: $inherited.types.copy-regular
-width: fill-container
+-- collapse.collapse: Lorem ipsum dolor
+info-right: Dolor sit amet
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -138,57 +78,34 @@ nostrud exercitation ullamco laboris nisi ut
 
 -- end: triangular
 
--- triangular: Lorem ipsum dolor
-make-odd: true
+-- site-doc.header: Properties:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
+Below are details of all properties of `triangular` component.
 
--- ft.code:
-lang: ftd
+-- site-doc.component-property: `title`
+type: Caption (`optional`)
 
-\-- ftd.column holder:
-optional caption title:
-optional body body:
-width: auto
-width { ftd.device == "mobile" }: fill-container
+It's used to title to the `triangular` component.
 
--- ft.markdown:
+-- site-doc.component-property: `body`
+type: Body (`optional`)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
+It's used to add body content to `triangular` component.
 
--- end: triangular
+-- site-doc.component-property: `make-odd`
+type: Boolean (`optional`, default: `false`)
 
--- triangular: 
+If you want to show multiple `triangular` component one after another add
+`make-odd` property value to `true` which will remove background colors and all
+`triangular` component with `make-odd` will be seen as a part of every
+triangular component. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
+Try adding multiple `triangular` components one after another and add this
+property value as `true` to odd positioned `triangular` component.
 
--- ft.code:
-lang: ftd
+-- end: site-doc.component-doc
 
-\-- ftd.column holder:
-optional caption title:
-optional body body:
-width: auto
-width { ftd.device == "mobile" }: fill-container
-
--- ftd.text:
-color: $inherited.colors.text.dark
-role: $inherited.types.copy-regular
-width: fill-container
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
--- end: triangular
-
--- end: bling.page
+-- end: site-doc.doc-home
 
 
 
