@@ -1,0 +1,172 @@
+-- site-doc.doc-home: Documentation - Collapse
+site-title: Bling
+show-tabs: false
+
+-- site-doc.component-doc: `collapse`
+package-link: https://fastn-community.github.io/bling/collapse/
+package-name: fastn-community.github.io/bling/collapse
+info: `-- collapse` can be used as part of any component inside your fastn web projects.
+
+The collapse component typically consists of a header and a collapsible body.
+The header serves as a clickable element, such as a button or a title, that
+triggers the collapse functionality. 
+
+-- site-doc.header: How to use
+
+-- cb.code: Add `bling` dependency into your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+
+-- cb.code: `-- collapse`
+lang: ftd
+
+\-- import: fastn-community.github.io/bling/collapse
+
+\-- collapse.collapse: Lorem ipsum dolor
+info-right: Some info at right side
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
+
+-- site-doc.header: Example
+
+-- site-doc.output:
+colors: $ftd.default-colors
+types: $ftd.default-types
+
+-- collapse: Lorem ipsum dolor
+info-right: Dolor sit amet
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
+-- end: site-doc.output
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `collapse` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+It's used to add title which is clickable.
+
+-- site-doc.component-property: `info-right`
+type: String (`optional`)
+
+It's used to show some info/text to the right corner of the title of collapse.
+
+-- site-doc.component-property: `is-open`
+type: Boolean (`optional`, default: `false`)
+
+It's used to show body content of collapse, default value is `false` if you set
+it to `true` then body content will be visible.
+
+-- site-doc.component-property: `body`
+type: Body (`optional`)
+
+It's used to add body content to collapse component.
+
+-- end: site-doc.component-doc
+
+-- end: site-doc.doc-home
+
+
+
+
+
+
+
+
+
+
+-- component collapse:
+caption title:
+optional string info-right:
+boolean $is-open: false
+optional body body:
+children container:
+
+-- ftd.column:
+width: fill-container
+width if { $collapse.info-right != NULL }: fill-container
+margin-bottom.px: 20
+color: $inherited.colors.text
+border-color: $inherited.colors.border
+border-width.px: 1
+border-radius.px: 6
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 8
+$on-click$: $ftd.toggle($a = $collapse.is-open)
+padding.px: 8
+
+-- ftd.row:
+width: fill-container
+align-self: start
+
+-- ftd.image:
+if: { !collapse.is-open }
+src: $assets.files.static.right-arrow.svg
+align-self: center
+width.fixed.px: 12
+margin-right.px: 16
+
+-- ftd.image:
+if: { collapse.is-open }
+src: $assets.files.static.down-arrow.svg
+align-self: center
+width.fixed.px: 12
+margin-right.px: 16
+
+-- ftd.text: $collapse.title
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+width: hug-content
+align-self: end
+
+-- ftd.text: $collapse.info-right
+if: { $collapse.info-right != NULL }
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+white-space: nowrap
+align-self: end
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+if: { $collapse.is-open }
+border-top-width.px: 1
+border-color: $inherited.colors.border
+padding.px: 12
+border-bottom-left-radius.px: 6
+border-bottom-right-radius.px: 6
+
+-- ftd.text: $collapse.body
+if: { $collapse.body != NULL }
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.column:
+children: $collapse.container
+width: fill-container
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: collapse

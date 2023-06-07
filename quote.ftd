@@ -1,68 +1,112 @@
--- import: fastn-community.github.io/bling/assets
--- import: fifthtry.github.io/package-doc/doc as pd
 
--- ftd.responsive-type copy-relaxed: 
-desktop: $copy-relax
-mobile: $copy-relax
-weight: 700
+-- site-doc.doc-home: Documentation - Quotes
+site-title: Bling
+show-tabs: false
 
--- ftd.type heading-40-bold-desktop:
-line-height.fixed.px: 48
-size.px: 40
-letter-spacing.fixed.px: 0
+-- site-doc.component-doc: `quote`
+package-link: https://fastn-community.github.io/bling/quote/
+package-name: fastn-community.github.io/bling/quote
+info: `-- quote` can be used as part of any component inside your fastn web projects.
 
--- ftd.responsive-type heading-40-bold:
-desktop: $heading-40-bold-desktop
-mobile: $heading-40-bold-desktop
-weight: 700
+The quote component is to draw attention to a specific statement, passage, or
+text by presenting it in a visually distinct and often stylized manner. The
+quote component includes the actual text of the quote or excerpt.
 
--- ftd.type heading-small-bold-desktop:
-line-height.fixed.px: 36
-size.px: 24
-letter-spacing.fixed.px: 0
+The quote component also includes information about the source or author of the
+quote.
 
--- ftd.type heading-small-bold: 
-desktop: $heading-small-bold-desktop
-mobile: $heading-small-bold-desktop
-xl: $heading-small-bold-desktop
-weight: 700
+-- site-doc.header: How to use
 
--- ftd.responsive-type fine-print-bold: $inherited.types.fine-print.font
-desktop: $inherited.types.fine-print.desktop
-mobile: $inherited.types.fine-print.mobile
-weight: 700
-
--- ftd.color image-color:
-light: rgba(192,192,192,0.3)
-dark: rgba(192,192,192,0.3)
-
--- bling.page: `quote` and it's Usage
-
-`-- quote` can be used as part of blog posts to highlight a quote from blogger
-OR highlighting important notes on documentation etc.
-
--- pd.package: `quote`
-name: fastn-community.github.io/bling
-
-To use these quotes on your web package add below into `FASTN.ftd` file:
-
--- cb.code:
+-- cb.code: Add `bling` dependency into your FASTN.ftd
 lang: ftd
 
-\-- fastn.dependency: fastn-community.github.io/bling as bling
-\-- fastn.auto-import: bling/quote as quote
+\-- fastn.dependency: fastn-community.github.io/bling
 
--- tf.markdown:
-
-Once you add above lines into your web package, add `quote` into your `.ftd`
-files:
-
--- tf.h2: List of quotes we designed for you:
-
--- tf.h3: 1: `-- charcoal`
-
--- cb.code: Example code for `-- charcoal`
+-- cb.code: Impot `quote` inside your `ftd` file
 lang: ftd
+
+\-- import: fastn-community.github.io/bling/quote
+
+
+-- site-doc.header: Examples
+
+As shown above, once you import `quote` inside your `ftd` file, add below
+component(s) inside it. 
+
+There are total 18 example quote components, you can use as per your design
+need.
+
+-- site-doc.output: 
+colors: $ftd.default-colors
+types: $ftd.default-types
+
+-- cb.rendered: Example 1: `-- quote.antique`
+
+-- cb.rendered.input:
+
+\-- quote.antique: Socrates
+
+"Strong minds discuss ideas, average minds."
+
+-- cb.rendered.output:
+
+-- ftd.column:
+id: antique
+-- end: ftd.column
+
+-- antique: Socrates
+
+"Strong minds discuss ideas, average minds."
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- cb.rendered: Example 2: `-- quote.bubble`
+
+-- cb.rendered.input:
+
+\-- quote.bubble: Socrates
+
+"To find yourself, think for yourself."
+
+-- cb.rendered.output:
+
+-- ftd.column:
+id: bubble
+-- end: ftd.column
+
+-- bubble: Socrates
+
+"To find yourself, think for yourself."
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- cb.rendered: Example 3: `-- quote.chalice`
+
+-- cb.rendered.input:
+
+\-- quote.chalice: Nelson Mandela
+
+The greatest glory in living lies not in never falling, but in rising every time
+we fall.
+
+-- cb.rendered.output:
+
+-- chalice: Nelson Mandela
+
+The greatest glory in living lies not in never falling, but in rising every time
+we fall.
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered 
+
+-- cb.rendered: Example 4: `-- quote.charcoal`
+
+-- cb.rendered.input:
 
 \-- quote.charcoal: Amit Upadhyay
 label: CEO
@@ -72,9 +116,11 @@ logo: $assets.files.static.fifthtry.svg
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua..
 
--- tf.markdown: 
+-- cb.rendered.output:
 
-Output of above:
+-- ftd.column:
+id: charcoal
+-- end: ftd.column
 
 -- charcoal: Amit Upadhyay
 label: CEO
@@ -84,179 +130,57 @@ logo: $assets.files.static.fifthtry.svg
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua..
 
--- tf.h3: 2: `-- marengo`
+-- end: cb.rendered.output
 
--- cb.code: Example code for `-- marengo`
-lang: ftd
+-- end: cb.rendered 
 
-\-- quote.marengo: Steve Jobs
+-- cb.rendered: Example 5: `-- quote.chrome`
 
-Your time is limited, so don't waste it living someone else's life. Don't be
-trapped by dogma – which is living with the results of other people's
-thinking.
+-- cb.rendered.input:
 
--- tf.markdown: 
+\-- quote.chrome: Swami Vivekananda
 
-Output of above:
+"Take up one idea. Make that one idea your life; dream of it; think of it; live
+ on that idea. Let the brain, the body, muscles, nerves, every part of your
+ body be full of that idea, and just leave every other idea alone. This is the
+ way to success, and this is the way great spiritual giants are produced."
 
--- marengo: Steve Jobs
+-- cb.rendered.output:
 
-Your time is limited, so don't waste it living someone else's life. Don't be
-trapped by dogma – which is living with the results of other people's
-thinking.
+-- chrome: Swami Vivekananda
 
--- tf.h3: 3: `-- marengo-hug`
+"Take up one idea. Make that one idea your life; dream of it; think of it; live
+ on that idea. Let the brain, the body, muscles, nerves, every part of your
+ body be full of that idea, and just leave every other idea alone. This is the
+ way to success, and this is the way great spiritual giants are produced."
 
--- cb.code: Example code for `-- marengo-hug`
-lang: ftd
+-- end: cb.rendered.output
 
-\-- quote.marengo-hug: Oprah Winfrey
+-- end: cb.rendered 
 
-If you look at what you have in life, you'll always have more. If you look at
-what you don't have in life, you'll never have enough.
+-- cb.rendered: Example 6: `-- quote.dorian`
 
--- tf.markdown: 
+-- cb.rendered.input:
 
-Output of above:
+\-- quote.dorian: Swami Vivekananda
 
--- marengo-hug: Oprah Winfrey
+“You have to grow from the inside out. None can teach you, none can make you
+ spiritual. There is no other teacher but your own soul.”
 
-If you look at what you have in life, you'll always have more. If you look at
-what you don't have in life, you'll never have enough.
+-- cb.rendered.output:
 
--- tf.h3: 4: `-- scorpion`
+-- dorian: Swami Vivekananda
 
--- cb.code: Example code for `-- scorpion`
-lang: ftd
+“You have to grow from the inside out. None can teach you, none can make you
+ spiritual. There is no other teacher but your own soul.”
 
-\-- quote.scorpion: Eleanor Roosevelt
-label: U.S.A.
+-- end: cb.rendered.output
 
-"The future belongs to those who believe in the beauty of their dreams."
+-- end: cb.rendered 
 
--- tf.markdown: 
+-- cb.rendered: Example 7: `-- quote.echo`
 
-Output of above:
-
--- scorpion: Eleanor Roosevelt
-label: U.S.A.
-
-"The future belongs to those who believe in the beauty of their dreams."
-
--- tf.h3: 5: `-- chalice`
-
--- cb.code: Example code for `-- chalice`
-lang: ftd
-
-\-- quote.chalice: Nelson Mandela
-
-The greatest glory in living lies not in never falling, but in rising every time
-we fall. 
-
--- tf.markdown: 
-
-Output of above:
-
--- chalice: Nelson Mandela
-
-The greatest glory in living lies not in never falling, but in rising every time
-we fall. 
-
--- tf.h3: 6: `-- onyx`
-
--- cb.code: Example code for `-- onyx`
-lang: ftd
-
-\-- quote.onyx: Barack Obama
-
-The real test is not whether you avoid this failure, because you won't. It's
-whether you let it harden or shame you into inaction, or whether you learn from
-it; whether you choose to persevere.
-
--- tf.markdown: 
-
-Output of above:
-
--- onyx: Barack Obama
-
-The real test is not whether you avoid this failure, because you won't. It's
-whether you let it harden or shame you into inaction, or whether you learn from
-it; whether you choose to persevere.
-
--- tf.h3: 7: `-- silver`
-
--- cb.code: Example code for `-- silver`
-lang: ftd
-
-\-- quote.silver: Helen Keller
-
-Life is either a daring adventure or nothing at all.
-
--- tf.markdown: 
-
-Output of above:
-
--- silver: Helen Keller
-
-Life is either a daring adventure or nothing at all.
-
--- tf.h3: 8: `-- storm-cloud`
-
--- cb.code: Example code for `-- storm-cloud`
-lang: ftd
-
-\-- quote.storm-cloud: M.K. Gandhi
-
-"A man is but a product of his thoughts. What he thinks he becomes."
-
--- tf.markdown: 
-
-Output of above:
-
--- storm-cloud: M.K. Gandhi
-
-"A man is but a product of his thoughts. What he thinks he becomes."
-
--- tf.h3: 9: `-- vampire`
-
--- cb.code: Example code for `-- vampire`
-lang: ftd
-
-\-- quote.vampire: Thomas Jefferson
-
-"I find that the harder I work, the more luck I seem to have."
-
--- tf.markdown: 
-
-Output of above:
-
--- vampire: Thomas Jefferson
-
-"I find that the harder I work, the more luck I seem to have."
-
--- tf.h3: 10: `-- rustic`
-
--- cb.code: Example code for `-- rustic`
-lang: ftd
-
-\-- quote.rustic: Dr. APJ Abdul Kalam
-
-"All of us do not have equal talent. But, all of us have an equal opportunity to
-develop our talents."
-
--- tf.markdown: 
-
-Output of above:
-
--- rustic: Dr. APJ Abdul Kalam
-
-"All of us do not have equal talent. But, all of us have an equal opportunity to
-develop our talents."
-
--- tf.h3: 11: `-- echo`
-
--- cb.code: Example code for `-- echo`
-lang: ftd
+-- cb.rendered.input:
 
 \-- quote.echo: Swami Vivekananda
 
@@ -265,9 +189,7 @@ lang: ftd
  body be full of that idea, and just leave every other idea alone. This is the
  way to success, and this is the way great spiritual giants are produced."
 
--- tf.markdown: 
-
-Output of above:
+-- cb.rendered.output:
 
 -- echo: Swami Vivekananda
 
@@ -276,86 +198,13 @@ Output of above:
  body be full of that idea, and just leave every other idea alone. This is the
  way to success, and this is the way great spiritual giants are produced."
 
--- tf.h3: 12: `-- window`
+-- end: cb.rendered.output
 
--- cb.code: Example code for `-- window`
-lang: ftd
+-- end: cb.rendered 
 
-\-- quote.window: Mark Zuckerberg
+-- cb.rendered: Example 8: `-- quote.electric`
 
-"If you just work on stuff that you like and you're passionate about, you don't
- have to have a master plan with how things will play out."
-
--- tf.markdown: 
-
-Output of above:
-
--- window: Mark Zuckerberg
-
-"If you just work on stuff that you like and you're passionate about, you don't
- have to have a master plan with how things will play out."
-
--- tf.h3: 13: `-- matte`
-
--- cb.code: Example code for `-- matte`
-lang: ftd
-
-\-- quote.matte: Swami Vivekananda
-
-"Take up one idea. Make that one idea your life; dream of it; think of it; live
- on that idea. Let the brain, the body, muscles, nerves, every part of your
- body be full of that idea, and just leave every other idea alone. This is the
- way to success, and this is the way great spiritual giants are produced."
-
--- tf.markdown: 
-
-Output of above:
-
--- matte: Swami Vivekananda
-
-"Take up one idea. Make that one idea your life; dream of it; think of it; live
- on that idea. Let the brain, the body, muscles, nerves, every part of your
- body be full of that idea, and just leave every other idea alone. This is the
- way to success, and this is the way great spiritual giants are produced."
-
--- tf.h3: 14: `-- antique`
-
--- cb.code: Example code for `-- antique`
-lang: ftd
-
-\-- quote.antique: Socrates
-
-"Strong minds discuss ideas, average minds."
-
--- tf.markdown: 
-
-Output of above:
-
--- antique: Socrates
-
-"Strong minds discuss ideas, average minds."
-
--- tf.h3: 15: `-- bubble`
-
--- cb.code: Example code for `-- bubble`
-lang: ftd
-
-\-- quote.bubble: Socrates
-
-"To find yourself, think for yourself."
-
--- tf.markdown: 
-
-Output of above:
-
--- bubble: Socrates
-
-"To find yourself, think for yourself."
-
--- tf.h3: 16: `-- electric`
-
--- cb.code: Example code for `-- electric`
-lang: ftd
+-- cb.rendered.input:
 
 \-- quote.electric: Socrates
 
@@ -365,9 +214,11 @@ lang: ftd
  free of change. Free of pain, free of the obligations of life and death. But
  change is law and no amount of pretending will alter that reality.”
 
--- tf.markdown: 
+-- cb.rendered.output:
 
-Output of above:
+-- ftd.column:
+id: electric
+-- end: ftd.column
 
 -- electric: Socrates
 
@@ -377,72 +228,262 @@ Output of above:
  free of change. Free of pain, free of the obligations of life and death. But
  change is law and no amount of pretending will alter that reality.”
 
--- tf.h3: 17: `-- chrome`
+-- end: cb.rendered.output
 
--- cb.code: Example code for `-- chrome`
-lang: ftd
+-- end: cb.rendered
 
-\-- quote.chrome: Swami Vivekananda
+-- cb.rendered: Example 9: `-- quote.marengo`
+
+-- cb.rendered.input:
+
+\-- quote.marengo: Steve Jobs
+
+Your time is limited, so don't waste it living someone else's life. Don't be
+trapped by dogma – which is living with the results of other people's
+thinking.
+
+-- cb.rendered.output:
+
+-- marengo: Steve Jobs
+
+Your time is limited, so don't waste it living someone else's life. Don't be
+trapped by dogma – which is living with the results of other people's
+thinking.
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered 
+
+-- cb.rendered: Example 10: `-- quote.marengo-hug`
+
+-- cb.rendered.input:
+
+\-- quote.marengo-hug: Oprah Winfrey
+
+If you look at what you have in life, you'll always have more. If you look at
+what you don't have in life, you'll never have enough.
+
+-- cb.rendered.output:
+
+-- marengo-hug: Oprah Winfrey
+
+If you look at what you have in life, you'll always have more. If you look at
+what you don't have in life, you'll never have enough.
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered 
+
+-- cb.rendered: Example 11: `-- quote.matte`
+
+-- cb.rendered.input:
+
+\-- quote.matte: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; think of it; live
  on that idea. Let the brain, the body, muscles, nerves, every part of your
  body be full of that idea, and just leave every other idea alone. This is the
  way to success, and this is the way great spiritual giants are produced."
 
--- tf.markdown: 
+-- cb.rendered.output:
 
-Output of above:
-
--- chrome: Swami Vivekananda
+-- matte: Swami Vivekananda
 
 "Take up one idea. Make that one idea your life; dream of it; think of it; live
  on that idea. Let the brain, the body, muscles, nerves, every part of your
  body be full of that idea, and just leave every other idea alone. This is the
  way to success, and this is the way great spiritual giants are produced."
 
--- tf.h3: 18: `-- dorian`
+-- end: cb.rendered.output
 
--- cb.code: Example code for `-- dorian`
-lang: ftd
+-- end: cb.rendered 
 
-\-- quote.dorian: Swami Vivekananda
+-- cb.rendered: Example 12: `-- quote.onyx`
 
-“You have to grow from the inside out. None can teach you, none can make you
- spiritual. There is no other teacher but your own soul.”
+-- cb.rendered.input:
 
--- tf.markdown: 
+\-- quote.onyx: Barack Obama
 
-Output of above:
+The real test is not whether you avoid this failure, because you won't. It's
+whether you let it harden or shame you into inaction, or whether you learn from
+it; whether you choose to persevere.
 
--- dorian: Swami Vivekananda
+-- cb.rendered.output:
 
-“You have to grow from the inside out. None can teach you, none can make you
- spiritual. There is no other teacher but your own soul.”
+-- onyx: Barack Obama
 
-/-- tf.h3: 19: `-- octa`
+The real test is not whether you avoid this failure, because you won't. It's
+whether you let it harden or shame you into inaction, or whether you learn from
+it; whether you choose to persevere.
 
-/-- cb.code: Example code for `-- octa`
-lang: ftd
+-- end: cb.rendered.output
 
-\-- quote.octa: Swami Vivekananda
+-- end: cb.rendered 
 
-“Take up one idea. Make that one idea your life; dream of it; think of it; live
- on that idea. Let the brain, the body, muscles, nerves, every part of your
- body be full of that idea, and just leave every other idea alone. This is the
- way to success, and this is the way great spiritual giants are produced.”
+-- cb.rendered: Example 13: `-- quote.rustic`
 
-/-- tf.markdown: 
+-- cb.rendered.input:
 
-Output of above:
+\-- quote.rustic: Dr. APJ Abdul Kalam
 
-/-- octa: Swami Vivekananda
+"All of us do not have equal talent. But, all of us have an equal opportunity to
+develop our talents."
 
-“Take up one idea. Make that one idea your life; dream of it; think of it; live
- on that idea. Let the brain, the body, muscles, nerves, every part of your
- body be full of that idea, and just leave every other idea alone. This is the
- way to success, and this is the way great spiritual giants are produced.”
+-- cb.rendered.output:
 
--- end: bling.page
+-- rustic: Dr. APJ Abdul Kalam
+
+"All of us do not have equal talent. But, all of us have an equal opportunity to
+develop our talents."
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered 
+
+-- cb.rendered: Example 14: `-- quote.scorpion`
+
+-- cb.rendered.input:
+
+\-- quote.scorpion: Eleanor Roosevelt
+label: U.S.A.
+
+"The future belongs to those who believe in the beauty of their dreams."
+
+-- cb.rendered.output:
+
+-- ftd.column:
+id: scorpion
+-- end: ftd.column
+
+-- scorpion: Eleanor Roosevelt
+label: U.S.A.
+
+"The future belongs to those who believe in the beauty of their dreams."
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered 
+
+-- cb.rendered: Example 15: `-- quote.silver`
+
+-- cb.rendered.input:
+
+\-- quote.silver: Helen Keller
+
+Life is either a daring adventure or nothing at all.
+
+-- cb.rendered.output:
+
+-- silver: Helen Keller
+
+Life is either a daring adventure or nothing at all.
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered 
+
+-- cb.rendered: Example 16: `-- quote.storm-cloud`
+
+-- cb.rendered.input:
+
+\-- quote.storm-cloud: M.K. Gandhi
+
+"A man is but a product of his thoughts. What he thinks he becomes."
+
+-- cb.rendered.output:
+
+-- storm-cloud: M.K. Gandhi
+
+"A man is but a product of his thoughts. What he thinks he becomes."
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered 
+
+-- cb.rendered: Example 17: `-- quote.vampire`
+
+-- cb.rendered.input:
+
+\-- quote.vampire: Thomas Jefferson
+
+"I find that the harder I work, the more luck I seem to have."
+
+-- cb.rendered.output:
+
+-- vampire: Thomas Jefferson
+
+"I find that the harder I work, the more luck I seem to have."
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered 
+
+-- cb.rendered: Example 18: `-- quote.window`
+
+-- cb.rendered.input:
+
+\-- quote.window: Mark Zuckerberg
+
+"If you just work on stuff that you like and you're passionate about, you don't
+ have to have a master plan with how things will play out."
+
+-- cb.rendered.output:
+
+-- window: Mark Zuckerberg
+
+"If you just work on stuff that you like and you're passionate about, you don't
+ have to have a master plan with how things will play out."
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered 
+
+-- end: site-doc.output
+
+-- site-doc.header: Common Properties:
+
+Below are details of all common properties of quote components.
+
+-- site-doc.component-property: `title`
+type: Caption (`optional`)
+
+It's used to add title to all quote components shown in above examples.
+
+-- site-doc.component-property: `body`
+type: Body (`required`)
+
+It's used to add body content to all quote components shown in above examples.
+
+-- site-doc.header: Additional Properties:
+
+Below are details of additional properties of quote components.
+
+-- site-doc.component-property: `avatar`
+type: ftd.image-src (`optional`)
+
+It's used to add image in below quote components.
+
+[charcoal](quote/#charcoal), [antique](quote/#antique), [bubble](quote/#bubble),
+[electric](quote/#electric)
+
+-- site-doc.component-property: `label`
+type: String (`optional`)
+
+It's used to add author profile/designation details inside below quote
+components.
+
+[charcoal](quote/#charcoal) and [scorpion](quote/#scorpion)
+
+-- site-doc.component-property: `logo`
+type: ftd.image-src (`optional`)
+
+It's used to add author company logo inside below quote components.
+
+[charcoal](quote/#charcoal)
+
+-- end: site-doc.component-doc
+
+-- end: site-doc.doc-home
 
 
 
@@ -721,12 +762,20 @@ background.solid: $quote-1-desktop.backgroundcolor
 margin-top.px: 20
 margin-bottom.px: 24
 max-width.fixed.px: 1056
+border-top-left-radius.px: 20
+border-bottom-right-radius.px: 20
 
 -- ftd.row:
 width: fill-container
 border-left-width.px: 4
 padding-left.px: 40
-border-color: $inherited.colors.border
+padding-top.px: 24
+padding-bottom.px: 24
+padding-right.px: 24
+border-color: $inherited.colors.cta-secondary.border
+border-top-left-radius.px: 20
+border-bottom-right-radius.px: 20
+
 
 -- ftd.column:
 width: fill-container
@@ -734,7 +783,7 @@ width: fill-container
 -- ftd.text: 
 text: $quote-1-desktop.body
 color: $inherited.colors.text
-role: $inherited.types.copy-large
+role: $inherited.types.copy-regular
 
 -- ftd.row:
 align-self: end
@@ -774,26 +823,36 @@ white-space: nowrap
 -- component quote-1-mobile:
 optional caption title:
 body body:
-ftd.color backgroundcolor:
+ftd.color backgroundcolor: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
 background.solid: $quote-1-mobile.backgroundcolor
 max-width.fixed.px: 1056
+border-bottom-right-radius.px: 20
+border-top-left-radius.px: 20
+
 
 -- ftd.row:
 width: fill-container
 border-left-width.px: 4
-padding-left.px: 32
+padding-left.px: 24
+padding-top.px: 16
+padding-right.px: 16
+padding-bottom.px: 16
 border-color: $inherited.colors.border
+border-bottom-right-radius.px: 20
+border-top-left-radius.px: 20
 
 -- ftd.column:
 width: fill-container
+spacing.fixed.px: 24
 
 -- ftd.text: 
-text: $quote-1-mobile.body
 color: $inherited.colors.text
 role: $inherited.types.copy-small
+
+$quote-1-mobile.body
 
 -- ftd.row:
 align-self: end
@@ -879,19 +938,27 @@ background.solid: $quote-2-desktop.backgroundcolor
 margin-top.px: 20
 margin-bottom.px: 24
 max-width.fixed.px: 2056
+border-top-right-radius.px: 20
+border-bottom-left-radius.px: 20
 
 -- ftd.row:
 width: fill-container
-border-left-width.px: 4
+border-right-width.px: 4
 padding-left.px: 40
-border-color: $inherited.colors.border
+padding-top.px: 24
+padding-bottom.px: 24
+padding-right.px: 24
+border-color: $inherited.colors.cta-primary.border
+border-top-right-radius.px: 20
+border-bottom-left-radius.px: 20
 
 -- ftd.column:
 width: fill-container
+spacing.fixed.px: 24
 
 -- ftd.text: 
 color: $inherited.colors.text
-role: $inherited.types.copy-large
+role: $inherited.types.copy-regular
 style: italic
 text-align: end
 
@@ -900,7 +967,6 @@ $quote-2-desktop.body
 -- ftd.row:
 align-self: end
 spacing.fixed.px: 8
-margin-top.px: 16
 
 -- ftd.text: ~
 align-self: center
@@ -942,15 +1008,23 @@ ftd.color backgroundcolor:
 width: fill-container
 background.solid: $quote-2-mobile.backgroundcolor
 max-width.fixed.px: 2056
+border-top-right-radius.px: 20
+border-bottom-left-radius.px: 20
 
 -- ftd.row:
 width: fill-container
-border-left-width.px: 4
-padding-left.px: 32
+border-right-width.px: 4
+padding-left.px: 24
+padding-top.px: 16
+padding-bottom.px: 16
+padding-right.px: 16
 border-color: $inherited.colors.border
+border-top-right-radius.px: 20
+border-bottom-left-radius.px: 20
 
 -- ftd.column:
 width: fill-container
+spacing.fixed.px: 24
 
 -- ftd.text:
 color: $inherited.colors.text
@@ -963,7 +1037,6 @@ $quote-2-mobile.body
 -- ftd.row:
 align-self: end
 spacing.fixed.px: 8
-margin-top.px: 16
 
 -- ftd.text: ~
 color: $inherited.colors.text
@@ -1090,11 +1163,11 @@ margin-right.px: 24
 -- ftd.row:
 anchor: parent
 width.fixed.px: 50
-border-width.px: 4
-border-color: $inherited.colors.background.base
+height.fixed.px: 3
 left.px: 50
-bottom.px: -4
+bottom.px: -3
 z-index: 200
+background.solid: $inherited.colors.background.base
 
 -- end: ftd.row
 
@@ -1261,50 +1334,44 @@ text-align: center
 -- component onyx:
 optional caption title:
 body body:
-ftd.color backgroundcolor: $inherited.colors.background.step-1
-ftd.color color: $inherited.colors.text
 optional ftd.image-src quote-logo: $assets.files.static.left-quote-circle.png
 
 -- ftd.row:
-background.solid: $onyx.backgroundcolor
-padding-vertical.px: 24
+background.solid: $inherited.colors.background.step-1
+padding-vertical.px: 16
 border-left-width.px: 5
-padding-right.px: 32
+padding-right.px: 16
 border-color: $inherited.colors.text
-spacing.fixed.px: 32
-margin-top.px: 24
-margin-bottom.px: 24
+spacing.fixed.px: 16
+margin-top.px: 16
+margin-bottom.px: 16
 width: fill-container
+color: $inherited.colors.text
 
 -- ftd.image:
 src: $onyx.quote-logo
 width: auto
 height.fixed.px: 32
-padding-left.px: 25
+padding-left.px: 16
 
 -- ftd.column:
 width: fill-container
 align-self: center
-padding-top.px: 12
 spacing.fixed.px: 12
 
 -- ftd.text:
 role: $inherited.types.copy-regular
-color: $onyx.color
 
 $onyx.body
 
 -- ftd.row:
-padding-left.px: 12
 
 -- ftd.text: ~
-role: $inherited.types.copy-regular
-color: $inherited.colors.background.step-2
+role: $inherited.types.copy-small
 margin-right.px: 8
 
 -- ftd.text: $onyx.title
-role: $inherited.types.copy-regular
-color: $inherited.colors.background.step-2
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -1401,14 +1468,23 @@ padding-vertical.px: 32
 max-height.fixed.px: 400
 
 -- ftd.text: 
-text: $quote-6-desktop.body
-role: $inherited.types.heading-small
+role: $inherited.types.copy-large
 color: $inherited.colors.text
 
+$quote-6-desktop.body
+
+-- ftd.row:
+align-self: center
+spacing.fixed.px: 8
+
+-- ftd.text: ~
+role: $inherited.types.copy-regular
+
 -- ftd.text: $quote-6-desktop.title
-role: $inherited.types.heading-small
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
-padding-top.px: 20
+
+-- end: ftd.row
 
 -- ftd.image:
 anchor: parent
@@ -1514,7 +1590,7 @@ optional caption title:
 body body:
 
 -- ftd.column:
-border-width.px: 16
+border-width.px: 12
 border-color: $inherited.colors.border
 padding-vertical.px: 16
 padding-horizontal.px: 16
@@ -1523,13 +1599,14 @@ max-width.fixed.px: 320
 margin-top.px: 24
 margin-bottom.px: 24
 align-self: center
+border-bottom-right-radius.px: 54
+color: $inherited.colors.text
 
 -- ftd.column:
 z-index: 300
 
 -- ftd.text:
-role: $inherited.types.copy-large
-color: $inherited.colors.text
+role: $inherited.types.copy-regular
 margin-top.px: 16
 margin-bottom.px: 16
 text-align: center
@@ -1542,27 +1619,15 @@ padding-left.px: 12
 align-self: end
 
 -- ftd.text: ~
-role: $inherited.types.fine-print
-color: $inherited.colors.text
+role: $inherited.types.copy-small
 margin-right.px: 8
 
 -- ftd.text: $storm-cloud.title
-role: $inherited.types.fine-print
-color: $inherited.colors.text
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
 -- end: ftd.column
-
--- ftd.row:
-anchor: parent
-background.solid: $inherited.colors.background.base
-left.px: 32
-right.px: 32
-top.px: -16
-bottom.px: -16
-
--- end: ftd.row
 
 -- end: ftd.column
 
@@ -1590,6 +1655,7 @@ min-width.fixed.percent: 50
 margin-top.px: 24
 margin-bottom.px: 24
 align-self: center
+color: $inherited.colors.text
 
 -- ftd.image:
 src: $vampire.left-logo
@@ -1604,8 +1670,7 @@ width: fill-container
 min-height.fixed.px: 84
 
 -- ftd.text:
-color: $inherited.colors.text-strong
-role: $inherited.types.copy-small
+role: $inherited.types.copy-regular
 padding-horizontal.px: 32
 margin-top.px: 16
 margin-bottom.px: 16
@@ -1618,8 +1683,7 @@ $vampire.body
 
 -- ftd.text: $vampire.title
 align-self: end
-role: $inherited.types.fine-print
-color: $inherited.colors.text
+role: $inherited.types.copy-small
 padding-horizontal.px: 16
 
 -- end: ftd.column
@@ -1724,8 +1788,8 @@ max-width.fixed.px: 960
 
 -- ftd.row:
 width: fill-container
-border-left-width.px: 10
-padding-left.px: 40
+border-left-width.px: 8
+padding-left.px: 52
 border-color: $inherited.colors.border
 
 -- ftd.column:
@@ -1735,7 +1799,7 @@ padding-vertical.px: 12
 
 -- ftd.text:
 color: $inherited.colors.text
-role: $inherited.types.copy-large
+role: $inherited.types.copy-regular
 
 $echo.body
 
@@ -1746,7 +1810,7 @@ $echo.body
 
 -- ftd.text:
 color: $inherited.colors.text
-role: $inherited.types.copy-large
+role: $inherited.types.copy-regular
 text-align: justify
 text: $echo.body
 
@@ -1754,7 +1818,7 @@ text: $echo.body
 
 -- ftd.text: $echo.title
 color: $inherited.colors.text
-role: $inherited.types.fine-print
+role: $inherited.types.copy-small
 margin-top.px: 12
 
 -- end: ftd.column
@@ -1762,10 +1826,9 @@ margin-top.px: 12
 -- ftd.row:
 anchor: parent
 padding-vertical.px: 16
-background.solid: $inherited.colors.background.base
 top.px: 36
 top.px if { ftd.device == "mobile" }: 64
-left.px: -8
+left.px: 8
 
 -- ftd.image:
 src: $echo.logo
@@ -1790,12 +1853,12 @@ height: auto
 
 
 -- component window:
-caption title:
+optional caption title:
 body body:
 
 -- ftd.column:
 border-width.px: 1
-border-color: $inherited.colors.text
+border-color: $inherited.colors.border
 padding-vertical.px: 32
 padding-horizontal.px: 32
 width: auto
@@ -1806,12 +1869,12 @@ margin-top.px: 24
 margin-bottom.px: 24
 
 -- ftd.text: $window.title
+if: { window.title != NULL }
 anchor: parent
 background.solid: $inherited.colors.background.base
 top.px: -16
-;; move-right.px: 270 - TODO FTD 0.3
 text-align: center
-role: $inherited.types.copy-large
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 white-space: nowrap
 padding-horizontal.px: 24
@@ -1841,7 +1904,6 @@ border-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 left.px: -16
 top.px: -11
-;; rotate.px: 110 - TODO FTD 0.3
 z-index: 200
 
 -- end: ftd.row
@@ -1859,7 +1921,6 @@ border-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 left.px: -16
 bottom.px: -11
-;; rotate: 150 - TODO FTD 0.3
 z-index: 200
 
 -- end: ftd.row
@@ -1877,7 +1938,6 @@ border-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 right.px: -16
 top.px: -11
-;; rotate: 160 - TODO FTD 0.3
 z-index: 200
 
 -- end: ftd.row
@@ -1895,7 +1955,6 @@ border-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 right.px: -16
 bottom.px: -11
-;; rotate: 110 - TODO FTD 0.3
 z-index: 200
 
 -- end: ftd.row
@@ -1918,18 +1977,21 @@ optional caption title:
 body body:
 
 -- ftd.column:
-padding-vertical.px: 16
 width: auto
 width if { ftd.device == "mobile" }: fill-container
 align-self: center
-border-style: dashed
-border-bottom-width.px: 2
+border-style: double
+border-bottom-width.px: 3
+border-top-width.px: 3
 border-color: $inherited.colors.text
 margin-top.px: 24
 margin-bottom.px: 24
+border-bottom-right-radius.px: 20
+border-top-left-radius.px: 20
+padding.px: 16
 
 -- ftd.text:
-role: $inherited.types.copy-small
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 $matte.body
@@ -1939,12 +2001,12 @@ align-self: end
 padding-top.px: 16
 
 -- ftd.text: ~
-role: $inherited.types.fine-print
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 margin-right.px: 4
 
 -- ftd.text: $matte.title
-role: $inherited.types.fine-print
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 
 -- end: ftd.row
@@ -2200,7 +2262,7 @@ color: $inherited.colors.text
 
 
 -- component electric:
-ftd.background-image avatar: $assets.files.static.socrates.png
+ftd.image-src avatar: $assets.files.static.socrates.png
 optional caption title:
 body body:
 
@@ -2223,26 +2285,30 @@ height: fill-container
 -- end: ftd.column
 
 -- ftd.column:
-background.image: $electric.avatar
-width.fixed.px: 90
+width.fixed.px: 100
 height: fill-container
 anchor: parent
 top.px: 0
 left.px: 0
+
+-- ftd.image:
+src: $electric.avatar
+width: fill-container
+height: fill-container
 
 -- end: ftd.column
 
 -- ftd.column:
 margin-left.px: 90
 padding-top.px: 16
-padding-horizontal.px: 16
+padding-horizontal.px: 24
 background.solid: $inherited.colors.background.step-2
 border-radius.px: 4
 spacing.fixed.px: 8
 width: fill-container
 
 -- ftd.text:
-role: $inherited.types.heading-small
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 $electric.body
@@ -2253,11 +2319,11 @@ margin-top.px: 42
 padding-bottom.px: 16
 
 -- ftd.text: ~
-role: $inherited.types.copy-large
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 -- ftd.text: $electric.title
-role: $inherited.types.copy-large
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 -- end: ftd.row
@@ -2285,9 +2351,9 @@ ftd.image-src quote-icon: $assets.files.static.quotes.svg
 -- ftd.column:
 background.solid: $inherited.colors.background.step-2
 border-radius.px: 16
-border-width.px: 2
-padding-vertical.px: 24
-padding-horizontal.px: 24
+border-width.px: 1
+padding-vertical.px: 16
+padding-horizontal.px: 16
 width: auto
 width if { ftd.device == "mobile" }: fill-container
 align-self: center
@@ -2298,21 +2364,24 @@ margin-bottom.px: 24
 src: $chrome.quote-icon
 width.fixed.px: 32
 height: auto
-margin-bottom.px: 16
+anchor: parent
+z-index: 0
 
 -- ftd.text: 
-padding-bottom.px: 24
+padding-bottom.px: 16
 color: $inherited.colors.text
-role: $inherited.types.heading-small
-border-bottom-width.px: 2
+role: $inherited.types.copy-regular
+border-bottom-width.px: 1
 border-color: $inherited.colors.text
+z-index: 1
+padding-left.px: 42
 
 $chrome.body
 
 -- ftd.text: $chrome.title
-margin-top.px: 24
+margin-top.px: 16
 color: $inherited.colors.text
-role: $inherited.types.fine-print
+role: $inherited.types.copy-small
 
 -- end: ftd.column
 
@@ -2330,7 +2399,6 @@ role: $inherited.types.fine-print
 -- component dorian:
 optional caption title:
 body body:
-ftd.background-image image: $assets.files.static.down.svg
 
 -- ftd.column:
 width: fill-container
@@ -2339,16 +2407,13 @@ width: fill-container
 
 -- dorian-desktop: $dorian.title
 body: $dorian.body
-image: $dorian.image
 
 -- end: ftd.desktop
-
 
 -- ftd.mobile:
 
 -- dorian-mobile: $dorian.title
 body: $dorian.body
-image: $dorian.image
 
 -- end: ftd.mobile
 
@@ -2368,7 +2433,6 @@ image: $dorian.image
 -- component dorian-desktop:
 optional caption title:
 body body:
-ftd.background-image image:
 
 -- ftd.column:
 width: auto
@@ -2394,12 +2458,12 @@ z-index: 0
 -- end: ftd.row
 
 -- ftd.text: 
-padding-bottom.px: 24
+padding-bottom.px: 16
 color: $inherited.colors.text
-role: $inherited.types.heading-small
+role: $inherited.types.copy-regular
 background.solid: $inherited.colors.background.step-2
-padding-vertical.px: 24
-padding-horizontal.px: 24
+padding-vertical.px: 16
+padding-horizontal.px: 16
 border-top-right-radius.px: 8
 border-top-left-radius.px: 8
 z-index: 10
@@ -2408,10 +2472,10 @@ $dorian-desktop.body
 
 -- ftd.text: $dorian-desktop.title
 color: $inherited.colors.text
-role: $inherited.types.fine-print
+role: $inherited.types.copy-small
 background.solid: $inherited.colors.background.step-1
-padding-vertical.px: 24
-padding-horizontal.px: 24
+padding-vertical.px: 16
+padding-horizontal.px: 16
 width: fill-container
 border-bottom-right-radius.px: 8
 border-bottom-left-radius.px: 8
@@ -2432,7 +2496,6 @@ border-bottom-left-radius.px: 8
 -- component dorian-mobile:
 optional caption title:
 body body:
-ftd.background-image image:
 
 -- ftd.column:
 width: fill-container
@@ -2493,208 +2556,6 @@ border-bottom-left-radius.px: 8
 
 
 
--- component octa:
-optional caption title:
-body body:
-
--- ftd.column:
-width: fill-container
-
--- ftd.desktop:
-
--- octa-desktop: $octa.title
-body: $octa.body
-
--- end: ftd.desktop
-
--- ftd.mobile:
-
--- octa-mobile: $octa.title
-body: $octa.body
-
--- end: ftd.mobile
-
--- end: ftd.column
-
--- end: octa
-
-
-
-
-
-
-
-
-
-
--- component octa-desktop:
-optional caption title:
-body body:
-
--- ftd.column:
-width: fill-container
-min-height.fixed.px: 300
-background.solid: $inherited.colors.custom.seven
-margin-bottom.px: 40
-margin-top.px: 40
-padding-horizontal.px: 40
-padding-vertical.px: 40
-
--- octa-inner: $octa-desktop.title
-body: $octa-desktop.body
-
--- end: ftd.column
-
--- end: octa-desktop
-
-
-
-
-
-
-
-
-
--- component octa-mobile:
-optional caption title:
-body body:
-
--- ftd.column:
-background.solid: $inherited.colors.custom.seven
-margin-bottom.px: 40
-padding-horizontal.px: 40
-padding-vertical.px: 40
-;; scale: 0.6 - TODO FTD 0.3
-width.fixed.px: 750
-margin-left.px: -200
-margin-top.px: -70
-
--- octa-inner: $octa-mobile.title
-body: $octa-mobile.body
-
--- end: ftd.column
-
--- end: octa-mobile
-
-
-
-
-
-
-
-
-
-
--- component octa-inner:
-optional caption title:
-body body: 
-
--- ftd.column:
-width: fill-container
-
--- ftd.column:
-width: fill-container
-background.solid: $inherited.colors.background.base
-min-height.fixed.px: 250
-
--- ftd.column:
-background.image: $assets.files.static.hexagon-10.svg
-width.fixed.px: 150
-height.fixed.px: 150
-anchor: parent
-left.px: -62
-top.px: -32
-z-index: 99
-
--- end: ftd.column
-
--- ftd.column:
-background.image: $assets.files.static.hexagon-11.svg 
-width.fixed.px: 80
-height.fixed.px: 80
-anchor: parent
-left.px: 44
-top.px: -34
-z-index: 99
-
--- end: ftd.column
-
--- ftd.column:
-background.image: $assets.files.static.hexagon-12.svg
-width.fixed.px: 130
-height.fixed.px: 130
-anchor: parent
-right.px: -24
-top.px: -54
-z-index: 99
-
--- end: ftd.column
-
--- ftd.column:
-background.image: $assets.files.static.hexagon-13.svg
-width.fixed.px: 140
-height.fixed.px: 140
-anchor: parent
-left.px: -44
-bottom.px: -44
-z-index: 99
-
--- end: ftd.column
-
--- ftd.column:
-background.image: $assets.files.static.hexagon-14.svg
-width.fixed.px: 120
-height.fixed.px: 120
-anchor: parent
-right.px: 60
-bottom.px: -34
-z-index: 999
-
--- end: ftd.column
-
--- ftd.column:
-background.image: $assets.files.static.hexagon-9.svg
-width.fixed.px: 150
-height.fixed.px: 150
-anchor: parent
-right.px: -44
-bottom.px: -34
-z-index: 99
-
--- end: ftd.column
-
--- end: ftd.column
-
--- ftd.column:
-width.fixed.percent: 70
-align-self: center
-padding-top.px: 40
-
--- ftd.text:
-role: $inherited.types.copy-small
-color: $inherited.colors.custom.three
-max-height.fixed.px: 200
-overflow-y: auto
-
-$octa-inner.body
-
--- ftd.row:
-align-self: center
-margin-top.px: 40
-
--- ftd.text: ~
-role: $inherited.types.copy-small
-color: $inherited.colors.text
-margin-right.px: 8
-
--- ftd.text: $octa-inner.title
-role: $inherited.types.copy-small
-color: $inherited.colors.custom.three
-
--- end: ftd.row
-
--- end: ftd.column
-
--- end: ftd.column
-
--- end: octa-inner
+-- ftd.color image-color:
+light: rgba(192,192,192,0.3)
+dark: rgba(192,192,192,0.3)

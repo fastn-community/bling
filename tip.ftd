@@ -1,44 +1,30 @@
--- import: fastn-community.github.io/bling/assets
--- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fastn-community.github.io/bling/collapse
 
--- bling.page: `Tip` and it's usage
+-- site-doc.doc-home: Documentation - Tip
+site-title: Bling
+show-tabs: false
 
-`tip` is a new conversation experience via using `FTD` lang. `tip` can be used
-as part of any component and is available in below formats:
+-- site-doc.component-doc: `tip`
+package-link: https://fastn-community.github.io/bling/tip/
+package-name: fastn-community.github.io/bling/tip
+info: `-- tip` can be used as part of any component inside your fastn web projects.
 
--- pd.package: `tip`
-name: fastn-community.github.io/bling
+The "tip component" is a UI component used to provide helpful suggestions,
+advice, or recommendations to users. It is commonly used in websites to offer
+tips or best practices that can enhance the user's experience, or provide
+guidance on how to use specific features.
 
-To use `tip` on your web package, add below lines into `FASTN.ftd` file:
+-- site-doc.header: How to use
 
--- cb.code:
+-- cb.code: Add `bling` dependency into your FASTN.ftd
 lang: ftd
 
-\-- fastn.dependency: fastn-community.github.io/bling as bling
-\-- fastn.auto-import: bling/tip as tip
+\-- fastn.dependency: fastn-community.github.io/bling
 
--- tf.markdown:
-
-Once you add above lines into your web package, add `tip` into your `.ftd`
-files:
-
--- cb.code: Basic usage example code:
+-- cb.code: `-- tip`
 lang: ftd
 
-\-- tip.tip: Cool bots hot tip!
-
-Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
-
-\-- end: tip
-
--- tf.h3: Output of above basic example:
-
--- tip: Cool bots hot tip!
-
-Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
-
--- cb.code: Advanced usage example code:
-lang: ftd
+\-- import: fastn-community.github.io/bling/tip
 
 \-- tip.tip: Cool bots hot tip !
 
@@ -46,20 +32,30 @@ Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
 dolorem queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo
 inventore!
 
-\-- tf.code: Wow! awesome man!:
-lang: ftd
+\-- cb.code: Wow! awesome!:
+lang: java
 
-\-- ftd.text: Though the code block appears above, can I have some text below it?
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
+if (condition) {
+    // code block
+    statement1;
+    statement2;
+    // ...
+}
 
-\-- ftd.text: Though the code block appears above, can I have some text below it?
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
+\-- collapse.collapse: Lorem ipsum dolor
+info-right: Dolor sit amet
 
-\-- end: tip
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
--- tf.h3: Output of above advanced usage example:
+\-- end: tip.tip
+
+-- site-doc.header: Example
+
+-- site-doc.output:
+colors: $ftd.default-colors
+types: $ftd.default-types
 
 -- tip: Cool bots hot tip !
 
@@ -67,20 +63,56 @@ Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
 dolorem queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo
 inventore!
 
+-- tip: Cool bots hot tip with additional components !
+
+Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
+dolorem queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo
+inventore!
+
 -- cb.code: Wow! awesome!:
-lang: ftd
+lang: java
 
-\-- ftd.text: can I have some text below it?
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
+if (condition) {
+    // code block
+    statement1;
+    statement2;
+    // ...
+}
 
--- ftd.text: can I have some text below it?
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
+-- collapse.collapse: Lorem ipsum dolor
+info-right: Dolor sit amet
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
 
 -- end: tip
 
--- end: bling.page
+-- end: site-doc.output
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `tip` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`optional`)
+
+It's used to title to the `tip` component.
+
+-- site-doc.component-property: `body`
+type: Body (`required`)
+
+It's used to add body content to `tip` component.
+
+-- site-doc.component-property: `icon`
+type: ftd.image-src (`optional`)
+
+If you want to change default icon with your prefferd icon, then add `icon`
+property and add your image asset file-name.
+
+-- end: site-doc.component-doc
+
+-- end: site-doc.doc-home
 
 
 
@@ -94,7 +126,7 @@ role: $inherited.types.copy-regular
 -- component tip:
 optional caption title:
 optional body body:
-optional ftd.image-src avatar: $assets.files.static.amitu.jpg
+optional ftd.image-src icon: $assets.files.static.amitu.jpg
 children tip-wrap:
 
 -- ftd.column:
@@ -116,14 +148,13 @@ width: fill-container
 -- ftd.row:
 align-self: center
 margin-bottom.px: 24
+align-content: center
 
 -- ftd.image:
-src: $tip.avatar
+src: $tip.icon
 width.fixed.px: 32
 height.fixed.px: 32
 margin-right.px: 16
-margin-top.px: 8
-align-self: center
 border-radius.px: 100
 
 -- ftd.text: $tip.title

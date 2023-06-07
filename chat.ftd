@@ -1,59 +1,49 @@
--- import: fastn-community.github.io/bling/assets
--- import: fifthtry.github.io/package-doc/doc as pd
 
--- bling.page: Chat & messages
+-- site-doc.doc-home: Documentation - Chat & messages
+site-title: Bling
+show-tabs: false
 
-`-- message-left` OR `-- message-right` is a new chatting experience via using
-`FTD` lang.
+-- site-doc.component-doc: `Chat`
+package-link: https://fastn-community.github.io/bling/chat/
+package-name: fastn-community.github.io/bling/chat
+info: `-- chat` can be used as part of any component inside your fastn web projects.
 
--- pd.package: `message-left` & `message-right`
-name: fastn-community.github.io/bling
+The chat message component is a UI component designed to display individual
+messages within a chat or messaging interface. It is commonly used in
+applications or websites that involve real-time communication, such as
+messaging platforms, chatbots, or customer support systems.
 
-To use these components on your web package, add below into `FASTN.ftd` file:
+-- site-doc.header: How to use
 
--- cb.code:
+-- cb.code: Add `bling` dependency into your FASTN.ftd
 lang: ftd
 
-\-- fastn.dependency: fastn-community.github.io/bling as bling
-\-- fastn.auto-import: bling/chat as chat
+\-- fastn.dependency: fastn-community.github.io/bling
 
--- tf.markdown:
-
-Once you add above lines into your web package, add `message-left` OR
-`message-right` into your `.ftd` files:
-
--- cb.code: `-- message-left` basic usage example code:
+-- cb.code: `-- message-left` & `-- message-right`
 lang: ftd
 
-\-- chat.message-left: Hellow World! 😀
+\-- import: fastn-community.github.io/bling/chat
 
-some body of the chat here
+\-- message-left: Hi! 
 
-\-- end: chat.message-left
+\-- message-right: Hey! how are you doing? 
 
--- message-left: Hello World! 😀
+-- site-doc.header: Chat Example
 
--- cb.code: `-- message-right` basic usage example code:
-lang: ftd
-
-\-- chat.message-right: Hey Buddy! 👋
-
-some body of the chat here
-
-\-- end: chat.message-right
-
--- message-right: Hey Buddy! 👋
-
--- tf.h3: Real-life example of a chat, using `message` `left` & `right`:
+-- site-doc.output:
+colors: $ftd.default-colors
+types: $ftd.default-types
 
 -- ftd.column:
 width.fixed.px if { ftd.device != "mobile" }: 380
+width: fill-container
 padding.px if { ftd.device != "mobile" }: 24
-border-radius.px: 20
+padding.px if { ftd.device == "mobile" }: 16
+border-radius.px: 10
 background.solid: $inherited.colors.background.base
 
 -- message-left: Hey Buddy!
-pull-top: -4
 
 -- ftd.column:
 margin-top.px: 4
@@ -74,22 +64,19 @@ lang: ftd
 \-- ftd.text: Hi!
 
 -- ftd.column:
-margin-top.px: -11
 
 -- end: message-left
 
 -- message-right: Yo! 
-pull-top: -4
 
 -- tf.markdown:
 
 in voluptate velit esse cillum dolor er eu fugiat nulla pariatur. Excepte urla
 sint occaecat cupidatat nor proident,
 
--- cb.code: Wow! awesome man!:
+-- cb.code: Code Block in chat?
 lang: ftd
 
-\-- message-right: Yo! 
 \-- ftd.text: Yo! 
 
 -- ftd.text: Sed ut perspiciatis unde omnis isa te natus error sit volupta tem.
@@ -112,7 +99,33 @@ role: $inherited.types.label-large
 
 -- end: ftd.column
 
--- end: bling.page
+-- end: site-doc.output
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `triangular` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`optional`)
+
+It's used to add title as a message to the `message-left`  and `message-right`
+components.
+
+-- site-doc.component-property: `avatar`
+type: ftd.image-src (`optional`)
+
+It's used to add user image to the `message-left` and `message-right`
+components.
+
+-- site-doc.component-property: `round-avatar`
+type: Boolean (`optional`, default: `true`)
+
+If `round-avatar` property set as `false` then user image will be seen as
+square. By default it will be seen as rounded image.
+
+-- end: site-doc.component-doc
+
+-- end: site-doc.doc-home
 
 
 
@@ -127,11 +140,10 @@ role: $inherited.types.label-large
 optional caption title:
 ftd.image-src avatar: $assets.files.static.amitu.jpg
 boolean round-avatar: true
-integer pull-top: 0
 children container:
 
 -- ftd.column:
-margin-bottom.px: 16
+margin-bottom.px: 24
 
 -- ftd.column:
 width: fill-container
@@ -144,30 +156,50 @@ if: { !$message-left.round-avatar }
 src: $message-left.avatar
 width.fixed.px: 32
 height: auto
-margin-right.px: 16
+margin-right.px: 20
 
 -- ftd.image:
 if: { $message-left.round-avatar }
 src: $message-left.avatar
 width.fixed.px: 32
 height: auto
-margin-right.px: 16
+margin-right.px: 20
 border-radius.px: 32
 
 -- ftd.column:
+width.fixed.px: 8
+height.fixed.px: 8
+background.solid: #FFF
+border-top-width.px: 18
+border-left-width.px: 34
+border-right-width.px: 0
+border-top-color: $inherited.colors.cta-secondary.border
+border-bottom-color: $inherited.colors.cta-secondary.border
+border-left-color: $inherited.colors.background.base
+border-right-color: $inherited.colors.cta-secondary.border
+anchor: parent
+left.px: 38
+z-index: 0
+top.px: 12
+
+-- end: ftd.column
+
+-- ftd.column:
 border-width.px: 1
-border-color: $inherited.colors.border
+border-color: $inherited.colors.cta-secondary.border
 background.solid: $inherited.colors.background.step-1
-padding.px: 12
-border-radius.px: 4
+padding-vertical.px: 12
+padding-horizontal.px: 22
+border-radius.px: 10
 width: fill-container
+z-index: 1
+margin-top.px: 6
 
 -- ftd.text: $message-left.title
 color: $inherited.colors.text
 role: $inherited.types.label-large
 width: fill-container
 text-align: start
-margin-top.px: $message-left.pull-top
 
 -- ftd.column:
 children: $message-left.container
@@ -197,11 +229,10 @@ children: $message-left.container
 optional caption title:
 ftd.image-src avatar: $assets.files.static.ganeshs.jpg
 boolean round-avatar: true
-integer pull-top: 0
 children container:
 
 -- ftd.column:
-margin-bottom.px: 16
+margin-bottom.px: 24
 align-content: right
 width: fill-container
 
@@ -212,17 +243,19 @@ width: fill-container
 
 -- ftd.column:
 border-width.px: 1
-border-color: $inherited.colors.border
+border-color: $inherited.colors.cta-secondary.border
 background.solid: $inherited.colors.background.step-1
-padding.px: 12
-border-radius.px: 4
+padding-vertical.px: 12
+padding-horizontal.px: 22
+border-radius.px: 10
+z-index: 1
+margin-top.px: 6
 
 -- ftd.text: $message-right.title
 color: $inherited.colors.text
 role: $inherited.types.label-large
 width: fill-container
 text-align: end
-margin-top.px: $message-right.pull-top
 
 -- ftd.column:
 children: $message-right.container
@@ -231,19 +264,37 @@ children: $message-right.container
 
 -- end: ftd.column
 
+-- ftd.column:
+width.fixed.px: 8
+height.fixed.px: 8
+background.solid: #FFF
+border-top-width.px: 0
+border-bottom-width.px: 18
+border-left-width.px: 34
+border-right-width.px: 0
+border-bottom-color: $inherited.colors.background.base
+border-left-color:  $inherited.colors.cta-secondary.border
+border-right-color: $inherited.colors.cta-secondary.border
+anchor: parent
+right.px: 38
+z-index: 0
+top.px: 12
+
+-- end: ftd.column
+
 -- ftd.image:
 if: { !$message-right.round-avatar }
 src: $message-right.avatar
 width.fixed.px: 32
 height: auto
-margin-left.px: 16
+margin-left.px: 26
 
 -- ftd.image:
 if: { $message-right.round-avatar }
 src: $message-right.avatar
 width.fixed.px: 32
 height: auto
-margin-left.px: 16
+margin-left.px: 20
 border-radius.px: 32
 
 -- end: ftd.row
