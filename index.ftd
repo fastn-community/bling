@@ -28,7 +28,7 @@ background.solid: $inherited.colors.background.base
 
 -- chat.message-left: Hey Buddy! liking `fastn`? 🙂
 
--- chat.message-right: Hi! [`fastn`](https://fastn.com/) language is awesome! 👍🏻
+-- chat.message-right: Hi! [`fastn`](https://fastn.com/) is awesome! 👍🏻
 
 -- end: ftd.column
 
