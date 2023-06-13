@@ -1,5 +1,13 @@
 # Bling Components Change Log
 
+## June 13, 2023
+
+- [Updated readme as per review](https://github.com/fastn-community/bling/commit/63027f3cf929bfa57ba2d326482b18e61a42e79b)
+
+
+## June 12, 2023
+
+- [Updating README, Added Changelog](https://github.com/fastn-community/bling/commit/bb0aaa37248edaa937bada081a7eaeadf17eb2c2)
 
 ## June 9, 2023
 
