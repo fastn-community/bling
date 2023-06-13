@@ -1,7 +1,7 @@
-# Overview
+# Bling Components
 
-`fastn-community.github.io/bling` is a component library which contains various
-`ftd` components can be used on your pages.
+fastn-community.github.io/bling is a fastn component library which contains
+various ftd components can be used on your pages.
 
 Bling is for making most content pages more interesting.
 
@@ -17,7 +17,8 @@ Bling is for making most content pages more interesting.
 
 # See it in Action! 
 
-Explore websites and projects that have utilized this component [here](https://fastn-community.github.io/bling/) for inspiration.
+Explore websites and projects that have utilized this component [here](https://fastn.com/home/#there-are-a-lot-of-ready-made-ftd-components-available-today)
+for inspiration.
 
 
 # [Changelog](Changelog.md)
