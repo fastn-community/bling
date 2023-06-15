@@ -2158,6 +2158,8 @@ background.image: $quote-14-desktop.avatar
 padding-vertical.px: 40
 padding-horizontal.px: 40
 align-self: center
+border-top-left-radius.px: 20
+border-bottom-right-radius.px: 20
 
 -- ftd.column:
 spacing.fixed.px: 8

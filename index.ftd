@@ -52,12 +52,12 @@ label: U.S.A.
 
 -- end: site-doc.output
 
--- site-doc.header: What is a bling component?
+-- site-doc.header: What is a bling component
 
-Bling components are for making your fastn pages more interesting. Normally
-content pages, like a blog post, or news article etc, only have headings,
-single quote, image and code block. With bling we are trying to create rich
-variety of components to spice up such blog posts.
+Bling components refer to a collection of visually appealing and interactive
+elements designed to enhance the presentation and engagement of web pages.
+These components are designed to captivate and add sparkle to content pages
+such as blog posts, news articles, and more.
 
 -- site-doc.header: How to use bling
 
