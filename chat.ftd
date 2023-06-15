@@ -32,8 +32,6 @@ lang: ftd
 -- site-doc.header: Chat Example
 
 -- site-doc.output:
-colors: $ftd.default-colors
-types: $ftd.default-types
 
 -- ftd.column:
 width.fixed.px if { ftd.device != "mobile" }: 380
