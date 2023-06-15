@@ -40,51 +40,8 @@ need.
 colors: $ftd.default-colors
 types: $ftd.default-types
 
--- cb.rendered: Example 1: `-- quote.antique`
 
--- cb.rendered.input:
-
-\-- quote.antique: Socrates
-
-"Strong minds discuss ideas, average minds."
-
--- cb.rendered.output:
-
--- ftd.column:
-id: antique
--- end: ftd.column
-
--- antique: Socrates
-
-"Strong minds discuss ideas, average minds."
-
--- end: cb.rendered.output
-
--- end: cb.rendered
-
--- cb.rendered: Example 2: `-- quote.bubble`
-
--- cb.rendered.input:
-
-\-- quote.bubble: Socrates
-
-"To find yourself, think for yourself."
-
--- cb.rendered.output:
-
--- ftd.column:
-id: bubble
--- end: ftd.column
-
--- bubble: Socrates
-
-"To find yourself, think for yourself."
-
--- end: cb.rendered.output
-
--- end: cb.rendered
-
--- cb.rendered: Example 3: `-- quote.chalice`
+-- cb.rendered: Example 1: `-- quote.chalice`
 
 -- cb.rendered.input:
 
@@ -104,7 +61,7 @@ we fall.
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 4: `-- quote.charcoal`
+-- cb.rendered: Example 2: `-- quote.charcoal`
 
 -- cb.rendered.input:
 
@@ -134,31 +91,31 @@ incididunt ut labore et dolore magna aliqua..
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 5: `-- quote.chrome`
+-- cb.rendered: Example 3: `-- quote.chrome`
 
 -- cb.rendered.input:
 
 \-- quote.chrome: Swami Vivekananda
 
-"Take up one idea. Make that one idea your life; dream of it; think of it; live
+Take up one idea. Make that one idea your life; dream of it; think of it; live
  on that idea. Let the brain, the body, muscles, nerves, every part of your
  body be full of that idea, and just leave every other idea alone. This is the
- way to success, and this is the way great spiritual giants are produced."
+ way to success, and this is the way great spiritual giants are produced.
 
 -- cb.rendered.output:
 
 -- chrome: Swami Vivekananda
 
-"Take up one idea. Make that one idea your life; dream of it; think of it; live
+Take up one idea. Make that one idea your life; dream of it; think of it; live
  on that idea. Let the brain, the body, muscles, nerves, every part of your
  body be full of that idea, and just leave every other idea alone. This is the
- way to success, and this is the way great spiritual giants are produced."
+ way to success, and this is the way great spiritual giants are produced.
 
 -- end: cb.rendered.output
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 6: `-- quote.dorian`
+-- cb.rendered: Example 4: `-- quote.dorian`
 
 -- cb.rendered.input:
 
@@ -169,6 +126,8 @@ incididunt ut labore et dolore magna aliqua..
 
 -- cb.rendered.output:
 
+-- site-doc.output:
+
 -- dorian: Swami Vivekananda
 
 “You have to grow from the inside out. None can teach you, none can make you
@@ -178,31 +137,31 @@ incididunt ut labore et dolore magna aliqua..
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 7: `-- quote.echo`
+-- cb.rendered: Example 5: `-- quote.echo`
 
 -- cb.rendered.input:
 
 \-- quote.echo: Swami Vivekananda
 
-"Take up one idea. Make that one idea your life; dream of it; think of it; live
+Take up one idea. Make that one idea your life; dream of it; think of it; live
  on that idea. Let the brain, the body, muscles, nerves, every part of your
  body be full of that idea, and just leave every other idea alone. This is the
- way to success, and this is the way great spiritual giants are produced."
+ way to success, and this is the way great spiritual giants are produced.
 
 -- cb.rendered.output:
 
 -- echo: Swami Vivekananda
 
-"Take up one idea. Make that one idea your life; dream of it; think of it; live
+Take up one idea. Make that one idea your life; dream of it; think of it; live
  on that idea. Let the brain, the body, muscles, nerves, every part of your
  body be full of that idea, and just leave every other idea alone. This is the
- way to success, and this is the way great spiritual giants are produced."
+ way to success, and this is the way great spiritual giants are produced.
 
 -- end: cb.rendered.output
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 8: `-- quote.electric`
+-- cb.rendered: Example 6: `-- quote.electric`
 
 -- cb.rendered.input:
 
@@ -232,7 +191,7 @@ id: electric
 
 -- end: cb.rendered
 
--- cb.rendered: Example 9: `-- quote.marengo`
+-- cb.rendered: Example 7: `-- quote.marengo`
 
 -- cb.rendered.input:
 
@@ -254,7 +213,7 @@ thinking.
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 10: `-- quote.marengo-hug`
+-- cb.rendered: Example 8: `-- quote.marengo-hug`
 
 -- cb.rendered.input:
 
@@ -274,31 +233,31 @@ what you don't have in life, you'll never have enough.
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 11: `-- quote.matte`
+-- cb.rendered: Example 9: `-- quote.matte`
 
 -- cb.rendered.input:
 
 \-- quote.matte: Swami Vivekananda
 
-"Take up one idea. Make that one idea your life; dream of it; think of it; live
+Take up one idea. Make that one idea your life; dream of it; think of it; live
  on that idea. Let the brain, the body, muscles, nerves, every part of your
  body be full of that idea, and just leave every other idea alone. This is the
- way to success, and this is the way great spiritual giants are produced."
+ way to success, and this is the way great spiritual giants are produced.
 
 -- cb.rendered.output:
 
 -- matte: Swami Vivekananda
 
-"Take up one idea. Make that one idea your life; dream of it; think of it; live
+Take up one idea. Make that one idea your life; dream of it; think of it; live
  on that idea. Let the brain, the body, muscles, nerves, every part of your
  body be full of that idea, and just leave every other idea alone. This is the
- way to success, and this is the way great spiritual giants are produced."
+ way to success, and this is the way great spiritual giants are produced.
 
 -- end: cb.rendered.output
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 12: `-- quote.onyx`
+-- cb.rendered: Example 10: `-- quote.onyx`
 
 -- cb.rendered.input:
 
@@ -320,34 +279,34 @@ it; whether you choose to persevere.
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 13: `-- quote.rustic`
+-- cb.rendered: Example 11: `-- quote.rustic`
 
 -- cb.rendered.input:
 
 \-- quote.rustic: Dr. APJ Abdul Kalam
 
-"All of us do not have equal talent. But, all of us have an equal opportunity to
-develop our talents."
+All of us do not have equal talent. But, all of us have an equal opportunity to
+develop our talents.
 
 -- cb.rendered.output:
 
 -- rustic: Dr. APJ Abdul Kalam
 
-"All of us do not have equal talent. But, all of us have an equal opportunity to
-develop our talents."
+All of us do not have equal talent. But, all of us have an equal opportunity to
+develop our talents.
 
 -- end: cb.rendered.output
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 14: `-- quote.scorpion`
+-- cb.rendered: Example 12: `-- quote.scorpion`
 
 -- cb.rendered.input:
 
 \-- quote.scorpion: Eleanor Roosevelt
 label: U.S.A.
 
-"The future belongs to those who believe in the beauty of their dreams."
+The future belongs to those who believe in the beauty of their dreams.
 
 -- cb.rendered.output:
 
@@ -358,13 +317,13 @@ id: scorpion
 -- scorpion: Eleanor Roosevelt
 label: U.S.A.
 
-"The future belongs to those who believe in the beauty of their dreams."
+The future belongs to those who believe in the beauty of their dreams.
 
 -- end: cb.rendered.output
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 15: `-- quote.silver`
+-- cb.rendered: Example 13: `-- quote.silver`
 
 -- cb.rendered.input:
 
@@ -382,63 +341,23 @@ Life is either a daring adventure or nothing at all.
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 16: `-- quote.storm-cloud`
+-- cb.rendered: Example 14: `-- quote.storm-cloud`
 
 -- cb.rendered.input:
 
 \-- quote.storm-cloud: M.K. Gandhi
 
-"A man is but a product of his thoughts. What he thinks he becomes."
+A man is but a product of his thoughts. What he thinks he becomes.
 
 -- cb.rendered.output:
 
 -- storm-cloud: M.K. Gandhi
 
-"A man is but a product of his thoughts. What he thinks he becomes."
+A man is but a product of his thoughts. What he thinks he becomes.
 
 -- end: cb.rendered.output
 
 -- end: cb.rendered 
-
--- cb.rendered: Example 17: `-- quote.vampire`
-
--- cb.rendered.input:
-
-\-- quote.vampire: Thomas Jefferson
-
-"I find that the harder I work, the more luck I seem to have."
-
--- cb.rendered.output:
-
--- vampire: Thomas Jefferson
-
-"I find that the harder I work, the more luck I seem to have."
-
--- end: cb.rendered.output
-
--- end: cb.rendered 
-
--- cb.rendered: Example 18: `-- quote.window`
-
--- cb.rendered.input:
-
-\-- quote.window: Mark Zuckerberg
-
-"If you just work on stuff that you like and you're passionate about, you don't
- have to have a master plan with how things will play out."
-
--- cb.rendered.output:
-
--- window: Mark Zuckerberg
-
-"If you just work on stuff that you like and you're passionate about, you don't
- have to have a master plan with how things will play out."
-
--- end: cb.rendered.output
-
--- end: cb.rendered 
-
--- end: site-doc.output
 
 -- site-doc.header: Common Properties:
 
@@ -501,7 +420,6 @@ optional body body:
 optional ftd.image-src avatar:
 optional ftd.image-src logo:
 optional string label:
-ftd.color backgroundcolor: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
@@ -514,7 +432,6 @@ body: $charcoal.body
 avatar: $charcoal.avatar
 logo: $charcoal.logo
 label: $charcoal.label
-backgroundcolor: $charcoal.backgroundcolor
 
 -- end: ftd.desktop
 
@@ -525,7 +442,6 @@ body: $charcoal.body
 avatar: $charcoal.avatar
 logo: $charcoal.logo
 label: $charcoal.label
-backgroundcolor: $charcoal.backgroundcolor
 
 -- end: ftd.mobile
 
@@ -549,14 +465,12 @@ optional body body:
 optional ftd.image-src avatar:
 optional ftd.image-src logo:
 optional string label:
-ftd.color backgroundcolor:
 
 -- ftd.column:
 width: fill-container
 padding-vertical.px: 64
 margin-top.px: 24
 margin-bottom.px: 24
-background.solid: $quote-desktop.backgroundcolor
 
 -- ftd.row:
 max-width.fixed.px: 1000
@@ -638,13 +552,11 @@ optional body body:
 optional ftd.image-src avatar:
 optional ftd.image-src logo:
 optional string label:
-ftd.color backgroundcolor:
 
 -- ftd.column:
 width: fill-container
 padding-vertical.px: 32
 padding-horizontal.px: 16
-background.solid: $quote-mobile.backgroundcolor
 margin-top.px: 24
 margin-bottom.px: 24
 
@@ -715,7 +627,6 @@ align-self: center
 -- component marengo:
 optional caption title:
 body body:
-ftd.color backgroundcolor: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
@@ -726,7 +637,6 @@ margin-bottom.px: 24
 
 -- quote-1-desktop: $marengo.title
 body: $marengo.body
-backgroundcolor: $marengo.backgroundcolor
 
 -- end: ftd.desktop
 
@@ -734,7 +644,6 @@ backgroundcolor: $marengo.backgroundcolor
 
 -- quote-1-mobile: $marengo.title
 body: $marengo.body
-backgroundcolor: $marengo.backgroundcolor
 
 -- end: ftd.mobile
 
@@ -754,11 +663,9 @@ backgroundcolor: $marengo.backgroundcolor
 -- component quote-1-desktop:
 body body:
 optional caption title:
-ftd.color backgroundcolor: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
-background.solid: $quote-1-desktop.backgroundcolor
 margin-top.px: 20
 margin-bottom.px: 24
 max-width.fixed.px: 1056
@@ -768,14 +675,13 @@ border-bottom-right-radius.px: 20
 -- ftd.row:
 width: fill-container
 border-left-width.px: 4
+border-right-width.px: 4
 padding-left.px: 40
 padding-top.px: 24
 padding-bottom.px: 24
 padding-right.px: 24
 border-color: $inherited.colors.cta-secondary.border
-border-top-left-radius.px: 20
-border-bottom-right-radius.px: 20
-
+border-radius.px: 20
 
 -- ftd.column:
 width: fill-container
@@ -823,26 +729,23 @@ white-space: nowrap
 -- component quote-1-mobile:
 optional caption title:
 body body:
-ftd.color backgroundcolor: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
-background.solid: $quote-1-mobile.backgroundcolor
 max-width.fixed.px: 1056
 border-bottom-right-radius.px: 20
 border-top-left-radius.px: 20
 
-
 -- ftd.row:
 width: fill-container
 border-left-width.px: 4
+border-right-width.px: 4
 padding-left.px: 24
 padding-top.px: 16
 padding-right.px: 16
 padding-bottom.px: 16
-border-color: $inherited.colors.border
-border-bottom-right-radius.px: 20
-border-top-left-radius.px: 20
+border-color: $inherited.colors.cta-secondary.border
+border-radius.px: 20
 
 -- ftd.column:
 width: fill-container
@@ -890,7 +793,6 @@ white-space: nowrap
 -- component marengo-hug:
 optional caption title:
 body body:
-ftd.color backgroundcolor: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
@@ -901,16 +803,13 @@ margin-bottom.px: 24
 
 -- quote-2-desktop: $marengo-hug.title
 body: $marengo-hug.body
-backgroundcolor: $marengo-hug.backgroundcolor
 
 -- end: ftd.desktop
-
 
 -- ftd.mobile:
 
 -- quote-2-mobile: $marengo-hug.title
 body: $marengo-hug.body
-backgroundcolor: $marengo-hug.backgroundcolor
 
 -- end: ftd.mobile
 
@@ -930,11 +829,9 @@ backgroundcolor: $marengo-hug.backgroundcolor
 -- component quote-2-desktop:
 body body:
 optional caption title:
-ftd.color backgroundcolor: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
-background.solid: $quote-2-desktop.backgroundcolor
 margin-top.px: 20
 margin-bottom.px: 24
 max-width.fixed.px: 2056
@@ -950,7 +847,7 @@ padding-bottom.px: 24
 padding-right.px: 24
 border-color: $inherited.colors.cta-primary.border
 border-top-right-radius.px: 20
-border-bottom-left-radius.px: 20
+border-bottom-right-radius.px: 20
 
 -- ftd.column:
 width: fill-container
@@ -1002,11 +899,9 @@ style: italic
 -- component quote-2-mobile:
 optional caption title:
 body body:
-ftd.color backgroundcolor:
 
 -- ftd.column:
 width: fill-container
-background.solid: $quote-2-mobile.backgroundcolor
 max-width.fixed.px: 2056
 border-top-right-radius.px: 20
 border-bottom-left-radius.px: 20
@@ -1018,9 +913,10 @@ padding-left.px: 24
 padding-top.px: 16
 padding-bottom.px: 16
 padding-right.px: 16
-border-color: $inherited.colors.border
+border-color: $inherited.colors.cta-primary.border
 border-top-right-radius.px: 20
 border-bottom-left-radius.px: 20
+border-bottom-right-radius.px: 20
 
 -- ftd.column:
 width: fill-container
@@ -1272,7 +1168,6 @@ $quotes-mobile.body
 -- component chalice:
 optional caption title:
 body body:
-ftd.background-image bg-image: $assets.files.static.quotes.svg
 
 -- ftd.column:
 padding-horizontal.px: 24
@@ -1284,7 +1179,6 @@ margin-top.px: 24
 margin-bottom.px: 24
 
 -- ftd.row:
-background.image: $chalice.bg-image
 width.fixed.px: 84
 height.fixed.px: 84
 width.fixed.px if { ftd.device == "mobile" }: 44
@@ -1292,9 +1186,14 @@ height.fixed.px if { ftd.device == "mobile" }: 44
 anchor: parent
 top.px: 10
 top.px if { ftd.device == "mobile" }: 34
-left.px: 0
+left.px: -50
 left.px if { ftd.device == "mobile" }: 34
 z-index: 0
+
+-- ftd.image:
+src: $assets.files.static.quotes.svg
+width: fill-container
+height: fill-container
 
 -- end: ftd.row
 
@@ -1334,7 +1233,7 @@ text-align: center
 -- component onyx:
 optional caption title:
 body body:
-optional ftd.image-src quote-logo: $assets.files.static.left-quote-circle.png
+optional ftd.image-src quote-logo: $assets.files.static.left-quote-circle.svg
 
 -- ftd.row:
 background.solid: $inherited.colors.background.step-1
@@ -1427,13 +1326,11 @@ body: $silver.body
 -- component quote-6-desktop:
 optional caption title:
 body body:
-ftd.image-src logo: $assets.files.static.quote.png
+ftd.image-src logo: $assets.files.static.quote.svg
 
 -- ftd.column:
 padding-vertical.px: 32
 padding-horizontal.px: 32
-;; gradient-direction: top to bottom - TODO FTD 0.3
-;; gradient-colors: grey, black - TODO FTD 0.3
 width: fill-container
 max-width.fixed.px: 800
 align-self: center
@@ -1512,7 +1409,7 @@ width.fixed.px: 62
 -- component quote-6-mobile:
 optional caption title:
 body body:
-ftd.image-src logo: $assets.files.static.quote.png
+ftd.image-src logo: $assets.files.static.quote.svg
 
 -- ftd.column:
 padding-vertical.px: 16
@@ -1644,8 +1541,8 @@ role: $inherited.types.copy-small
 
 -- component vampire:
 optional caption title:
-ftd.image-src left-logo: $assets.files.static.left-quote.png
-ftd.image-src right-logo: $assets.files.static.right-quote-sign.png
+ftd.image-src left-logo: $assets.files.static.left-quote.svg
+ftd.image-src right-logo: $assets.files.static.right-quote-sign.svg
 body body:
 
 -- ftd.row:
@@ -1709,8 +1606,8 @@ width.fixed.px: 24
 -- component rustic:
 optional caption title:
 body body: 
-ftd.image-src left-logo: $assets.files.static.left-quote.png
-ftd.image-src right-logo: $assets.files.static.right-quote-sign.png
+ftd.image-src left-logo: $assets.files.static.left-quote.svg
+ftd.image-src right-logo: $assets.files.static.right-quote-sign-flip.svg
 
 -- ftd.column:
 margin-top.px: 24
@@ -1777,7 +1674,7 @@ bottom.px: 0
 
 -- component echo:
 optional caption title:
-ftd.image-src logo: $assets.files.static.right-quote-sign.png
+ftd.image-src logo: $assets.files.static.right-quote-sign.svg
 body body:
 
 -- ftd.column:
@@ -2163,10 +2060,12 @@ border-bottom-right-radius.px: 20
 
 -- ftd.column:
 spacing.fixed.px: 8
-background.solid: $inherited.colors.background.base
+background.solid: $inherited.colors.background.step-2
 align-self: center
 padding-vertical.px: 40
 padding-horizontal.px: 40
+border-top-right-radius.px: 20
+border-bottom-left-radius.px: 20
 
 -- ftd.text:
 role: $inherited.types.heading-small
@@ -2317,7 +2216,7 @@ $electric.body
 
 -- ftd.row:
 spacing.fixed.px: 8
-margin-top.px: 42
+margin-top.px: 12
 padding-bottom.px: 16
 
 -- ftd.text: ~
