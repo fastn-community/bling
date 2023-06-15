@@ -674,14 +674,14 @@ border-bottom-right-radius.px: 20
 
 -- ftd.row:
 width: fill-container
-border-left-width.px: 4
 border-right-width.px: 4
 padding-left.px: 40
 padding-top.px: 24
 padding-bottom.px: 24
 padding-right.px: 24
-border-color: $inherited.colors.cta-secondary.border
-border-radius.px: 20
+border-color: $inherited.colors.cta-primary.border
+border-top-right-radius.px: 20
+border-bottom-right-radius.px: 20
 
 -- ftd.column:
 width: fill-container
@@ -738,14 +738,14 @@ border-top-left-radius.px: 20
 
 -- ftd.row:
 width: fill-container
-border-left-width.px: 4
 border-right-width.px: 4
 padding-left.px: 24
 padding-top.px: 16
 padding-right.px: 16
 padding-bottom.px: 16
-border-color: $inherited.colors.cta-secondary.border
-border-radius.px: 20
+border-color: $inherited.colors.cta-primary.border
+border-top-right-radius.px: 20
+border-bottom-right-radius.px: 20
 
 -- ftd.column:
 width: fill-container
@@ -835,19 +835,17 @@ width: fill-container
 margin-top.px: 20
 margin-bottom.px: 24
 max-width.fixed.px: 2056
-border-top-right-radius.px: 20
-border-bottom-left-radius.px: 20
 
 -- ftd.row:
 width: fill-container
+border-left-width.px: 4
 border-right-width.px: 4
 padding-left.px: 40
 padding-top.px: 24
 padding-bottom.px: 24
 padding-right.px: 24
-border-color: $inherited.colors.cta-primary.border
-border-top-right-radius.px: 20
-border-bottom-right-radius.px: 20
+border-color: $inherited.colors.cta-secondary.border
+border-radius.px: 20
 
 -- ftd.column:
 width: fill-container
@@ -908,15 +906,14 @@ border-bottom-left-radius.px: 20
 
 -- ftd.row:
 width: fill-container
+border-left-width.px: 4
 border-right-width.px: 4
 padding-left.px: 24
 padding-top.px: 16
 padding-bottom.px: 16
 padding-right.px: 16
-border-color: $inherited.colors.cta-primary.border
-border-top-right-radius.px: 20
-border-bottom-left-radius.px: 20
-border-bottom-right-radius.px: 20
+border-color: $inherited.colors.cta-secondary.border
+border-radius.px: 20
 
 -- ftd.column:
 width: fill-container
