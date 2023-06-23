@@ -60,11 +60,19 @@ type: String (`optional`)
 
 It's used to show some info/text to the right corner of the title of collapse.
 
--- site-doc.component-property: `is-open`
+-- site-doc.component-property: `$is-open`
 type: Boolean (`optional`, default: `false`)
 
 It's used to show body content of collapse, default value is `false` if you set
 it to `true` then body content will be visible.
+
+-- site-doc.component-property: `remove-gap`
+type: Boolean (`optional`, default: `false`)
+
+It's used to remove bottom margin between two collapse components, default value
+is `false` if you set it to `true` then bottom margin of collapse will be
+removed.
+
 
 -- site-doc.component-property: `body`
 type: Body (`optional`)
@@ -90,11 +98,12 @@ optional string info-right:
 boolean $is-open: false
 optional body body:
 children container:
+boolean remove-gap: false
 
 -- ftd.column:
 width: fill-container
 width if { $collapse.info-right != NULL }: fill-container
-margin-bottom.px: 20
+margin-bottom.px if { !collapse.remove-gap }: 20
 color: $inherited.colors.text
 border-color: $inherited.colors.border
 border-width.px: 1
