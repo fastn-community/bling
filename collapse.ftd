@@ -37,7 +37,7 @@ nostrud exercitation ullamco laboris nisi ut
 colors: $ftd.default-colors
 types: $ftd.default-types
 
--- collapse: Lorem ipsum dolor
+-- collapse: Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
 info-right: Dolor sit amet
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -111,7 +111,7 @@ border-radius.px: 6
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 8
+spacing.fixed.px: 28
 $on-click$: $ftd.toggle($a = $collapse.is-open)
 padding.px: 8
 
@@ -141,7 +141,7 @@ color: $inherited.colors.text
 
 -- ftd.row:
 width: hug-content
-align-self: end
+align-self: center
 
 -- ftd.text: $collapse.info-right
 if: { $collapse.info-right != NULL }
