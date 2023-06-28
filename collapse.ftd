@@ -37,7 +37,7 @@ nostrud exercitation ullamco laboris nisi ut
 colors: $ftd.default-colors
 types: $ftd.default-types
 
--- collapse: Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+-- collapse: Lorem ipsum dolor
 info-right: Dolor sit amet
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -112,8 +112,10 @@ border-radius.px: 6
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 28
+spacing.fixed.px if { ftd.device == "mobile" }: 12
 $on-click$: $ftd.toggle($a = $collapse.is-open)
 padding.px: 8
+wrap if { ftd.device == "mobile" }: true
 
 -- ftd.row:
 width: fill-container
@@ -140,11 +142,12 @@ color: $inherited.colors.text
 -- end: ftd.row
 
 -- ftd.row:
+if: { $collapse.info-right != NULL }
 width: hug-content
 align-self: center
+margin-left.px if { ftd.device == "mobile" }: 28
 
 -- ftd.text: $collapse.info-right
-if: { $collapse.info-right != NULL }
 role: $inherited.types.copy-small
 color: $inherited.colors.text
 white-space: nowrap
