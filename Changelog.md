@@ -2,6 +2,7 @@
 
 ## June 28, 2023
 
+- [Removing documentation word to avoid extra noise](https://github.com/fastn-community/bling/commit/fd1de6d8c1965dfbfd972a660c449f50a78c3ee0)
 - [Updated mobile view of collapse](https://github.com/fastn-community/bling/commit/51a961f4098bf103a7ee964bdf53807148766894)
 - [Collapse center alignment on mobile](https://github.com/fastn-community/bling/commit/c7a24e05d7b4027d48b61d25ffcb35616138ce79)
 
