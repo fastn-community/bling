@@ -1,5 +1,23 @@
 # Bling Components Change Log
 
+## June 28, 2023
+
+- [Updated mobile view of collapse](https://github.com/fastn-community/bling/commit/51a961f4098bf103a7ee964bdf53807148766894)
+- [Collapse center alignment on mobile](https://github.com/fastn-community/bling/commit/c7a24e05d7b4027d48b61d25ffcb35616138ce79)
+
+## June 23, 2023
+
+- [Added new boolean remove-gap](https://github.com/fastn-community/bling/commit/7e56120467df8bd1460b32520abea987b7cf5eaa)
+
+## June 16, 2023
+
+- [Updated Package Name](https://github.com/fastn-community/bling/commit/14996571a5a3f72bc905a46ef7178dc4c5d2bd12)
+- [Added Contribute Page](https://github.com/fastn-community/bling/commit/4cc244f8bc26c3a73bbe656f96223e942d6945ca)
+
+## June 15, 2023
+
+- [Review comments fixed](https://github.com/fastn-community/bling/commit/23a775288b6d281a600a7188f6e23fa80415216d)
+
 ## June 13, 2023
 
 - [Updated readme as per review](https://github.com/fastn-community/bling/commit/63027f3cf929bfa57ba2d326482b18e61a42e79b)
