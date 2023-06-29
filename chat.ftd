@@ -6,7 +6,7 @@ show-tabs: false
 -- site-doc.component-doc: `Chat`
 package-link: https://fastn-community.github.io/bling/chat/
 package-name: fastn-community.github.io/bling/chat
-info: `-- chat` can be used as part of any component inside your fastn web projects.
+info: `-- chat` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
 
 The chat message component is a UI component designed to display individual
 messages within a chat or messaging interface. It is commonly used in

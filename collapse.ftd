@@ -5,7 +5,7 @@ show-tabs: false
 -- site-doc.component-doc: `collapse`
 package-link: https://fastn-community.github.io/bling/collapse/
 package-name: fastn-community.github.io/bling/collapse
-info: `-- collapse` can be used as part of any component inside your fastn web projects.
+info: `-- collapse` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
 
 The collapse component typically consists of a header and a collapsible body.
 The header serves as a clickable element, such as a button or a title, that

@@ -6,7 +6,7 @@ show-tabs: false
 -- site-doc.component-doc: `read-more`
 package-link: https://fastn-community.github.io/bling/read-more/
 package-name: fastn-community.github.io/bling/read-more
-info: `-- read-more` can be used as part of any component inside your fastn web projects.
+info: `-- read-more` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
 
 A "Read More" link is a user interface element commonly used in web content to
 provide a way for users to access additional or extended content beyond an

@@ -6,7 +6,7 @@ show-tabs: false
 -- site-doc.component-doc: `emoji-list`
 package-link: https://fastn-community.github.io/bling/emoji-list/
 package-name: fastn-community.github.io/bling/emoji-list
-info: `-- emoji-list` can be used as part of any component inside your fastn web projects.
+info: `-- emoji-list` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
 
 An emoji list refers to a collection list items with emoji as a bullet. Emoji's 
 are small graphical icons or symbols used to convey emotions, ideas, or
