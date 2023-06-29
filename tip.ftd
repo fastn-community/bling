@@ -7,7 +7,7 @@ show-tabs: false
 -- site-doc.component-doc: `tip`
 package-link: https://fastn-community.github.io/bling/tip/
 package-name: fastn-community.github.io/bling/tip
-info: `-- tip` can be used as part of any component inside your fastn web projects.
+info: `-- tip` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
 
 The "tip component" is a UI component used to provide helpful suggestions,
 advice, or recommendations to users. It is commonly used in websites to offer
@@ -126,7 +126,7 @@ property and add your image asset file-name.
 -- component tip:
 optional caption title:
 optional body body:
-optional ftd.image-src icon: $assets.files.static.amitu.jpg
+optional ftd.image-src icon: $assets.files.static.avatar.svg
 children tip-wrap:
 
 -- ftd.column:
@@ -168,9 +168,14 @@ role: $inherited.types.heading-small
 
 -- ftd.column:
 width: fill-container
+align-content: center
+align-self: center
 
--- tf.markdown:
-body: $tip.body
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$tip.body
 
 -- end: ftd.column
 

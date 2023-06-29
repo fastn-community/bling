@@ -6,7 +6,7 @@ show-tabs: false
 -- site-doc.component-doc: `twitter-cards`
 package-link: https://fastn-community.github.io/bling/twitter-cards/
 package-name: fastn-community.github.io/bling/twitter-cards
-info: `-- twitter-cards` can be used as part of any component inside your fastn web projects.
+info: `-- twitter-cards` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
 
 The twitter card includes a title, a brief description, a thumbnail image, and
 the Twitter handle of the account sharing the link. It provides a basic preview

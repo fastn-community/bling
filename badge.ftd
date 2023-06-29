@@ -6,7 +6,7 @@ show-tabs: false
 -- site-doc.component-doc: `badge`
 package-link: https://fastn-community.github.io/bling/badge/
 package-name: fastn-community.github.io/bling/badge
-info: `-- badge` can be used as part of any component inside your fastn web projects.
+info: `-- badge` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
 
 Badges often take the form of small shapes, such as circles, squares, or
 rectangles, and they can contain text, numbers, or icons. They are commonly

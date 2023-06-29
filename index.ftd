@@ -26,16 +26,15 @@ padding.px if { ftd.device == "mobile" }: 16
 border-radius.px: 10
 background.solid: $inherited.colors.background.base
 
--- chat.message-left: Hey Buddy! liking `fastn`? 🙂
+-- chat.message-left: Hey Buddy! liking [fastn](https://fastn.com/)? 🙂
 
--- chat.message-right: Hi! [`fastn`](https://fastn.com/) is awesome! 👍🏻
+-- chat.message-right: Hi! [fastn](https://fastn.com/) is awesome! 👍🏻
 
 -- end: ftd.column
 
--- tip.tip: Cool bots hot tip!
+-- tip.tip: [fastn's](https://fastn.com/) hot tip!
 
-Sed ut perspiciatis unde omnis iste rolf
-natus err or sit voluptatem accusantiu.
+`If you can type you can code` - [fastn](https://fastn.com/)
 
 -- quote.scorpion: Abraham Lincoln
 label: U.S.A.
@@ -61,7 +60,7 @@ such as blog posts, news articles, and more.
 
 -- site-doc.header: How to use bling
 
-To use bling components on your fastn web project, add below into `FASTN.ftd`
+To use bling components on your [fastn](https://fastn.com/) web project, add below into `FASTN.ftd`
 file:
 
 -- cb.code:
