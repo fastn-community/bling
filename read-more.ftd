@@ -2,6 +2,7 @@
 -- site-doc.doc-home: Read More
 site-title: Bling
 show-tabs: false
+github-url: https://github.com/fastn-community/bling
 
 -- site-doc.component-doc: `read-more`
 package-link: https://fastn-community.github.io/bling/read-more/

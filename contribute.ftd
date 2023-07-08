@@ -3,6 +3,7 @@ license-url: https://github.com/fastn-community/bling/blob/main/LICENSE
 current-package: fastn-community.github.io/bling
 show-tabs: false
 site-title: Bling
+github-url: https://github.com/fastn-community/bling
 
 `bling` is an [open source](https://opensource.guide/) fastn components
 library. It's built using [fastn](https://github.com/fastn-stack/fastn).
