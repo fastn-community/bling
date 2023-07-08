@@ -981,7 +981,7 @@ spacing.fixed.px: 8
 anchor: parent
 bottom.px: -34
 left.px: 20
-left.px if { ftd.device == "mobile" }: 5
+left.px if { ftd.device == "mobile" }: 45
 
 -- ftd.text: $scorpion.title
 role: $inherited.types.copy-small
