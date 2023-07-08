@@ -1,6 +1,7 @@
 -- site-doc.doc-home: Collapse
 site-title: Bling
 show-tabs: false
+github-url: https://github.com/fastn-community/bling
 
 -- site-doc.component-doc: `collapse`
 package-link: https://fastn-community.github.io/bling/collapse/

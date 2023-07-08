@@ -2,6 +2,7 @@
 -- site-doc.doc-home: Twitter Cards
 site-title: Bling
 show-tabs: false
+github-url: https://github.com/fastn-community/bling
 
 -- site-doc.component-doc: `twitter-cards`
 package-link: https://fastn-community.github.io/bling/twitter-cards/

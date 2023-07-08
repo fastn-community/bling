@@ -2,6 +2,7 @@
 -- site-doc.doc-home: Badge
 site-title: Bling
 show-tabs: false
+github-url: https://github.com/fastn-community/bling
 
 -- site-doc.component-doc: `badge`
 package-link: https://fastn-community.github.io/bling/badge/
