@@ -1,0 +1,154 @@
+
+-- site-doc.doc-home: Modal
+site-title: Bling
+show-tabs: false
+github-url: https://github.com/fastn-community/bling
+
+-- site-doc.component-doc: `modal`
+package-link: https://fastn-community.github.io/bling/modal/
+package-name: fastn-community.github.io/bling/modal
+info: `-- modal` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
+
+A modal is a user interface element that is displayed as a temporary or
+secondary window on top of the main content of a web page. It is designed to
+capture the user's attention and typically requires an action from the user
+before they can continue interacting with the rest of the page.
+
+-- site-doc.header: How to use
+
+-- cb.code: Add `bling` dependency into your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+
+-- cb.code: All modals: copy any one of these modals you like to use
+lang: ftd
+
+\-- import: fastn-community.github.io/bling/modal
+
+\-- modal.modal: Light
+light: true
+
+
+
+-- site-doc.header: Examples
+
+-- site-doc.output:
+colors: $ftd.default-colors
+types: $ftd.default-types
+
+-- modal-cover: This is modal
+$open: true
+
+-- end: site-doc.output
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `modal` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+It's used to add text inside modal.
+
+-- site-doc.component-property: `light`
+type: Boolean (`optional`, default: `false`)
+
+If you want to show modal with light background.
+
+-- site-doc.component-property: `dark`
+type: Boolean (`optional`, default: `false`)
+
+If you want to show modal with dark background.
+
+-- site-doc.component-property: `primary`
+type: Boolean (`optional`, default: `false`)
+
+If you want to show modal with primary background.
+
+-- site-doc.component-property: `secondary`
+type: Boolean (`optional`, default: `false`)
+
+If you want to show modal with secondary background.
+
+-- site-doc.component-property: `info`
+type: Boolean (`optional`, default: `false`)
+
+If you want to show modal with info background.
+
+-- site-doc.component-property: `success`
+type: Boolean (`optional`, default: `false`)
+
+If you want to show modal with success background.
+
+-- site-doc.component-property: `danger`
+type: Boolean (`optional`, default: `false`)
+
+If you want to show modal with danger background.
+
+-- site-doc.component-property: `warning`
+type: Boolean (`optional`, default: `false`)
+
+If you want to show modal with warning background.
+
+-- end: site-doc.component-doc
+
+-- end: site-doc.doc-home
+
+
+
+
+
+
+
+
+
+
+-- component modal-cover:
+caption title:
+optional body modal-body:
+boolean transparent: false
+boolean show-form: false
+string placeholder: Your email address here
+string cta-text: Continue
+string trigger: Click here to open modal cover
+optional string footer:
+boolean $open: false
+
+-- ftd.column:
+if: { modal-cover.open }
+width: fill-container
+anchor: window
+background.solid: $inherited.colors.background.overlay
+height: fill-container
+z-index: 99999
+align-content: center
+top.px: 0
+bottom.px: 0
+left.px: 0
+right.px: 0
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: 600
+align-content: center
+background.solid: $inherited.colors.background.base
+padding.px: 44
+id: modal-wrap
+
+-- ftd.image:
+src: $assets.files.static.cross.svg
+width.fixed.px: 24
+anchor.id: modal-wrap
+right.px: 0
+top.px: 0
+$on-click$: $ftd.toggle($a = $modal-cover.open)
+
+-- ftd.text: $modal-cover.title
+color: red
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: modal-cover 
