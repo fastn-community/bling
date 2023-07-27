@@ -3,37 +3,14 @@
 site-title: Bling
 show-tabs: false
 github-url: https://github.com/fastn-community/bling
-
--- site-doc.component-doc: `note`
-package-link: https://fastn-community.github.io/bling/note/
-package-name: fastn-community.github.io/bling/note
-info: `-- note` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
+current-package: fastn-community.github.io/bling
 
 A "note component" typically refers to a UI component used to display a note or
 a small piece of information within a user interface. It is commonly used in
 applications, websites, or documentation systems to present brief explanations,
 tips, warnings, or other important information to users.
 
--- site-doc.header: How to use
-
--- cb.code: Add `bling` dependency into your FASTN.ftd
-lang: ftd
-
-\-- fastn.dependency: fastn-community.github.io/bling
-
--- cb.code: `-- note`
-lang: ftd
-
-\-- import: fastn-community.github.io/bling/note
-
-\-- note.note: This is your Title
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut.
-
-
--- site-doc.header: Examples
+-- site-doc.header: Example
 
 -- site-doc.output:
 colors: $ftd.default-colors
@@ -46,6 +23,29 @@ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 nostrud exercitation ullamco laboris nisi ut.
 
 -- end: site-doc.output
+
+-- site-doc.header: How to use
+
+-- cb.code: Add `bling` dependency into your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+
+
+-- cb.code: import `note` inside your `.ftd` file
+lang: ftd
+
+\-- import: fastn-community.github.io/bling/note
+
+
+-- cb.code: sample usage of `-- note` component
+lang: ftd
+
+\-- note.note: This is your Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut.
 
 -- site-doc.header: Properties:
 
@@ -65,8 +65,6 @@ It's used to add body content to `note` component.
 type: Body (`optional`)
 
 It's used to add emoji icon to `note` component.
-
--- end: site-doc.component-doc
 
 -- end: site-doc.doc-home
 

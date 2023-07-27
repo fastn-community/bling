@@ -4,16 +4,34 @@
 site-title: Bling
 show-tabs: false
 github-url: https://github.com/fastn-community/bling
-
--- site-doc.component-doc: `holder`
-package-link: https://fastn-community.github.io/bling/holder/
-package-name: fastn-community.github.io/bling/holder
-info: `-- holder` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
+current-package: fastn-community.github.io/bling
 
 The triangle bubble holder web component provides an attractive and
 attention-grabbing way to present quotes or important text within a web page.
 It enhances the visual appeal and readability of the content while providing a
 clear visual indication of the quoted content.
+
+-- site-doc.header: Example
+
+-- site-doc.output:
+
+-- triangular: A Triangle Quote Component
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
+-- cb.code:
+lang: java
+
+if (condition) {
+    // code block
+    statement1;
+    statement2;
+    // ...
+}
+
+-- end: triangular
 
 -- site-doc.header: How to use
 
@@ -22,10 +40,13 @@ lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/bling
 
--- cb.code: `-- triangular`
+-- cb.code: import `holder` inside your `.ftd` file
 lang: ftd
 
 \-- import: fastn-community.github.io/bling/holder
+
+-- cb.code: Add `-- triangular` holder inside your `.ftd` file 
+lang: ftd
 
 \-- holder.triangular: A Triangle Quote Component
 
@@ -52,28 +73,6 @@ nostrud exercitation ullamco laboris nisi ut
 
 \-- end: holder.triangular
 
--- site-doc.header: Example
-
--- site-doc.output:
-
--- triangular: A Triangle Quote Component
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
--- cb.code:
-lang: java
-
-if (condition) {
-    // code block
-    statement1;
-    statement2;
-    // ...
-}
-
--- end: triangular
-
 -- site-doc.header: Properties:
 
 Below are details of all properties of `triangular` component.
@@ -98,8 +97,6 @@ triangular component.
 
 Try adding multiple `triangular` components one after another and add this
 property value as `true` to odd positioned `triangular` component.
-
--- end: site-doc.component-doc
 
 -- end: site-doc.doc-home
 

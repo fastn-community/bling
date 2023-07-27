@@ -2,35 +2,11 @@
 site-title: Bling
 show-tabs: false
 github-url: https://github.com/fastn-community/bling
-
--- site-doc.component-doc: `collapse`
-package-link: https://fastn-community.github.io/bling/collapse/
-package-name: fastn-community.github.io/bling/collapse
-info: `-- collapse` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
+current-package: fastn-community.github.io/bling
 
 The collapse component typically consists of a header and a collapsible body.
 The header serves as a clickable element, such as a button or a title, that
 triggers the collapse functionality. 
-
--- site-doc.header: How to use
-
--- cb.code: Add `bling` dependency into your FASTN.ftd
-lang: ftd
-
-\-- fastn.dependency: fastn-community.github.io/bling
-
--- cb.code: `-- collapse`
-lang: ftd
-
-\-- import: fastn-community.github.io/bling/collapse
-
-\-- collapse.collapse: Lorem ipsum dolor
-info-right: Some info at right side
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
 
 -- site-doc.header: Example
 
@@ -46,6 +22,26 @@ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 nostrud exercitation ullamco laboris nisi ut
 
 -- end: site-doc.output
+
+-- site-doc.header: How to use
+
+-- cb.code: Add `bling` dependency into your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+
+-- cb.code: sample usage of `-- collapse` component
+lang: ftd
+
+\-- import: fastn-community.github.io/bling/collapse
+
+\-- collapse.collapse: Lorem ipsum dolor
+info-right: Some info at right side
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
 
 -- site-doc.header: Properties:
 
@@ -74,13 +70,10 @@ It's used to remove bottom margin between two collapse components, default value
 is `false` if you set it to `true` then bottom margin of collapse will be
 removed.
 
-
 -- site-doc.component-property: `body`
 type: Body (`optional`)
 
 It's used to add body content to collapse component.
-
--- end: site-doc.component-doc
 
 -- end: site-doc.doc-home
 

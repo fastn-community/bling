@@ -3,15 +3,34 @@
 site-title: Bling
 show-tabs: false
 github-url: https://github.com/fastn-community/bling
-
--- site-doc.component-doc: `twitter-cards`
-package-link: https://fastn-community.github.io/bling/twitter-cards/
-package-name: fastn-community.github.io/bling/twitter-cards
-info: `-- twitter-cards` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
+current-package: fastn-community.github.io/bling
 
 The twitter card includes a title, a brief description, a thumbnail image, and
 the Twitter handle of the account sharing the link. It provides a basic preview
 of the shared content on twitter.
+
+-- site-doc.header: Example
+
+-- site-doc.output:
+colors: $ftd.default-colors
+types: $ftd.default-types
+
+-- card:
+user: $amitu
+created_at: 9:19 AM · Oct 29, 2020
+place: $amitu.location
+reply_count: 1
+retweet_count: 9
+favorite_count: 1
+
+Just launched http://fifthtry.com homepage! Will give you some idea of what I
+quit Acko to build. If you are developer, engineering manager, product manager,
+it’s relevant to you!
+
+Please reply or DM me with what you think about it, will be immensely helpful
+and appreciated.
+
+-- end: site-doc.output
 
 -- site-doc.header: How to use
 
@@ -20,10 +39,13 @@ lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/bling
 
--- cb.code: `twitter-cards`
+-- cb.code: import `twitter-cards` inside your `.ftd` file
 lang: ftd
 
 \-- import: fastn-community.github.io/bling/twitter-cards
+
+-- cb.code: `twitter-cards`
+lang: ftd
 
 \-- twitter-cards.user amitu:
 name: Amit Upadhyay
@@ -49,29 +71,6 @@ it’s relevant to you!
 
 Please reply or DM me with what you think about it, will be immensely helpful
 and appreciated.
-
--- site-doc.header: Example
-
--- site-doc.output:
-colors: $ftd.default-colors
-types: $ftd.default-types
-
--- card:
-user: $amitu
-created_at: 9:19 AM · Oct 29, 2020
-place: $amitu.location
-reply_count: 1
-retweet_count: 9
-favorite_count: 1
-
-Just launched http://fifthtry.com homepage! Will give you some idea of what I
-quit Acko to build. If you are developer, engineering manager, product manager,
-it’s relevant to you!
-
-Please reply or DM me with what you think about it, will be immensely helpful
-and appreciated.
-
--- end: site-doc.output
 
 -- site-doc.header: Properties:
 
@@ -170,8 +169,6 @@ It's used to add retweet count.
 type: Integer (`required`)
 
 It's used to add tweet likes count.
-
--- end: site-doc.component-doc
 
 -- end: site-doc.doc-home
 
