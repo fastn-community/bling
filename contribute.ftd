@@ -1,4 +1,4 @@
--- site-doc.doc-home: Contribute to Bling Components
+-- site-doc.doc-home: Contribute to Bling
 license-url: https://github.com/fastn-community/bling/blob/main/LICENSE
 current-package: fastn-community.github.io/bling
 show-tabs: false
