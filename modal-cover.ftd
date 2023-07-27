@@ -28,6 +28,7 @@ $open: $show-modal
 show-form: true
 placeholder: Your email address here
 cta-text: Continue
+cta-link: modal-cover/
 footer: What is it? [Terms and conditions](modal-cover/)
 
 25% Off On Your First Purchase* Enter code WELCOME at checkout
@@ -100,9 +101,14 @@ If you want to change input placeholder text change its value with value you
 would like to show inside input as a placeholder text.
 
 -- site-doc.component-property: `cta-text`
-type: String (`optional`, default: `Continue`)
+type: String (`required`, default: `Continue`)
 
 Its used to change value of `Button` title. 
+
+-- site-doc.component-property: `cta-link`
+type: String (`required`)
+
+Its used to add link to form `Button`.
 
 -- site-doc.component-property: `footer`
 type: String (`optional`)
