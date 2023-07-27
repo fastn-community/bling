@@ -3,11 +3,7 @@
 site-title: Bling
 show-tabs: false
 github-url: https://github.com/fastn-community/bling
-
--- site-doc.component-doc: `quote`
-package-link: https://fastn-community.github.io/bling/quote/
-package-name: fastn-community.github.io/bling/quote
-info: `-- quote` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
+current-package: fastn-community.github.io/bling
 
 The quote component is to draw attention to a specific statement, passage, or
 text by presenting it in a visually distinct and often stylized manner. The
@@ -400,8 +396,6 @@ type: ftd.image-src (`optional`)
 It's used to add author company logo inside below quote components.
 
 [charcoal](quote/#charcoal)
-
--- end: site-doc.component-doc
 
 -- end: site-doc.doc-home
 

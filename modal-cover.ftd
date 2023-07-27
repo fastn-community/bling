@@ -121,7 +121,7 @@ like footer.
 Below are details of all properties of `modal-cover.button` component.
 
 `$on-click$: $ftd.toggle($a = $show-modal)` `$ftd.toggle` is a in-built fastn
-function. which requires `boolean` `$show-modal` to show or hide modal-cover.
+function. which requires a `boolean` `$show-modal` to show or hide modal-cover.
 
 
 -- site-doc.component-property: `$show-modal`

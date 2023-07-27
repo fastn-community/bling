@@ -3,11 +3,7 @@
 site-title: Bling
 show-tabs: false
 github-url: https://github.com/fastn-community/bling
-
--- site-doc.component-doc: `emoji-list`
-package-link: https://fastn-community.github.io/bling/emoji-list/
-package-name: fastn-community.github.io/bling/emoji-list
-info: `-- emoji-list` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
+current-package: fastn-community.github.io/bling
 
 An emoji list refers to a collection list items with emoji as a bullet. Emoji's 
 are small graphical icons or symbols used to convey emotions, ideas, or
@@ -15,38 +11,6 @@ concepts in digital communication. Emojis are widely used in various forms of
 online communication, such as messaging apps, social media platforms, and
 emails, to add visual expressions and enhance the tone and meaning of
 text-based messages.
-
--- site-doc.header: How to use
-
--- cb.code: Add `bling` dependency into your FASTN.ftd
-lang: ftd
-
-\-- fastn.dependency: fastn-community.github.io/bling
-
--- cb.code: `-- emoji-list`
-lang: ftd
-
-\-- import: fastn-community.github.io/bling/emoji-list
-
-\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
-emoji: 💫
-
-\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
-emoji: 🌟
-
-\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
-emoji: 💥
-
-\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
-emoji: 🌺
-
-\-- emoji-list: 
-emoji: ✨
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
 
 -- site-doc.header: Example
 
@@ -69,6 +33,40 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 nostrud exercitation ullamco laboris nisi ut
 
+-- site-doc.header: How to use
+
+-- cb.code: Add `bling` dependency into your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+
+-- cb.code: import `emoji-list` inside your `.ftd` file
+lang: ftd
+
+\-- import: fastn-community.github.io/bling/emoji-list
+
+-- cb.code: copy any one of these `-- emoji-list` you like to use
+lang: ftd
+
+\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 💫
+
+\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 🌟
+
+\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 💥
+
+\-- emoji-list: Lorem ipsum dolor sit amet, consectetur adipiscing 
+emoji: 🌺
+
+\-- emoji-list: 
+emoji: ✨
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
 -- site-doc.header: Properties:
 
 Below are details of all properties of `emoji-list` component.
@@ -82,8 +80,6 @@ It's used to add emoji as a list bullet to emoji-list.
 type: Body (`optional`)
 
 It's used to add body content to emoji-list component.
-
--- end: site-doc.component-doc
 
 -- end: site-doc.doc-home
 

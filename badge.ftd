@@ -1,18 +1,23 @@
 
 -- site-doc.doc-home: Badge
 site-title: Bling
-show-tabs: false
 github-url: https://github.com/fastn-community/bling
-
--- site-doc.component-doc: `badge`
-package-link: https://fastn-community.github.io/bling/badge/
-package-name: fastn-community.github.io/bling/badge
-info: `-- badge` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
+current-package: fastn-community.github.io/bling
 
 Badges often take the form of small shapes, such as circles, squares, or
 rectangles, and they can contain text, numbers, or icons. They are commonly
 used to convey information such as new messages, notifications, unread counts,
 user roles or statuses, ratings, achievements, or labels.
+
+-- site-doc.header: Examples
+
+-- site-doc.output:
+colors: $ftd.default-colors
+types: $ftd.default-types
+
+-- all-badges:
+
+-- end: site-doc.output
 
 -- site-doc.header: How to use
 
@@ -21,10 +26,14 @@ lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/bling
 
--- cb.code: All badges: copy any one of these badges you like to use
+-- cb.code: import `badge` inside your `.ftd` file
 lang: ftd
 
 \-- import: fastn-community.github.io/bling/badge
+
+-- cb.code: All badges: copy any one of these badges you like to use
+lang: ftd
+
 
 \-- badge.badge: Light
 light: true
@@ -49,16 +58,6 @@ success: true
 
 \-- badge.badge: Danger
 danger: true
-
--- site-doc.header: Examples
-
--- site-doc.output:
-colors: $ftd.default-colors
-types: $ftd.default-types
-
--- all-badges:
-
--- end: site-doc.output
 
 -- site-doc.header: Properties:
 
@@ -109,7 +108,6 @@ type: Boolean (`optional`, default: `false`)
 
 If you want to show badge with warning background.
 
--- end: site-doc.component-doc
 
 -- end: site-doc.doc-home
 

@@ -4,55 +4,14 @@
 site-title: Bling
 show-tabs: false
 github-url: https://github.com/fastn-community/bling
-
--- site-doc.component-doc: `tip`
-package-link: https://fastn-community.github.io/bling/tip/
-package-name: fastn-community.github.io/bling/tip
-info: `-- tip` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
+current-package: fastn-community.github.io/bling
 
 The "tip component" is a UI component used to provide helpful suggestions,
 advice, or recommendations to users. It is commonly used in websites to offer
 tips or best practices that can enhance the user's experience, or provide
 guidance on how to use specific features.
 
--- site-doc.header: How to use
-
--- cb.code: Add `bling` dependency into your FASTN.ftd
-lang: ftd
-
-\-- fastn.dependency: fastn-community.github.io/bling
-
--- cb.code: `-- tip`
-lang: ftd
-
-\-- import: fastn-community.github.io/bling/tip
-
-\-- tip.tip: Cool bots hot tip !
-
-Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
-dolorem queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo
-inventore!
-
-\-- cb.code: Wow! awesome!:
-lang: java
-
-if (condition) {
-    // code block
-    statement1;
-    statement2;
-    // ...
-}
-
-\-- collapse.collapse: Lorem ipsum dolor
-info-right: Dolor sit amet
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
-
-\-- end: tip.tip
-
--- site-doc.header: Example
+-- site-doc.header: Examples
 
 -- site-doc.output:
 colors: $ftd.default-colors
@@ -91,6 +50,46 @@ nostrud exercitation ullamco laboris nisi ut
 
 -- end: site-doc.output
 
+-- site-doc.header: How to use
+
+-- cb.code: Add `bling` dependency into your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+
+-- cb.code: import `tip` inside your `.ftd` file
+lang: ftd
+
+\-- import: fastn-community.github.io/bling/tip
+
+-- cb.code: sample usage of `-- tip` component
+lang: ftd
+
+\-- tip.tip: Cool bots hot tip !
+
+Sed ut perspiciatis unde omnis iste natus err or sit voluptatem accusantium
+dolorem queili le laudantium, totam rem aperiam, eaque lai ipsa quae ab illo
+inventore!
+
+\-- cb.code: Wow! awesome!:
+lang: java
+
+if (condition) {
+    // code block
+    statement1;
+    statement2;
+    // ...
+}
+
+\-- collapse.collapse: Lorem ipsum dolor
+info-right: Dolor sit amet
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
+\-- end: tip.tip
+
 -- site-doc.header: Properties:
 
 Below are details of all properties of `tip` component.
@@ -110,8 +109,6 @@ type: ftd.image-src (`optional`)
 
 If you want to change default icon with your prefferd icon, then add `icon`
 property and add your image asset file-name.
-
--- end: site-doc.component-doc
 
 -- end: site-doc.doc-home
 

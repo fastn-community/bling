@@ -3,32 +3,10 @@
 site-title: Bling
 show-tabs: false
 github-url: https://github.com/fastn-community/bling
-
--- site-doc.component-doc: `sidenote`
-package-link: https://fastn-community.github.io/bling/sidenote/
-package-name: fastn-community.github.io/bling/sidenote
-info: `-- sidenote` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
+current-package: fastn-community.github.io/bling
 
 A "sidenote component" is a UI component used to display additional or
 supplementary information related to the main content within a user interface.
-
--- site-doc.header: How to use
-
--- cb.code: Add `bling` dependency into your FASTN.ftd
-lang: ftd
-
-\-- fastn.dependency: fastn-community.github.io/bling
-
--- cb.code: `-- sidenote`
-lang: ftd
-
-\-- import: fastn-community.github.io/bling/sidenote
-
-\-- sidenote.sidenote:
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut
 
 -- site-doc.header: Example
 
@@ -44,6 +22,27 @@ nostrud exercitation ullamco laboris nisi ut
 
 -- end: site-doc.output
 
+-- site-doc.header: How to use
+
+-- cb.code: Add `bling` dependency into your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+
+-- cb.code: import `sidenote` inside your `.ftd` file
+lang: ftd
+
+\-- import: fastn-community.github.io/bling/sidenote
+
+-- cb.code: sample usage of `-- sidenote` component
+lang: ftd
+
+\-- sidenote.sidenote:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
 -- site-doc.header: Properties:
 
 Below are details of all properties of `sidenote` component.
@@ -52,8 +51,6 @@ Below are details of all properties of `sidenote` component.
 type: Body (`required`)
 
 It's used to add body content to read-more component.
-
--- end: site-doc.component-doc
 
 -- end: site-doc.doc-home
 

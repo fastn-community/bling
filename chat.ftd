@@ -3,34 +3,14 @@
 site-title: Bling
 show-tabs: false
 github-url: https://github.com/fastn-community/bling
-
--- site-doc.component-doc: `Chat`
-package-link: https://fastn-community.github.io/bling/chat/
-package-name: fastn-community.github.io/bling/chat
-info: `-- chat` can be used as part of any component inside your [fastn](https://fastn.com/) web projects.
+current-package: fastn-community.github.io/bling
 
 The chat message component is a UI component designed to display individual
 messages within a chat or messaging interface. It is commonly used in
 applications or websites that involve real-time communication, such as
 messaging platforms, chatbots, or customer support systems.
 
--- site-doc.header: How to use
-
--- cb.code: Add `bling` dependency into your FASTN.ftd
-lang: ftd
-
-\-- fastn.dependency: fastn-community.github.io/bling
-
--- cb.code: `-- message-left` & `-- message-right`
-lang: ftd
-
-\-- import: fastn-community.github.io/bling/chat
-
-\-- message-left: Hi! 
-
-\-- message-right: Hey! how are you doing? 
-
--- site-doc.header: Chat Example
+-- site-doc.header: Example
 
 -- site-doc.output:
 
@@ -100,6 +80,25 @@ role: $inherited.types.label-large
 
 -- end: site-doc.output
 
+-- site-doc.header: How to use
+
+-- cb.code: Add `bling` dependency into your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+
+-- cb.code: import `chat` inside your `.ftd` file
+lang: ftd
+
+\-- import: fastn-community.github.io/bling/chat
+
+-- cb.code: sample usage of `-- message-left` & `-- message-right`
+lang: ftd
+
+\-- message-left: Hi! 
+
+\-- message-right: Hey! how are you doing? 
+
 -- site-doc.header: Properties:
 
 Below are details of all properties of `triangular` component.
@@ -121,8 +120,6 @@ type: Boolean (`optional`, default: `true`)
 
 If `round-avatar` property set as `false` then user image will be seen as
 square. By default it will be seen as rounded image.
-
--- end: site-doc.component-doc
 
 -- end: site-doc.doc-home
 
