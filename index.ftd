@@ -2,9 +2,11 @@
 -- import: fastn-community.github.io/bling/chat
 -- import: fastn-community.github.io/bling/tip
 -- import: fastn-community.github.io/bling/quote
+-- import: fastn-community.github.io/bling/modal-cover
 
 
 
+-- boolean $show-modal: false
 
 
 

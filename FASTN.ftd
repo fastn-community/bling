@@ -28,7 +28,7 @@
   - Emoji-list: emoji-list/
   - Holder: holder/
   - Message: chat/
-  - Modal: modal/
+  - Modal-cover: modal-cover/
   - Note: note/
   - Quotes: quote/
   - Read more: read-more/
