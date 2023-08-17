@@ -9,7 +9,7 @@ show-tabs: false
 github-url: https://github.com/fastn-community/bling
 current-package: fastn-community.github.io/bling
 
-The logo component will help you to down the fastn logo in different formats.
+The logo component will help you to download the fastn logo in different formats.
 
 PNG downloads have a transparent background, JPGs will have a white background.
 
@@ -20,7 +20,7 @@ lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/bling
 
--- cb.code: Impot `fastn-logo` inside your `ftd` file
+-- cb.code: Import `fastn-logo` inside your `.ftd` file
 lang: ftd
 
 \-- import: fastn-community.github.io/bling/fastn-logo
