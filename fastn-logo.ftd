@@ -1,0 +1,424 @@
+-- import: fastn-stack.github.io/fastn-js/utils
+-- import: fastn-community.github.io/bling
+
+
+
+-- site-doc.doc-home: Fastn Logos
+site-title: Bling
+show-tabs: false
+github-url: https://github.com/fastn-community/bling
+current-package: fastn-community.github.io/bling
+
+The logo component will help you to down the fastn logo in different formats.
+
+PNG downloads have a transparent background, JPGs will have a white background.
+
+-- site-doc.header: How to use
+
+-- cb.code: Add `bling` dependency into your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+
+-- cb.code: Impot `fastn-logo` inside your `ftd` file
+lang: ftd
+
+\-- import: fastn-community.github.io/bling/fastn-logo
+
+-- logo-dark-details:
+logo: $assets.files.static.fastn.svg
+
+-- cb.code: Example usage
+
+\-- bling.logo-dark-details:
+logo: $assets.files.static.fastn.svg
+
+-- logo-light-details:
+logo: $assets.files.static.logo-light.svg
+
+-- cb.code: Example usage
+
+\-- bling.logo-light-details:
+logo: $assets.files.static.logo-light.svg
+
+-- logo-without-bg-details:
+logo: $assets.files.static.logo-without-bg.svg
+
+-- cb.code: Example usage
+
+\-- bling.logo-without-bg-details:
+logo: $assets.files.static.logo-without-bg.svg
+
+-- end: site-doc.doc-home
+
+
+
+
+
+
+
+
+
+
+
+-- component logo-dark-details:
+optional ftd.image-src logo:
+private string card-id: this-card
+boolean $mouse-in: false
+boolean $mouse-enter: false
+boolean $mouse-over: false
+
+-- ftd.column:
+width if { ftd.device == "mobile" }: fill-container
+
+-- ftd.column:
+width if { ftd.device == "mobile" }: fill-container
+spacing.fixed.px: 24
+
+-- ftd.column:
+width: fill-container
+id: $logo-dark-details.card-id
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- logo-dark:
+logo: $logo-dark-details.logo
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.row:
+width.fixed.px: 250
+spacing: space-between
+align-content: center
+align-self: center
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.static.download.svg
+src if { logo-dark-details.mouse-over }: $assets.files.static.download-hover.svg
+width.fixed.px: 16
+$on-click$: $utils.download-as-image(element_id = $logo-dark-details.card-id, filename = fastn.png)
+$on-mouse-enter$: $ftd.set-bool($a = $logo-dark-details.mouse-over, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $logo-dark-details.mouse-over, v = false)
+
+-- ftd.text: PNG
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.static.download.svg
+src if { logo-dark-details.mouse-enter }: $assets.files.static.download-hover.svg
+width.fixed.px: 16
+$on-click$: $utils.download-as-image(element_id = $logo-dark-details.card-id, filename = fastn.jpg)
+$on-mouse-enter$: $ftd.set-bool($a = $logo-dark-details.mouse-enter, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $logo-dark-details.mouse-enter, v = false)
+
+-- ftd.text: JPG
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.static.download.svg
+src if { logo-dark-details.mouse-in }: $assets.files.static.download-hover.svg
+width.fixed.px: 16
+$on-click$: $utils.download-as-image(element_id = $logo-dark-details.card-id, filename = fastn.svg)
+$on-mouse-enter$: $ftd.set-bool($a = $logo-dark-details.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $logo-dark-details.mouse-in, v = false)
+
+-- ftd.text: SVG
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: logo-dark-details
+
+
+
+
+
+
+
+
+
+
+-- component logo-dark:
+optional ftd.image-src logo:
+
+-- ftd.column:
+width.fixed.px: 314
+align-content: center
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 8
+
+-- ftd.image:
+src: $logo-dark.logo
+width: auto
+
+-- end: ftd.column
+
+-- end: logo-dark
+
+
+
+
+
+
+
+
+
+
+
+-- component logo-light-details:
+optional ftd.image-src logo:
+private string card-id: this-card
+boolean $mouse-in: false
+boolean $mouse-enter: false
+boolean $mouse-over: false
+
+-- ftd.column:
+width if { ftd.device == "mobile" }: fill-container
+
+-- ftd.column:
+width if { ftd.device == "mobile" }: fill-container
+spacing.fixed.px: 24
+
+-- ftd.column:
+width: fill-container
+id: $logo-light-details.card-id
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- logo-light:
+logo: $logo-light-details.logo
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.row:
+width.fixed.px: 250
+spacing: space-between
+align-content: center
+align-self: center
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.static.download.svg
+src if { logo-light-details.mouse-over }: $assets.files.static.download-hover.svg
+width.fixed.px: 16
+$on-click$: $utils.download-as-image(element_id = $logo-light-details.card-id, filename = fastn.png)
+$on-mouse-enter$: $ftd.set-bool($a = $logo-light-details.mouse-over, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $logo-light-details.mouse-over, v = false)
+
+-- ftd.text: PNG
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.static.download.svg
+src if { logo-light-details.mouse-enter }: $assets.files.static.download-hover.svg
+width.fixed.px: 16
+$on-click$: $utils.download-as-image(element_id = $logo-light-details.card-id, filename = fastn.jpg)
+$on-mouse-enter$: $ftd.set-bool($a = $logo-light-details.mouse-enter, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $logo-light-details.mouse-enter, v = false)
+
+-- ftd.text: JPG
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.static.download.svg
+src if { logo-light-details.mouse-in }: $assets.files.static.download-hover.svg
+width.fixed.px: 16
+$on-click$: $utils.download-as-image(element_id = $logo-light-details.card-id, filename = fastn.svg)
+$on-mouse-enter$: $ftd.set-bool($a = $logo-light-details.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $logo-light-details.mouse-in, v = false)
+
+-- ftd.text: SVG
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: logo-light-details
+
+
+
+
+
+
+
+
+-- component logo-light:
+optional ftd.image-src logo:
+
+-- ftd.column:
+width.fixed.px: 314
+align-content: center
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 8
+
+-- ftd.image:
+src: $logo-light.logo
+width: auto
+
+-- end: ftd.column
+
+-- end: logo-light
+
+
+
+
+
+
+
+
+
+
+
+
+-- component logo-without-bg-details:
+optional ftd.image-src logo:
+private string card-id: this-card
+boolean $mouse-in: false
+boolean $mouse-enter: false
+boolean $mouse-over: false
+
+-- ftd.column:
+width if { ftd.device == "mobile" }: fill-container
+
+-- ftd.column:
+width if { ftd.device == "mobile" }: fill-container
+spacing.fixed.px: 24
+
+-- ftd.column:
+width: fill-container
+id: $logo-without-bg-details.card-id
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- logo-without-bg:
+logo: $logo-without-bg-details.logo
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.row:
+width.fixed.px: 250
+spacing: space-between
+align-content: center
+align-self: center
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.static.download.svg
+src if { logo-without-bg-details.mouse-over }: $assets.files.static.download-hover.svg
+width.fixed.px: 16
+$on-click$: $utils.download-as-image(element_id = $logo-without-bg-details.card-id, filename = fastn.png)
+$on-mouse-enter$: $ftd.set-bool($a = $logo-without-bg-details.mouse-over, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $logo-without-bg-details.mouse-over, v = false)
+
+-- ftd.text: PNG
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.static.download.svg
+src if { logo-without-bg-details.mouse-enter }: $assets.files.static.download-hover.svg
+width.fixed.px: 16
+$on-click$: $utils.download-as-image(element_id = $logo-without-bg-details.card-id, filename = fastn.jpg)
+$on-mouse-enter$: $ftd.set-bool($a = $logo-without-bg-details.mouse-enter, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $logo-without-bg-details.mouse-enter, v = false)
+
+-- ftd.text: JPG
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.static.download.svg
+src if { logo-without-bg-details.mouse-in }: $assets.files.static.download-hover.svg
+width.fixed.px: 16
+$on-click$: $utils.download-as-image(element_id = $logo-without-bg-details.card-id, filename = fastn.svg)
+$on-mouse-enter$: $ftd.set-bool($a = $logo-without-bg-details.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $logo-without-bg-details.mouse-in, v = false)
+
+-- ftd.text: SVG
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: logo-without-bg-details
+
+
+
+
+
+
+
+
+-- component logo-without-bg:
+optional ftd.image-src logo:
+
+-- ftd.column:
+width.fixed.px: 314
+align-content: center
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 8
+
+-- ftd.image:
+src: $logo-without-bg.logo
+width: auto
+
+-- end: ftd.column
+
+-- end: logo-without-bg
