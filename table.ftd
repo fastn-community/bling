@@ -1,0 +1,246 @@
+-- table:
+
+
+
+
+
+
+
+
+
+
+-- component table:
+optional caption title:
+
+-- ftd.row:
+width: fill-container
+padding.px: 24
+align-content: center
+
+-- table-column:
+data-column: $column-1-data
+
+-- table-column:
+data-column: $column-2-data
+
+-- table-column:
+data-column: $column-3-data
+
+-- table-column:
+data-column: $column-4-data
+
+-- end: ftd.row
+
+-- end: table
+
+
+
+
+
+
+
+
+
+
+-- component table-column:
+table-cell-record list data-column: $column-1-data
+
+-- ftd.column:
+width.fixed.px: 240
+
+-- table-cell: $obj.title
+$loop$: $table-column.data-column as $obj
+cell-icon: $obj.cell-icon
+is-title: $obj.is-title
+
+-- end: ftd.column
+
+-- end: table-column
+
+
+
+
+
+
+
+
+
+
+-- component table-cell:
+optional caption title:
+optional ftd.image-src cell-icon:
+boolean is-title: false
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: 30
+align-content: center
+border-color: $inherited.colors.border-strong
+border-width.px: 1
+padding-vertical.px: 24
+
+-- ftd.text: $table-cell.title
+if: { table-cell.is-title }
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-large
+
+-- ftd.image:
+if: { !table-cell.is-title }
+src: $table-cell.cell-icon
+width: auto
+
+-- end: ftd.column
+
+-- end: table-cell
+
+
+
+
+
+
+
+
+
+
+-- record table-cell-record:
+optional caption title:
+optional ftd.image-src cell-icon:
+boolean is-title: false
+
+-- table-cell-record list column-1-data:
+
+-- table-cell-record: Add Product Service
+is-title: true
+
+-- table-cell-record: Your Text Here
+is-title: true
+
+-- table-cell-record: Your Text Here
+is-title: true
+
+-- table-cell-record: Your Text Here
+is-title: true
+
+-- table-cell-record: Your Text Here
+is-title: true
+
+-- table-cell-record: Your Text Here
+is-title: true
+
+-- table-cell-record: Your Text Here
+is-title: true
+
+-- table-cell-record: Your Text Here
+is-title: true
+
+-- table-cell-record: Your Text Here
+is-title: true
+
+-- end: column-1-data
+
+
+
+
+
+
+-- table-cell-record list column-2-data:
+
+-- table-cell-record: BASIC
+is-title: true
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.no.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.no.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.no.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.no.svg
+
+-- end: column-2-data
+
+
+
+
+-- table-cell-record list column-3-data:
+
+-- table-cell-record: STANDARD
+is-title: true
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.no.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.no.svg
+
+-- end: column-3-data
+
+
+
+
+
+
+
+-- table-cell-record list column-4-data:
+
+-- table-cell-record: PLUS
+is-title: true
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- end: column-4-data
