@@ -40,16 +40,16 @@ logo and surrounding elements preserves the visual integrity of our brand.
 PNG downloads have a transparent background, JPGs will have a white background.
 
 -- logo-dark-details:
-logo: $assets.files.static.logo-dark.svg
+logo: $assets.files.static.logo-dark-img.svg
 
 -- logo-light-details:
-logo: $assets.files.static.logo-light.svg
+logo: $assets.files.static.logo-light-img.svg
 
 -- logo-without-bg-details:
-logo: $assets.files.static.logo-without-bg.svg
+logo: $assets.files.static.logo-without-bg-img.svg
 
 -- logo-without-bg-white-details:
-logo: $assets.files.static.logo-without-bg-white.svg
+logo: $assets.files.static.logo-without-bg-white-img.svg
 
 -- end: fastn-logo
 
@@ -261,10 +261,9 @@ spacing.fixed.px: 12
 src: $assets.files.static.download.svg
 src if { logo-dark-details.mouse-in }: $assets.files.static.download-hover.svg
 width.fixed.px: 16
-;;$on-click$: $utils.download-as-image(element_id = $logo-dark-details.card-id, filename = fastn.svg)
 $on-mouse-enter$: $ftd.set-bool($a = $logo-dark-details.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $logo-dark-details.mouse-in, v = false)
-link: http://www.w3.org/2000/svg
+link: http://fastn-community.github.io/bling/static/logo-dark-img.svg
 open-in-new-tab: true
 
 -- ftd.text: SVG
@@ -394,9 +393,10 @@ spacing.fixed.px: 12
 src: $assets.files.static.download.svg
 src if { logo-light-details.mouse-in }: $assets.files.static.download-hover.svg
 width.fixed.px: 16
-$on-click$: $utils.download-as-image(element_id = $logo-light-details.card-id-light, filename = fastn-light.svg)
 $on-mouse-enter$: $ftd.set-bool($a = $logo-light-details.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $logo-light-details.mouse-in, v = false)
+link: http://fastn-community.github.io/bling/static/logo-light-img.svg
+open-in-new-tab: true
 
 -- ftd.text: SVG
 color: $inherited.colors.text-strong
@@ -524,9 +524,10 @@ spacing.fixed.px: 12
 src: $assets.files.static.download.svg
 src if { logo-without-bg-details.mouse-in }: $assets.files.static.download-hover.svg
 width.fixed.px: 16
-$on-click$: $utils.download-as-image(element_id = $logo-without-bg-details.card-id-no-bg, filename = fastn-no-bg.svg)
 $on-mouse-enter$: $ftd.set-bool($a = $logo-without-bg-details.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $logo-without-bg-details.mouse-in, v = false)
+link: http://fastn-community.github.io/bling/static/logo-without-bg-img.svg
+open-in-new-tab: true
 
 -- ftd.text: SVG
 color: $inherited.colors.text-strong
@@ -655,9 +656,10 @@ spacing.fixed.px: 12
 src: $assets.files.static.download.svg
 src if { logo-without-bg-white-details.mouse-in }: $assets.files.static.download-hover.svg
 width.fixed.px: 16
-$on-click$: $utils.download-as-image(element_id = $logo-without-bg-white-details.card-id-white, filename = fastn-white.svg)
 $on-mouse-enter$: $ftd.set-bool($a = $logo-without-bg-white-details.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $logo-without-bg-white-details.mouse-in, v = false)
+link: http://fastn-community.github.io/bling/static/logo-without-bg-white-img.svg
+open-in-new-tab: true
 
 -- ftd.text: SVG
 color: $inherited.colors.text-strong
