@@ -1,67 +1,181 @@
 -- import: fastn-stack.github.io/fastn-js/utils
 -- import: fastn-community.github.io/bling
 
-
-
 -- site-doc.doc-home: Fastn Logos
 site-title: Bling
 show-tabs: false
 github-url: https://github.com/fastn-community/bling
 current-package: fastn-community.github.io/bling
 
-The logo component will help you to download the fastn logo in different formats.
+-- fastn-logo: Logo Mark
+logo: $assets.files.static.fastn.svg
+
+The core logo consists of the wordmark in horizontal format. The core logo is
+the standard logo orientation to be used across all marketing materials, when
+the application or surrounding elements are ideal for the width of its
+proportions.
+
+-- fastn-logo: Safe Space
+logo: $assets.files.static.fastn-space.svg
+
+This area should be kept free of any visual elements, including text, graphics,
+borders, patterns, and other logos. Ensuring proper clear space between the
+logo and surrounding elements preserves the visual integrity of our brand.
+
+-- fastn-logo: Incorrect Usage
+logo: $assets.files.static.fastn-frame.svg
+point-1: 1.Do not apply a stroke to the logo
+point-2: 2.Do not recolor any part of the logo
+point-3: 3.Do not apply drop shadow or effects to the logo
+point-4: 4.Do not rotate the logo in any way
+point-5: 5.Do not distort the logo in any way
+point-6: 6.Do not use the logo as a framing device for imagery
+
+This area should be kept free of any visual elements, including text, graphics,
+borders, patterns, and other logos. Ensuring proper clear space between the
+logo and surrounding elements preserves the visual integrity of our brand.
+
+-- fastn-logo: Fastn logos and brand assets
 
 PNG downloads have a transparent background, JPGs will have a white background.
 
--- site-doc.header: How to use
-
--- cb.code: Add `bling` dependency into your FASTN.ftd
-lang: ftd
-
-\-- fastn.dependency: fastn-community.github.io/bling
-
--- cb.code: Import `fastn-logo` inside your `.ftd` file
-lang: ftd
-
-\-- import: fastn-community.github.io/bling/fastn-logo
-
 -- logo-dark-details:
-logo: $assets.files.static.fastn.svg
-
--- cb.code: Example usage
-
-\-- bling.logo-dark-details:
-logo: $assets.files.static.fastn.svg
+logo: $assets.files.static.logo-dark.svg
 
 -- logo-light-details:
-logo: $assets.files.static.logo-light.svg
-
--- cb.code: Example usage
-
-\-- bling.logo-light-details:
 logo: $assets.files.static.logo-light.svg
 
 -- logo-without-bg-details:
 logo: $assets.files.static.logo-without-bg.svg
 
--- cb.code: Example usage
-
-\-- bling.logo-without-bg-details:
-logo: $assets.files.static.logo-without-bg.svg
-
 -- logo-without-bg-white-details:
 logo: $assets.files.static.logo-without-bg-white.svg
 
--- cb.code: Example usage
+-- end: fastn-logo
 
-\-- bling.logo-without-bg-white-details:
-logo: $assets.files.static.logo-without-bg-white.svg
+-- fastn-logo: Color
+logo: $assets.files.static.fastn-color.svg
+
+Black and orange are used in all branded materials. The remaining colours in the
+primary palette are used for accents and reinforcing elements, such as graphics
+and illustrations.
+
+-- fastn-logo: Color usage
+
+Digital colours refer to colours that will be used for digital properties. For
+example, this webpage uses color defined by HEX codes. If you're working with
+any digital asset, you can input either the HEX or RGB color codes, as detailed
+in the primary palette. Some digital use cases include, digital ads, digital
+billboards, video and animation, Canva.
+
+- HEX: HEX codes are based on the hexadecimal system in computing. HEX and RGB
+codes provide the same information, but in different formats. The HEX code
+includes a hashtag followed by six characters. Example: #FC6D26
+
+- RGB: RGB is an acronym for Red, Green, and Blue. All digital colors are
+generated using percentages of these three colors. As mentioned, RGB is
+interchangeable with HEX. Example: rgb(255, 255, 255)
+
+-- fastn-logo: Typography
+
+Manrope is the default typeface for all fastn materials. It is an open source
+modern sans-serif font family.
+
+Refer to the guidelines below when working with typography:
+
+- Alternate between different sizes and weights to establish layout hierarchy.
+- Keep the font size consistent within each block of copy.
+- Left-align all copy. Never force-justify, center-align, or right-align typography, unless the written language dictates otherwise.
+- Default to sentence case unless working with a tagline/headline or different tiers of information.
+- No ALL-CAPS please.
+- Keep text solid-filled and refrain from adding strokes to outline the type.
+
 
 -- end: site-doc.doc-home
 
 
 
 
+
+
+
+
+
+-- component fastn-logo:
+caption title:
+body body:
+optional ftd.image-src logo:
+optional string point-1:
+optional string point-2:
+optional string point-3:
+optional string point-4:
+optional string point-5:
+optional string point-6:
+children wrapper:
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 24
+padding-bottom.px: 24
+
+-- ftd.text: $fastn-logo.title
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+style: bold
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$fastn-logo.body
+
+-- ftd.image:
+if: {fastn-logo.logo != NULL}
+src: $fastn-logo.logo
+width: auto
+align-self: center
+
+-- ftd.text: $fastn-logo.point-1
+if: {fastn-logo.point-1 != NULL}
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- ftd.text: $fastn-logo.point-2
+if: {fastn-logo.point-2 != NULL}
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- ftd.text: $fastn-logo.point-3
+if: {fastn-logo.point-3 != NULL}
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- ftd.text: $fastn-logo.point-4
+if: {fastn-logo.point-4 != NULL}
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- ftd.text: $fastn-logo.point-5
+if: {fastn-logo.point-5 != NULL}
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- ftd.text: $fastn-logo.point-6
+if: {fastn-logo.point-6 != NULL}
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 24
+wrap: true
+children: $fastn-logo.wrapper
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: fastn-logo
 
 
 
@@ -118,6 +232,8 @@ $on-mouse-enter$: $ftd.set-bool($a = $logo-dark-details.mouse-over, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $logo-dark-details.mouse-over, v = false)
 
 -- ftd.text: PNG
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -133,6 +249,8 @@ $on-mouse-enter$: $ftd.set-bool($a = $logo-dark-details.mouse-enter, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $logo-dark-details.mouse-enter, v = false)
 
 -- ftd.text: JPG
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -143,11 +261,15 @@ spacing.fixed.px: 12
 src: $assets.files.static.download.svg
 src if { logo-dark-details.mouse-in }: $assets.files.static.download-hover.svg
 width.fixed.px: 16
-$on-click$: $utils.download-as-image(element_id = $logo-dark-details.card-id, filename = fastn.svg)
+;;$on-click$: $utils.download-as-image(element_id = $logo-dark-details.card-id, filename = fastn.svg)
 $on-mouse-enter$: $ftd.set-bool($a = $logo-dark-details.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $logo-dark-details.mouse-in, v = false)
+link: http://www.w3.org/2000/svg
+open-in-new-tab: true
 
 -- ftd.text: SVG
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -243,6 +365,8 @@ $on-mouse-enter$: $ftd.set-bool($a = $logo-light-details.mouse-over, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $logo-light-details.mouse-over, v = false)
 
 -- ftd.text: PNG
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -258,6 +382,8 @@ $on-mouse-enter$: $ftd.set-bool($a = $logo-light-details.mouse-enter, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $logo-light-details.mouse-enter, v = false)
 
 -- ftd.text: JPG
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -273,6 +399,8 @@ $on-mouse-enter$: $ftd.set-bool($a = $logo-light-details.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $logo-light-details.mouse-in, v = false)
 
 -- ftd.text: SVG
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -367,6 +495,8 @@ $on-mouse-enter$: $ftd.set-bool($a = $logo-without-bg-details.mouse-over, v = tr
 $on-mouse-leave$: $ftd.set-bool($a = $logo-without-bg-details.mouse-over, v = false)
 
 -- ftd.text: PNG
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -382,6 +512,8 @@ $on-mouse-enter$: $ftd.set-bool($a = $logo-without-bg-details.mouse-enter, v = t
 $on-mouse-leave$: $ftd.set-bool($a = $logo-without-bg-details.mouse-enter, v = false)
 
 -- ftd.text: JPG
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -397,6 +529,8 @@ $on-mouse-enter$: $ftd.set-bool($a = $logo-without-bg-details.mouse-in, v = true
 $on-mouse-leave$: $ftd.set-bool($a = $logo-without-bg-details.mouse-in, v = false)
 
 -- ftd.text: SVG
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -419,6 +553,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $logo-without-bg-details.mouse-in, v = fals
 optional ftd.image-src logo:
 
 -- ftd.column:
+height.fixed.px: 170
 width.fixed.px: 314
 align-content: center
 border-width.px: 1
@@ -491,6 +626,8 @@ $on-mouse-enter$: $ftd.set-bool($a = $logo-without-bg-white-details.mouse-over, 
 $on-mouse-leave$: $ftd.set-bool($a = $logo-without-bg-white-details.mouse-over, v = false)
 
 -- ftd.text: PNG
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -506,6 +643,8 @@ $on-mouse-enter$: $ftd.set-bool($a = $logo-without-bg-white-details.mouse-enter,
 $on-mouse-leave$: $ftd.set-bool($a = $logo-without-bg-white-details.mouse-enter, v = false)
 
 -- ftd.text: JPG
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -521,6 +660,8 @@ $on-mouse-enter$: $ftd.set-bool($a = $logo-without-bg-white-details.mouse-in, v 
 $on-mouse-leave$: $ftd.set-bool($a = $logo-without-bg-white-details.mouse-in, v = false)
 
 -- ftd.text: SVG
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
