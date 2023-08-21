@@ -127,10 +127,9 @@ Refer to the guidelines below when working with typography:
 -- component logo-card:
 optional ftd.image-src logo:
 optional string id: logo-card
-boolean $mouse-in: false
-boolean $mouse-enter: false
-boolean $mouse-over: false
 optional string link:
+boolean $mouse-enter: false
+optional ftd.image-src logo:
 
 -- ftd.column:
 width if { ftd.device == "mobile" }: fill-container
@@ -147,8 +146,8 @@ id: $logo-card.id
 width: fill-container
 height: fill-container
 
--- logo-dark:
-logo: $logo-card.logo
+-- ftd.image:
+src: $logo-card.logo
 
 -- end: ftd.column
 
@@ -160,57 +159,22 @@ spacing: space-between
 align-content: center
 align-self: center
 
--- ftd.row:
-spacing.fixed.px: 12
+-- file-format: PNG
+$boolean: $logo-card.mouse-enter
+element-id: $logo-card.id
+file-name: fastn-logo.png
 
--- ftd.image:
-src: $assets.files.static.download.svg
-src if { logo-card.mouse-over }: $assets.files.static.download-hover.svg
-width.fixed.px: 16
-$on-click$: $utils.download-as-image(element_id = $logo-card.id, filename = fastn.png)
-$on-mouse-enter$: $ftd.set-bool($a = $logo-card.mouse-over, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $logo-card.mouse-over, v = false)
+-- file-format: JPG
+$boolean: $logo-card.mouse-enter
+element-id: $logo-card.id
+file-name: fastn-logo.jpg
 
--- ftd.text: PNG
-color: $inherited.colors.text-strong
-role: $inherited.types.copy-small
-
--- end: ftd.row
-
--- ftd.row:
-spacing.fixed.px: 12
-
--- ftd.image:
-src: $assets.files.static.download.svg
-src if { logo-card.mouse-enter }: $assets.files.static.download-hover.svg
-width.fixed.px: 16
-$on-click$: $utils.download-as-image(element_id = $logo-card.id, filename = fastn.jpg)
-$on-mouse-enter$: $ftd.set-bool($a = $logo-card.mouse-enter, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $logo-card.mouse-enter, v = false)
-
--- ftd.text: JPG
-color: $inherited.colors.text-strong
-role: $inherited.types.copy-small
-
--- end: ftd.row
-
--- ftd.row:
-spacing.fixed.px: 12
-
--- ftd.image:
-src: $assets.files.static.download.svg
-src if { logo-card.mouse-in }: $assets.files.static.download-hover.svg
-width.fixed.px: 16
-$on-mouse-enter$: $ftd.set-bool($a = $logo-card.mouse-in, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $logo-card.mouse-in, v = false)
+-- file-format: SVG
+$boolean: $logo-card.mouse-enter
+element-id: $logo-card.id
 link: $logo-card.link
-open-in-new-tab: true
-
--- ftd.text: SVG
-color: $inherited.colors.text-strong
-role: $inherited.types.copy-small
-
--- end: ftd.row
+file-name: fastn-logo.svg
+open: true
 
 -- end: ftd.row
 
@@ -229,20 +193,32 @@ role: $inherited.types.copy-small
 
 
 
--- component logo-dark:
-optional ftd.image-src logo:
+-- component file-format: 
+caption title: 
+boolean $boolean: false
+string element-id: file-format
+string file-name:
+boolean $mouse-enter: false
+optional string link:
+optional boolean open: false
 
--- ftd.column:
-width.fixed.px: 314
-align-content: center
-border-width.px: 1
-border-color: $inherited.colors.border
-border-radius.px: 8
+-- ftd.row:
+spacing.fixed.px: 12
 
 -- ftd.image:
-src: $logo-dark.logo
-width: auto
+src: $assets.files.static.download.svg
+src if { file-format.mouse-enter }: $assets.files.static.download-hover.svg
+width.fixed.px: 16
+$on-click$: $utils.download-as-image(element_id = $file-format.element-id, filename = $file-format.file-name)
+$on-mouse-enter$: $ftd.set-bool($a = $file-format.mouse-enter, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $file-format.mouse-enter, v = false)
+link: $file-format.link
+open-in-new-tab: $file-format.open
 
--- end: ftd.column
+-- ftd.text: $file-format.title
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
--- end: logo-dark
+-- end: ftd.row
+
+-- end: file-format
