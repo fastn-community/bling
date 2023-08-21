@@ -53,11 +53,14 @@ src: $assets.files.static.fastn-frame.svg
 
 PNG downloads have a transparent background, JPGs will have a white background.
 
--- logo-dark-details:
+-- logo-card:
 logo: $assets.files.static.logo-dark.svg
+id: logo-card-1
 
--- logo-light-details:
+-- logo-card:
 logo: $assets.files.static.logo-light.svg
+id: logo-card-2
+
 
 -- logo-without-bg-details:
 logo: $assets.files.static.logo-without-bg.svg
@@ -116,9 +119,9 @@ Refer to the guidelines below when working with typography:
 
 
 
--- component logo-dark-details:
+-- component logo-card:
 optional ftd.image-src logo:
-private string card-id: logo-dark-details
+optional string id: logo-card
 boolean $mouse-in: false
 boolean $mouse-enter: false
 boolean $mouse-over: false
@@ -132,14 +135,14 @@ spacing.fixed.px: 24
 
 -- ftd.column:
 width: fill-container
-id: $logo-dark-details.card-id
+id: $logo-card.id
 
 -- ftd.column:
 width: fill-container
 height: fill-container
 
 -- logo-dark:
-logo: $logo-dark-details.logo
+logo: $logo-card.logo
 
 -- end: ftd.column
 
@@ -156,11 +159,11 @@ spacing.fixed.px: 12
 
 -- ftd.image:
 src: $assets.files.static.download.svg
-src if { logo-dark-details.mouse-over }: $assets.files.static.download-hover.svg
+src if { logo-card.mouse-over }: $assets.files.static.download-hover.svg
 width.fixed.px: 16
-$on-click$: $utils.download-as-image(element_id = $logo-dark-details.card-id, filename = fastn.png)
-$on-mouse-enter$: $ftd.set-bool($a = $logo-dark-details.mouse-over, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $logo-dark-details.mouse-over, v = false)
+$on-click$: $utils.download-as-image(element_id = $logo-card.id, filename = fastn.png)
+$on-mouse-enter$: $ftd.set-bool($a = $logo-card.mouse-over, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $logo-card.mouse-over, v = false)
 
 -- ftd.text: PNG
 color: $inherited.colors.text-strong
@@ -173,11 +176,11 @@ spacing.fixed.px: 12
 
 -- ftd.image:
 src: $assets.files.static.download.svg
-src if { logo-dark-details.mouse-enter }: $assets.files.static.download-hover.svg
+src if { logo-card.mouse-enter }: $assets.files.static.download-hover.svg
 width.fixed.px: 16
-$on-click$: $utils.download-as-image(element_id = $logo-dark-details.card-id, filename = fastn.jpg)
-$on-mouse-enter$: $ftd.set-bool($a = $logo-dark-details.mouse-enter, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $logo-dark-details.mouse-enter, v = false)
+$on-click$: $utils.download-as-image(element_id = $logo-card.id, filename = fastn.jpg)
+$on-mouse-enter$: $ftd.set-bool($a = $logo-card.mouse-enter, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $logo-card.mouse-enter, v = false)
 
 -- ftd.text: JPG
 color: $inherited.colors.text-strong
@@ -190,10 +193,10 @@ spacing.fixed.px: 12
 
 -- ftd.image:
 src: $assets.files.static.download.svg
-src if { logo-dark-details.mouse-in }: $assets.files.static.download-hover.svg
+src if { logo-card.mouse-in }: $assets.files.static.download-hover.svg
 width.fixed.px: 16
-$on-mouse-enter$: $ftd.set-bool($a = $logo-dark-details.mouse-in, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $logo-dark-details.mouse-in, v = false)
+$on-mouse-enter$: $ftd.set-bool($a = $logo-card.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $logo-card.mouse-in, v = false)
 link: http://fastn-community.github.io/bling/static/logo-dark-img.svg
 open-in-new-tab: true
 
@@ -209,7 +212,7 @@ role: $inherited.types.copy-small
 
 -- end: ftd.column
 
--- end: logo-dark-details
+-- end: logo-card
 
 
 
