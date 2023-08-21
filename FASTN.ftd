@@ -6,6 +6,7 @@
 -- fastn.dependency: fastn-community.github.io/code-block
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/typography
+-- fastn.dependency: fastn-stack.github.io/fastn-js
 
 -- fastn.auto-import: fastn-community.github.io/site-doc
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
@@ -26,6 +27,7 @@
   - Badge: badge/
   - Collapse: collapse/
   - Emoji-list: emoji-list/
+  - Fastn Brand Guideline: fastn-brand-guidelines/
   - Holder: holder/
   - Message: chat/
   - Modal-cover: modal-cover/
