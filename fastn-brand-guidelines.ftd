@@ -156,7 +156,6 @@ id: $logo-card.id
 -- ftd.column:
 width: fill-container
 height: fill-container
-;;min-height.fixed.px: 180
 
 -- ftd.image:
 src: $logo-card.logo
