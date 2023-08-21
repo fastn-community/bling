@@ -53,6 +53,11 @@ src: $assets.files.static.fastn-frame.svg
 
 PNG downloads have a transparent background, JPGs will have a white background.
 
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 24
+wrap: true
+
 -- logo-card:
 logo: $assets.files.static.logo-dark.svg
 id: logo-card-1
@@ -72,6 +77,8 @@ link: http://fastn-community.github.io/bling/static/logo-without-bg-img.svg
 logo: $assets.files.static.logo-without-bg-white.svg
 id: logo-card-4
 link: http://fastn-community.github.io/bling/static/logo-without-bg-white-img.svg
+
+-- end: ftd.row
 
 -- site-doc.header: Color
 
@@ -136,7 +143,11 @@ width if { ftd.device == "mobile" }: fill-container
 
 -- ftd.column:
 width if { ftd.device == "mobile" }: fill-container
-spacing.fixed.px: 24
+width.fixed.px: 316
+padding-bottom.px: 12
+border-width.px: 1
+border-radius.px: 8
+border-color: $inherited.colors.border-strong
 
 -- ftd.column:
 width: fill-container
@@ -148,26 +159,47 @@ height: fill-container
 
 -- ftd.image:
 src: $logo-card.logo
+border-radius.px: 8
 
 -- end: ftd.column
 
 -- end: ftd.column
 
 -- ftd.row:
-width.fixed.px: 250
-spacing: space-between
+width: fill-container
 align-content: center
 align-self: center
+border-top-width.px: 1
+border-color: $inherited.colors.border-strong
+padding-top.px: 18
+
+-- ftd.row:
+width.fixed.px: 250
+spacing: space-between
 
 -- file-format: PNG
 $boolean: $logo-card.mouse-enter
 element-id: $logo-card.id
 file-name: fastn-logo.png
 
+-- ftd.row:
+height.fixed.px: 24
+border-right-width.px: 1
+border-color: $inherited.colors.border-strong
+
+-- end: ftd.row
+
 -- file-format: JPG
 $boolean: $logo-card.mouse-enter
 element-id: $logo-card.id
 file-name: fastn-logo.jpg
+
+-- ftd.row:
+height.fixed.px: 24
+border-right-width.px: 1
+border-color: $inherited.colors.border-strong
+
+-- end: ftd.row
 
 -- file-format: SVG
 $boolean: $logo-card.mouse-enter
@@ -176,6 +208,7 @@ link: $logo-card.link
 file-name: fastn-logo.svg
 open: true
 
+-- end: ftd.row
 -- end: ftd.row
 
 -- end: ftd.column
