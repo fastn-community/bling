@@ -56,18 +56,22 @@ PNG downloads have a transparent background, JPGs will have a white background.
 -- logo-card:
 logo: $assets.files.static.logo-dark.svg
 id: logo-card-1
+link: http://fastn-community.github.io/bling/static/logo-dark-img.svg
 
 -- logo-card:
 logo: $assets.files.static.logo-light.svg
 id: logo-card-2
+link: http://fastn-community.github.io/bling/static/logo-light-img.svg
 
 -- logo-card:
 logo: $assets.files.static.logo-without-bg.svg
 id: logo-card-3
+link: http://fastn-community.github.io/bling/static/logo-without-bg-img.svg
 
 -- logo-card:
 logo: $assets.files.static.logo-without-bg-white.svg
 id: logo-card-4
+link: http://fastn-community.github.io/bling/static/logo-without-bg-white-img.svg
 
 -- site-doc.header: Color
 
@@ -126,6 +130,7 @@ optional string id: logo-card
 boolean $mouse-in: false
 boolean $mouse-enter: false
 boolean $mouse-over: false
+optional string link:
 
 -- ftd.column:
 width if { ftd.device == "mobile" }: fill-container
@@ -193,43 +198,12 @@ role: $inherited.types.copy-small
 spacing.fixed.px: 12
 
 -- ftd.image:
-if: {logo-card.id == "logo-card-1"}
 src: $assets.files.static.download.svg
 src if { logo-card.mouse-in }: $assets.files.static.download-hover.svg
 width.fixed.px: 16
 $on-mouse-enter$: $ftd.set-bool($a = $logo-card.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $logo-card.mouse-in, v = false)
-link: http://fastn-community.github.io/bling/static/logo-dark-img.svg
-open-in-new-tab: true
-
--- ftd.image:
-if: {logo-card.id == "logo-card-2"}
-src: $assets.files.static.download.svg
-src if { logo-card.mouse-in }: $assets.files.static.download-hover.svg
-width.fixed.px: 16
-$on-mouse-enter$: $ftd.set-bool($a = $logo-card.mouse-in, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $logo-card.mouse-in, v = false)
-link: http://fastn-community.github.io/bling/static/logo-light-img.svg
-open-in-new-tab: true
-
--- ftd.image:
-if: {logo-card.id == "logo-card-3"}
-src: $assets.files.static.download.svg
-src if { logo-card.mouse-in }: $assets.files.static.download-hover.svg
-width.fixed.px: 16
-$on-mouse-enter$: $ftd.set-bool($a = $logo-card.mouse-in, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $logo-card.mouse-in, v = false)
-link: http://fastn-community.github.io/bling/static/logo-without-bg-img.svg
-open-in-new-tab: true
-
--- ftd.image:
-if: {logo-card.id == "logo-card-4"}
-src: $assets.files.static.download.svg
-src if { logo-card.mouse-in }: $assets.files.static.download-hover.svg
-width.fixed.px: 16
-$on-mouse-enter$: $ftd.set-bool($a = $logo-card.mouse-in, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $logo-card.mouse-in, v = false)
-link: http://fastn-community.github.io/bling/static/logo-without-bg-white-img.svg
+link: $logo-card.link
 open-in-new-tab: true
 
 -- ftd.text: SVG
