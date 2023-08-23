@@ -46,7 +46,7 @@ lang: ftd
 
 -- end: message-left
 
--- message-right: Yo! 
+-- message-right: Yo!
 
 -- tf.markdown:
 
@@ -134,7 +134,8 @@ square. By default it will be seen as rounded image.
 
 -- component message-left:
 optional caption title:
-ftd.image-src avatar: $assets.files.static.amitu.jpg
+optional body body:
+optional ftd.image-src avatar: $assets.files.static.avatar.svg
 boolean round-avatar: true
 children container:
 
@@ -148,37 +149,20 @@ width: fill-container
 width: fill-container
 
 -- ftd.image:
-if: { !$message-left.round-avatar }
 src: $message-left.avatar
 width.fixed.px: 32
 height: auto
 margin-right.px: 20
+border-radius.px if { !message-left.round-avatar }: 32
 
 -- ftd.image:
-if: { $message-left.round-avatar }
-src: $message-left.avatar
+src: $assets.files.static.left-pointer.svg
 width.fixed.px: 32
-height: auto
-margin-right.px: 20
-border-radius.px: 32
-
--- ftd.column:
-width.fixed.px: 8
-height.fixed.px: 8
-background.solid: #FFF
-border-top-width.px: 18
-border-left-width.px: 34
-border-right-width.px: 0
-border-top-color: $inherited.colors.cta-secondary.border
-border-bottom-color: $inherited.colors.cta-secondary.border
-border-left-color: $inherited.colors.background.base
-border-right-color: $inherited.colors.cta-secondary.border
+height.fixed.px: 32
 anchor: parent
 left.px: 38
 z-index: 0
-top.px: 12
-
--- end: ftd.column
+top.px: 4
 
 -- ftd.column:
 border-width.px: 1
@@ -192,10 +176,20 @@ z-index: 1
 margin-top.px: 6
 
 -- ftd.text: $message-left.title
+if: { message-left.title != NULL }
 color: $inherited.colors.text
 role: $inherited.types.label-large
 width: fill-container
 text-align: start
+
+-- ftd.text:
+if: { message-left.body != NULL }
+color: $inherited.colors.text
+role: $inherited.types.label-large
+width: fill-container
+text-align: start
+
+$message-left.body
 
 -- ftd.column:
 children: $message-left.container
@@ -223,7 +217,8 @@ children: $message-left.container
 
 -- component message-right:
 optional caption title:
-ftd.image-src avatar: $assets.files.static.ganeshs.jpg
+optional body body:
+optional ftd.image-src avatar: $assets.files.static.avatar.svg
 boolean round-avatar: true
 children container:
 
@@ -248,10 +243,20 @@ z-index: 1
 margin-top.px: 6
 
 -- ftd.text: $message-right.title
+if: { message-right.title != NULL }
 color: $inherited.colors.text
 role: $inherited.types.label-large
 width: fill-container
 text-align: end
+
+-- ftd.text:
+if: { message-right.body != NULL }
+color: $inherited.colors.text
+role: $inherited.types.label-large
+width: fill-container
+text-align: end
+
+$message-right.body
 
 -- ftd.column:
 children: $message-right.container
@@ -260,23 +265,14 @@ children: $message-right.container
 
 -- end: ftd.column
 
--- ftd.column:
-width.fixed.px: 8
-height.fixed.px: 8
-background.solid: #FFF
-border-top-width.px: 0
-border-bottom-width.px: 18
-border-left-width.px: 34
-border-right-width.px: 0
-border-bottom-color: $inherited.colors.background.base
-border-left-color:  $inherited.colors.cta-secondary.border
-border-right-color: $inherited.colors.cta-secondary.border
+-- ftd.image:
+src: $assets.files.static.right-pointer.svg
+width.fixed.px: 32
+height.fixed.px: 32
 anchor: parent
 right.px: 38
 z-index: 0
-top.px: 12
-
--- end: ftd.column
+top.px: 4
 
 -- ftd.image:
 if: { !$message-right.round-avatar }
