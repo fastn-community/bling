@@ -21,7 +21,7 @@ padding.px if { ftd.device != "mobile" }: 24
 padding.px if { ftd.device == "mobile" }: 16
 
 -- message-left: Hey Buddy!
-username: user-1
+username: John Doe
 time: 12.36 pm
 
 uis nostrud exercitation ullaril mco labil oris nisi ut aliquip ex ea commo
@@ -31,12 +31,14 @@ dorli consequa duis aute irure dolor lorii
 lang: ftd
 
 \-- message-left: Hi! 
+username: John Doe
+time: 12.36 pm
+
 \-- ftd.text: Hi!
 
 -- end: message-left
 
 -- message-right: Yo!
-;;username: user-1
 time: 12.36 pm
 
 -- tf.markdown:
@@ -56,16 +58,25 @@ role: $inherited.types.label-large
 -- end: message-right
 
 -- message-left: 🤘
+username: John Doe
+time: 12.36 pm
 
 -- message-right: 👍👍
+time: 12.36 pm
 
 -- message-left: Lorem ipsum dolor sit amet,
+username: John Doe
+time: 12.36 pm
 
 -- message-right: sed do eiusmod tempor ut
+time: 12.36 pm
 
 -- message-left: Lorem ipsum
+username: John Doe
+time: 12.36 pm
 
 -- message-right: sed do eiusmod
+time: 12.36 pm
 
 -- end: ftd.column
 
@@ -87,8 +98,11 @@ lang: ftd
 lang: ftd
 
 \-- message-left: Hi! 
+username: John Doe
+time: 12.36 pm
 
 \-- message-right: Hey! how are you doing? 
+time: 12.36 pm
 
 -- site-doc.header: Properties:
 
@@ -168,22 +182,12 @@ width: fill-container
 z-index: 1
 spacing.fixed.px: 12
 
--- ftd.row:
-spacing.fixed.px: 4
-
--- ftd.text: ~~
-if: { message-left.username != NULL }
-color: $inherited.colors.text-strong
-role: $inherited.types.copy-regular
-
 -- ftd.text: $message-left.username
 if: { message-left.username != NULL }
 color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 width: fill-container
 text-align: start
-
--- end: ftd.row
 
 -- ftd.text: $message-left.title
 if: { message-left.title != NULL }
@@ -274,13 +278,7 @@ spacing.fixed.px: 12
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 4
 align-content: right
-
--- ftd.text: ~~
-if: { message-right.username != NULL }
-color: $inherited.colors.text-strong
-role: $inherited.types.copy-regular
 
 -- ftd.text: $message-right.username
 if: { message-right.username != NULL }
@@ -338,7 +336,6 @@ z-index: 0
 top.px: 4
 
 -- ftd.image:
-if: { $message-right.round-avatar }
 src: $message-right.avatar
 width.fixed.px: 32
 height: auto
@@ -348,7 +345,6 @@ border-radius.px if { !$message-right.round-avatar }: 32
 -- end: ftd.row
 
 -- end: ftd.column
-
 
 -- end: ftd.column
 
