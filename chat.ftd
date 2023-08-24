@@ -19,22 +19,13 @@ width.fixed.px if { ftd.device != "mobile" }: 380
 width: fill-container
 padding.px if { ftd.device != "mobile" }: 24
 padding.px if { ftd.device == "mobile" }: 16
-border-radius.px: 10
-background.solid: $inherited.colors.background.base
 
 -- message-left: Hey Buddy!
-
--- ftd.column:
-margin-top.px: 4
-
--- tf.markdown:
+username: user-1
+time: 12.36 pm
 
 uis nostrud exercitation ullaril mco labil oris nisi ut aliquip ex ea commo
 dorli consequa duis aute irure dolor lorii
-
--- ftd.column:
-margin-top.px: -14
-width: fill-container
 
 -- cb.code: Below is code:
 lang: ftd
@@ -42,11 +33,11 @@ lang: ftd
 \-- message-left: Hi! 
 \-- ftd.text: Hi!
 
--- ftd.column:
-
 -- end: message-left
 
 -- message-right: Yo!
+;;username: user-1
+time: 12.36 pm
 
 -- tf.markdown:
 
@@ -135,6 +126,8 @@ square. By default it will be seen as rounded image.
 -- component message-left:
 optional caption title:
 optional body body:
+optional string username:
+optional string time:
 optional ftd.image-src avatar: $assets.files.static.avatar.svg
 boolean round-avatar: true
 children container:
@@ -173,7 +166,24 @@ padding-horizontal.px: 22
 border-radius.px: 10
 width: fill-container
 z-index: 1
-margin-top.px: 6
+spacing.fixed.px: 12
+
+-- ftd.row:
+spacing.fixed.px: 4
+
+-- ftd.text: ~~
+if: { message-left.username != NULL }
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-regular
+
+-- ftd.text: $message-left.username
+if: { message-left.username != NULL }
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-regular
+width: fill-container
+text-align: start
+
+-- end: ftd.row
 
 -- ftd.text: $message-left.title
 if: { message-left.title != NULL }
@@ -192,7 +202,23 @@ text-align: start
 $message-left.body
 
 -- ftd.column:
+padding-bottom.px if { message-left.time != NULL }: 16
 children: $message-left.container
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+anchor: parent
+bottom.px: 8
+right.px: 8
+
+-- ftd.text: $message-left.time
+if: { message-left.time != NULL }
+color: $inherited.colors.text
+role: $inherited.types.label-small
+width: fill-container
+text-align: end
 
 -- end: ftd.column
 
@@ -218,6 +244,8 @@ children: $message-left.container
 -- component message-right:
 optional caption title:
 optional body body:
+optional string username:
+optional string time:
 optional ftd.image-src avatar: $assets.files.static.avatar.svg
 boolean round-avatar: true
 children container:
@@ -236,11 +264,30 @@ width: fill-container
 border-width.px: 1
 border-color: $inherited.colors.cta-secondary.border
 background.solid: $inherited.colors.background.step-1
-padding-vertical.px: 12
 padding-horizontal.px: 22
+padding-vertical.px if { message-right.username != NULL }: 12
+padding-vertical.px if { message-right.username == NULL }: 4
 border-radius.px: 10
 z-index: 1
 margin-top.px: 6
+spacing.fixed.px: 12
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 4
+align-content: right
+
+-- ftd.text: ~~
+if: { message-right.username != NULL }
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-regular
+
+-- ftd.text: $message-right.username
+if: { message-right.username != NULL }
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-regular
+
+-- end: ftd.row
 
 -- ftd.text: $message-right.title
 if: { message-right.title != NULL }
@@ -259,7 +306,23 @@ text-align: end
 $message-right.body
 
 -- ftd.column:
+padding-bottom.px if { message-right.time != NULL }: 24
 children: $message-right.container
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+anchor: parent
+bottom.px: 8
+right.px: 8
+
+-- ftd.text: $message-right.time
+if: { message-right.time != NULL }
+color: $inherited.colors.text
+role: $inherited.types.label-small
+width: fill-container
+text-align: end
 
 -- end: ftd.column
 
@@ -275,23 +338,17 @@ z-index: 0
 top.px: 4
 
 -- ftd.image:
-if: { !$message-right.round-avatar }
-src: $message-right.avatar
-width.fixed.px: 32
-height: auto
-margin-left.px: 26
-
--- ftd.image:
 if: { $message-right.round-avatar }
 src: $message-right.avatar
 width.fixed.px: 32
 height: auto
 margin-left.px: 20
-border-radius.px: 32
+border-radius.px if { !$message-right.round-avatar }: 32
 
 -- end: ftd.row
 
 -- end: ftd.column
+
 
 -- end: ftd.column
 
