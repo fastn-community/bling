@@ -59,24 +59,24 @@ role: $inherited.types.label-large
 
 -- message-left: 🤘
 username: John Doe
-time: 12.36 pm
+time: 12.37 pm
 
 -- message-right: 👍👍
-time: 12.36 pm
+time: 12.37 pm
 
 -- message-left: Lorem ipsum dolor sit amet,
 username: John Doe
-time: 12.36 pm
+time: 12.37 pm
 
 -- message-right: sed do eiusmod tempor ut
-time: 12.36 pm
+time: 12.38 pm
 
 -- message-left: Lorem ipsum
 username: John Doe
-time: 12.36 pm
+time: 12.40 pm
 
 -- message-right: sed do eiusmod
-time: 12.36 pm
+time: 12.41 pm
 
 -- end: ftd.column
 
@@ -184,22 +184,22 @@ spacing.fixed.px: 12
 
 -- ftd.text: $message-left.username
 if: { message-left.username != NULL }
-color: $inherited.colors.text-strong
-role: $inherited.types.copy-regular
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 width: fill-container
 text-align: start
 
 -- ftd.text: $message-left.title
 if: { message-left.title != NULL }
 color: $inherited.colors.text
-role: $inherited.types.label-large
+role: $inherited.types.copy-small
 width: fill-container
 text-align: start
 
 -- ftd.text:
 if: { message-left.body != NULL }
 color: $inherited.colors.text
-role: $inherited.types.label-large
+role: $inherited.types.copy-small
 width: fill-container
 text-align: start
 
@@ -220,7 +220,7 @@ right.px: 8
 -- ftd.text: $message-left.time
 if: { message-left.time != NULL }
 color: $inherited.colors.text
-role: $inherited.types.label-small
+role: $inherited.types.fine-print
 width: fill-container
 text-align: end
 
@@ -282,22 +282,22 @@ align-content: right
 
 -- ftd.text: $message-right.username
 if: { message-right.username != NULL }
-color: $inherited.colors.text-strong
-role: $inherited.types.copy-regular
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 
 -- end: ftd.row
 
 -- ftd.text: $message-right.title
 if: { message-right.title != NULL }
 color: $inherited.colors.text
-role: $inherited.types.label-large
+role: $inherited.types.copy-small
 width: fill-container
 text-align: end
 
 -- ftd.text:
 if: { message-right.body != NULL }
 color: $inherited.colors.text
-role: $inherited.types.label-large
+role: $inherited.types.copy-small
 width: fill-container
 text-align: end
 
@@ -318,7 +318,7 @@ right.px: 8
 -- ftd.text: $message-right.time
 if: { message-right.time != NULL }
 color: $inherited.colors.text
-role: $inherited.types.label-small
+role: $inherited.types.fine-print
 width: fill-container
 text-align: end
 
