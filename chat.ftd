@@ -75,6 +75,10 @@ time: 12.38 pm
 username: John Doe
 time: 12.40 pm
 
+-- message-left: Lorem ipsum
+
+-- message-right: Lorem ipsum
+
 -- message-right: sed do eiusmod
 time: 12.41 pm
 
@@ -148,9 +152,10 @@ children container:
 
 -- ftd.column:
 margin-bottom.px: 24
+align-content: left
+width: fill-container
 
 -- ftd.column:
-width: fill-container
 
 -- ftd.row:
 width: fill-container
@@ -175,11 +180,12 @@ top.px: 4
 border-width.px: 1
 border-color: $inherited.colors.cta-secondary.border
 background.solid: $inherited.colors.background.step-1
-padding-vertical.px: 12
 padding-horizontal.px: 22
+padding-vertical.px if { message-left.username != NULL }: 12
+padding-vertical.px if { message-left.username == NULL }: 4
 border-radius.px: 10
-width: fill-container
 z-index: 1
+margin-top.px: 6
 spacing.fixed.px: 12
 
 -- ftd.text: $message-left.username
@@ -206,19 +212,20 @@ text-align: start
 $message-left.body
 
 -- ftd.column:
+;; if: { !$ftd.is_empty($message-left.container) } --> this should work
 padding-bottom.px if { message-left.time != NULL }: 16
 children: $message-left.container
 
 -- end: ftd.column
 
 -- ftd.column:
+if: { message-left.time != NULL }
 width: fill-container
 anchor: parent
 bottom.px: 8
 right.px: 8
 
 -- ftd.text: $message-left.time
-if: { message-left.time != NULL }
 color: $inherited.colors.text
 role: $inherited.types.fine-print
 width: fill-container
@@ -277,11 +284,11 @@ margin-top.px: 6
 spacing.fixed.px: 12
 
 -- ftd.row:
+if: { message-right.username != NULL }
 width: fill-container
 align-content: right
 
 -- ftd.text: $message-right.username
-if: { message-right.username != NULL }
 color: $inherited.colors.text
 role: $inherited.types.fine-print
 
@@ -304,19 +311,20 @@ text-align: end
 $message-right.body
 
 -- ftd.column:
+;; if: { !$ftd.is_empty($message-right.container) } --> this should work
 padding-bottom.px if { message-right.time != NULL }: 24
 children: $message-right.container
 
 -- end: ftd.column
 
 -- ftd.column:
+if: { message-right.time != NULL }
 width: fill-container
 anchor: parent
 bottom.px: 8
 right.px: 8
 
 -- ftd.text: $message-right.time
-if: { message-right.time != NULL }
 color: $inherited.colors.text
 role: $inherited.types.fine-print
 width: fill-container
