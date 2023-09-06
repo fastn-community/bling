@@ -1,0 +1,289 @@
+-- import: fastn-stack.github.io/fastn-js/utils
+-- import: fastn-community.github.io/bling
+
+
+
+-- site-doc.doc-home: Table
+site-title: Bling
+show-tabs: false
+github-url: https://github.com/fastn-community/bling
+current-package: fastn-community.github.io/bling
+
+-- site-doc.header: How to use
+
+-- cb.code: Add `bling` dependency into your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/bling
+
+-- cb.code: Import `table` inside your `.ftd` file
+lang: ftd
+
+\-- import: fastn-community.github.io/bling/table
+
+-- table:
+
+-- cb.code: Example usage
+
+\-- bling.table:
+
+
+-- end: site-doc.doc-home
+
+
+
+
+
+
+
+-- component table:
+optional caption title:
+
+-- ftd.row:
+width: fill-container
+padding.px: 24
+align-content: center
+
+-- table-column:
+data-column: $column-1-data
+
+-- table-column:
+data-column: $column-2-data
+
+-- table-column:
+data-column: $column-3-data
+
+-- table-column:
+data-column: $column-4-data
+
+-- end: ftd.row
+
+-- end: table
+
+
+
+
+
+
+
+
+
+
+-- component table-column:
+table-cell-record list data-column: $column-1-data
+
+-- ftd.column:
+width.fixed.px: 240
+
+-- table-cell: $obj.title
+$loop$: $table-column.data-column as $obj
+cell-icon: $obj.cell-icon
+is-title: $obj.is-title
+bg-color: $obj.bg-color
+
+-- end: ftd.column
+
+-- end: table-column
+
+
+
+
+
+
+
+
+
+
+-- component table-cell:
+optional caption title:
+optional ftd.image-src cell-icon:
+boolean is-title: false
+optional ftd.color bg-color:
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: 30
+align-content: center
+border-color: $inherited.colors.border-strong
+border-width.px: 1
+padding-vertical.px: 24
+
+-- ftd.text: $table-cell.title
+if: { table-cell.is-title }
+color: $table-cell.bg-color
+role: $inherited.types.copy-large
+style: semi-bold
+
+-- ftd.image:
+if: { !table-cell.is-title }
+src: $table-cell.cell-icon
+width.fixed.px: 24
+
+-- end: ftd.column
+
+-- end: table-cell
+
+
+
+
+
+
+
+
+
+
+-- record table-cell-record:
+optional caption title:
+optional ftd.image-src cell-icon:
+boolean is-title: false
+optional ftd.color bg-color:
+
+-- table-cell-record list column-1-data:
+
+-- table-cell-record: Add Product Service
+is-title: true
+bg-color: $inherited.colors.text-strong
+
+-- table-cell-record: Your Text Here
+is-title: true
+bg-color: $inherited.colors.text
+
+-- table-cell-record: Your Text Here
+is-title: true
+bg-color: $inherited.colors.text
+
+-- table-cell-record: Your Text Here
+is-title: true
+bg-color: $inherited.colors.text
+
+-- table-cell-record: Your Text Here
+is-title: true
+bg-color: $inherited.colors.text
+
+-- table-cell-record: Your Text Here
+is-title: true
+bg-color: $inherited.colors.text
+
+-- table-cell-record: Your Text Here
+is-title: true
+bg-color: $inherited.colors.text
+
+-- table-cell-record: Your Text Here
+is-title: true
+bg-color: $inherited.colors.text
+
+-- table-cell-record: Your Text Here
+is-title: true
+bg-color: $inherited.colors.text
+
+-- end: column-1-data
+
+
+
+
+
+
+-- table-cell-record list column-2-data:
+
+-- table-cell-record: BASIC
+is-title: true
+bg-color: $inherited.colors.custom.one
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.no.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.no.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.no.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.no.svg
+
+-- end: column-2-data
+
+
+
+
+-- table-cell-record list column-3-data:
+
+-- table-cell-record: STANDARD
+is-title: true
+bg-color: $inherited.colors.custom.three
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.no.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.no.svg
+
+-- end: column-3-data
+
+
+
+
+
+
+
+-- table-cell-record list column-4-data:
+
+-- table-cell-record: PLUS
+is-title: true
+bg-color: $inherited.colors.custom.six
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- table-cell-record:
+cell-icon: $assets.files.static.yes.svg
+
+-- end: column-4-data
