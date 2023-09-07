@@ -356,6 +356,28 @@ A man is but a product of his thoughts. What he thinks he becomes.
 
 -- end: cb.rendered 
 
+-- cb.rendered: Example 15: `-- quote.backgroung-image`
+
+-- cb.rendered.input:
+
+\-- quote.backgroung-image: Lucius Annaeus Seneca
+quote-background: https://e0.pxfuel.com/wallpapers/491/601/desktop-wallpaper-ultra-original-and-background-it-ultra.jpg
+text-color: #FFF
+
+As long as you live, keep learning how to live.
+
+-- cb.rendered.output:
+
+-- backgroung-image: Lucius Annaeus Seneca
+quote-background: https://e0.pxfuel.com/wallpapers/491/601/desktop-wallpaper-ultra-original-and-background-it-ultra.jpg
+text-color: #FFF
+
+As long as you live, keep learning how to live.
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered 
+
 -- site-doc.header: Common Properties:
 
 Below are details of all common properties of quote components.
@@ -2290,6 +2312,7 @@ role: $inherited.types.copy-small
 
 
 
+
 -- component dorian:
 optional caption title:
 body body:
@@ -2441,6 +2464,201 @@ border-bottom-left-radius.px: 8
 
 -- end: dorian-mobile
 
+
+
+
+
+
+
+
+
+
+-- component backgroung-image:
+optional caption title:
+body body:
+ftd.image-src quote-background:
+string text-color:
+
+-- ftd.column:
+width: fill-container
+background.image: $backgroung-image.quote-background
+color: $backgroung-image.text-color
+
+
+-- ftd.desktop:
+
+-- quote-7-desktop: $backgroung-image.title
+body: $backgroung-image.body
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- quote-7-mobile: $backgroung-image.title
+body: $backgroung-image.body
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: backgroung-image
+
+
+
+
+
+
+
+
+
+-- component quote-7-desktop:
+optional caption title:
+body body:
+ftd.image-src logo: $assets.files.static.quote.svg
+
+-- ftd.column:
+padding-vertical.px: 32
+padding-horizontal.px: 32
+width: fill-container
+max-width.fixed.px: 800
+align-self: center
+margin-top.px: 24
+margin-bottom.px: 24
+
+-- ftd.column:
+border-top-width.px: 2
+border-color: $inherited.colors.text
+anchor: parent
+top.px: 38
+left.px: 148
+width.fixed.percent: 60
+align-self: center
+
+-- end: ftd.column
+
+-- ftd.column:
+border-bottom-width.px: 2
+border-color: $inherited.colors.text
+anchor: parent
+right.px: 146
+bottom.px: 38
+width.fixed.percent: 60
+
+-- end: ftd.column
+
+-- ftd.column:
+align-self: center
+width.fixed.percent: 60
+padding-vertical.px: 32
+max-height.fixed.px: 400
+
+-- ftd.text: 
+role: $inherited.types.copy-large
+
+
+$quote-7-desktop.body
+
+-- ftd.row:
+align-self: center
+spacing.fixed.px: 8
+
+-- ftd.text: ~
+role: $inherited.types.copy-regular
+
+-- ftd.text: $quote-7-desktop.title
+role: $inherited.types.copy-regular
+
+
+-- end: ftd.row
+
+-- ftd.image:
+anchor: parent
+src: $quote-7-desktop.logo
+right.px: 10
+bottom.px: -32
+height.fixed.px: 62
+width.fixed.px: 62
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: quote-7-desktop
+
+
+
+
+
+
+
+
+
+
+-- component quote-7-mobile:
+optional caption title:
+body body:
+ftd.image-src logo: $assets.files.static.quote.svg
+
+-- ftd.column:
+padding-vertical.px: 16
+padding-horizontal.px: 16
+;; gradient-direction: top.px to bottom.px - TODO FTD 0.3
+;; gradient-colors: grey, black - TODO FTD 0.3
+width: fill-container
+max-width.fixed.px: 800
+align-self: center
+margin-top.px: 20
+margin-bottom.px: 24
+
+-- ftd.column:
+border-top-width.px: 1
+border-color: $inherited.colors.text
+anchor: parent
+top.px: 18
+left.px: 44
+width.fixed.percent: 80
+align-self: center
+
+-- end: ftd.column
+
+-- ftd.column:
+border-bottom-width.px: 1
+border-color: $inherited.colors.text
+anchor: parent
+right.px: 44
+bottom.px: 18
+width.fixed.percent: 80
+
+-- end: ftd.column
+
+-- ftd.column:
+align-self: center
+width.fixed.percent: 80
+padding-vertical.px: 16
+
+-- ftd.text:
+role: $inherited.types.heading-small
+
+
+$quote-7-mobile.body
+
+-- ftd.text: $quote-7-mobile.title
+role: $inherited.types.copy-regular
+padding-top.px: 20
+
+-- ftd.image:
+anchor: parent
+src: $quote-7-mobile.logo
+right.px: 10
+bottom.px: -12
+height.fixed.px: 32
+width.fixed.px: 32
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: quote-7-mobile
 
 
 
