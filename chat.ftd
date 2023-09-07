@@ -22,7 +22,7 @@ padding.px if { ftd.device == "mobile" }: 16
 
 -- message-left: Hey Buddy!
 username: John Doe
-time: 12.36 pm
+time: 12.36
 
 uis nostrud exercitation ullaril mco labil oris nisi ut aliquip ex ea commo
 dorli consequa duis aute irure dolor lorii
@@ -32,16 +32,14 @@ lang: ftd
 
 \-- message-left: Hi! 
 username: John Doe
-time: 12.36 pm
+time: 12.36
 
 \-- ftd.text: Hi!
 
 -- end: message-left
 
 -- message-right: Yo!
-time: 12.36 pm
-
--- tf.markdown:
+time: 12.36
 
 in voluptate velit esse cillum dolor er eu fugiat nulla pariatur. Excepte urla
 sint occaecat cupidatat nor proident,
@@ -52,35 +50,37 @@ lang: ftd
 \-- ftd.text: Yo! 
 
 -- ftd.text: Sed ut perspiciatis unde omnis isa te natus error sit volupta tem.
-color: $inherited.colors.text
-role: $inherited.types.label-large
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
 
 -- end: message-right
 
 -- message-left: 🤘
 username: John Doe
-time: 12.37 pm
+time: 12.37
 
 -- message-right: 👍👍
-time: 12.37 pm
+time: 12.37
 
 -- message-left: Lorem ipsum dolor sit amet,
 username: John Doe
-time: 12.37 pm
+time: 12.37
+reaction: 🤘
 
 -- message-right: sed do eiusmod tempor ut
-time: 12.38 pm
+time: 12.38
+reaction: 🤘
 
 -- message-left: Lorem ipsum
 username: John Doe
-time: 12.40 pm
+time: 12.40
 
 -- message-left: Lorem ipsum
 
 -- message-right: Lorem ipsum
 
 -- message-right: sed do eiusmod
-time: 12.41 pm
+time: 12.41
 
 -- end: ftd.column
 
@@ -103,10 +103,10 @@ lang: ftd
 
 \-- message-left: Hi! 
 username: John Doe
-time: 12.36 pm
+time: 12.36
 
 \-- message-right: Hey! how are you doing? 
-time: 12.36 pm
+time: 12.36
 
 -- site-doc.header: Properties:
 
@@ -146,12 +146,14 @@ optional caption title:
 optional body body:
 optional string username:
 optional string time:
+optional string reaction:
 optional ftd.image-src avatar: $assets.files.static.avatar.svg
 boolean round-avatar: true
 children container:
 
 -- ftd.column:
-margin-bottom.px: 24
+margin-bottom.px: 32
+;;margin-bottom.px if { message-left.reaction }: 38
 align-content: left
 width: fill-container
 
@@ -169,42 +171,44 @@ border-radius.px if { !message-left.round-avatar }: 32
 
 -- ftd.image:
 src: $assets.files.static.left-pointer.svg
-width.fixed.px: 32
-height.fixed.px: 32
+width.fixed.px: 22
+height.fixed.px: 28
 anchor: parent
-left.px: 38
-z-index: 0
-top.px: 4
+left.px: 36
+z-index: 22
+top.px: -2
 
 -- ftd.column:
-border-width.px: 1
-border-color: $inherited.colors.cta-secondary.border
-background.solid: $inherited.colors.background.step-1
-padding-horizontal.px: 22
+background.solid: $inherited.colors.background.base
+padding-horizontal.px: 12
 padding-vertical.px if { message-left.username != NULL }: 12
 padding-vertical.px if { message-left.username == NULL }: 4
-border-radius.px: 10
+border-top-right-radius.px: 10
+border-bottom-right-radius.px: 10
+border-bottom-left-radius.px: 10
 z-index: 1
 margin-top.px: 6
 spacing.fixed.px: 12
+shadow: $shadow
 
 -- ftd.text: $message-left.username
 if: { message-left.username != NULL }
-color: $inherited.colors.text
+color: $inherited.colors.accent.primary
 role: $inherited.types.fine-print
 width: fill-container
+style: semi-bold
 text-align: start
 
 -- ftd.text: $message-left.title
 if: { message-left.title != NULL }
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 width: fill-container
 text-align: start
 
 -- ftd.text:
 if: { message-left.body != NULL }
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 width: fill-container
 text-align: start
@@ -226,10 +230,27 @@ bottom.px: 8
 right.px: 8
 
 -- ftd.text: $message-left.time
-color: $inherited.colors.text
+color: $inherited.colors.info.text
 role: $inherited.types.fine-print
 width: fill-container
+style: light
 text-align: end
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { message-left.reaction != NULL }
+width.fixed.px: 38
+height.fixed.px: 34
+padding.px: 6
+align-content: center
+border-radius.percent: 50
+anchor: parent
+bottom.px: -30
+background.solid: $inherited.colors.background.base
+shadow: $shadow-14
+
+-- ftd.text: $message-left.reaction
 
 -- end: ftd.column
 
@@ -257,12 +278,13 @@ optional caption title:
 optional body body:
 optional string username:
 optional string time:
+optional string reaction:
 optional ftd.image-src avatar: $assets.files.static.avatar.svg
 boolean round-avatar: true
 children container:
 
 -- ftd.column:
-margin-bottom.px: 24
+margin-bottom.px: 32
 align-content: right
 width: fill-container
 
@@ -272,16 +294,17 @@ width: fill-container
 width: fill-container
 
 -- ftd.column:
-border-width.px: 1
-border-color: $inherited.colors.cta-secondary.border
-background.solid: $inherited.colors.background.step-1
-padding-horizontal.px: 22
+background.solid: $inherited.colors.background.base
+padding-horizontal.px: 12
 padding-vertical.px if { message-right.username != NULL }: 12
-padding-vertical.px if { message-right.username == NULL }: 4
-border-radius.px: 10
+padding-vertical.px if { message-right.username == NULL }: 12
+border-top-right-radius.px: 10
+border-bottom-right-radius.px: 10
+border-bottom-left-radius.px: 10
 z-index: 1
 margin-top.px: 6
 spacing.fixed.px: 12
+shadow: $shadow
 
 -- ftd.row:
 if: { message-right.username != NULL }
@@ -289,24 +312,24 @@ width: fill-container
 align-content: right
 
 -- ftd.text: $message-right.username
-color: $inherited.colors.text
+color: $inherited.colors.custom.four
 role: $inherited.types.fine-print
 
 -- end: ftd.row
 
 -- ftd.text: $message-right.title
 if: { message-right.title != NULL }
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 width: fill-container
 text-align: end
 
 -- ftd.text:
 if: { message-right.body != NULL }
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 width: fill-container
-text-align: end
+text-align: start
 
 $message-right.body
 
@@ -325,10 +348,28 @@ bottom.px: 8
 right.px: 8
 
 -- ftd.text: $message-right.time
-color: $inherited.colors.text
+color: $inherited.colors.info.text
 role: $inherited.types.fine-print
 width: fill-container
 text-align: end
+style: light
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { message-right.reaction != NULL }
+width.fixed.px: 38
+height.fixed.px: 34
+padding.px: 6
+align-content: center
+border-radius.percent: 50
+anchor: parent
+bottom.px: -30
+right.px: 10
+background.solid: $inherited.colors.background.base
+shadow: $shadow-14
+
+-- ftd.text: $message-right.reaction
 
 -- end: ftd.column
 
@@ -336,12 +377,12 @@ text-align: end
 
 -- ftd.image:
 src: $assets.files.static.right-pointer.svg
-width.fixed.px: 32
-height.fixed.px: 32
+width.fixed.px: 22
+height.fixed.px: 28
 anchor: parent
+z-index: 22
+top.px: -2
 right.px: 38
-z-index: 0
-top.px: 4
 
 -- ftd.image:
 src: $message-right.avatar
@@ -357,3 +398,24 @@ border-radius.px if { !$message-right.round-avatar }: 32
 -- end: ftd.column
 
 -- end: message-right
+
+
+
+
+-- ftd.shadow shadow:
+color: #d0d0d0
+;;x-offset.px: 0
+y-offset.px: 2
+blur.px: 2
+inset-body: false
+spread.px: 0
+
+
+
+-- ftd.shadow shadow-14:
+color: #d0d0d0
+x-offset.px: 0
+y-offset.px: 0
+blur.px: 4
+inset-body: false
+spread.px: 0
