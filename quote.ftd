@@ -356,11 +356,11 @@ A man is but a product of his thoughts. What he thinks he becomes.
 
 -- end: cb.rendered 
 
--- cb.rendered: Example 15: `-- quote.backgroung-image`
+-- cb.rendered: Example 15: `-- quote.background-image`
 
 -- cb.rendered.input:
 
-\-- quote.backgroung-image: Lucius Annaeus Seneca
+\-- quote.background-image: Lucius Annaeus Seneca
 quote-background: https://e0.pxfuel.com/wallpapers/491/601/desktop-wallpaper-ultra-original-and-background-it-ultra.jpg
 text-color: #FFF
 
@@ -372,7 +372,7 @@ As long as you live, keep learning how to live.
 id: background-image
 -- end: ftd.column
 
--- backgroung-image: Lucius Annaeus Seneca
+-- background-image: Lucius Annaeus Seneca
 quote-background: https://e0.pxfuel.com/wallpapers/491/601/desktop-wallpaper-ultra-original-and-background-it-ultra.jpg
 text-color: #FFF
 
@@ -2491,7 +2491,7 @@ border-bottom-left-radius.px: 8
 
 
 
--- component backgroung-image:
+-- component background-image:
 optional caption title:
 body body:
 ftd.image-src quote-background:
@@ -2499,27 +2499,27 @@ string text-color:
 
 -- ftd.column:
 width: fill-container
-background.image: $backgroung-image.quote-background
-color: $backgroung-image.text-color
+background.image: $background-image.quote-background
+color: $background-image.text-color
 
 
 -- ftd.desktop:
 
--- quote-7-desktop: $backgroung-image.title
-body: $backgroung-image.body
+-- quote-7-desktop: $background-image.title
+body: $background-image.body
 
 -- end: ftd.desktop
 
 -- ftd.mobile:
 
--- quote-7-mobile: $backgroung-image.title
-body: $backgroung-image.body
+-- quote-7-mobile: $background-image.title
+body: $background-image.body
 
 -- end: ftd.mobile
 
 -- end: ftd.column
 
--- end: backgroung-image
+-- end: background-image
 
 
 
