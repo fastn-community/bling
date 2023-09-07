@@ -368,6 +368,10 @@ As long as you live, keep learning how to live.
 
 -- cb.rendered.output:
 
+-- ftd.column:
+id: background-image
+-- end: ftd.column
+
 -- backgroung-image: Lucius Annaeus Seneca
 quote-background: https://e0.pxfuel.com/wallpapers/491/601/desktop-wallpaper-ultra-original-and-background-it-ultra.jpg
 text-color: #FFF
@@ -418,6 +422,20 @@ type: ftd.image-src (`optional`)
 It's used to add author company logo inside below quote components.
 
 [charcoal](quote/#charcoal)
+
+-- site-doc.component-property: `quote-background`
+type: ftd.image-src (`mandatory`)
+
+It's used to add background image inside below quote components.
+
+[background-image](quote/#background-image)
+
+-- site-doc.component-property: `text-color`
+type: String (`mandatory`)
+
+It's used to customize text color inside below quote components.
+
+[background-image](quote/#background-image)
 
 -- end: site-doc.doc-home
 
