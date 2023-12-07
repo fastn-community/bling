@@ -97,6 +97,7 @@ align-self: center
 -- ftd.column:
 
 -- ftd.text: $note.emoji
+if: { note.emoji != NULL }
 role: $inherited.types.heading-medium
 
 -- end: ftd.column
@@ -110,9 +111,11 @@ role: $inherited.types.button-medium
 color: $inherited.colors.text
 
 -- ftd.text:
-text: $note.body
+if: { note.body != NULL }
 role: $inherited.types.copy-small
 color: $inherited.colors.text
+
+$note.body
 
 -- end: ftd.column
 
